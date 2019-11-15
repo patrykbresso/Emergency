@@ -9,8 +9,71 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var keyword: String = ""
+    
     var body: some View {
-        Text("Hello World")
+        VStack(alignment: HorizontalAlignment.leading) {
+            NavigationView {
+                VStack() {
+                    HStack() {
+                        NavigationLink(destination: NewsView()) {
+                            Text("NEWSY")
+                        }
+                        Spacer()
+                        NavigationLink(destination: AdviceView()) {
+                            Text("PORADY RÓŻNE")
+                        }
+                    }
+                    .padding(50)
+                    HStack() {
+                        NavigationLink(destination: TranslateView()) {
+                            Text("TLUMACZ")
+                        }
+                        Spacer()
+                        NavigationLink(destination: PhoneNumbersView()) {
+                            Text("TELEFONY")
+                        }
+                    }
+                    .padding(50)
+                    HStack() {
+                        NavigationLink(destination: HelpView()) {
+                            Text("POMOC OD UCZELNI")
+                        }
+                        Spacer()
+                        NavigationLink(destination: LawView()) {
+                            Text("PRZEPISY")
+                        }
+                    }
+                    .padding(50)
+                    HStack() {
+                        NavigationLink(destination: DifficultSituationsView()) {
+                            Text("TRUDNE SYTUACJE")
+                        }
+                        Spacer()
+                        NavigationLink(destination: ConsulatesView()) {
+                            Text("KONSULATY")
+                        }
+                    }
+                    .padding(50)
+                    HStack() {
+                        NavigationLink(destination: HospitalsView()) {
+                            Text("SZPITALE")
+                        }
+                        Spacer()
+                        NavigationLink(destination: PoliceView()) {
+                            Text("POLICJA")
+                        }
+                    }
+                    .padding(50)
+                }
+            }
+            HStack() {
+                TextField("WYSZUKAJ", text:$keyword)
+                    .textFieldStyle(.roundedBorder)
+            }
+            .padding(.leading, 50)
+            .padding(.trailing, 50)
+        }
     }
 }
 
