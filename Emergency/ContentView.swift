@@ -9,7 +9,7 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State private var keyword: String = ""
+    //@State private var keyword: String = ""
     
     var body: some View {
         VStack(alignment: HorizontalAlignment.leading) {
@@ -60,21 +60,22 @@ struct ContentView: View {
                             Text("SZPITALE")
                         }
                         Spacer()
-                        NavigationLink(destination: PoliceView()) {
+                        NavigationLink(destination: PoliceList()) {
                             Text("POLICJA")
                         }
                     }
                     .padding(50)
                 }
             }
-            HStack() {
+            /*HStack() {
                 TextField("WYSZUKAJ", text:$keyword)
                     .textFieldStyle(.roundedBorder)
-            }
+            }*/
             .padding(.leading, 50)
             .padding(.trailing, 50)
         }
     }
+
 }
 
 struct ContentView_Previews: PreviewProvider {

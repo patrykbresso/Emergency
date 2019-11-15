@@ -1,0 +1,52 @@
+
+[
+    {
+        "id": 1,
+        "name": "Pierwszy komisariat",
+        "address": "ulica 11111",
+        "number": "111111111",
+        "email": "1@1.pl",
+        "coordinates": {
+            "longitude": -116.166868,
+            "latitude": 34.011286
+        },
+        "imageName": "1"
+    },
+    {
+        "id": 2,
+        "name": "Drugi Komisariat",
+        "address": "ulica 22222",
+        "number": "222222",
+        "email": "2@2.pl",
+        "coordinates": {
+            "longitude": -152.665167,
+            "latitude": 59.980167
+        },
+        "imageName": "1"
+    },
+    {
+        "id": 3,
+        "name": "Trzeci komisariat",
+        "address": "ulica 11111",
+        "number": "111111111",
+        "email": "1@1.pl",
+        "coordinates": {
+            "longitude": -116.166868,
+            "latitude": 34.011286
+        },
+        "imageName": "1"
+    },
+    {
+        "id": 4,
+        "name": "Czwarty Komisariat",
+        "address": "ulica 22222",
+        "number": "222222",
+        "email": "2@2.pl",
+        "coordinates": {
+            "longitude": -152.665167,
+            "latitude": 59.980167
+        },
+        "imageName": "1"
+    }
+    
+]
