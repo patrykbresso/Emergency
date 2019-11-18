@@ -15,8 +15,10 @@ struct PhoneNumbersView: View {
     let height: CGFloat = 80
     let description: String = ""
     @State var offsets: [CGFloat] = [0, 0, 0, 0, 0, 0]
+    @State var boxOffsets: [CGFloat] = [0, 0, 0, 0, 0, 0]
     @State var descriptions: [String] = ["", "", "", "", "", ""]
     @State var heights: [CGFloat] = [80, 80, 80, 80, 80, 80]
+    @State var boxClicked: [Bool] = [false, false, false, false, false, false]
     
     
     var body: some View {
@@ -26,9 +28,7 @@ struct PhoneNumbersView: View {
             HStack {
                 Spacer()
                 Button(action: {
-                    self.changeDescription(boxNo: 0)
-                    self.changeHeight(boxNo: 0)
-                    self.changeOffset(boxNo: 0)
+                    self.onBoxClick(boxNo: 0)
                 }) {
                     VStack {
                         RoundedRectangle(cornerRadius: 10)
@@ -54,13 +54,12 @@ struct PhoneNumbersView: View {
                             .foregroundColor(.white)
                             .offset(y: -90)
                     }
+                    .offset(y: boxOffsets[0])
                 }
             }
             HStack {
                 Button(action: {
-                    self.changeDescription(boxNo: 1)
-                    self.changeHeight(boxNo: 1)
-                    self.changeOffset(boxNo: 1)
+                    self.onBoxClick(boxNo: 1)
                 }) {
                     VStack {
                         RoundedRectangle(cornerRadius: 10)
@@ -85,15 +84,14 @@ struct PhoneNumbersView: View {
                             .foregroundColor(.white)
                             .offset(y: -90)
                     }
+                    .offset(y: boxOffsets[1])
                 }
                 Spacer()
             }
             HStack {
                 Spacer()
                 Button(action: {
-                    self.changeDescription(boxNo: 2)
-                    self.changeHeight(boxNo: 2)
-                    self.changeOffset(boxNo: 2)
+                    self.onBoxClick(boxNo: 2)
                 }) {
                     VStack {
                         RoundedRectangle(cornerRadius: 10)
@@ -119,13 +117,12 @@ struct PhoneNumbersView: View {
                             .offset(y: -90)
                         
                     }
+                    .offset(y: boxOffsets[2])
                 }
             }
             HStack {
                 Button(action: {
-                    self.changeDescription(boxNo: 3)
-                    self.changeHeight(boxNo: 3)
-                    self.changeOffset(boxNo: 3)
+                    self.onBoxClick(boxNo: 3)
                 }) {
                     VStack {
                         RoundedRectangle(cornerRadius: 10)
@@ -150,15 +147,14 @@ struct PhoneNumbersView: View {
                             .foregroundColor(.white)
                             .offset(y: -90)
                     }
+                    .offset(y: boxOffsets[3])
                 }
                 Spacer()
             }
             HStack {
                 Spacer()
                 Button(action: {
-                    self.changeDescription(boxNo: 4)
-                    self.changeHeight(boxNo: 4)
-                    self.changeOffset(boxNo: 4)
+                    self.onBoxClick(boxNo: 4)
                 }) {
                     VStack {
                         RoundedRectangle(cornerRadius: 10)
@@ -183,13 +179,12 @@ struct PhoneNumbersView: View {
                             .foregroundColor(.white)
                             .offset(y: -90)
                     }
+                    .offset(y: boxOffsets[4])
                 }
             }
             HStack {
                 Button(action: {
-                    self.changeDescription(boxNo: 5)
-                    self.changeHeight(boxNo: 5)
-                    self.changeOffset(boxNo: 5)
+                    self.onBoxClick(boxNo: 5)
                 }) {
                     VStack {
                         RoundedRectangle(cornerRadius: 10)
@@ -214,6 +209,7 @@ struct PhoneNumbersView: View {
                             .foregroundColor(.white)
                             .offset(y: -90)
                     }
+                    .offset(y: boxOffsets[5])
                 }
                 Spacer()
             }
@@ -237,6 +233,31 @@ struct PhoneNumbersView: View {
     
     func changeOffset(boxNo: Int) {
         offsets[boxNo] = (offsets[boxNo] == 70) ? 0 : 70
+        if(boxNo != 0) {
+            for n in 0...(boxNo - 1) {
+                self.boxOffsets[n] = (self.boxOffsets[n] == 98.5) ? 0 : 98.5
+            }
+        }
+    }
+    
+    func clearPreviousClick(boxNo: Int) {
+        for n in 0...5 {
+            if (n != boxNo && self.boxClicked[n]) {
+                self.descriptions[n] = ""
+                self.offsets[n] = 0
+                self.boxOffsets = [0, 0, 0, 0, 0, 0]
+                self.boxClicked[n] = false
+                self.heights[n] = 80
+            }
+        }
+    }
+    
+    func onBoxClick(boxNo: Int) {
+        self.clearPreviousClick(boxNo: boxNo)
+        self.changeHeight(boxNo: boxNo)
+        self.changeDescription(boxNo: boxNo)
+        self.changeOffset(boxNo: boxNo)
+        self.boxClicked[boxNo] = self.boxClicked[boxNo] ? false : true
     }
 }
 
