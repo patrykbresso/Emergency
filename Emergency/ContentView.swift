@@ -14,7 +14,7 @@ struct ContentView: View {
     var body: some View {
         VStack(alignment: HorizontalAlignment.leading) {
             NavigationView {
-                VStack() {
+                VStack(alignment: .leading) {
                     HStack() {
                         NavigationLink(destination: NewsView()) {
                             Text("NEWSY")
@@ -66,13 +66,12 @@ struct ContentView: View {
                     }
                     .padding(50)
                 }
+                .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: .topLeading)
             }
             /*HStack() {
                 TextField("WYSZUKAJ", text:$keyword)
                     .textFieldStyle(.roundedBorder)
             }*/
-            .padding(.leading, 50)
-            .padding(.trailing, 50)
         }
     }
 

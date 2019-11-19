@@ -24,7 +24,6 @@ struct PhoneNumbersView: View {
     var body: some View {
         VStack(alignment: .trailing, spacing: -70) {
             Spacer()
-            Spacer()
             HStack {
                 Spacer()
                 Button(action: {
@@ -235,7 +234,7 @@ struct PhoneNumbersView: View {
         offsets[boxNo] = (offsets[boxNo] == 70) ? 0 : 70
         if(boxNo != 0) {
             for n in 0...(boxNo - 1) {
-                self.boxOffsets[n] = (self.boxOffsets[n] == 98.5) ? 0 : 98.5
+                self.boxOffsets[n] = (self.boxOffsets[n] == 76.5) ? 0 : 76.5
             }
         }
     }
