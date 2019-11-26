@@ -60,7 +60,7 @@ struct ContentView: View {
                             Text("SZPITALE")
                         }
                         Spacer()
-                        NavigationLink(destination: PoliceList()) {
+                        NavigationLink(destination: PoliceView()) {
                             Text("POLICJA")
                         }
                     }

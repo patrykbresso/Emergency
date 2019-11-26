@@ -11,9 +11,9 @@ import CoreLocation
 
 
 
-struct PoliceRow: View {
+struct ConsulatesRow: View {
 
-    var policeStation: Police
+    var consulate: Consulates
     var body: some View {
         
 
@@ -23,11 +23,11 @@ struct PoliceRow: View {
                 .background(Color(red: 219 / 255, green: 2 / 255, blue: 109 / 255))
                 
                 VStack {
-                    Text(policeStation.name)
+                    Text(consulate.name)
                         .bold()
-                    Text(policeStation.address)
-                    Text(policeStation.number)
-                    Text(policeStation.email)
+                    Text(consulate.address)
+                    Text(consulate.number)
+                    Text(consulate.email)
                 }
             }
             .foregroundColor(.white)
@@ -36,11 +36,11 @@ struct PoliceRow: View {
 }
 
 #if DEBUG
-struct PoliceRow_Previews: PreviewProvider {
+struct ConsulatesRow_Previews: PreviewProvider {
     static var previews: some View {
         Group{
-            PoliceRow(policeStation: policeData[0])
-            PoliceRow(policeStation: policeData[1])
+            ConsulatesRow(consulate: consulatesData[0])
+            ConsulatesRow(consulate: consulatesData[0])
         }
         .previewLayout(.fixed(width: 300, height: 100))
     }

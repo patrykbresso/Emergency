@@ -9,11 +9,10 @@
 
 import SwiftUI
 
-struct PoliceDetailView: View {
+struct ConsulatesDetailView: View {
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
 
-    var policeStation: Police
-
+    var consulate: Consulates
     
     var body: some View {
         
@@ -24,7 +23,7 @@ struct PoliceDetailView: View {
                     self.presentationMode.wrappedValue.dismiss()
                 }) {
                     VStack {
-                        Image("police")
+                        Image("consulate")
                             .renderingMode(.original)
                         Image("left_arrow")
                             .renderingMode(.original)
@@ -38,13 +37,13 @@ struct PoliceDetailView: View {
                 }.padding(.trailing, 20)
             }
             
-            MapView(coordinate: policeStation.locationCoordinate)
+            MapView(coordinate: consulate.locationCoordinate)
                 .frame(width: 346, height: 270, alignment: .center)
                 .overlay(
                     RoundedRectangle(cornerRadius: 5)
                         .stroke(Color.black, lineWidth: 3)
                 )
-            CircleImage(image: Image(policeStation.imageName))
+            CircleImage(image: Image(consulate.imageName))
                 .offset(y: -100)
                 .padding(.bottom, -130)
 
@@ -54,11 +53,11 @@ struct PoliceDetailView: View {
                 .background(Color(red: 219 / 255, green: 2 / 255, blue: 109 / 255))
                 .frame(width: 170, height: 120)
                 VStack {
-                    Text(policeStation.name)
+                    Text(consulate.name)
                         .bold()
-                    Text(policeStation.address)
-                    Text(policeStation.number)
-                    Text(policeStation.email)
+                    Text(consulate.address)
+                    Text(consulate.number)
+                    Text(consulate.email)
                 }
                 .foregroundColor(.white)
             }
@@ -73,9 +72,9 @@ struct PoliceDetailView: View {
     }
 }
 
-struct PoliceDetailView_Preview: PreviewProvider {
+struct ConsulatesDetailView_Preview: PreviewProvider {
     static var previews: some View {
-        PoliceDetailView(policeStation: policeData[1])
+        ConsulatesDetailView(consulate: consulatesData[1])
     }
 }
 
