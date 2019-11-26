@@ -17,56 +17,108 @@ struct ContentView: View {
                 VStack(alignment: .leading) {
                     HStack() {
                         NavigationLink(destination: NewsView()) {
-                            Text("NEWSY")
+                            VStack {
+                                Image("news")
+                                    .renderingMode(.original)
+                                Text("NEWSY")
+                                .bold()
+                            }
                         }
                         Spacer()
                         NavigationLink(destination: AdviceView()) {
-                            Text("PORADY RÓŻNE")
+                            VStack {
+                                Image("advice")
+                                    .renderingMode(.original)
+                                Text("PORADY RÓŻNE")
+                                    .bold()
+                            }
                         }
-                    }
-                    .padding(50)
+                    }.padding(.top, 150)
                     HStack() {
                         NavigationLink(destination: TranslateView()) {
-                            Text("TLUMACZ")
+                            VStack {
+                                Image("translate")
+                                    .renderingMode(.original)
+                                Text("TRANSLATE")
+                                    .bold()
+                            }
                         }
                         Spacer()
                         NavigationLink(destination: PhoneNumbersView()) {
-                            Text("TELEFONY")
+                            VStack {
+                                Image("phone")
+                                    .renderingMode(.original)
+                                Text("PHONE NUMBERS")
+                                    .bold()
+                            }
                         }
                     }
-                    .padding(50)
                     HStack() {
                         NavigationLink(destination: HelpView()) {
-                            Text("POMOC OD UCZELNI")
+                            VStack {
+                                Image("help")
+                                    .renderingMode(.original)
+                                Text("HELP")
+                                    .bold()
+                            }
                         }
                         Spacer()
                         NavigationLink(destination: LawView()) {
-                            Text("PRZEPISY")
+                            VStack {
+                                Image("law")
+                                    .renderingMode(.original)
+                                Text("LAWS")
+                                    .bold()
+                            }
                         }
                     }
-                    .padding(50)
                     HStack() {
                         NavigationLink(destination: DifficultSituationsView()) {
-                            Text("TRUDNE SYTUACJE")
+                            VStack {
+                                Image("difficultsituations")
+                                    .renderingMode(.original)
+                                Text("DIFFICULT SITUATIONS")
+                                    .bold()
+                            }
+                            
                         }
                         Spacer()
                         NavigationLink(destination: ConsulatesView()) {
-                            Text("KONSULATY")
+                            VStack {
+                                Image("consulate")
+                                    .renderingMode(.original)
+                                Text("CONSULATES")
+                                    .bold()
+                            }
                         }
                     }
-                    .padding(50)
                     HStack() {
                         NavigationLink(destination: HospitalsView()) {
-                            Text("SZPITALE")
+                            VStack {
+                                Image("hospital")
+                                    .renderingMode(.original)
+                                Text("HOSPITALS")
+                                    .bold()
+                            }
                         }
                         Spacer()
                         NavigationLink(destination: PoliceView()) {
-                            Text("POLICJA")
+                            VStack {
+                                Image("police")
+                                    .renderingMode(.original)
+                                Text("POLICE")
+                                    .bold()
+                            }
                         }
                     }
-                    .padding(50)
+                    
                 }
+                .padding(.leading, 50)
+                .padding(.trailing, 50)
                 .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: .topLeading)
+                .background(Color(red: 19 / 255, green: 42 / 255, blue: 122 / 255))
+                .foregroundColor(.white)
+                .edgesIgnoringSafeArea(.all)
             }
             /*HStack() {
                 TextField("WYSZUKAJ", text:$keyword)
