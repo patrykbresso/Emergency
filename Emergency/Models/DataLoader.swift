@@ -14,6 +14,7 @@ import CoreLocation
 var policeData: [Police] = load("policeData.json")
 var hospitalsData: [Hospitals] = load("hospitalsData.json")
 var consulatesData: [Consulates] = load("consulatesData.json")
+var lawsData: [Laws] = load("lawsData.json")
 
 func load<T: Decodable>(_ filename: String, as type: T.Type = T.self) -> T {
     let data: Data

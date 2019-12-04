@@ -31,7 +31,6 @@ struct PoliceRow: View {
                 }
             }
             .foregroundColor(.white)
-            .frame(width: 200, height: 80)
     }
 }
 
@@ -42,7 +41,6 @@ struct PoliceRow_Previews: PreviewProvider {
             PoliceRow(policeStation: policeData[0])
             PoliceRow(policeStation: policeData[1])
         }
-        .previewLayout(.fixed(width: 300, height: 100))
     }
 }
 #endif

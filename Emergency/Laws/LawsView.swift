@@ -1,41 +1,47 @@
-
 //
-//  PoliceList.swift
+//  LawView.swift
 //  Emergency
 //
-//  Created by Patryk Bresso on 15/11/2019.
+//  Created by stud on 15/11/2019.
 //  Copyright © 2019 Wasko. All rights reserved.
 //
 
-
 import SwiftUI
 
-struct PoliceView: View {
+struct LawsView: View {
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     
+    let rows = Row.read()
+    
+    
     var body: some View {
-           
+        
         GeometryReader { geometry in
             VStack(alignment: .leading) {
+                
                 Button(action: {
                     self.presentationMode.wrappedValue.dismiss()
                 }) {
                     VStack {
-                        Image("police")
+                        Image("law")
                             .renderingMode(.original)
                         Image("left_arrow")
                             .renderingMode(.original)
                     }
                 }
-
+                
                 VStack(spacing: 40) {
-                    ForEach(policeData) { policeStation in
-                            NavigationLink(destination: PoliceDetailView(policeStation: policeStation)) {
-                                PoliceRow(policeStation: policeStation)
-                                }
+                    ForEach(self.rows) { row in
+                        HStack(spacing: 40) {
+                            ForEach(row.cells) { cell in
+                                NavigationLink(destination: LawsDetailView(law: cell)) {
+                                    LawsCell(law: cell)
+                                    }
+                            }
+                            .frame(width: geometry.size.width / 2.4)
+                        }
                     }
                 }
-                .frame(width: geometry.size.width / 1.3)
             }
         }
         .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity)
@@ -46,9 +52,10 @@ struct PoliceView: View {
     }
 }
 
-struct PoliceView_Previews: PreviewProvider {
+#if DEBUG
+struct LawsView_Previews: PreviewProvider {
     static var previews: some View {
-        PoliceView()
+        LawsView()
     }
 }
-
+#endif

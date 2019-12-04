@@ -12,6 +12,8 @@ struct ContentView: View {
     //@State private var keyword: String = ""
     
     var body: some View {
+        
+        
         VStack(alignment: HorizontalAlignment.leading) {
             NavigationView {
                 VStack(alignment: .leading) {
@@ -63,7 +65,7 @@ struct ContentView: View {
                             }
                         }
                         Spacer()
-                        NavigationLink(destination: LawView()) {
+                        NavigationLink(destination: LawsView()) {
                             VStack {
                                 Image("law")
                                     .renderingMode(.original)
