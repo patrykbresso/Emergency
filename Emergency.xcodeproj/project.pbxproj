@@ -49,6 +49,7 @@
 		AB44EC0A1A887C0F6271A8B4 /* Pods_Emergency.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C62C0887FF051036269EA58 /* Pods_Emergency.framework */; };
 		C01907BEF0A423E69187A72B /* Pods_EmergencyUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38F29B74A73222348AB45E64 /* Pods_EmergencyUITests.framework */; };
 		C7DA29D6DD0ADAAD141A1B1D /* Pods_EmergencyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5337DBD89CD585332792FABD /* Pods_EmergencyTests.framework */; };
+		E8590BB92398469B00C37EE8 /* CustomTextFieldStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8590BB82398469B00C37EE8 /* CustomTextFieldStyle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -123,6 +124,7 @@
 		A151BB29237F2AFE007CEEC1 /* PoliceRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoliceRow.swift; sourceTree = "<group>"; };
 		BEEFCFFC5EDA393F1CA178AF /* Pods-EmergencyUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EmergencyUITests.release.xcconfig"; path = "Target Support Files/Pods-EmergencyUITests/Pods-EmergencyUITests.release.xcconfig"; sourceTree = "<group>"; };
 		C4C29EC31A572AC3686977D1 /* Pods-Emergency.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Emergency.release.xcconfig"; path = "Target Support Files/Pods-Emergency/Pods-Emergency.release.xcconfig"; sourceTree = "<group>"; };
+		E8590BB82398469B00C37EE8 /* CustomTextFieldStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextFieldStyle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -277,6 +279,7 @@
 				9F483A77237F32F1000E35A8 /* NewsView.swift */,
 				A151BB1F237F2AA1007CEEC1 /* HelpView.swift */,
 				A151BB23237F2AC7007CEEC1 /* DifficultSituationsView.swift */,
+				E8590BB82398469B00C37EE8 /* CustomTextFieldStyle.swift */,
 			);
 			path = Emergency;
 			sourceTree = "<group>";
@@ -557,6 +560,7 @@
 				A151BB2A237F2AFE007CEEC1 /* PoliceRow.swift in Sources */,
 				9F169A88237F6740005A8618 /* PoliceDetailView.swift in Sources */,
 				9F169A8A237F67F5005A8618 /* MapView.swift in Sources */,
+				E8590BB92398469B00C37EE8 /* CustomTextFieldStyle.swift in Sources */,
 				A151BB1C237F2A7A007CEEC1 /* TranslateView.swift in Sources */,
 				A151BB28237F2AF1007CEEC1 /* HospitalsView.swift in Sources */,
 				A151BB22237F2AB3007CEEC1 /* LawsView.swift in Sources */,

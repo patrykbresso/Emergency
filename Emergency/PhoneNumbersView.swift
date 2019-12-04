@@ -10,10 +10,7 @@ import SwiftUI
 
 struct PhoneNumbersView: View {
     @State private var keyword: String = ""
-    @State var clicked: Int = 0
     @State var emergencyNumberDescription: String = "czynny 24/7"
-    let height: CGFloat = 80
-    let description: String = ""
     @State var offsets: [CGFloat] = [0, 0, 0, 0, 0, 0]
     @State var boxOffsets: [CGFloat] = [0, 0, 0, 0, 0, 0]
     @State var descriptions: [String] = ["", "", "", "", "", ""]
