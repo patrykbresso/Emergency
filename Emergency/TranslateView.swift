@@ -148,7 +148,7 @@ struct TranslateView: View {
             TextField("WYSZUKAJ", text:$keyword)
                 .textFieldStyle(CustomTextFieldStyle())
                 .padding(.top, 20)
-                .padding(.bottom, 10)
+                .padding(.bottom, 20)
                 .padding(.leading, 35)
                 .padding(.trailing, 35)
                 

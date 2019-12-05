@@ -49,6 +49,7 @@
 		AB44EC0A1A887C0F6271A8B4 /* Pods_Emergency.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C62C0887FF051036269EA58 /* Pods_Emergency.framework */; };
 		C01907BEF0A423E69187A72B /* Pods_EmergencyUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38F29B74A73222348AB45E64 /* Pods_EmergencyUITests.framework */; };
 		C7DA29D6DD0ADAAD141A1B1D /* Pods_EmergencyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5337DBD89CD585332792FABD /* Pods_EmergencyTests.framework */; };
+		E82DE11D23999E57009F0F37 /* MailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E82DE11C23999E57009F0F37 /* MailView.swift */; };
 		E8590BB92398469B00C37EE8 /* CustomTextFieldStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8590BB82398469B00C37EE8 /* CustomTextFieldStyle.swift */; };
 /* End PBXBuildFile section */
 
@@ -124,6 +125,7 @@
 		A151BB29237F2AFE007CEEC1 /* PoliceRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoliceRow.swift; sourceTree = "<group>"; };
 		BEEFCFFC5EDA393F1CA178AF /* Pods-EmergencyUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EmergencyUITests.release.xcconfig"; path = "Target Support Files/Pods-EmergencyUITests/Pods-EmergencyUITests.release.xcconfig"; sourceTree = "<group>"; };
 		C4C29EC31A572AC3686977D1 /* Pods-Emergency.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Emergency.release.xcconfig"; path = "Target Support Files/Pods-Emergency/Pods-Emergency.release.xcconfig"; sourceTree = "<group>"; };
+		E82DE11C23999E57009F0F37 /* MailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailView.swift; sourceTree = "<group>"; };
 		E8590BB82398469B00C37EE8 /* CustomTextFieldStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextFieldStyle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -278,6 +280,7 @@
 				A151BB1D237F2A8F007CEEC1 /* PhoneNumbersView.swift */,
 				9F483A77237F32F1000E35A8 /* NewsView.swift */,
 				A151BB1F237F2AA1007CEEC1 /* HelpView.swift */,
+				E82DE11C23999E57009F0F37 /* MailView.swift */,
 				A151BB23237F2AC7007CEEC1 /* DifficultSituationsView.swift */,
 				E8590BB82398469B00C37EE8 /* CustomTextFieldStyle.swift */,
 			);
@@ -549,6 +552,7 @@
 				9F7D3A7A2397D0330092ADD6 /* LawsCell.swift in Sources */,
 				9F7D3A782397CFD10092ADD6 /* Laws.swift in Sources */,
 				A151BB24237F2AC7007CEEC1 /* DifficultSituationsView.swift in Sources */,
+				E82DE11D23999E57009F0F37 /* MailView.swift in Sources */,
 				9F7A4F1E238D878B001C4B7A /* CustomButtons.swift in Sources */,
 				A151BB1E237F2A8F007CEEC1 /* PhoneNumbersView.swift in Sources */,
 				9F169A80237F4192005A8618 /* DataLoader.swift in Sources */,
