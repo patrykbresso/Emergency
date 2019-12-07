@@ -51,6 +51,10 @@
 		C7DA29D6DD0ADAAD141A1B1D /* Pods_EmergencyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5337DBD89CD585332792FABD /* Pods_EmergencyTests.framework */; };
 		E82DE11D23999E57009F0F37 /* MailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E82DE11C23999E57009F0F37 /* MailView.swift */; };
 		E8590BB92398469B00C37EE8 /* CustomTextFieldStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8590BB82398469B00C37EE8 /* CustomTextFieldStyle.swift */; };
+		E8AD7F43239BEA87005150A7 /* DifficultSituationsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8AD7F42239BEA87005150A7 /* DifficultSituationsCell.swift */; };
+		E8AD7F45239BEAA0005150A7 /* DifficultSituationsDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8AD7F44239BEAA0005150A7 /* DifficultSituationsDetailView.swift */; };
+		E8AD7F47239BEEEA005150A7 /* difficultSituationsData.json in Resources */ = {isa = PBXBuildFile; fileRef = E8AD7F46239BEEEA005150A7 /* difficultSituationsData.json */; };
+		E8AD7F49239BF04E005150A7 /* DifficultSituations.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8AD7F48239BF04E005150A7 /* DifficultSituations.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -127,6 +131,10 @@
 		C4C29EC31A572AC3686977D1 /* Pods-Emergency.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Emergency.release.xcconfig"; path = "Target Support Files/Pods-Emergency/Pods-Emergency.release.xcconfig"; sourceTree = "<group>"; };
 		E82DE11C23999E57009F0F37 /* MailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailView.swift; sourceTree = "<group>"; };
 		E8590BB82398469B00C37EE8 /* CustomTextFieldStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextFieldStyle.swift; sourceTree = "<group>"; };
+		E8AD7F42239BEA87005150A7 /* DifficultSituationsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DifficultSituationsCell.swift; sourceTree = "<group>"; };
+		E8AD7F44239BEAA0005150A7 /* DifficultSituationsDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DifficultSituationsDetailView.swift; sourceTree = "<group>"; };
+		E8AD7F46239BEEEA005150A7 /* difficultSituationsData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = difficultSituationsData.json; sourceTree = "<group>"; };
+		E8AD7F48239BF04E005150A7 /* DifficultSituations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DifficultSituations.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -198,6 +206,7 @@
 				9F7A4F24238DA101001C4B7A /* Hospitals.swift */,
 				9F7A4F2D238DA388001C4B7A /* Consulates.swift */,
 				9F7D3A772397CFD10092ADD6 /* Laws.swift */,
+				E8AD7F48239BF04E005150A7 /* DifficultSituations.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -257,31 +266,17 @@
 		9FAACF832379B65600C3CF94 /* Emergency */ = {
 			isa = PBXGroup;
 			children = (
-				9F7D3A762397CFA10092ADD6 /* Laws */,
+				E8AD7F4B239BF509005150A7 /* Views */,
+				E8AD7F4A239BF4F2005150A7 /* Data */,
 				9F169A8F237F698F005A8618 /* Models */,
 				9F169A8E237F6971005A8618 /* Map */,
-				9F169A8D237F693D005A8618 /* Police */,
-				9F7A4F1F238D9D6B001C4B7A /* Hospitals */,
-				9F7A4F28238DA328001C4B7A /* Consulates */,
 				9FAACF842379B65600C3CF94 /* AppDelegate.swift */,
 				9FAACF862379B65600C3CF94 /* SceneDelegate.swift */,
-				9FAACF882379B65600C3CF94 /* ContentView.swift */,
 				9FAACF8A2379B65900C3CF94 /* Assets.xcassets */,
 				9FAACFB42379B68D00C3CF94 /* GoogleService-Info.plist */,
 				9FAACF8F2379B65900C3CF94 /* LaunchScreen.storyboard */,
 				9FAACF922379B65900C3CF94 /* Info.plist */,
 				9FAACF8C2379B65900C3CF94 /* Preview Content */,
-				A151BB17237F1E89007CEEC1 /* AdviceView.swift */,
-				9F7A4F26238DA150001C4B7A /* hospitalsData.json */,
-				9F7D3A742397CF7B0092ADD6 /* lawsData.json */,
-				9F169A91237F7132005A8618 /* policeData.json */,
-				9F7A4F2F238DA535001C4B7A /* consulatesData.json */,
-				A151BB1B237F2A7A007CEEC1 /* TranslateView.swift */,
-				A151BB1D237F2A8F007CEEC1 /* PhoneNumbersView.swift */,
-				9F483A77237F32F1000E35A8 /* NewsView.swift */,
-				A151BB1F237F2AA1007CEEC1 /* HelpView.swift */,
-				E82DE11C23999E57009F0F37 /* MailView.swift */,
-				A151BB23237F2AC7007CEEC1 /* DifficultSituationsView.swift */,
 				E8590BB82398469B00C37EE8 /* CustomTextFieldStyle.swift */,
 			);
 			path = Emergency;
@@ -311,6 +306,87 @@
 				9FAACFA82379B65900C3CF94 /* Info.plist */,
 			);
 			path = EmergencyUITests;
+			sourceTree = "<group>";
+		};
+		E8AD7F41239BE9B9005150A7 /* DifficultSituations */ = {
+			isa = PBXGroup;
+			children = (
+				A151BB23237F2AC7007CEEC1 /* DifficultSituationsView.swift */,
+				E8AD7F42239BEA87005150A7 /* DifficultSituationsCell.swift */,
+				E8AD7F44239BEAA0005150A7 /* DifficultSituationsDetailView.swift */,
+			);
+			path = DifficultSituations;
+			sourceTree = "<group>";
+		};
+		E8AD7F4A239BF4F2005150A7 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				9F7A4F26238DA150001C4B7A /* hospitalsData.json */,
+				9F7D3A742397CF7B0092ADD6 /* lawsData.json */,
+				9F169A91237F7132005A8618 /* policeData.json */,
+				9F7A4F2F238DA535001C4B7A /* consulatesData.json */,
+				E8AD7F46239BEEEA005150A7 /* difficultSituationsData.json */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		E8AD7F4B239BF509005150A7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9FAACF882379B65600C3CF94 /* ContentView.swift */,
+				E82DE11C23999E57009F0F37 /* MailView.swift */,
+				E8AD7F50239BF578005150A7 /* News */,
+				E8AD7F4F239BF567005150A7 /* PhoneNumbers */,
+				E8AD7F4E239BF55D005150A7 /* Help */,
+				E8AD7F4D239BF548005150A7 /* Translate */,
+				E8AD7F4C239BF53B005150A7 /* Advice */,
+				9F7A4F28238DA328001C4B7A /* Consulates */,
+				9F7A4F1F238D9D6B001C4B7A /* Hospitals */,
+				9F169A8D237F693D005A8618 /* Police */,
+				E8AD7F41239BE9B9005150A7 /* DifficultSituations */,
+				9F7D3A762397CFA10092ADD6 /* Laws */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E8AD7F4C239BF53B005150A7 /* Advice */ = {
+			isa = PBXGroup;
+			children = (
+				A151BB17237F1E89007CEEC1 /* AdviceView.swift */,
+			);
+			path = Advice;
+			sourceTree = "<group>";
+		};
+		E8AD7F4D239BF548005150A7 /* Translate */ = {
+			isa = PBXGroup;
+			children = (
+				A151BB1B237F2A7A007CEEC1 /* TranslateView.swift */,
+			);
+			path = Translate;
+			sourceTree = "<group>";
+		};
+		E8AD7F4E239BF55D005150A7 /* Help */ = {
+			isa = PBXGroup;
+			children = (
+				A151BB1F237F2AA1007CEEC1 /* HelpView.swift */,
+			);
+			path = Help;
+			sourceTree = "<group>";
+		};
+		E8AD7F4F239BF567005150A7 /* PhoneNumbers */ = {
+			isa = PBXGroup;
+			children = (
+				A151BB1D237F2A8F007CEEC1 /* PhoneNumbersView.swift */,
+			);
+			path = PhoneNumbers;
+			sourceTree = "<group>";
+		};
+		E8AD7F50239BF578005150A7 /* News */ = {
+			isa = PBXGroup;
+			children = (
+				9F483A77237F32F1000E35A8 /* NewsView.swift */,
+			);
+			path = News;
 			sourceTree = "<group>";
 		};
 		FB0759D9C999299D9A337BEE /* Frameworks */ = {
@@ -435,6 +511,7 @@
 				9F7A4F30238DA535001C4B7A /* consulatesData.json in Resources */,
 				9F7D3A752397CF7B0092ADD6 /* lawsData.json in Resources */,
 				9F7A4F27238DA150001C4B7A /* hospitalsData.json in Resources */,
+				E8AD7F47239BEEEA005150A7 /* difficultSituationsData.json in Resources */,
 				9FAACF912379B65900C3CF94 /* LaunchScreen.storyboard in Resources */,
 				9FAACF8E2379B65900C3CF94 /* Preview Assets.xcassets in Resources */,
 				9FAACF8B2379B65900C3CF94 /* Assets.xcassets in Resources */,
@@ -554,6 +631,8 @@
 				A151BB24237F2AC7007CEEC1 /* DifficultSituationsView.swift in Sources */,
 				E82DE11D23999E57009F0F37 /* MailView.swift in Sources */,
 				9F7A4F1E238D878B001C4B7A /* CustomButtons.swift in Sources */,
+				E8AD7F49239BF04E005150A7 /* DifficultSituations.swift in Sources */,
+				E8AD7F43239BEA87005150A7 /* DifficultSituationsCell.swift in Sources */,
 				A151BB1E237F2A8F007CEEC1 /* PhoneNumbersView.swift in Sources */,
 				9F169A80237F4192005A8618 /* DataLoader.swift in Sources */,
 				9F7A4F25238DA101001C4B7A /* Hospitals.swift in Sources */,
@@ -566,6 +645,7 @@
 				9F169A8A237F67F5005A8618 /* MapView.swift in Sources */,
 				E8590BB92398469B00C37EE8 /* CustomTextFieldStyle.swift in Sources */,
 				A151BB1C237F2A7A007CEEC1 /* TranslateView.swift in Sources */,
+				E8AD7F45239BEAA0005150A7 /* DifficultSituationsDetailView.swift in Sources */,
 				A151BB28237F2AF1007CEEC1 /* HospitalsView.swift in Sources */,
 				A151BB22237F2AB3007CEEC1 /* LawsView.swift in Sources */,
 				9F7A4F21238DA049001C4B7A /* HospitalsRow.swift in Sources */,

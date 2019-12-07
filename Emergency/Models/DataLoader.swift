@@ -15,6 +15,7 @@ var policeData: [Police] = load("policeData.json")
 var hospitalsData: [Hospitals] = load("hospitalsData.json")
 var consulatesData: [Consulates] = load("consulatesData.json")
 var lawsData: [Laws] = load("lawsData.json")
+var difficultSituationsData: [DifficultSituations] = load("difficultSituationsData.json")
 
 func load<T: Decodable>(_ filename: String, as type: T.Type = T.self) -> T {
     let data: Data

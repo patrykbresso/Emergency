@@ -9,6 +9,8 @@
 import SwiftUI
 
 struct TranslateView: View {
+    @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
+    
     var boxHeight: CGFloat = 100;
     @State private var keyword: String = ""
     @State var originalTexts: [String] = ["I need help!", "I need a doctor!", "Please take me to a hospital!", "Please call the police!", "I've been robbed!", "I'm on the (...) street."]
@@ -16,13 +18,21 @@ struct TranslateView: View {
     @State var texts: [String] = ["I need help!", "I need a doctor!", "Please take me to a hospital!", "Please call the police!", "I've been robbed!", "I'm on the (...) street."]
     
     var body: some View {
-        VStack(alignment: HorizontalAlignment.leading, spacing: -95) {
+        VStack(alignment: HorizontalAlignment.leading, spacing: 15) {
+            Spacer().padding(.bottom, 20)
             HStack{
-                Image("translate")
+                Button(action: {
+                    self.presentationMode.wrappedValue.dismiss() //fix not working button
+                }) {
+                    VStack {
+                        Image("translate")
+                            .renderingMode(.original)
+                        Image("left_arrow")
+                            .renderingMode(.original)
+                    }
+                }
                 Spacer()
             }
-            .padding(.top, 30)
-            Spacer()
             HStack {
                 Spacer()
                 Button(action: {
@@ -42,7 +52,8 @@ struct TranslateView: View {
                             .frame(width: 150, height: boxHeight)
                             .offset(y: -120)
                     }
-                }
+                }.frame(width: 150, height: boxHeight)
+                    .offset(y: 55)
             }
             HStack {
                 Button(action: {
@@ -61,7 +72,8 @@ struct TranslateView: View {
                             .frame(width: 150, height: boxHeight)
                             .offset(y: -120)
                     }
-                }
+                }.frame(width: 150, height: boxHeight)
+                .offset(y: 55)
                 Spacer()
             }
             HStack {
@@ -83,7 +95,8 @@ struct TranslateView: View {
                             .offset(y: -120)
                         
                     }
-                }
+                }.frame(width: 150, height: boxHeight)
+                .offset(y: 55)
             }
             HStack {
                 Button(action: {
@@ -102,7 +115,8 @@ struct TranslateView: View {
                             .frame(width: 150, height: boxHeight)
                             .offset(y: -120)
                     }
-                }
+                }.frame(width: 150, height: boxHeight)
+                .offset(y: 55)
                 Spacer()
             }
             HStack {
@@ -123,7 +137,8 @@ struct TranslateView: View {
                             .frame(width: 150, height: boxHeight)
                             .offset(y: -120)
                     }
-                }
+                }.frame(width: 150, height: boxHeight)
+                .offset(y: 55)
             }
             HStack {
                 Button(action: {
@@ -142,7 +157,8 @@ struct TranslateView: View {
                             .frame(width: 150, height: boxHeight)
                             .offset(y: -120)
                     }
-                }
+                }.frame(width: 150, height: boxHeight)
+                .offset(y: 55)
                 Spacer()
             }
             TextField("WYSZUKAJ", text:$keyword)
@@ -159,6 +175,7 @@ struct TranslateView: View {
         .background(Color(red: 19 / 255, green: 42 / 255, blue: 122 / 255))
         .foregroundColor(.white)
         .edgesIgnoringSafeArea(.all)
+        .navigationBarBackButtonHidden(true)
     }
     
     func onBoxClick(boxNo: Int) {
