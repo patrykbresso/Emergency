@@ -55,6 +55,8 @@
 		E8AD7F45239BEAA0005150A7 /* DifficultSituationsDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8AD7F44239BEAA0005150A7 /* DifficultSituationsDetailView.swift */; };
 		E8AD7F47239BEEEA005150A7 /* difficultSituationsData.json in Resources */ = {isa = PBXBuildFile; fileRef = E8AD7F46239BEEEA005150A7 /* difficultSituationsData.json */; };
 		E8AD7F49239BF04E005150A7 /* DifficultSituations.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8AD7F48239BF04E005150A7 /* DifficultSituations.swift */; };
+		E8AD7F52239C4A48005150A7 /* adviceData.json in Resources */ = {isa = PBXBuildFile; fileRef = E8AD7F51239C4A48005150A7 /* adviceData.json */; };
+		E8AD7F54239C4AB8005150A7 /* Advice.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8AD7F53239C4AB8005150A7 /* Advice.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -135,6 +137,8 @@
 		E8AD7F44239BEAA0005150A7 /* DifficultSituationsDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DifficultSituationsDetailView.swift; sourceTree = "<group>"; };
 		E8AD7F46239BEEEA005150A7 /* difficultSituationsData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = difficultSituationsData.json; sourceTree = "<group>"; };
 		E8AD7F48239BF04E005150A7 /* DifficultSituations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DifficultSituations.swift; sourceTree = "<group>"; };
+		E8AD7F51239C4A48005150A7 /* adviceData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = adviceData.json; sourceTree = "<group>"; };
+		E8AD7F53239C4AB8005150A7 /* Advice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Advice.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -207,6 +211,7 @@
 				9F7A4F2D238DA388001C4B7A /* Consulates.swift */,
 				9F7D3A772397CFD10092ADD6 /* Laws.swift */,
 				E8AD7F48239BF04E005150A7 /* DifficultSituations.swift */,
+				E8AD7F53239C4AB8005150A7 /* Advice.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -326,6 +331,7 @@
 				9F169A91237F7132005A8618 /* policeData.json */,
 				9F7A4F2F238DA535001C4B7A /* consulatesData.json */,
 				E8AD7F46239BEEEA005150A7 /* difficultSituationsData.json */,
+				E8AD7F51239C4A48005150A7 /* adviceData.json */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -516,6 +522,7 @@
 				9FAACF8E2379B65900C3CF94 /* Preview Assets.xcassets in Resources */,
 				9FAACF8B2379B65900C3CF94 /* Assets.xcassets in Resources */,
 				9FAACFB52379B68E00C3CF94 /* GoogleService-Info.plist in Resources */,
+				E8AD7F52239C4A48005150A7 /* adviceData.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -628,6 +635,7 @@
 			files = (
 				9F7D3A7A2397D0330092ADD6 /* LawsCell.swift in Sources */,
 				9F7D3A782397CFD10092ADD6 /* Laws.swift in Sources */,
+				E8AD7F54239C4AB8005150A7 /* Advice.swift in Sources */,
 				A151BB24237F2AC7007CEEC1 /* DifficultSituationsView.swift in Sources */,
 				E82DE11D23999E57009F0F37 /* MailView.swift in Sources */,
 				9F7A4F1E238D878B001C4B7A /* CustomButtons.swift in Sources */,
