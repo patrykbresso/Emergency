@@ -57,6 +57,9 @@
 		E8AD7F49239BF04E005150A7 /* DifficultSituations.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8AD7F48239BF04E005150A7 /* DifficultSituations.swift */; };
 		E8AD7F52239C4A48005150A7 /* adviceData.json in Resources */ = {isa = PBXBuildFile; fileRef = E8AD7F51239C4A48005150A7 /* adviceData.json */; };
 		E8AD7F54239C4AB8005150A7 /* Advice.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8AD7F53239C4AB8005150A7 /* Advice.swift */; };
+		E8DFAD68239D285B00D4CD74 /* phoneNumbersData.json in Resources */ = {isa = PBXBuildFile; fileRef = E8DFAD67239D285B00D4CD74 /* phoneNumbersData.json */; };
+		E8DFAD6A239D2A1E00D4CD74 /* PhoneNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8DFAD69239D2A1E00D4CD74 /* PhoneNumber.swift */; };
+		E8DFAD6C239D2C5D00D4CD74 /* PhoneNumbersCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8DFAD6B239D2C5D00D4CD74 /* PhoneNumbersCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -139,6 +142,9 @@
 		E8AD7F48239BF04E005150A7 /* DifficultSituations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DifficultSituations.swift; sourceTree = "<group>"; };
 		E8AD7F51239C4A48005150A7 /* adviceData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = adviceData.json; sourceTree = "<group>"; };
 		E8AD7F53239C4AB8005150A7 /* Advice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Advice.swift; sourceTree = "<group>"; };
+		E8DFAD67239D285B00D4CD74 /* phoneNumbersData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = phoneNumbersData.json; sourceTree = "<group>"; };
+		E8DFAD69239D2A1E00D4CD74 /* PhoneNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNumber.swift; sourceTree = "<group>"; };
+		E8DFAD6B239D2C5D00D4CD74 /* PhoneNumbersCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNumbersCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -212,6 +218,7 @@
 				9F7D3A772397CFD10092ADD6 /* Laws.swift */,
 				E8AD7F48239BF04E005150A7 /* DifficultSituations.swift */,
 				E8AD7F53239C4AB8005150A7 /* Advice.swift */,
+				E8DFAD69239D2A1E00D4CD74 /* PhoneNumber.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -332,6 +339,7 @@
 				9F7A4F2F238DA535001C4B7A /* consulatesData.json */,
 				E8AD7F46239BEEEA005150A7 /* difficultSituationsData.json */,
 				E8AD7F51239C4A48005150A7 /* adviceData.json */,
+				E8DFAD67239D285B00D4CD74 /* phoneNumbersData.json */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -339,13 +347,13 @@
 		E8AD7F4B239BF509005150A7 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				E8AD7F4C239BF53B005150A7 /* Advice */,
 				9FAACF882379B65600C3CF94 /* ContentView.swift */,
 				E82DE11C23999E57009F0F37 /* MailView.swift */,
 				E8AD7F50239BF578005150A7 /* News */,
 				E8AD7F4F239BF567005150A7 /* PhoneNumbers */,
 				E8AD7F4E239BF55D005150A7 /* Help */,
 				E8AD7F4D239BF548005150A7 /* Translate */,
-				E8AD7F4C239BF53B005150A7 /* Advice */,
 				9F7A4F28238DA328001C4B7A /* Consulates */,
 				9F7A4F1F238D9D6B001C4B7A /* Hospitals */,
 				9F169A8D237F693D005A8618 /* Police */,
@@ -383,6 +391,7 @@
 			isa = PBXGroup;
 			children = (
 				A151BB1D237F2A8F007CEEC1 /* PhoneNumbersView.swift */,
+				E8DFAD6B239D2C5D00D4CD74 /* PhoneNumbersCell.swift */,
 			);
 			path = PhoneNumbers;
 			sourceTree = "<group>";
@@ -517,6 +526,7 @@
 				9F7A4F30238DA535001C4B7A /* consulatesData.json in Resources */,
 				9F7D3A752397CF7B0092ADD6 /* lawsData.json in Resources */,
 				9F7A4F27238DA150001C4B7A /* hospitalsData.json in Resources */,
+				E8DFAD68239D285B00D4CD74 /* phoneNumbersData.json in Resources */,
 				E8AD7F47239BEEEA005150A7 /* difficultSituationsData.json in Resources */,
 				9FAACF912379B65900C3CF94 /* LaunchScreen.storyboard in Resources */,
 				9FAACF8E2379B65900C3CF94 /* Preview Assets.xcassets in Resources */,
@@ -644,6 +654,7 @@
 				A151BB1E237F2A8F007CEEC1 /* PhoneNumbersView.swift in Sources */,
 				9F169A80237F4192005A8618 /* DataLoader.swift in Sources */,
 				9F7A4F25238DA101001C4B7A /* Hospitals.swift in Sources */,
+				E8DFAD6A239D2A1E00D4CD74 /* PhoneNumber.swift in Sources */,
 				9F169A86237F62EB005A8618 /* PoliceView.swift in Sources */,
 				9F7A4F2E238DA388001C4B7A /* Consulates.swift in Sources */,
 				9FAACF852379B65600C3CF94 /* AppDelegate.swift in Sources */,
@@ -653,6 +664,7 @@
 				9F169A8A237F67F5005A8618 /* MapView.swift in Sources */,
 				E8590BB92398469B00C37EE8 /* CustomTextFieldStyle.swift in Sources */,
 				A151BB1C237F2A7A007CEEC1 /* TranslateView.swift in Sources */,
+				E8DFAD6C239D2C5D00D4CD74 /* PhoneNumbersCell.swift in Sources */,
 				E8AD7F45239BEAA0005150A7 /* DifficultSituationsDetailView.swift in Sources */,
 				A151BB28237F2AF1007CEEC1 /* HospitalsView.swift in Sources */,
 				A151BB22237F2AB3007CEEC1 /* LawsView.swift in Sources */,
