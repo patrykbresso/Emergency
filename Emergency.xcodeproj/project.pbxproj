@@ -60,6 +60,9 @@
 		E8DFAD68239D285B00D4CD74 /* phoneNumbersData.json in Resources */ = {isa = PBXBuildFile; fileRef = E8DFAD67239D285B00D4CD74 /* phoneNumbersData.json */; };
 		E8DFAD6A239D2A1E00D4CD74 /* PhoneNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8DFAD69239D2A1E00D4CD74 /* PhoneNumber.swift */; };
 		E8DFAD6C239D2C5D00D4CD74 /* PhoneNumbersCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8DFAD6B239D2C5D00D4CD74 /* PhoneNumbersCell.swift */; };
+		E8DFAD70239D461400D4CD74 /* translateData.json in Resources */ = {isa = PBXBuildFile; fileRef = E8DFAD6F239D461400D4CD74 /* translateData.json */; };
+		E8DFAD72239D467400D4CD74 /* Translate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8DFAD71239D467400D4CD74 /* Translate.swift */; };
+		E8DFAD74239D48B400D4CD74 /* TranslateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8DFAD73239D48B400D4CD74 /* TranslateCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -145,6 +148,9 @@
 		E8DFAD67239D285B00D4CD74 /* phoneNumbersData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = phoneNumbersData.json; sourceTree = "<group>"; };
 		E8DFAD69239D2A1E00D4CD74 /* PhoneNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNumber.swift; sourceTree = "<group>"; };
 		E8DFAD6B239D2C5D00D4CD74 /* PhoneNumbersCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNumbersCell.swift; sourceTree = "<group>"; };
+		E8DFAD6F239D461400D4CD74 /* translateData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = translateData.json; sourceTree = "<group>"; };
+		E8DFAD71239D467400D4CD74 /* Translate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Translate.swift; sourceTree = "<group>"; };
+		E8DFAD73239D48B400D4CD74 /* TranslateCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslateCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -219,6 +225,7 @@
 				E8AD7F48239BF04E005150A7 /* DifficultSituations.swift */,
 				E8AD7F53239C4AB8005150A7 /* Advice.swift */,
 				E8DFAD69239D2A1E00D4CD74 /* PhoneNumber.swift */,
+				E8DFAD71239D467400D4CD74 /* Translate.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -340,6 +347,7 @@
 				E8AD7F46239BEEEA005150A7 /* difficultSituationsData.json */,
 				E8AD7F51239C4A48005150A7 /* adviceData.json */,
 				E8DFAD67239D285B00D4CD74 /* phoneNumbersData.json */,
+				E8DFAD6F239D461400D4CD74 /* translateData.json */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -347,9 +355,9 @@
 		E8AD7F4B239BF509005150A7 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				E8AD7F4C239BF53B005150A7 /* Advice */,
 				9FAACF882379B65600C3CF94 /* ContentView.swift */,
 				E82DE11C23999E57009F0F37 /* MailView.swift */,
+				E8AD7F4C239BF53B005150A7 /* Advice */,
 				E8AD7F50239BF578005150A7 /* News */,
 				E8AD7F4F239BF567005150A7 /* PhoneNumbers */,
 				E8AD7F4E239BF55D005150A7 /* Help */,
@@ -375,6 +383,7 @@
 			isa = PBXGroup;
 			children = (
 				A151BB1B237F2A7A007CEEC1 /* TranslateView.swift */,
+				E8DFAD73239D48B400D4CD74 /* TranslateCell.swift */,
 			);
 			path = Translate;
 			sourceTree = "<group>";
@@ -532,6 +541,7 @@
 				9FAACF8E2379B65900C3CF94 /* Preview Assets.xcassets in Resources */,
 				9FAACF8B2379B65900C3CF94 /* Assets.xcassets in Resources */,
 				9FAACFB52379B68E00C3CF94 /* GoogleService-Info.plist in Resources */,
+				E8DFAD70239D461400D4CD74 /* translateData.json in Resources */,
 				E8AD7F52239C4A48005150A7 /* adviceData.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -649,6 +659,7 @@
 				A151BB24237F2AC7007CEEC1 /* DifficultSituationsView.swift in Sources */,
 				E82DE11D23999E57009F0F37 /* MailView.swift in Sources */,
 				9F7A4F1E238D878B001C4B7A /* CustomButtons.swift in Sources */,
+				E8DFAD74239D48B400D4CD74 /* TranslateCell.swift in Sources */,
 				E8AD7F49239BF04E005150A7 /* DifficultSituations.swift in Sources */,
 				E8AD7F43239BEA87005150A7 /* DifficultSituationsCell.swift in Sources */,
 				A151BB1E237F2A8F007CEEC1 /* PhoneNumbersView.swift in Sources */,
@@ -677,6 +688,7 @@
 				9F169A8C237F6844005A8618 /* CircleImage.swift in Sources */,
 				9F7D3A7C2397D2E80092ADD6 /* LawsDetailView.swift in Sources */,
 				9FAACF872379B65600C3CF94 /* SceneDelegate.swift in Sources */,
+				E8DFAD72239D467400D4CD74 /* Translate.swift in Sources */,
 				A151BB20237F2AA1007CEEC1 /* HelpView.swift in Sources */,
 				9FAACF892379B65600C3CF94 /* ContentView.swift in Sources */,
 				9F7A4F23238DA05A001C4B7A /* HospitalsDetailView.swift in Sources */,
