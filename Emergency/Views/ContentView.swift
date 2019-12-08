@@ -9,123 +9,137 @@
 import SwiftUI
 
 struct ContentView: View {
-    //@State private var keyword: String = ""
+    @State private var keyword: String = ""
     
     var body: some View {
         
-        
-        VStack(alignment: HorizontalAlignment.leading) {
-            NavigationView {
-                VStack(alignment: .leading) {
-                    HStack() {
-                        NavigationLink(destination: NewsView()) {
-                            VStack {
-                                Image("news")
-                                    .renderingMode(.original)
-                                Text("NEWSY")
-                                .bold()
+        GeometryReader { geometry in
+            VStack(alignment: HorizontalAlignment.leading) {
+                NavigationView {
+                    VStack(alignment: .leading) {
+                        HStack() {
+                            NavigationLink(destination: NewsView()) {
+                                VStack {
+                                    Image("news")
+                                        .renderingMode(.original)
+                                    Text("NEWSY")
+                                    .fontWeight(.bold)
+                                    .multilineTextAlignment(.center)
+                                }.frame(width: geometry.size.width / 2 - 60)
+                            }
+                            Spacer()
+                            NavigationLink(destination: AdviceView()) {
+                                VStack {
+                                    Image("advice")
+                                        .renderingMode(.original)
+                                    Text("PORADY RÓŻNE")
+                                        .fontWeight(.bold)
+                                        .multilineTextAlignment(.center)
+                                }.frame(width: geometry.size.width / 2 - 60)
+                            }
+                        }.padding(.top, 150)
+                        HStack() {
+                            NavigationLink(destination: TranslateView()) {
+                                VStack {
+                                    Image("translate")
+                                        .renderingMode(.original)
+                                    Text("TRANSLATE")
+                                        .fontWeight(.bold)
+                                        .multilineTextAlignment(.center)
+                                }.frame(width: geometry.size.width / 2 - 60)
+                            }
+                            Spacer()
+                            NavigationLink(destination: PhoneNumbersView()) {
+                                VStack {
+                                    Image("phone")
+                                        .renderingMode(.original)
+                                    Text("PHONE NUMBERS")
+                                        .fontWeight(.bold)
+                                        .multilineTextAlignment(.center)
+                                }.frame(width: geometry.size.width / 2 - 60)
+                            }
+                        }
+                        HStack() {
+                            NavigationLink(destination: HelpView()) {
+                                VStack {
+                                    Image("help")
+                                        .renderingMode(.original)
+                                    Text("HELP")
+                                        .fontWeight(.bold)
+                                        .multilineTextAlignment(.center)
+                                }.frame(width: geometry.size.width / 2 - 60)
+                            }
+                            Spacer()
+                            NavigationLink(destination: LawsView()) {
+                                VStack {
+                                    Image("law")
+                                        .renderingMode(.original)
+                                    Text("LAWS")
+                                        .fontWeight(.bold)
+                                        .multilineTextAlignment(.center)
+                                }.frame(width: geometry.size.width / 2 - 60)
+                            }
+                        }
+                        HStack() {
+                            NavigationLink(destination: DifficultSituationsView()) {
+                                VStack {
+                                    Image("difficultsituations")
+                                        .renderingMode(.original)
+                                    Text("DIFFICULT SITUATIONS")
+                                        .fontWeight(.bold)
+                                        .multilineTextAlignment(.center)
+                                }.frame(width: geometry.size.width / 2 - 60)
+                                
+                            }
+                            Spacer()
+                            NavigationLink(destination: ConsulatesView()) {
+                                VStack {
+                                    Image("consulate")
+                                        .renderingMode(.original)
+                                    Text("CONSULATES")
+                                        .fontWeight(.bold)
+                                        .multilineTextAlignment(.center)
+                                }.frame(width: geometry.size.width / 2 - 60)
+                            }
+                        }
+                        HStack() {
+                            NavigationLink(destination: HospitalsView()) {
+                                VStack {
+                                    Image("hospital")
+                                        .renderingMode(.original)
+                                    Text("HOSPITALS")
+                                        .fontWeight(.bold)
+                                        .multilineTextAlignment(.center)
+                                }.frame(width: geometry.size.width / 2 - 60)
+                            }
+                            Spacer()
+                            NavigationLink(destination: PoliceView()) {
+                                VStack {
+                                    Image("police")
+                                        .renderingMode(.original)
+                                    Text("POLICE")
+                                        .fontWeight(.bold)
+                                        .multilineTextAlignment(.center)
+                                }.frame(width: geometry.size.width / 2 - 60)
                             }
                         }
                         Spacer()
-                        NavigationLink(destination: AdviceView()) {
-                            VStack {
-                                Image("advice")
-                                    .renderingMode(.original)
-                                Text("PORADY RÓŻNE")
-                                    .bold()
-                            }
-                        }
-                    }.padding(.top, 150)
-                    HStack() {
-                        NavigationLink(destination: TranslateView()) {
-                            VStack {
-                                Image("translate")
-                                    .renderingMode(.original)
-                                Text("TRANSLATE")
-                                    .bold()
-                            }
-                        }
-                        Spacer()
-                        NavigationLink(destination: PhoneNumbersView()) {
-                            VStack {
-                                Image("phone")
-                                    .renderingMode(.original)
-                                Text("PHONE NUMBERS")
-                                    .bold()
-                            }
-                        }
+                        TextField("", text: self.$keyword)
+                            .textFieldStyle(CustomTextFieldStyle())
+                            .padding(.top, 20)
+                            .padding(.bottom, 20)
+                            .padding(.leading, 35)
+                            .padding(.trailing, 35)
+                        
                     }
-                    HStack() {
-                        NavigationLink(destination: HelpView()) {
-                            VStack {
-                                Image("help")
-                                    .renderingMode(.original)
-                                Text("HELP")
-                                    .bold()
-                            }
-                        }
-                        Spacer()
-                        NavigationLink(destination: LawsView()) {
-                            VStack {
-                                Image("law")
-                                    .renderingMode(.original)
-                                Text("LAWS")
-                                    .bold()
-                            }
-                        }
-                    }
-                    HStack() {
-                        NavigationLink(destination: DifficultSituationsView()) {
-                            VStack {
-                                Image("difficultsituations")
-                                    .renderingMode(.original)
-                                Text("DIFFICULT SITUATIONS")
-                                    .bold()
-                            }
-                            
-                        }
-                        Spacer()
-                        NavigationLink(destination: ConsulatesView()) {
-                            VStack {
-                                Image("consulate")
-                                    .renderingMode(.original)
-                                Text("CONSULATES")
-                                    .bold()
-                            }
-                        }
-                    }
-                    HStack() {
-                        NavigationLink(destination: HospitalsView()) {
-                            VStack {
-                                Image("hospital")
-                                    .renderingMode(.original)
-                                Text("HOSPITALS")
-                                    .bold()
-                            }
-                        }
-                        Spacer()
-                        NavigationLink(destination: PoliceView()) {
-                            VStack {
-                                Image("police")
-                                    .renderingMode(.original)
-                                Text("POLICE")
-                                    .bold()
-                            }
-                        }
-                    }
-                    
+                    .padding(.leading, 30)
+                    .padding(.trailing, 30)
+                    .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: .topLeading)
+                    .background(Color(red: 19 / 255, green: 42 / 255, blue: 122 / 255))
+                    .foregroundColor(.white)
+                    .edgesIgnoringSafeArea(.all)
                 }
-                .padding(.leading, 50)
-                .padding(.trailing, 50)
-                .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: .topLeading)
-                .background(Color(red: 19 / 255, green: 42 / 255, blue: 122 / 255))
-                .foregroundColor(.white)
-                .edgesIgnoringSafeArea(.all)
             }
-            /*HStack() {
-                TextField("WYSZUKAJ", text:$keyword)
-                    .textFieldStyle(.roundedBorder)
-            }*/
         }
     }
 
