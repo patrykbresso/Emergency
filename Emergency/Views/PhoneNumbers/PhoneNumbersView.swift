@@ -39,11 +39,11 @@ struct PhoneNumbersView: View {
                                     self.onBoxClick(boxNo: row.id - 1)
                                 }) {
                                     PhoneNumbersCell(phoneNumber: row, showDescription: self.boxClicked[row.id - 1])
-                                    .frame(width: 150)
+                                        .frame(width: 150)
                                 }
                                 Spacer()
                                 }
-                                .padding(.bottom, 10)
+                                .padding(.bottom, 5)
                         } else {
                             HStack {
                                 Spacer()
@@ -54,16 +54,16 @@ struct PhoneNumbersView: View {
                                     .frame(width: 150)
                                 }
                             }
-                            .padding(.bottom, 10)
+                            .padding(.bottom, 5)
                         }
                     }
                 }
                 .padding(.leading, geometry.size.width / 10)
                 .padding(.trailing, geometry.size.width / 10)
+                .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity)
                 TextField("", text: self.$keyword)
                     .textFieldStyle(CustomTextFieldStyle())
                     .padding(.top, 20)
-                    .padding(.bottom, 20)
                     .padding(.leading, 35)
                     .padding(.trailing, 35)
             }

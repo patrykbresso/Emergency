@@ -24,8 +24,13 @@ struct PhoneNumbersCell: View {
                     .fontWeight(.bold)
                 if(showDescription) {
                     Text(phoneNumber.available)
+                        .font(.body)
+                        .lineLimit(nil)
+                        .foregroundColor(Color(red: 19 / 255, green: 42 / 255, blue: 122 / 255))
                     Text(phoneNumber.description)
                         .font(.caption)
+                        .lineLimit(nil)
+                        .foregroundColor(Color(red: 19 / 255, green: 42 / 255, blue: 122 / 255))
                 }
             }
                     
