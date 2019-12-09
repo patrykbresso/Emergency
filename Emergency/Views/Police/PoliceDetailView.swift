@@ -32,6 +32,9 @@ struct PoliceDetailView: View {
                     }
                     Spacer()
                     Button(action: {
+                        let formattedString = "http://maps.apple.com/maps?saddr=\(self.policeStation.coordinates.latitude),\(self.policeStation.coordinates.longitude)"
+                        let url: NSURL = URL(string: formattedString)! as NSURL
+                        UIApplication.shared.open(url as URL)
                     }) {
                         Image("map")
                             .renderingMode(.original)
@@ -42,7 +45,7 @@ struct PoliceDetailView: View {
                     .frame(width: 346, height: 270, alignment: .center)
                     .overlay(
                         RoundedRectangle(cornerRadius: 5)
-                            .stroke(Color.black, lineWidth: 3)
+                            .stroke(Color.white, lineWidth: 3)
                     )
                 CircleImage(image: Image(self.policeStation.imageName).resizable())
                 .frame(width: 180, height: 180)

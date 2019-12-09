@@ -127,7 +127,9 @@ struct ContentView: View {
                         HStack {
                             Image("magnifier")
                             .renderingMode(.original)
+                            Spacer(minLength: 50)
                             ZStack {
+                                
                                 if(self.keyword.isEmpty) {
                                     Text("szukaj...")
                                 }

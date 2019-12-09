@@ -9,6 +9,7 @@
 
 
 import SwiftUI
+import MapKit
 
 struct PoliceView: View {
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
@@ -38,6 +39,7 @@ struct PoliceView: View {
                     
                     //Map button
                     Button(action: {
+                        
                     }) {
                         Image("map")
                             .renderingMode(.original)
@@ -64,6 +66,7 @@ struct PoliceView: View {
                 
                 //ScrollView with list of policestations
                 ScrollView {
+                    Spacer(minLength: 30)
                     VStack(spacing: 80) {
                         
                         ForEach(policeData) { policeStation in

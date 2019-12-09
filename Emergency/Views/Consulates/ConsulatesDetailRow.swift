@@ -57,7 +57,6 @@ struct ConsulatesDetailView: View {
                         .bold()
                     Text(consulate.address)
                     Text(consulate.number)
-                    Text(consulate.email)
                 }
                 .foregroundColor(.white)
             }

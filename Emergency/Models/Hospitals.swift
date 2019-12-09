@@ -14,7 +14,6 @@ struct Hospitals: Identifiable, Decodable {
     var name: String
     var address: String
     var number: String
-    var email: String
     var imageName: String
     var coordinates: Coordinates
     var locationCoordinate: CLLocationCoordinate2D {
@@ -23,5 +22,3 @@ struct Hospitals: Identifiable, Decodable {
             longitude: coordinates.longitude)
     }
 }
-
-

@@ -12,9 +12,9 @@ import CoreLocation
 struct Consulates: Identifiable, Decodable {
     var id: Int
     var name: String
+    var consulName: String
     var address: String
     var number: String
-    var email: String
     var imageName: String
     var coordinates: Coordinates
     var locationCoordinate: CLLocationCoordinate2D {

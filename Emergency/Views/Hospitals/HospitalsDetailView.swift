@@ -57,7 +57,6 @@ struct HospitalsDetailView: View {
                         .bold()
                     Text(hospital.address)
                     Text(hospital.number)
-                    Text(hospital.email)
                 }
                 .foregroundColor(.white)
             }
@@ -77,4 +76,3 @@ struct HospitalsDetailView_Preview: PreviewProvider {
         HospitalsDetailView(hospital: hospitalsData[1])
     }
 }
-

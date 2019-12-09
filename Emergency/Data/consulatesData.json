@@ -2,10 +2,10 @@
 [
     {
         "id": 1,
-        "name": "Pierwszy konsulat",
-        "address": "ulica 11111",
-        "number": "111111111",
-        "email": "1@1.pl",
+        "name": "Konsulat Generalny Niemiec",
+        "consulName": "Konsul Generalny – Hans Jörg Neumann",
+        "address": "ul. Podwale 76 50-499 Wrocław",
+        "number": "71 377 27 00",
         "coordinates": {
             "longitude": -116.166868,
             "latitude": 34.011286
@@ -14,22 +14,22 @@
     },
     {
         "id": 2,
-        "name": "Drugi konsulat",
-        "address": "ulica 22222",
-        "number": "222222",
-        "email": "2@2.pl",
+        "name": "Konsulat Austrii we Wrocławiu",
+        "consulName": "Konsul Honorowy - dr Edward Wąsiewicz",
+        "address": "ul. Skwierzyńska 21/10 53-521 Wrocław",
+        "number": "+48 782 173 777",
         "coordinates": {
-            "longitude": -152.665167,
-            "latitude": 59.980167
+            "longitude": -116.166868,
+            "latitude": 34.011286
         },
         "imageName": "1"
     },
     {
         "id": 3,
-        "name": "Trzeci konsulat",
-        "address": "ulica 11111",
-        "number": "111111111",
-        "email": "1@1.pl",
+        "name": "Konsulat Republiki Bułgarii",
+        "consulName": "Konsul Honorowy - Jan Chorostkowski",
+        "address": "ul. ks. P. Skargi 7/1 50-082 Wrocław",
+        "number": "71 783 39 28",
         "coordinates": {
             "longitude": -116.166868,
             "latitude": 34.011286
@@ -38,9 +38,62 @@
     },
     {
         "id": 4,
-        "name": "Czwarty konsulat",
-        "address": "ulica 22222",
-        "number": "222222",
+        "name": "Konsulat Republiki Chile",
+        "consulName": "Konsul Honorowy - Zbigniew Sebastian",
+        "address": "ul. Świdnicka 39 50-029 Wrocław",
+        "number": "71 372 44 91",
+        "email": "2@2.pl",
+        "coordinates": {
+            "longitude": -152.665167,
+            "latitude": 59.980167
+        },
+        "imageName": "1"
+    },
+    {
+        "id": 5,
+        "name": "Konsulat Honorowy Republiki Czeskiej",
+        "consulName": "Konsul Honorowy - Arkadiusz Ignasiak",
+        "address": "ul. Szkocka 5/2 54-402 Wrocław",
+        "number": "71 350 97 00",
+        "email": "2@2.pl",
+        "coordinates": {
+            "longitude": -152.665167,
+            "latitude": 59.980167
+        },
+        "imageName": "1"
+    },
+    {
+        "id": 6,
+        "name": "Konsulat Królestwa Danii",
+        "consulName": "Konsul Honorowa - Maria Keller",
+        "address": "ul. Świdnicka 36/15 50-068 Wrocław",
+        "number": "71 372 39 50",
+        "email": "2@2.pl",
+        "coordinates": {
+            "longitude": -152.665167,
+            "latitude": 59.980167
+        },
+        "imageName": "1"
+    },
+    {
+        "id": 7,
+        "name": "Konsulat Honorowy Finlandii",
+        "consulName": "Konsul Honorowa - Małgorzata Węgrzyn-Wysocka",
+        "address": "ul. Włodkowica 10/11 50-072 Wrocław",
+        "number": "71 780 76 00",
+        "email": "2@2.pl",
+        "coordinates": {
+            "longitude": -152.665167,
+            "latitude": 59.980167
+        },
+        "imageName": "1"
+    },
+    {
+        "id": 8,
+        "name": "Konsulat Honorowy Francji",
+        "consulName": "Konsul Honorowy - Richard Kepinski",
+        "address": "Rynek 58/300 50-116 Wrocław",
+        "number": "71 341 02 80 ",
         "email": "2@2.pl",
         "coordinates": {
             "longitude": -152.665167,

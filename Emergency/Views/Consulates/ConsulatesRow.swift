@@ -16,24 +16,36 @@ struct ConsulatesRow: View {
     var consulate: Consulates
     var body: some View {
         
-
+        GeometryReader { geometry in
             ZStack() {
                 RoundedRectangle(cornerRadius: 10)
                 .stroke(Color(red: 219 / 255, green: 2 / 255, blue: 109 / 255), lineWidth: 10)
                 .background(Color(red: 219 / 255, green: 2 / 255, blue: 109 / 255))
                 
                 VStack {
-                    Text(consulate.name)
+                    Text(self.consulate.name)
                         .bold()
-                    Text(consulate.address)
-                    Text(consulate.number)
-                    Text(consulate.email)
+                    Text(self.consulate.consulName)
+                    Text(self.consulate.address)
+                    Button(action: {
+                        let cleanString = String(self.consulate.number.filter { !" \n\t\r".contains($0) })
+                        let tel = "tel://"
+                        let formattedString = tel + cleanString
+                        let url: NSURL = URL(string: formattedString)! as NSURL
+                        UIApplication.shared.open(url as URL)
+                       }) {
+                       Text(self.consulate.number)
+                        .bold()
+                    }
                 }
             }
+            .font(.system(size: 14))
+            .frame(width: geometry.size.width / 1.3, height: geometry.size.height / 6)
             .foregroundColor(.white)
-            .frame(width: 200, height: 80)
+        }
     }
 }
+
 
 #if DEBUG
 struct ConsulatesRow_Previews: PreviewProvider {

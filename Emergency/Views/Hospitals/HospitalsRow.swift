@@ -16,22 +16,32 @@ struct HospitalsRow: View {
     var hospital: Hospitals
     var body: some View {
         
-
+        GeometryReader { geometry in
             ZStack() {
                 RoundedRectangle(cornerRadius: 10)
                 .stroke(Color(red: 219 / 255, green: 2 / 255, blue: 109 / 255), lineWidth: 10)
                 .background(Color(red: 219 / 255, green: 2 / 255, blue: 109 / 255))
                 
                 VStack {
-                    Text(hospital.name)
+                    Text(self.hospital.name)
                         .bold()
-                    Text(hospital.address)
-                    Text(hospital.number)
-                    Text(hospital.email)
+                    Text(self.hospital.address)
+                    Button(action: {
+                        let cleanString = String(self.hospital.number.filter { !" \n\t\r".contains($0) })
+                        let tel = "tel://"
+                        let formattedString = tel + cleanString
+                        let url: NSURL = URL(string: formattedString)! as NSURL
+                        UIApplication.shared.open(url as URL)
+                       }) {
+                       Text(self.hospital.number)
+                        .bold()
+                    }
                 }
             }
+            .font(.system(size: 14))
+            .frame(width: geometry.size.width / 1.3, height: geometry.size.height / 6)
             .foregroundColor(.white)
-            .frame(width: 200, height: 80)
+        }
     }
 }
 
