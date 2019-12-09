@@ -15,23 +15,40 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="EMERGENCY" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5fG-39-UyG">
-                                <rect key="frame" x="87" y="502" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="EMERGENCY" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5fG-39-UyG">
+                                <rect key="frame" x="87" y="591" width="240" height="128"/>
                                 <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="welcome_image" translatesAutoresizingMaskIntoConstraints="NO" id="BQp-mP-ULd">
+                                <rect key="frame" x="43" y="254" width="328" height="253"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="253" id="wr0-qw-bJ6"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.074578993019999998" green="0.1627003253" blue="0.47839063409999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="tintColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="5fG-39-UyG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="87" id="8B6-xh-80L"/>
+                            <constraint firstItem="BQp-mP-ULd" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="210" id="FBd-mF-kJA"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="5fG-39-UyG" secondAttribute="bottom" constant="143" id="KZC-2m-S7W"/>
+                            <constraint firstItem="BQp-mP-ULd" firstAttribute="centerX" secondItem="5fG-39-UyG" secondAttribute="centerX" id="aeT-Wr-t01"/>
+                            <constraint firstItem="5fG-39-UyG" firstAttribute="top" secondItem="BQp-mP-ULd" secondAttribute="bottom" constant="84" id="dKj-X6-aib"/>
+                            <constraint firstItem="BQp-mP-ULd" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="tjX-gs-aPQ"/>
+                            <constraint firstItem="BQp-mP-ULd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="43" id="zUr-aq-PVf"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="52.173913043478265" y="375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="welcome_image" width="334" height="256"/>
+    </resources>
     <color key="tintColor" red="0.074578993019999998" green="0.1627003253" blue="0.47839063409999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
 </document>

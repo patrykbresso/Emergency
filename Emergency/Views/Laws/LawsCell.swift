@@ -22,6 +22,9 @@ struct LawsCell: View {
                 .background(Color(red: 219 / 255, green: 2 / 255, blue: 109 / 255))
                 
                 Text(law.title)
+                    .multilineTextAlignment(.center)
+                    .font(.system(size: 14))
+                    .lineLimit(4)
             }
             .foregroundColor(.white)
     }
@@ -37,8 +40,8 @@ extension Row {
             
             var collection: [Row] = []
             var index = 0
-            while index < lawsData.count {
-                collection.append(Row(cells: [lawsData[index], lawsData[index+1]]))
+            while index < lawsData.count - 1 {
+                collection.append(Row(cells: [lawsData[index+1], lawsData[index+2]]))
                 index += 2
             }
             return collection

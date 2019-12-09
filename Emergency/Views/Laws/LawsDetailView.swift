@@ -28,17 +28,22 @@ struct LawsDetailView: View {
                                 .renderingMode(.original)
                         }             
                     }
-                VStack {
-                    Text(self.law.title)
-                        .bold()
-                    Text(self.law.text)
-                }
-                .padding(20)
-                .frame(width: geometry.size.width / 1.3)
-                .foregroundColor(.white)
-                .background(Color(red: 219 / 255, green: 2 / 255, blue: 109 / 255))
-                .cornerRadius(10)
-         
+                ScrollView {
+                    VStack {
+                        
+                        
+                            Text(self.law.title)
+                                .bold()
+                            Spacer()
+                            Text(self.law.text)
+                        
+                    }
+                    .padding(20)
+                    .frame(width: geometry.size.width / 1.3)
+                    .foregroundColor(.white)
+                    .background(Color(red: 219 / 255, green: 2 / 255, blue: 109 / 255))
+                    .cornerRadius(10)
+                }.padding(.bottom, 20)
             }
             .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity)
             .background(Color(red: 19 / 255, green: 42 / 255, blue: 122 / 255)
