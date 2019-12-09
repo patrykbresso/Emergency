@@ -4,7 +4,7 @@
         "name": "Telefon Alarmowy",
         "number": "112",
         "available": "czynny 24/7",
-        "description": "Telefon sluzy do powiadamiania w sytuacjach zagrozenia zycia."
+        "description": "Telefon służy do powiadamiania w sytuacjach zagrożenia życia."
     },
     {
         "id": 2,
@@ -22,14 +22,14 @@
     },
     {
         "id": 4,
-        "name": "Straz Pozarna",
+        "name": "Straż Pożarna",
         "number": "998",
         "available": "czynny 24/7",
         "description": ""
     },
     {
         "id": 5,
-        "name": "Straz Miejska",
+        "name": "Straż Miejska",
         "number": "986",
         "available": "czynny 24/7",
         "description": ""
@@ -38,7 +38,7 @@
         "id": 6,
         "name": "Infolinia",
         "number": "71 77 24 950",
-        "available": "Pn, Wt, Pt, 9:00 - 16:00, (Sr, Czw, 11:00 - 18:00)",
-        "description": "Miejski punkt informacji telefonicznej dla obcokrajowcow, dostepny rowniez w jezyku angielskim"
+        "available": "czynny: (Pn, Wt, Pt, 9:00 - 16:00), (Śr, Czw, 11:00 – 18:00)",
+        "description": "Miejski punkt  informacji telefonicznej dla obcokrajowców, dostępny również  języku angielskim."
     }
 ]
