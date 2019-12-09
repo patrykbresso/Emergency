@@ -34,12 +34,10 @@ struct PhoneNumbersCell: View {
                         .lineLimit(nil)
                         .padding(.leading, 5)
                         .padding(.trailing, 5)
-                        .foregroundColor(Color(red: 19 / 255, green: 42 / 255, blue: 122 / 255))
                     Text(phoneNumber.description)
                         .font(.body)
                         .fixedSize(horizontal: false, vertical: true)
                         .lineLimit(nil)
-                        .foregroundColor(Color(red: 19 / 255, green: 42 / 255, blue: 122 / 255))
                 }
             }
                     

@@ -54,12 +54,22 @@ struct DifficultSituationsView: View {
                 }
                 .padding(.leading, geometry.size.width / 10)
                 .padding(.trailing, geometry.size.width / 10)
-                TextField("WYSZUKAJ", text: self.$keyword)
-                    .textFieldStyle(CustomTextFieldStyle())
-                    .padding(.top, 20)
-                    .padding(.bottom, 20)
-                    .padding(.leading, 35)
-                    .padding(.trailing, 35)
+                HStack {
+                    Image("magnifier")
+                    .renderingMode(.original)
+                    ZStack {
+                        if(self.keyword.isEmpty) {
+                            Text("szukaj...")
+                        }
+                        TextField("", text: self.$keyword)
+                        .textFieldStyle(CustomTextFieldStyle())
+                    }
+                    .foregroundColor(.white)
+                }
+                .padding(.top, 20)
+                .padding(.leading, 35)
+                .padding(.trailing, 35)
+                .foregroundColor(.white)
             }
         }
         .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity)

@@ -56,11 +56,22 @@ struct LawsView: View {
                     }
                     
                     
-                    TextField("WYSZUKAJ", text: self.$keyword)
-                        .textFieldStyle(CustomTextFieldStyle())
-                        .padding(.bottom, 10)
-                        .padding(.leading, 35)
-                        .padding(.trailing, 35)
+                    HStack {
+                        Image("magnifier")
+                        .renderingMode(.original)
+                        ZStack {
+                            if(self.keyword.isEmpty) {
+                                Text("szukaj...")
+                            }
+                            TextField("", text: self.$keyword)
+                            .textFieldStyle(CustomTextFieldStyle())
+                        }
+                        .foregroundColor(.white)
+                    }
+                    .padding(.top, 20)
+                    .padding(.leading, 35)
+                    .padding(.trailing, 35)
+                    .foregroundColor(.white)
                 }
             
         }

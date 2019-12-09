@@ -47,22 +47,29 @@ struct AdviceView: View {
                             .padding(15)
                         }
                     }
-                    TextField("WYSZUKAJ", text: self.$keyword)
+                HStack {
+                    Image("magnifier")
+                    .renderingMode(.original)
+                    ZStack {
+                        if(self.keyword.isEmpty) {
+                            Text("szukaj...")
+                        }
+                        TextField("", text: self.$keyword)
                         .textFieldStyle(CustomTextFieldStyle())
-                        .padding(.top, 20)
-                        .padding(.bottom, 20)
-                        .padding(.leading, 35)
-                        .padding(.trailing, 35)
+                    }
+                    .foregroundColor(.white)
                 }
-                .padding(15)
-                .foregroundColor(.white)
+                .padding(.top, 20)
             }
-            .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity)
-            .background(Color(red: 19 / 255, green: 42 / 255, blue: 122 / 255)
-            .edgesIgnoringSafeArea(.all)
-            )
-            .navigationBarBackButtonHidden(true)
+            .padding(15)
+            .foregroundColor(.white)
         }
+        .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity)
+        .background(Color(red: 19 / 255, green: 42 / 255, blue: 122 / 255)
+        .edgesIgnoringSafeArea(.all)
+        )
+        .navigationBarBackButtonHidden(true)
+    }
 }
 
 #if DEBUG
