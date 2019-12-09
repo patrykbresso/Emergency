@@ -26,7 +26,7 @@ struct TranslateView: View {
                         Image("left_arrow")
                             .renderingMode(.original)
                         
-                    }.padding(.leading, 15)
+                    }
                 }
                 ForEach(translateData) { row in
                     if(row.id % 2 == 0) {
