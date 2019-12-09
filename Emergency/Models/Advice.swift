@@ -8,7 +8,12 @@
 
 import Foundation
 
-struct Advice: Identifiable, Decodable {
+struct Advice: Decodable {
+    var intro: String
+    var advice: [AdviceTexts]
+}
+
+struct AdviceTexts: Identifiable, Decodable {
     var id: Int
     var text: String
 }

@@ -16,7 +16,7 @@ var hospitalsData: [Hospitals] = load("hospitalsData.json")
 var consulatesData: [Consulates] = load("consulatesData.json")
 var lawsData: [Laws] = load("lawsData.json")
 var difficultSituationsData: [DifficultSituations] = load("difficultSituationsData.json")
-var adviceData: [Advice] = load("adviceData.json")
+var adviceData: Advice = load("adviceData.json")
 var phoneNumbersData: [PhoneNumber] = load("phoneNumbersData.json")
 var translateData: [Translate] = load("translateData.json")
 

@@ -1,37 +1,23 @@
-[
-    {
-        "id": 1,
-        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-        
-    },
-    {
-        "id": 2,
-        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-    },
-    {
-        "id": 3,
-        "title": "The standard Lorem Ipsum passage, used since the 1500s",
-        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-    },
-    {
-        "id": 4,
-        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-    },
-    {
-        "id": 5,
-        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-    },
-    {
-        "id": 6,
-        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-    },
-    {
-        "id": 7,
-        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-    },
-    {
-        "id": 8,
-        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-    },
-]
+{
+    "intro": "Wrocław to przyjazne miasto, zwłaszcza dla studentów i młodych ludzi. W trudnych sytuacjach może pomóc Ci wiedza, którą podzielili się wrocławscy Policjanci. Aplikacja została utworzona dla wszystkich osób, które szczególnie chcą zadbać o bezpieczeństwo. Tak jak wszędzie, mogą zdarzyć się pewne trudne sytuacje, dlatego zapraszamy Cię do zapoznania z kilkoma poradami, które mogą być przydatne:",
+    "advice": [
+        {
+            "id": 1,
+            "text": "Porada nr #1: Gdy wypłacasz gotówkę z bankomatu – chroń swój numer PIN. Najlepiej zasłoń klawiaturę dłonią, aby nikt go nie zobaczył. Wypłaconej gotówki nie przeliczaj na oczach innych ludzi."
+            
+        },
+        {
+            "id": 2,
+            "text": "Porada nr #2: W środkach transportu publicznego (tramwajach i autobusach) jest monitoring. Gdy zdarzy się coś niepokojącego, poinformuj kierowcę. Będzie on mógł odpowiednio zareagować w sytuacji, gdybyś potrzebował pomocy lub wskazać Ci właściwy przystanek."
+        },
+        {
+            "id": 3,
+            "text": "Porada nr #3: Gdy wychodzisz wieczorem, zaplanuj swoją pieszą trasę tak, aby wybierać większe i oświetlone ulice. Ciemne podwórka albo przejścia podziemne mogą Cię czymś zaskoczyć. W miarę możliwości nie spaceruj samotnie."
+        },
+        {
+            "id": 4,
+            "text": "Porada nr #4: Pamiętaj, aby wszelkie umowy dotyczące wynajmu pokoju/mieszkania zawierać w formie papierowej. Powinieneś jeden egzemplarz umowy otrzymać dla siebie. Jeśli właściciel pobiera kaucję, również powinieneś otrzymać potwierdzenie na kwotę wpłaconej kaucji, abyś nie miał problemów z jej zwrotem. Jeśli umowa na najem lokalu została zawarta na czas nieoznaczony, a czynsz jest płatny miesięcznie, wtedy umowę można wypowiedzieć na trzy miesiące naprzód, zrób to na koniec miesiąca kalendarzowego."
+        }
+    ]
+}
 
