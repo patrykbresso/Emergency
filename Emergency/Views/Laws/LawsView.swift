@@ -22,7 +22,7 @@ struct LawsView: View {
                 
                 VStack(spacing: 30) {
                     
-                    HStack(spacing: 30) {
+                    HStack {
 
                         Button(action: {
                             self.presentationMode.wrappedValue.dismiss()
@@ -38,7 +38,7 @@ struct LawsView: View {
                         NavigationLink(destination: LawsDetailView(law: lawsData[0])) {
                         LawsCell(law: lawsData[0])
                         }
-                        .frame(width: geometry.size.width / 2.7)
+                        .frame(width: geometry.size.width / 2.7, height: geometry.size.height / 9)
                     }
                     .padding(.trailing, 35)
                     .padding(.leading, 35)

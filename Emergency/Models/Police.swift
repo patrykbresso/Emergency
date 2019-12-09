@@ -14,7 +14,6 @@ struct Police: Identifiable, Decodable {
     var name: String
     var address: String
     var number: String
-    var email: String
     var imageName: String
     var coordinates: Coordinates
     var locationCoordinate: CLLocationCoordinate2D {

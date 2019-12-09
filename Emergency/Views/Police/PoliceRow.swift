@@ -17,20 +17,21 @@ struct PoliceRow: View {
     var body: some View {
         
 
+        GeometryReader { geometry in
             ZStack() {
                 RoundedRectangle(cornerRadius: 10)
                 .stroke(Color(red: 219 / 255, green: 2 / 255, blue: 109 / 255), lineWidth: 10)
                 .background(Color(red: 219 / 255, green: 2 / 255, blue: 109 / 255))
                 
                 VStack {
-                    Text(policeStation.name)
+                    Text(self.policeStation.name)
                         .bold()
-                    Text(policeStation.address)
-                    Text(policeStation.number)
-                    Text(policeStation.email)
-                }
-            }
+                    Text(self.policeStation.address)
+                    Text(self.policeStation.number)
+                }.font(.system(size: 15))
+            }.frame(width: geometry.size.width / 1.25, height: geometry.size.height / 6)
             .foregroundColor(.white)
+        }
     }
 }
 
