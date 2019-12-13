@@ -50,6 +50,7 @@
 		C01907BEF0A423E69187A72B /* Pods_EmergencyUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38F29B74A73222348AB45E64 /* Pods_EmergencyUITests.framework */; };
 		C7DA29D6DD0ADAAD141A1B1D /* Pods_EmergencyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5337DBD89CD585332792FABD /* Pods_EmergencyTests.framework */; };
 		E82DE11D23999E57009F0F37 /* MailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E82DE11C23999E57009F0F37 /* MailView.swift */; };
+		E83E445F23A3D31F003AB246 /* searchKeywords.json in Resources */ = {isa = PBXBuildFile; fileRef = E83E445E23A3D31F003AB246 /* searchKeywords.json */; };
 		E8590BB92398469B00C37EE8 /* CustomTextFieldStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8590BB82398469B00C37EE8 /* CustomTextFieldStyle.swift */; };
 		E8AD7F43239BEA87005150A7 /* DifficultSituationsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8AD7F42239BEA87005150A7 /* DifficultSituationsCell.swift */; };
 		E8AD7F45239BEAA0005150A7 /* DifficultSituationsDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8AD7F44239BEAA0005150A7 /* DifficultSituationsDetailView.swift */; };
@@ -138,6 +139,7 @@
 		BEEFCFFC5EDA393F1CA178AF /* Pods-EmergencyUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EmergencyUITests.release.xcconfig"; path = "Target Support Files/Pods-EmergencyUITests/Pods-EmergencyUITests.release.xcconfig"; sourceTree = "<group>"; };
 		C4C29EC31A572AC3686977D1 /* Pods-Emergency.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Emergency.release.xcconfig"; path = "Target Support Files/Pods-Emergency/Pods-Emergency.release.xcconfig"; sourceTree = "<group>"; };
 		E82DE11C23999E57009F0F37 /* MailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailView.swift; sourceTree = "<group>"; };
+		E83E445E23A3D31F003AB246 /* searchKeywords.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = searchKeywords.json; sourceTree = "<group>"; };
 		E8590BB82398469B00C37EE8 /* CustomTextFieldStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextFieldStyle.swift; sourceTree = "<group>"; };
 		E8AD7F42239BEA87005150A7 /* DifficultSituationsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DifficultSituationsCell.swift; sourceTree = "<group>"; };
 		E8AD7F44239BEAA0005150A7 /* DifficultSituationsDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DifficultSituationsDetailView.swift; sourceTree = "<group>"; };
@@ -348,6 +350,7 @@
 				E8AD7F51239C4A48005150A7 /* adviceData.json */,
 				E8DFAD67239D285B00D4CD74 /* phoneNumbersData.json */,
 				E8DFAD6F239D461400D4CD74 /* translateData.json */,
+				E83E445E23A3D31F003AB246 /* searchKeywords.json */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -542,6 +545,7 @@
 				9FAACF8B2379B65900C3CF94 /* Assets.xcassets in Resources */,
 				9FAACFB52379B68E00C3CF94 /* GoogleService-Info.plist in Resources */,
 				E8DFAD70239D461400D4CD74 /* translateData.json in Resources */,
+				E83E445F23A3D31F003AB246 /* searchKeywords.json in Resources */,
 				E8AD7F52239C4A48005150A7 /* adviceData.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

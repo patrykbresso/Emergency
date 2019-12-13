@@ -1,0 +1,1044 @@
+[
+    {
+        "language": "en",
+        "views": [
+            {
+                "name": "translate",
+                "page": "",
+                "keywords": [
+                    {
+                        "keyword": "help"
+                    },
+                    {
+                        "keyword": "doctor"
+                    },
+                    {
+                        "keyword": "hospital"
+                    },
+                    {
+                        "keyword": "police"
+                    },
+                    {
+                        "keyword": "robbery"
+                    }
+                ]
+            },
+            {
+                "name": "phoneNumbers",
+                "page": "",
+                "keywords": [
+                    {
+                        "keyword": "phone"
+                    },
+                    {
+                        "keyword": "ambulance"
+                    },
+                    {
+                        "keyword": "police"
+                    },
+                    {
+                        "keyword": "fire brigade"
+                    },
+                    {
+                        "keyword": "helpline"
+                    }
+                ]
+            },
+            {
+                "name": "advice",
+                "page": "",
+                "keywords": [
+                    {
+                        "keyword": "ATM"
+                    },
+                    {
+                        "keyword": "money withdrawal"
+                    },
+                    {
+                        "keyword": "cash"
+                    },
+                    {
+                        "keyword": "help"
+                    },
+                    {
+                        "keyword": "tram"
+                    },
+                    {
+                        "keyword": "bus"
+                    },
+                    {
+                        "keyword": "evening"
+                    },
+                    {
+                        "keyword": "walking"
+                    },
+                    {
+                        "keyword": "room"
+                    },
+                    {
+                        "keyword": "flat"
+                    },
+                    {
+                        "keyword": "rent"
+                    }
+                ]
+            },
+            {
+                "name": "laws",
+                "page": "1",
+                "keywords": [
+                    {
+                        "keyword": "provisions"
+                    },
+                    {
+                        "keyword": "laws"
+                    },
+                    {
+                        "keyword": "obligations"
+                    },
+                    {
+                        "keyword": "document"
+                    },
+                    {
+                        "keyword": "passport"
+                    },
+                    {
+                        "keyword": "driving license"
+                    },
+                    {
+                        "keyword": "identity"
+                    }
+                ]
+            },
+            {
+                "name": "laws",
+                "page": "2",
+                "keywords": [
+                    {
+                        "keyword": "quiet hours"
+                    },
+                    {
+                        "keyword": "noise"
+                    },
+                    {
+                        "keyword": "party"
+                    }
+                ]
+            },
+            {
+                "name": "laws",
+                "page": "3",
+                "keywords": [
+                    {
+                        "keyword": "alcohol"
+                    },
+                    {
+                        "keyword": "consumption"
+                    },
+                    {
+                        "keyword": "place"
+                    }
+                ]
+            },
+            {
+                "name": "laws",
+                "page": "4",
+                "keywords": [
+                    {
+                        "keyword": "cigarette"
+                    },
+                    {
+                        "keyword": "vape"
+                    },
+                    {
+                        "keyword": "smoking"
+                    },
+                    {
+                        "keyword": "place"
+                    }
+                ]
+            },
+            {
+                "name": "laws",
+                "page": "5",
+                "keywords": [
+                    {
+                        "keyword": "drug"
+                    },
+                    {
+                        "keyword": "designer drug"
+                    },
+                    {
+                        "keyword": "intoxicating substance"
+                    },
+                    {
+                        "keyword": "possesion"
+                    },
+                    {
+                        "keyword": "use"
+                    }
+                ]
+            },
+            {
+                "name": "laws",
+                "page": "6",
+                "keywords": [
+                    {
+                        "keyword": "penalty notice"
+                    },
+                    {
+                        "keyword": "speed"
+                    },
+                    {
+                        "keyword": "traffic lights"
+                    },
+                    {
+                        "keyword": "seatbelts"
+                    },
+                    {
+                        "keyword": "alcohol"
+                    },
+                    {
+                        "keyword": "disturbing peace"
+                    }
+                ]
+            },
+            {
+                "name": "laws",
+                "page": "7",
+                "keywords": [
+                    {
+                        "keyword": "alcohol"
+                    },
+                    {
+                        "keyword": "car"
+                    },
+                    {
+                        "keyword": "driving"
+                    }
+                ]
+            },
+            {
+                "name": "laws",
+                "page": "8",
+                "keywords": [
+                    {
+                        "keyword": "drunkedness"
+                    },
+                    {
+                        "keyword": "help"
+                    },
+                    {
+                        "keyword": "overnight stay"
+                    }
+                ]
+            },
+            {
+                "name": "laws",
+                "page": "9",
+                "keywords": [
+                    {
+                        "keyword": "hate"
+                    },
+                    {
+                        "keyword": "bodily integrity"
+                    },
+                    {
+                        "keyword": "threat"
+                    },
+                    {
+                        "keyword": "insult"
+                    }
+                ]
+            },
+            {
+                "name": "laws",
+                "page": "10",
+                "keywords": [
+                    {
+                        "keyword": "indecency"
+                    },
+                    {
+                        "keyword": "obscenity"
+                    },
+                    {
+                        "keyword": "antic"
+                    },
+                    {
+                        "keyword": "behaviour"
+                    }
+                ]
+            },
+            {
+                "name": "difficultSituations",
+                "page": "1",
+                "keywords": [
+                    {
+                        "keyword": "document"
+                    },
+                    {
+                        "keyword": "loss"
+                    },
+                    {
+                        "keyword": "theft"
+                    },
+                    {
+                        "keyword": "passport"
+                    },
+                    {
+                        "keyword": "driving license"
+                    },
+                    {
+                        "keyword": "reporting to the Police"
+                    }
+                ]
+            },
+            {
+                "name": "difficultSituations",
+                "page": "2",
+                "keywords": [
+                    {
+                        "keyword": "theft"
+                    },
+                    {
+                        "keyword": "place"
+                    },
+                    {
+                        "keyword": "police station"
+                    },
+                    {
+                        "keyword": "items"
+                    },
+                    {
+                        "keyword": "description"
+                    }
+                ]
+            },
+            {
+                "name": "difficultSituations",
+                "page": "3",
+                "keywords": [
+                    {
+                        "keyword": "hate"
+                    },
+                    {
+                        "keyword": "racism"
+                    },
+                    {
+                        "keyword": "xenophobia"
+                    },
+                    {
+                        "keyword": "Internet"
+                    },
+                    {
+                        "keyword": "police"
+                    },
+                    {
+                        "keyword": "prosecutor"
+                    }
+                ]
+            },
+            {
+                "name": "difficultSituations",
+                "page": "4",
+                "keywords": [
+                    {
+                        "keyword": "rape"
+                    },
+                    {
+                        "keyword": "sex"
+                    },
+                    {
+                        "keyword": "drug"
+                    },
+                    {
+                        "keyword": "alcohol"
+                    }
+                ]
+            },
+            {
+                "name": "difficultSituations",
+                "page": "5",
+                "keywords": [
+                    {
+                        "keyword": "crime"
+                    },
+                    {
+                        "keyword": "life"
+                    },
+                    {
+                        "keyword": "health"
+                    },
+                    {
+                        "keyword": "safety"
+                    },
+                    {
+                        "keyword": "belongings"
+                    },
+                    {
+                        "keyword": "order"
+                    },
+                    {
+                        "keyword": "freedom"
+                    }
+                ]
+            },
+            {
+                "name": "difficultSituations",
+                "page": "6",
+                "keywords": [
+                    {
+                        "keyword": "checking the identification"
+                    },
+                    {
+                        "keyword": "police"
+                    },
+                    {
+                        "keyword": "ID document"
+                    }
+                ]
+            },
+            {
+                "name": "difficultSituations",
+                "page": "7",
+                "keywords": [
+                    {
+                        "keyword": "police"
+                    },
+                    {
+                        "keyword": "detention"
+                    },
+                    {
+                        "keyword": "attorney"
+                    },
+                    {
+                        "keyword": "legal counsel"
+                    }
+                ]
+            },
+            {
+                "name": "difficultSituations",
+                "page": "8",
+                "keywords": [
+                    {
+                        "keyword": "police"
+                    },
+                    {
+                        "keyword": "notification"
+                    },
+                    {
+                        "keyword": "event"
+                    },
+                    {
+                        "keyword": "support"
+                    },
+                    {
+                        "keyword": "psychologist"
+                    },
+                    {
+                        "keyword": "attorney"
+                    }
+                ]
+            },
+            {
+                "name": "police",
+                "page": "",
+                "keywords": [
+                    {
+                        "keyword": "police"
+                    },
+                    {
+                        "keyword": "police station"
+                    },
+                    {
+                        "keyword": "police headquarters"
+                    }
+                ]
+            },
+            {
+                "name": "hospitals",
+                "page": "",
+                "keywords": [
+                    {
+                        "keyword": "hospital"
+                    },
+                    {
+                        "keyword": "emergency"
+                    },
+                    {
+                        "keyword": "illness"
+                    },
+                    {
+                        "keyword": "health"
+                    }
+                ]
+            },
+            {
+                "name": "consulates",
+                "page": "",
+                "keywords": [
+                    {
+                        "keyword": "consulate"
+                    },
+                    {
+                        "keyword": "Wroclaw"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "language": "pl",
+        "views": [
+            {
+                "name": "translate",
+                "page": "",
+                "keywords": [
+                    {
+                        "keyword": "pomoc"
+                    },
+                    {
+                        "keyword": "lekarz"
+                    },
+                    {
+                        "keyword": "szpital"
+                    },
+                    {
+                        "keyword": "policja"
+                    },
+                    {
+                        "keyword": "kradzież"
+                    }
+                ]
+            },
+            {
+                "name": "phoneNumbers",
+                "page": "",
+                "keywords": [
+                    {
+                        "keyword": "telefon"
+                    },
+                    {
+                        "keyword": "pogotowie"
+                    },
+                    {
+                        "keyword": "policja"
+                    },
+                    {
+                        "keyword": "straż pożarna"
+                    },
+                    {
+                        "keyword": "infolinia"
+                    }
+                ]
+            },
+            {
+                "name": "advice",
+                "page": "",
+                "keywords": [
+                    {
+                        "keyword": "bankomat"
+                    },
+                    {
+                        "keyword": "wypłata"
+                    },
+                    {
+                        "keyword": "gotówka"
+                    },
+                    {
+                        "keyword": "pomoc"
+                    },
+                    {
+                        "keyword": "tramwaj"
+                    },
+                    {
+                        "keyword": "autobus"
+                    },
+                    {
+                        "keyword": "wieczór"
+                    },
+                    {
+                        "keyword": "spacer"
+                    },
+                    {
+                        "keyword": "pokój"
+                    },
+                    {
+                        "keyword": "mieszkanie"
+                    },
+                    {
+                        "keyword": "najem"
+                    }
+                ]
+            },
+            {
+                "name": "laws",
+                "page": "1",
+                "keywords": [
+                    {
+                        "keyword": "przepisy"
+                    },
+                    {
+                        "keyword": "prawa"
+                    },
+                    {
+                        "keyword": "obowiązki"
+                    },
+                    {
+                        "keyword": "dokument"
+                    },
+                    {
+                        "keyword": "paszport"
+                    },
+                    {
+                        "keyword": "prawo jazdy"
+                    },
+                    {
+                        "keyword": "tożsamość"
+                    }
+                ]
+            },
+            {
+                "name": "laws",
+                "page": "2",
+                "keywords": [
+                    {
+                        "keyword": "cisza nocna"
+                    },
+                    {
+                        "keyword": "hałas"
+                    },
+                    {
+                        "keyword": "impreza"
+                    }
+                ]
+            },
+            {
+                "name": "laws",
+                "page": "3",
+                "keywords": [
+                    {
+                        "keyword": "alkohol"
+                    },
+                    {
+                        "keyword": "spożywanie"
+                    },
+                    {
+                        "keyword": "miejsce"
+                    }
+                ]
+            },
+            {
+                "name": "laws",
+                "page": "4",
+                "keywords": [
+                    {
+                        "keyword": "papieros"
+                    },
+                    {
+                        "keyword": "e-papieros"
+                    },
+                    {
+                        "keyword": "palenie"
+                    },
+                    {
+                        "keyword": "miejsce"
+                    }
+                ]
+            },
+            {
+                "name": "laws",
+                "page": "5",
+                "keywords": [
+                    {
+                        "keyword": "narkotyk"
+                    },
+                    {
+                        "keyword": "dopalacz"
+                    },
+                    {
+                        "keyword": "środek odurzający"
+                    },
+                    {
+                        "keyword": "posiadanie"
+                    },
+                    {
+                        "keyword": "użycie"
+                    }
+                ]
+            },
+            {
+                "name": "laws",
+                "page": "6",
+                "keywords": [
+                    {
+                        "keyword": "mandat"
+                    },
+                    {
+                        "keyword": "prędkość"
+                    },
+                    {
+                        "keyword": "światła"
+                    },
+                    {
+                        "keyword": "pasy bezpieczeństwa"
+                    },
+                    {
+                        "keyword": "alkohol"
+                    },
+                    {
+                        "keyword": "zakłócanie spokoju"
+                    }
+                ]
+            },
+            {
+                "name": "laws",
+                "page": "7",
+                "keywords": [
+                    {
+                        "keyword": "alkohol"
+                    },
+                    {
+                        "keyword": "samochód"
+                    },
+                    {
+                        "keyword": "prowadzenie"
+                    }
+                ]
+            },
+            {
+                "name": "laws",
+                "page": "8",
+                "keywords": [
+                    {
+                        "keyword": "nietrzeźwość"
+                    },
+                    {
+                        "keyword": "pomoc"
+                    },
+                    {
+                        "keyword": "nocleg"
+                    },
+                    {
+                        "keyword": "pijaństwo"
+                    }
+                ]
+            },
+            {
+                "name": "laws",
+                "page": "9",
+                "keywords": [
+                    {
+                        "keyword": "nienawiść"
+                    },
+                    {
+                        "keyword": "nietykalność"
+                    },
+                    {
+                        "keyword": "groźba"
+                    },
+                    {
+                        "keyword": "znieważenie"
+                    }
+                ]
+            },
+            {
+                "name": "laws",
+                "page": "10",
+                "keywords": [
+                    {
+                        "keyword": "nieprzyzwoitość"
+                    },
+                    {
+                        "keyword": "nieobyczajność"
+                    },
+                    {
+                        "keyword": "wybryk"
+                    },
+                    {
+                        "keyword": "zachowanie"
+                    }
+                ]
+            },
+            {
+                "name": "difficultSituations",
+                "page": "1",
+                "keywords": [
+                    {
+                        "keyword": "dokument"
+                    },
+                    {
+                        "keyword": "utrata"
+                    },
+                    {
+                        "keyword": "kradzież"
+                    },
+                    {
+                        "keyword": "paszport"
+                    },
+                    {
+                        "keyword": "prawo jazdy"
+                    },
+                    {
+                        "keyword": "zgłoszenie policja"
+                    }
+                ]
+            },
+            {
+                "name": "difficultSituations",
+                "page": "2",
+                "keywords": [
+                    {
+                        "keyword": "kradzież"
+                    },
+                    {
+                        "keyword": "miejsce"
+                    },
+                    {
+                        "keyword": "komisariat"
+                    },
+                    {
+                        "keyword": "przedmioty"
+                    },
+                    {
+                        "keyword": "opis"
+                    }
+                ]
+            },
+            {
+                "name": "difficultSituations",
+                "page": "3",
+                "keywords": [
+                    {
+                        "keyword": "nienawiść"
+                    },
+                    {
+                        "keyword": "rasizm"
+                    },
+                    {
+                        "keyword": "ksenofobia"
+                    },
+                    {
+                        "keyword": "Internet"
+                    },
+                    {
+                        "keyword": "policja"
+                    },
+                    {
+                        "keyword": "prokurator"
+                    }
+                ]
+            },
+            {
+                "name": "difficultSituations",
+                "page": "4",
+                "keywords": [
+                    {
+                        "keyword": "gwałt"
+                    },
+                    {
+                        "keyword": "seks"
+                    },
+                    {
+                        "keyword": "narkotyk"
+                    },
+                    {
+                        "keyword": "alkohol"
+                    }
+                ]
+            },
+            {
+                "name": "difficultSituations",
+                "page": "5",
+                "keywords": [
+                    {
+                        "keyword": "przestępstwo"
+                    },
+                    {
+                        "keyword": "życie"
+                    },
+                    {
+                        "keyword": "zdrowie"
+                    },
+                    {
+                        "keyword": "bezpieczeństwo"
+                    },
+                    {
+                        "keyword": "mienie"
+                    },
+                    {
+                        "keyword": "porządek"
+                    },
+                    {
+                        "keyword": "wolność"
+                    }
+                ]
+            },
+            {
+                "name": "difficultSituations",
+                "page": "6",
+                "keywords": [
+                    {
+                        "keyword": "legitymowanie"
+                    },
+                    {
+                        "keyword": "policja"
+                    },
+                    {
+                        "keyword": "dokument tożsamości"
+                    }
+                ]
+            },
+            {
+                "name": "difficultSituations",
+                "page": "7",
+                "keywords": [
+                    {
+                        "keyword": "policja"
+                    },
+                    {
+                        "keyword": "zatrzymanie"
+                    },
+                    {
+                        "keyword": "adwokat"
+                    },
+                    {
+                        "keyword": "radca prawny"
+                    }
+                ]
+            },
+            {
+                "name": "difficultSituations",
+                "page": "8",
+                "keywords": [
+                    {
+                        "keyword": "policja"
+                    },
+                    {
+                        "keyword": "zawiadomienie"
+                    },
+                    {
+                        "keyword": "zdarzenie"
+                    },
+                    {
+                        "keyword": "wsparcie"
+                    },
+                    {
+                        "keyword": "psycholog"
+                    },
+                    {
+                        "keyword": "adwokat"
+                    }
+                ]
+            },
+            {
+                "name": "police",
+                "page": "",
+                "keywords": [
+                    {
+                        "keyword": "policja"
+                    },
+                    {
+                        "keyword": "komisariat"
+                    },
+                    {
+                        "keyword": "komenda"
+                    }
+                ]
+            },
+            {
+                "name": "hospitals",
+                "page": "",
+                "keywords": [
+                    {
+                        "keyword": "szpital"
+                    },
+                    {
+                        "keyword": "wypadek"
+                    },
+                    {
+                        "keyword": "choroba"
+                    },
+                    {
+                        "keyword": "zdrowie"
+                    }
+                ]
+            },
+            {
+                "name": "consulates",
+                "page": "",
+                "keywords": [
+                    {
+                        "keyword": "konsulat"
+                    },
+                    {
+                        "keyword": "Wrocław"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "language": "de",
+        "views": [
+            {
+                "name": "",
+                "page": "",
+                "keywords": [
+                    {
+                        "keyword": ""
+                    },
+                    {
+                        "keyword": ""
+                    },
+                    {
+                        "keyword": ""
+                    }
+                    
+                ]
+            }
+        ]
+    },
+    {
+        "language": "es",
+        "views": [
+            {
+                "name": "",
+                "page": "",
+                "keywords": [
+                    {
+                        "keyword": ""
+                    },
+                    {
+                        "keyword": ""
+                    },
+                    {
+                        "keyword": ""
+                    }
+                    
+                ]
+            }
+        ]
+    },
+    {
+        "language": "ua",
+        "views": [
+            {
+                "name": "",
+                "page": "",
+                "keywords": [
+                    {
+                        "keyword": ""
+                    },
+                    {
+                        "keyword": ""
+                    },
+                    {
+                        "keyword": ""
+                    }
+                    
+                ]
+            }
+        ]
+    }
+]
