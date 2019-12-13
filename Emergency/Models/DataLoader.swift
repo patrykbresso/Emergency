@@ -19,6 +19,7 @@ var difficultSituationsData: [DifficultSituations] = load("difficultSituationsDa
 var adviceData: Advice = load("adviceData.json")
 var phoneNumbersData: [PhoneNumber] = load("phoneNumbersData.json")
 var translateData: [Translate] = load("translateData.json")
+var searchKeywords: [SearchKeywords] = load("searchKeywords.json")
 
 func load<T: Decodable>(_ filename: String, as type: T.Type = T.self) -> T {
     let data: Data

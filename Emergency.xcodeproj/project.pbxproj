@@ -51,6 +51,9 @@
 		C7DA29D6DD0ADAAD141A1B1D /* Pods_EmergencyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5337DBD89CD585332792FABD /* Pods_EmergencyTests.framework */; };
 		E82DE11D23999E57009F0F37 /* MailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E82DE11C23999E57009F0F37 /* MailView.swift */; };
 		E83E445F23A3D31F003AB246 /* searchKeywords.json in Resources */ = {isa = PBXBuildFile; fileRef = E83E445E23A3D31F003AB246 /* searchKeywords.json */; };
+		E83E446123A3E62F003AB246 /* SearchKeywords.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83E446023A3E62F003AB246 /* SearchKeywords.swift */; };
+		E83E446323A3F29B003AB246 /* Page.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83E446223A3F29B003AB246 /* Page.swift */; };
+		E83E446523A3FDB4003AB246 /* SearchResultsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83E446423A3FDB4003AB246 /* SearchResultsView.swift */; };
 		E8590BB92398469B00C37EE8 /* CustomTextFieldStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8590BB82398469B00C37EE8 /* CustomTextFieldStyle.swift */; };
 		E8AD7F43239BEA87005150A7 /* DifficultSituationsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8AD7F42239BEA87005150A7 /* DifficultSituationsCell.swift */; };
 		E8AD7F45239BEAA0005150A7 /* DifficultSituationsDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8AD7F44239BEAA0005150A7 /* DifficultSituationsDetailView.swift */; };
@@ -140,6 +143,9 @@
 		C4C29EC31A572AC3686977D1 /* Pods-Emergency.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Emergency.release.xcconfig"; path = "Target Support Files/Pods-Emergency/Pods-Emergency.release.xcconfig"; sourceTree = "<group>"; };
 		E82DE11C23999E57009F0F37 /* MailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailView.swift; sourceTree = "<group>"; };
 		E83E445E23A3D31F003AB246 /* searchKeywords.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = searchKeywords.json; sourceTree = "<group>"; };
+		E83E446023A3E62F003AB246 /* SearchKeywords.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchKeywords.swift; sourceTree = "<group>"; };
+		E83E446223A3F29B003AB246 /* Page.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page.swift; sourceTree = "<group>"; };
+		E83E446423A3FDB4003AB246 /* SearchResultsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultsView.swift; sourceTree = "<group>"; };
 		E8590BB82398469B00C37EE8 /* CustomTextFieldStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextFieldStyle.swift; sourceTree = "<group>"; };
 		E8AD7F42239BEA87005150A7 /* DifficultSituationsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DifficultSituationsCell.swift; sourceTree = "<group>"; };
 		E8AD7F44239BEAA0005150A7 /* DifficultSituationsDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DifficultSituationsDetailView.swift; sourceTree = "<group>"; };
@@ -228,6 +234,8 @@
 				E8AD7F53239C4AB8005150A7 /* Advice.swift */,
 				E8DFAD69239D2A1E00D4CD74 /* PhoneNumber.swift */,
 				E8DFAD71239D467400D4CD74 /* Translate.swift */,
+				E83E446023A3E62F003AB246 /* SearchKeywords.swift */,
+				E83E446223A3F29B003AB246 /* Page.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -360,6 +368,7 @@
 			children = (
 				9FAACF882379B65600C3CF94 /* ContentView.swift */,
 				E82DE11C23999E57009F0F37 /* MailView.swift */,
+				E83E446423A3FDB4003AB246 /* SearchResultsView.swift */,
 				E8AD7F4C239BF53B005150A7 /* Advice */,
 				E8AD7F50239BF578005150A7 /* News */,
 				E8AD7F4F239BF567005150A7 /* PhoneNumbers */,
@@ -691,9 +700,12 @@
 				9F7A4F2C238DA355001C4B7A /* ConsulatesDetailRow.swift in Sources */,
 				9F169A8C237F6844005A8618 /* CircleImage.swift in Sources */,
 				9F7D3A7C2397D2E80092ADD6 /* LawsDetailView.swift in Sources */,
+				E83E446323A3F29B003AB246 /* Page.swift in Sources */,
 				9FAACF872379B65600C3CF94 /* SceneDelegate.swift in Sources */,
 				E8DFAD72239D467400D4CD74 /* Translate.swift in Sources */,
+				E83E446523A3FDB4003AB246 /* SearchResultsView.swift in Sources */,
 				A151BB20237F2AA1007CEEC1 /* HelpView.swift in Sources */,
+				E83E446123A3E62F003AB246 /* SearchKeywords.swift in Sources */,
 				9FAACF892379B65600C3CF94 /* ContentView.swift in Sources */,
 				9F7A4F23238DA05A001C4B7A /* HospitalsDetailView.swift in Sources */,
 			);

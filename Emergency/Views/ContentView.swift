@@ -10,6 +10,8 @@ import SwiftUI
 
 struct ContentView: View {
     @State private var keyword: String = ""
+    @State var show: Bool = false
+    @State var searchResults: [Page] = []
     
     var body: some View {
         
@@ -43,7 +45,7 @@ struct ContentView: View {
                                 VStack {
                                     Image("translate")
                                         .renderingMode(.original)
-                                    Text("TRANSLATE")
+                                    Text("TLUMACZENIE")
                                         .fontWeight(.bold)
                                         .multilineTextAlignment(.center)
                                 }.frame(width: geometry.size.width / 2 - 60)
@@ -53,7 +55,7 @@ struct ContentView: View {
                                 VStack {
                                     Image("phone")
                                         .renderingMode(.original)
-                                    Text("PHONE NUMBERS")
+                                    Text("NUMERY TELEFONOW")
                                         .fontWeight(.bold)
                                         .multilineTextAlignment(.center)
                                 }.frame(width: geometry.size.width / 2 - 60)
@@ -64,7 +66,7 @@ struct ContentView: View {
                                 VStack {
                                     Image("help")
                                         .renderingMode(.original)
-                                    Text("HELP")
+                                    Text("POMOC")
                                         .fontWeight(.bold)
                                         .multilineTextAlignment(.center)
                                 }.frame(width: geometry.size.width / 2 - 60)
@@ -74,7 +76,7 @@ struct ContentView: View {
                                 VStack {
                                     Image("law")
                                         .renderingMode(.original)
-                                    Text("LAWS")
+                                    Text("PRAWO")
                                         .fontWeight(.bold)
                                         .multilineTextAlignment(.center)
                                 }.frame(width: geometry.size.width / 2 - 60)
@@ -85,7 +87,7 @@ struct ContentView: View {
                                 VStack {
                                     Image("difficultsituations")
                                         .renderingMode(.original)
-                                    Text("DIFFICULT SITUATIONS")
+                                    Text("TRUDNE SYTUACJE")
                                         .fontWeight(.bold)
                                         .multilineTextAlignment(.center)
                                 }.frame(width: geometry.size.width / 2 - 60)
@@ -96,7 +98,7 @@ struct ContentView: View {
                                 VStack {
                                     Image("consulate")
                                         .renderingMode(.original)
-                                    Text("CONSULATES")
+                                    Text("KONSULATY")
                                         .fontWeight(.bold)
                                         .multilineTextAlignment(.center)
                                 }.frame(width: geometry.size.width / 2 - 60)
@@ -107,7 +109,7 @@ struct ContentView: View {
                                 VStack {
                                     Image("hospital")
                                         .renderingMode(.original)
-                                    Text("HOSPITALS")
+                                    Text("SZPITALE")
                                         .fontWeight(.bold)
                                         .multilineTextAlignment(.center)
                                 }.frame(width: geometry.size.width / 2 - 60)
@@ -117,7 +119,7 @@ struct ContentView: View {
                                 VStack {
                                     Image("police")
                                         .renderingMode(.original)
-                                    Text("POLICE")
+                                    Text("POLICJA")
                                         .fontWeight(.bold)
                                         .multilineTextAlignment(.center)
                                 }.frame(width: geometry.size.width / 2 - 60)
@@ -133,7 +135,9 @@ struct ContentView: View {
                                 if(self.keyword.isEmpty) {
                                     Text("szukaj...")
                                 }
-                                TextField("", text: self.$keyword)
+                                TextField("", text: self.$keyword, onCommit: {
+                                    self.searchResults = self.searchByKeywords(searchedPhrase: self.keyword)
+                                })
                                 .textFieldStyle(CustomTextFieldStyle())
                             }
                             .foregroundColor(.white)
@@ -143,7 +147,7 @@ struct ContentView: View {
                         .padding(.leading, 35)
                         .padding(.trailing, 35)
                         .foregroundColor(.white)
-                        
+                        NavigationLink(destination: SearchResultsView(results: self.searchResults), isActive: self.$show, label: { EmptyView()})
                     }
                     .padding(.leading, 30)
                     .padding(.trailing, 30)
@@ -156,7 +160,22 @@ struct ContentView: View {
         }
     }
 
+    func searchByKeywords(searchedPhrase: String) -> [Page] {
+        var results: [Page] = []
+        for view in searchKeywords[1].views {
+            for word in view.keywords {
+                if(searchedPhrase.lowercased().contains(word.keyword.lowercased())) {
+                    let result: Page = Page(name: view.name, page: view.page)
+                    results.append(result)
+                }
+            }
+        }
+        self.show = true
+        return results
+    }
 }
+
+
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
