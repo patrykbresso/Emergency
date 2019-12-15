@@ -147,7 +147,7 @@ struct ContentView: View {
                         .padding(.leading, 35)
                         .padding(.trailing, 35)
                         .foregroundColor(.white)
-                        NavigationLink(destination: SearchResultsView(results: self.searchResults), isActive: self.$show, label: { EmptyView()})
+                        NavigationLink(destination: SearchResultsView(searchTerm: self.keyword, results: self.searchResults), isActive: self.$show, label: { EmptyView()})
                     }
                     .padding(.leading, 30)
                     .padding(.trailing, 30)
@@ -162,10 +162,12 @@ struct ContentView: View {
 
     func searchByKeywords(searchedPhrase: String) -> [Page] {
         var results: [Page] = []
+        var i: Int = 1
         for view in searchKeywords[1].views {
             for word in view.keywords {
                 if(searchedPhrase.lowercased().contains(word.keyword.lowercased())) {
-                    let result: Page = Page(name: view.name, page: view.page)
+                    let result: Page = Page(id: i,name: view.name, page: view.page)
+                    i = i + 1
                     results.append(result)
                 }
             }

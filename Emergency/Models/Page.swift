@@ -8,7 +8,8 @@
 
 import SwiftUI
 
-struct Page: Decodable {
+struct Page: Decodable, Identifiable {
+    var id: Int
     var name: String
     var page: Int
 }
