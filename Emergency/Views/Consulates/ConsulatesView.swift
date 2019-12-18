@@ -35,7 +35,6 @@ struct ConsulatesView: View {
                         }
                         Spacer()
                     }.padding(.leading, 80)
-                    
                     ScrollView() {
                         Spacer(minLength: 40)
                         VStack(alignment: .center, spacing: 100) {
@@ -63,6 +62,8 @@ struct ConsulatesView: View {
             }
             
         }
+        .navigationBarTitle("")
+        .navigationBarHidden(true)
         .navigationBarBackButtonHidden(true)
     }
 

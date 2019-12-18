@@ -79,6 +79,8 @@ struct HospitalsView: View {
             }
             
         }
+        .navigationBarTitle("")
+        .navigationBarHidden(true)
         .navigationBarBackButtonHidden(true)
     }
 

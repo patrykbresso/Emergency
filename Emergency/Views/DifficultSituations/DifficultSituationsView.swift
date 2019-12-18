@@ -76,6 +76,8 @@ struct DifficultSituationsView: View {
         .background(Color(red: 19 / 255, green: 42 / 255, blue: 122 / 255)
             .edgesIgnoringSafeArea(.all)
         )
+        .navigationBarTitle("")
+        .navigationBarHidden(true)
         .navigationBarBackButtonHidden(true)
     }
 }

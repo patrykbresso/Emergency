@@ -51,6 +51,8 @@ struct DifficultSituationsDetailView: View {
             .edgesIgnoringSafeArea(.all)
         )
             .foregroundColor(.white)
+        .navigationBarTitle("")
+        .navigationBarHidden(true)
         .navigationBarBackButtonHidden(true)
     }
 }

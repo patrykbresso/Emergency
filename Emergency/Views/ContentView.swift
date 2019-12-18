@@ -14,11 +14,10 @@ struct ContentView: View {
     @State var searchResults: [Page] = []
     
     var body: some View {
-        
+        NavigationView {
         GeometryReader { geometry in
             VStack(alignment: HorizontalAlignment.leading) {
-                NavigationView {
-                    VStack(alignment: .leading) {
+                    VStack(alignment: .leading, spacing: 40) {
                         HStack() {
                             NavigationLink(destination: NewsView()) {
                                 VStack {
@@ -39,7 +38,7 @@ struct ContentView: View {
                                         .multilineTextAlignment(.center)
                                 }.frame(width: geometry.size.width / 2 - 60)
                             }
-                        }.padding(.top, 150)
+                        }
                         HStack() {
                             NavigationLink(destination: TranslateView()) {
                                 VStack {
@@ -125,7 +124,6 @@ struct ContentView: View {
                                 }.frame(width: geometry.size.width / 2 - 60)
                             }
                         }
-                        Spacer()
                         HStack {
                             Image("magnifier")
                             .renderingMode(.original)
@@ -142,7 +140,6 @@ struct ContentView: View {
                             }
                             .foregroundColor(.white)
                         }
-                        .padding(.top, 20)
                         .padding(.bottom, 20)
                         .padding(.leading, 35)
                         .padding(.trailing, 35)
@@ -152,11 +149,16 @@ struct ContentView: View {
                     .padding(.leading, 30)
                     .padding(.trailing, 30)
                     .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: .topLeading)
-                    .background(Color(red: 19 / 255, green: 42 / 255, blue: 122 / 255))
+                    .background(Color(red: 19 / 255, green: 42 / 255, blue: 122 / 255)
+                        .edgesIgnoringSafeArea(.all))
                     .foregroundColor(.white)
-                    .edgesIgnoringSafeArea(.all)
+                    
                 }
+                .navigationBarTitle("")
+                .navigationBarHidden(true)
+                .navigationBarBackButtonHidden(true)
             }
+           
         }
     }
 

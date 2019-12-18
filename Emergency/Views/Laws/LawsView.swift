@@ -80,6 +80,8 @@ struct LawsView: View {
             .edgesIgnoringSafeArea(.all)
         )
         
+        .navigationBarTitle("")
+        .navigationBarHidden(true)
         .navigationBarBackButtonHidden(true)
     }
 }

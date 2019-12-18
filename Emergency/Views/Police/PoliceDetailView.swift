@@ -40,7 +40,7 @@ struct PoliceDetailView: View {
                             .renderingMode(.original)
                     }.padding(.trailing, 20)
                 }
-                
+                Spacer(minLength: 20)
                 MapView(coordinate: self.policeStation.locationCoordinate)
                     .frame(width: 346, height: 270, alignment: .center)
                     .overlay(
@@ -50,7 +50,6 @@ struct PoliceDetailView: View {
                 CircleImage(image: Image(self.policeStation.imageName).resizable())
                 .frame(width: 180, height: 180)
                     .offset(y: -100)
-                    .padding(.bottom, -130)
 
                 ZStack {
                     RoundedRectangle(cornerRadius: 10)
@@ -74,11 +73,14 @@ struct PoliceDetailView: View {
                     }
                     .foregroundColor(.white)
                 }
-                .offset(y: 50)
+                
             }
             .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: .center)
-            .background(Color(red: 19 / 255, green: 42 / 255, blue: 122 / 255))
+            .background(Color(red: 19 / 255, green: 42 / 255, blue: 122 / 255)
             .edgesIgnoringSafeArea(.all)
+            )
+            .navigationBarTitle("")
+            .navigationBarHidden(true)
             .navigationBarBackButtonHidden(true)
             
         

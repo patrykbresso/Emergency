@@ -65,6 +65,8 @@ struct ConsulatesDetailView: View {
         .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: .center)
         .background(Color(red: 19 / 255, green: 42 / 255, blue: 122 / 255))
         .edgesIgnoringSafeArea(.all)
+        .navigationBarTitle("")
+        .navigationBarHidden(true)
         .navigationBarBackButtonHidden(true)
             
         
