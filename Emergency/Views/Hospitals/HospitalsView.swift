@@ -12,6 +12,7 @@ import SwiftUI
 struct HospitalsView: View {
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     @State private var keyword: String = ""
+    @EnvironmentObject var dataLoader: DataLoader
     
     private let title = "Szpitalne Oddziały Ratunkowe SOR"
     private let subtitle = "we Wrocławiu czynne przez całą dobę. SOR udziela świadczeń zdrowotnych w stanach nagłych. Polegają one na wstępnej diagnostyce i leczeniu w zakresie niezbędnym do stabilizacji funkcji życiowych osób, które znajdują się w stanie zagrożenia życia lub zdrowia."
@@ -55,7 +56,7 @@ struct HospitalsView: View {
                     ScrollView() {
                         Spacer(minLength: 30)
                         VStack(alignment: .center, spacing: 80) {
-                            ForEach(hospitalsData) { hospital in
+                            ForEach(self.dataLoader.hospitalsData) { hospital in
                                 HospitalsRow(hospital: hospital)
                                 }.padding(.leading, 40)
                         }.frame(width: geometry.size.width / 0.95, alignment: .center)

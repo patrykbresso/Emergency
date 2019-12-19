@@ -12,10 +12,10 @@ import CoreLocation
 
 
 struct ConsulatesRow: View {
-
+    @EnvironmentObject var dataLoader: DataLoader
     var consulate: Consulates
     var body: some View {
-        
+    
         GeometryReader { geometry in
             ZStack() {
                 RoundedRectangle(cornerRadius: 10)

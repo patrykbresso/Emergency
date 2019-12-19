@@ -6,7 +6,7 @@ target 'Emergency' do
   use_frameworks!
 
   # Pods for Emergency
-  pod 'Firebase/Analytics'
+
   target 'EmergencyTests' do
     inherit! :search_paths
     # Pods for testing

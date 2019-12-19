@@ -13,6 +13,7 @@ import SwiftUI
 struct ConsulatesView: View {
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     @State private var keyword: String = ""
+    @EnvironmentObject var dataLoader: DataLoader
     
     var body: some View {
           
@@ -38,7 +39,7 @@ struct ConsulatesView: View {
                     ScrollView() {
                         Spacer(minLength: 40)
                         VStack(alignment: .center, spacing: 100) {
-                            ForEach(consulatesData) { consulate in
+                            ForEach(self.dataLoader.consulatesData) { consulate in
                                 ConsulatesRow(consulate: consulate)
                                 }.padding(.leading, 40)
                         }.frame(width: geometry.size.width / 0.95, alignment: .center)

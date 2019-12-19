@@ -1,0 +1,92 @@
+
+[
+    {
+        "id": 1,
+        "name": "Komenda Miejska Policji we Wrocławiu",
+        "address": "ul. Sołtysowicka 21, 51-168 Wrocław",
+        "number": "+71 340 44 90",
+        "email": "kontakt@wroclaw.wr.policja.gov.pl",
+        "coordinates": {
+            "longitude": 17.070855,
+            "latitude": 51.141588
+        },
+        "imageName": "policja_soltysowicka"
+    },
+    {
+        "id": 2,
+        "name": "Wydział Ruchu Drogowego",
+        "address": "ul: Hubska 29/33, 50-501 Wrocław",
+        "number": "71 340 32 12",
+        "coordinates": {
+            "longitude": 17.042646,
+            "latitude": 51.093346
+        },
+        "imageName": "policja_hubska"
+    },
+    {
+        "id": 3,
+        "name": "Komisariat Wrocław-Stare Miasto",
+        "address": "ul. Trzemeska 12, 50-040 Wrocław",
+        "number": "71 340 31 31",
+        "coordinates": {
+            "longitude": 17.010767,
+            "latitude": 51.112300
+        },
+        "imageName": "policja_stare_miasto"
+    },
+    {
+        "id": 4,
+        "name": "Komisariat Wrocław-Ołbin",
+        "address": "ul. Rydygiera 46 /48, 50-249 Wrocław",
+        "number": "71 340 43 06",
+        "coordinates": {
+            "longitude":17.032310,
+            "latitude": 51.121025
+        },
+        "imageName": "policja_olbin"
+    },
+    {
+        "id": 5,
+        "name": "Komisariat Wrocław-Śródmieście",
+        "address": "ul. Grunwaldzka 6, 50-355 Wrocław",
+        "number": "71 340 43 58",
+        "coordinates": {
+            "longitude": 17.055712,
+            "latitude": 51.115019
+        },
+        "imageName": "policja_srodmiescie"
+    },
+    {
+        "id": 6,
+        "name": "Komisariat Wrocław-Krzyki",
+        "address": "ul. Slężna 115-129, 53-123 Wrocław",
+        "number": "71 782 46 00",
+        "coordinates": {
+            "longitude": 17.025356,
+            "latitude": 51.085191
+        },
+        "imageName": "policja_krzyki"
+    },
+    {
+        "id": 7,
+        "name": "Komisariat Wrocław-Rakowiec",
+        "address": "ul. Traugutta 94, 50-420 Wrocław",
+        "number": "71 340 43 44",
+        "coordinates": {
+            "longitude": 17.052681,
+            "latitude": 51.101520
+        },
+        "imageName": "policja_rakowiec"
+    },
+    {
+        "id": 8,
+        "name": "Komisariat Wrocław-Fabryczna",
+        "address": "ul. Połbina 1, 54-151 Wrocław",
+        "number": "71 340 43 80",
+        "coordinates": {
+            "longitude": 16.973529,
+            "latitude": 51.140285
+        },
+        "imageName": "policja_fabryczna"
+    }
+]

@@ -10,7 +10,7 @@ import SwiftUI
 
 struct DifficultSituationsView: View {
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
-    
+    @EnvironmentObject var dataLoader: DataLoader
     @State private var keyword: String = ""
     
     var body: some View {
@@ -30,7 +30,7 @@ struct DifficultSituationsView: View {
                 }
                 
                 VStack {
-                    ForEach(difficultSituationsData){ row in
+                    ForEach(self.dataLoader.difficultSituationsData){ row in
                         if(row.id % 2 == 0) {
                             HStack {
                                 NavigationLink(destination: DifficultSituationsDetailView(difficultSituation: row)) {

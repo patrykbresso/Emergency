@@ -10,7 +10,7 @@ import SwiftUI
 
 struct AdviceView: View {
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
-    
+    @EnvironmentObject var dataLoader: DataLoader
     @State private var keyword: String = ""
     
     var body: some View {
@@ -32,10 +32,11 @@ struct AdviceView: View {
                         .stroke(Color(red: 219 / 255, green: 2 / 255, blue: 109 / 255), lineWidth: 10)
                             .background(Color(red: 219 / 255, green: 2 / 255, blue: 109 / 255))
                         
-                        Text(adviceData.intro).padding(15)
+                         Text(self.dataLoader.adviceData.intro).padding(15)
+                        
                     }.fixedSize(horizontal: false, vertical: true)
                     ScrollView {
-                        ForEach(adviceData.advice) { advice in
+                        ForEach(self.dataLoader.adviceData.advice) { advice in
                             ZStack {
                                 RoundedRectangle(cornerRadius: 10)
                                 .stroke(Color(red: 219 / 255, green: 2 / 255, blue: 109 / 255), lineWidth: 10)

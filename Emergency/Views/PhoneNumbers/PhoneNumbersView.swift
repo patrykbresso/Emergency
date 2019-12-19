@@ -10,7 +10,7 @@ import SwiftUI
 
 struct PhoneNumbersView: View {
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
-    
+    @EnvironmentObject var dataLoader: DataLoader
     @State private var keyword: String = ""
     @State var boxClicked: [Bool] = [false, false, false, false, false, false]
     
@@ -32,7 +32,7 @@ struct PhoneNumbersView: View {
                 }
                 
                 VStack {
-                    ForEach(phoneNumbersData){ row in
+                    ForEach(self.dataLoader.phoneNumbersData){ row in
                         if(row.id % 2 == 0) {
                             HStack {
                                 Button(action: {

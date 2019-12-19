@@ -12,7 +12,7 @@ import CoreLocation
 
 
 struct PoliceRow: View {
-
+    @EnvironmentObject var dataLoader: DataLoader
     var policeStation: Police
     var body: some View {
         

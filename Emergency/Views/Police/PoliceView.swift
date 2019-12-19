@@ -12,6 +12,7 @@ import SwiftUI
 import MapKit
 
 struct PoliceView: View {
+    @EnvironmentObject var dataLoader: DataLoader
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     @State private var keyword: String = ""
     
@@ -69,7 +70,7 @@ struct PoliceView: View {
                     Spacer(minLength: 30)
                     VStack(spacing: 80) {
                         
-                        ForEach(policeData) { policeStation in
+                        ForEach(self.dataLoader.policeData) { policeStation in
                                 NavigationLink(destination: PoliceDetailView(policeStation: policeStation)) {
                                     PoliceRow(policeStation: policeStation)
                                     }

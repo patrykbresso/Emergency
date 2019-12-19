@@ -9,15 +9,28 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var isDrawerOpen: Bool = false
     @State private var keyword: String = ""
     @State var show: Bool = false
     @State var searchResults: [Page] = []
+    @EnvironmentObject var settings: UserSettings
+    @EnvironmentObject var dataLoader: DataLoader
     
     var body: some View {
         NavigationView {
         GeometryReader { geometry in
+            ZStack() {
+            if !self.isDrawerOpen {
             VStack(alignment: HorizontalAlignment.leading) {
-                    VStack(alignment: .leading, spacing: 40) {
+                    VStack(alignment: .leading, spacing: 30) {
+                        Button(action: {
+                            DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
+                                self.isDrawerOpen.toggle()
+                            }
+                        }) {
+                            Text("...")
+                                .foregroundColor(.red)
+                        }
                         HStack() {
                             NavigationLink(destination: NewsView()) {
                                 VStack {
@@ -158,14 +171,24 @@ struct ContentView: View {
                 .navigationBarHidden(true)
                 .navigationBarBackButtonHidden(true)
             }
-           
+            
+            }
+            NavigationDrawer(isOpen: self.isDrawerOpen)
+            }
+           .onTapGesture {
+               if self.isDrawerOpen {
+                   self.isDrawerOpen.toggle()
+               }
+        }.onAppear{
+            print(self.settings.language)
+            }
         }
     }
 
     func searchByKeywords(searchedPhrase: String) -> [Page] {
         var results: [Page] = []
         var i: Int = 1
-        for view in searchKeywords[1].views {
+        for view in dataLoader.searchKeywords[1].views {
             for word in view.keywords {
                 if(searchedPhrase.lowercased().contains(word.keyword.lowercased())) {
                     let result: Page = Page(id: i,name: view.name, page: view.page)

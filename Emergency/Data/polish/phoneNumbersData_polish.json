@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "name": "Telefon Alarmowy",
+        "number": "112",
+        "available": "czynny 24/7",
+        "description": "Telefon służy do powiadamiania w sytuacjach zagrożenia życia."
+    },
+    {
+        "id": 2,
+        "name": "Pogotowie Ratunkowe",
+        "number": "999",
+        "available": "czynny 24/7",
+        "description": ""
+    },
+    {
+        "id": 3,
+        "name": "Policja",
+        "number": "997",
+        "available": "czynny 24/7",
+        "description": ""
+    },
+    {
+        "id": 4,
+        "name": "Straż Pożarna",
+        "number": "998",
+        "available": "czynny 24/7",
+        "description": ""
+    },
+    {
+        "id": 5,
+        "name": "Straż Miejska",
+        "number": "986",
+        "available": "czynny 24/7",
+        "description": ""
+    },
+    {
+        "id": 6,
+        "name": "Infolinia",
+        "number": "71 77 24 950",
+        "available": "czynny: (Pn, Wt, Pt, 9:00 - 16:00), (Śr, Czw, 11:00 – 18:00)",
+        "description": "Miejski punkt  informacji telefonicznej dla obcokrajowców, dostępny również  języku angielskim."
+    }
+]

@@ -11,7 +11,7 @@ import SwiftUI
 import CoreLocation
 
 struct LawsCell: View {
-
+    @EnvironmentObject var dataLoader: DataLoader
     var law: Laws
     var body: some View {
         
@@ -40,8 +40,8 @@ extension Row {
             
             var collection: [Row] = []
             var index = 0
-            while index < lawsData.count - 1 {
-                collection.append(Row(cells: [lawsData[index+1], lawsData[index+2]]))
+        while index < lawsData.count - 1 {
+            collection.append(Row(cells: [lawsData[index+1], lawsData[index+2]]))
                 index += 2
             }
             return collection

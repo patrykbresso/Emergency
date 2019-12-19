@@ -10,7 +10,7 @@ import SwiftUI
 
 struct TranslateView: View {
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
-    
+    @EnvironmentObject var dataLoader: DataLoader
     @State private var keyword: String = ""
     @State var buttonClicked: [Bool] = [false, false, false, false, false, false]
     
@@ -28,7 +28,7 @@ struct TranslateView: View {
                         
                     }
                 }
-                ForEach(translateData) { row in
+                ForEach(self.dataLoader.translateData) { row in
                     if(row.id % 2 == 0) {
                         HStack {
                             Button(action: {

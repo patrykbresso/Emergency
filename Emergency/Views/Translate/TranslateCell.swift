@@ -11,6 +11,7 @@ import SwiftUI
 struct TranslateCell: View {
     var row: Translate
     var showTranslation: Bool
+    @EnvironmentObject var dataLoader: DataLoader
     
     var body: some View {
         ZStack {

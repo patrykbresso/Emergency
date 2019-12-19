@@ -11,7 +11,7 @@ import SwiftUI
 struct LawsView: View {
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     @State private var keyword: String = ""
-    
+    @EnvironmentObject var dataLoader: DataLoader
     let rows = Row.read()
     
     
@@ -35,8 +35,8 @@ struct LawsView: View {
                             }
                         }
                         Spacer()
-                        NavigationLink(destination: LawsDetailView(law: lawsData[0])) {
-                        LawsCell(law: lawsData[0])
+                        NavigationLink(destination: LawsDetailView(law: self.dataLoader.lawsData[0])) {
+                            LawsCell(law: self.dataLoader.lawsData[0])
                         }
                         .frame(width: geometry.size.width / 2.7, height: geometry.size.height / 9)
                     }

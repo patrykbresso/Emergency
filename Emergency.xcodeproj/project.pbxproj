@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,23 +13,21 @@
 		9F169A88237F6740005A8618 /* PoliceDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F169A87237F6740005A8618 /* PoliceDetailView.swift */; };
 		9F169A8A237F67F5005A8618 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F169A89237F67F5005A8618 /* MapView.swift */; };
 		9F169A8C237F6844005A8618 /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F169A8B237F6844005A8618 /* CircleImage.swift */; };
-		9F169A92237F7132005A8618 /* policeData.json in Resources */ = {isa = PBXBuildFile; fileRef = 9F169A91237F7132005A8618 /* policeData.json */; };
 		9F483A78237F32F1000E35A8 /* NewsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F483A77237F32F1000E35A8 /* NewsView.swift */; };
 		9F7A4F1E238D878B001C4B7A /* CustomButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F7A4F1D238D878B001C4B7A /* CustomButtons.swift */; };
 		9F7A4F21238DA049001C4B7A /* HospitalsRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F7A4F20238DA049001C4B7A /* HospitalsRow.swift */; };
 		9F7A4F23238DA05A001C4B7A /* HospitalsDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F7A4F22238DA05A001C4B7A /* HospitalsDetailView.swift */; };
 		9F7A4F25238DA101001C4B7A /* Hospitals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F7A4F24238DA101001C4B7A /* Hospitals.swift */; };
-		9F7A4F27238DA150001C4B7A /* hospitalsData.json in Resources */ = {isa = PBXBuildFile; fileRef = 9F7A4F26238DA150001C4B7A /* hospitalsData.json */; };
 		9F7A4F2A238DA348001C4B7A /* ConsulatesRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F7A4F29238DA348001C4B7A /* ConsulatesRow.swift */; };
 		9F7A4F2C238DA355001C4B7A /* ConsulatesDetailRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F7A4F2B238DA355001C4B7A /* ConsulatesDetailRow.swift */; };
 		9F7A4F2E238DA388001C4B7A /* Consulates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F7A4F2D238DA388001C4B7A /* Consulates.swift */; };
-		9F7A4F30238DA535001C4B7A /* consulatesData.json in Resources */ = {isa = PBXBuildFile; fileRef = 9F7A4F2F238DA535001C4B7A /* consulatesData.json */; };
-		9F7D3A752397CF7B0092ADD6 /* lawsData.json in Resources */ = {isa = PBXBuildFile; fileRef = 9F7D3A742397CF7B0092ADD6 /* lawsData.json */; };
 		9F7D3A782397CFD10092ADD6 /* Laws.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F7D3A772397CFD10092ADD6 /* Laws.swift */; };
 		9F7D3A7A2397D0330092ADD6 /* LawsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F7D3A792397D0330092ADD6 /* LawsCell.swift */; };
 		9F7D3A7C2397D2E80092ADD6 /* LawsDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F7D3A7B2397D2E80092ADD6 /* LawsDetailView.swift */; };
 		9F8F031123AA7865004FB4A0 /* ChangeLanguageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8F031023AA7865004FB4A0 /* ChangeLanguageView.swift */; };
 		9F8F031423AA7A79004FB4A0 /* ChangeLanguageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8F031323AA7A79004FB4A0 /* ChangeLanguageCell.swift */; };
+		9F8F037D23AAA9A0004FB4A0 /* DrawerContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8F037C23AAA9A0004FB4A0 /* DrawerContent.swift */; };
+		9F8F037F23AAA9BB004FB4A0 /* NavigationDrawer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8F037E23AAA9BB004FB4A0 /* NavigationDrawer.swift */; };
 		9FAACF852379B65600C3CF94 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FAACF842379B65600C3CF94 /* AppDelegate.swift */; };
 		9FAACF872379B65600C3CF94 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FAACF862379B65600C3CF94 /* SceneDelegate.swift */; };
 		9FAACF892379B65600C3CF94 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FAACF882379B65600C3CF94 /* ContentView.swift */; };
@@ -39,6 +37,61 @@
 		9FAACF9C2379B65900C3CF94 /* EmergencyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FAACF9B2379B65900C3CF94 /* EmergencyTests.swift */; };
 		9FAACFA72379B65900C3CF94 /* EmergencyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FAACFA62379B65900C3CF94 /* EmergencyUITests.swift */; };
 		9FAACFB52379B68E00C3CF94 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9FAACFB42379B68D00C3CF94 /* GoogleService-Info.plist */; };
+		9FB3E43423AB7FB9005E1095 /* UserSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB3E43323AB7FB9005E1095 /* UserSettings.swift */; };
+		9FB3E4C523ABE211005E1095 /* adviceData_english.json in Resources */ = {isa = PBXBuildFile; fileRef = 9FB3E49423ABE211005E1095 /* adviceData_english.json */; };
+		9FB3E4C623ABE211005E1095 /* policeData_english.json in Resources */ = {isa = PBXBuildFile; fileRef = 9FB3E49523ABE211005E1095 /* policeData_english.json */; };
+		9FB3E4C723ABE211005E1095 /* searchKeywords_english.json in Resources */ = {isa = PBXBuildFile; fileRef = 9FB3E49623ABE211005E1095 /* searchKeywords_english.json */; };
+		9FB3E4C823ABE211005E1095 /* translateData_english.json in Resources */ = {isa = PBXBuildFile; fileRef = 9FB3E49723ABE211005E1095 /* translateData_english.json */; };
+		9FB3E4C923ABE211005E1095 /* consulatesData_english.json in Resources */ = {isa = PBXBuildFile; fileRef = 9FB3E49823ABE211005E1095 /* consulatesData_english.json */; };
+		9FB3E4CA23ABE211005E1095 /* difficultSituationsData_english.json in Resources */ = {isa = PBXBuildFile; fileRef = 9FB3E49923ABE211005E1095 /* difficultSituationsData_english.json */; };
+		9FB3E4CB23ABE211005E1095 /* phoneNumbersData_english.json in Resources */ = {isa = PBXBuildFile; fileRef = 9FB3E49A23ABE211005E1095 /* phoneNumbersData_english.json */; };
+		9FB3E4CC23ABE211005E1095 /* hospitalsData_english.json in Resources */ = {isa = PBXBuildFile; fileRef = 9FB3E49B23ABE211005E1095 /* hospitalsData_english.json */; };
+		9FB3E4CD23ABE211005E1095 /* lawsData_english.json in Resources */ = {isa = PBXBuildFile; fileRef = 9FB3E49C23ABE211005E1095 /* lawsData_english.json */; };
+		9FB3E4CE23ABE211005E1095 /* lawsData_polish.json in Resources */ = {isa = PBXBuildFile; fileRef = 9FB3E49E23ABE211005E1095 /* lawsData_polish.json */; };
+		9FB3E4CF23ABE211005E1095 /* phoneNumbersData_polish.json in Resources */ = {isa = PBXBuildFile; fileRef = 9FB3E49F23ABE211005E1095 /* phoneNumbersData_polish.json */; };
+		9FB3E4D023ABE211005E1095 /* hospitalsData_polish.json in Resources */ = {isa = PBXBuildFile; fileRef = 9FB3E4A023ABE211005E1095 /* hospitalsData_polish.json */; };
+		9FB3E4D123ABE211005E1095 /* translateData_polish.json in Resources */ = {isa = PBXBuildFile; fileRef = 9FB3E4A123ABE211005E1095 /* translateData_polish.json */; };
+		9FB3E4D223ABE211005E1095 /* adviceData_polish.json in Resources */ = {isa = PBXBuildFile; fileRef = 9FB3E4A223ABE211005E1095 /* adviceData_polish.json */; };
+		9FB3E4D323ABE211005E1095 /* difficultSituationsData_polish.json in Resources */ = {isa = PBXBuildFile; fileRef = 9FB3E4A323ABE211005E1095 /* difficultSituationsData_polish.json */; };
+		9FB3E4D423ABE211005E1095 /* searchKeywords_polish.json in Resources */ = {isa = PBXBuildFile; fileRef = 9FB3E4A423ABE211005E1095 /* searchKeywords_polish.json */; };
+		9FB3E4D523ABE211005E1095 /* consulatesData_polish.json in Resources */ = {isa = PBXBuildFile; fileRef = 9FB3E4A523ABE211005E1095 /* consulatesData_polish.json */; };
+		9FB3E4D623ABE211005E1095 /* policeData_polish.json in Resources */ = {isa = PBXBuildFile; fileRef = 9FB3E4A623ABE211005E1095 /* policeData_polish.json */; };
+		9FB3E4D723ABE211005E1095 /* phoneNumbersData_ukrainian.json in Resources */ = {isa = PBXBuildFile; fileRef = 9FB3E4A823ABE211005E1095 /* phoneNumbersData_ukrainian.json */; };
+		9FB3E4D823ABE211005E1095 /* translateData_ukrainian.json in Resources */ = {isa = PBXBuildFile; fileRef = 9FB3E4A923ABE211005E1095 /* translateData_ukrainian.json */; };
+		9FB3E4D923ABE211005E1095 /* difficultSituationsData_ukrainian.json in Resources */ = {isa = PBXBuildFile; fileRef = 9FB3E4AA23ABE211005E1095 /* difficultSituationsData_ukrainian.json */; };
+		9FB3E4DA23ABE211005E1095 /* adviceData_ukrainian.json in Resources */ = {isa = PBXBuildFile; fileRef = 9FB3E4AB23ABE211005E1095 /* adviceData_ukrainian.json */; };
+		9FB3E4DB23ABE211005E1095 /* lawsData_ukrainian.json in Resources */ = {isa = PBXBuildFile; fileRef = 9FB3E4AC23ABE211005E1095 /* lawsData_ukrainian.json */; };
+		9FB3E4DC23ABE211005E1095 /* hospitalsData_ukrainian.json in Resources */ = {isa = PBXBuildFile; fileRef = 9FB3E4AD23ABE211005E1095 /* hospitalsData_ukrainian.json */; };
+		9FB3E4DD23ABE211005E1095 /* consulatesData_ukrainian.json in Resources */ = {isa = PBXBuildFile; fileRef = 9FB3E4AE23ABE211005E1095 /* consulatesData_ukrainian.json */; };
+		9FB3E4DE23ABE211005E1095 /* policeData_ukrainian.json in Resources */ = {isa = PBXBuildFile; fileRef = 9FB3E4AF23ABE211005E1095 /* policeData_ukrainian.json */; };
+		9FB3E4DF23ABE211005E1095 /* searchKeywords_ukrainian.json in Resources */ = {isa = PBXBuildFile; fileRef = 9FB3E4B023ABE211005E1095 /* searchKeywords_ukrainian.json */; };
+		9FB3E4E023ABE211005E1095 /* hospitalsData_german.json in Resources */ = {isa = PBXBuildFile; fileRef = 9FB3E4B223ABE211005E1095 /* hospitalsData_german.json */; };
+		9FB3E4E123ABE211005E1095 /* translateData_german.json in Resources */ = {isa = PBXBuildFile; fileRef = 9FB3E4B323ABE211005E1095 /* translateData_german.json */; };
+		9FB3E4E223ABE211005E1095 /* lawsData_german.json in Resources */ = {isa = PBXBuildFile; fileRef = 9FB3E4B423ABE211005E1095 /* lawsData_german.json */; };
+		9FB3E4E323ABE211005E1095 /* phoneNumbersData_german.json in Resources */ = {isa = PBXBuildFile; fileRef = 9FB3E4B523ABE211005E1095 /* phoneNumbersData_german.json */; };
+		9FB3E4E423ABE211005E1095 /* consulatesData_german.json in Resources */ = {isa = PBXBuildFile; fileRef = 9FB3E4B623ABE211005E1095 /* consulatesData_german.json */; };
+		9FB3E4E523ABE211005E1095 /* searchKeywords_german.json in Resources */ = {isa = PBXBuildFile; fileRef = 9FB3E4B723ABE211005E1095 /* searchKeywords_german.json */; };
+		9FB3E4E623ABE211005E1095 /* policeData_german.json in Resources */ = {isa = PBXBuildFile; fileRef = 9FB3E4B823ABE211005E1095 /* policeData_german.json */; };
+		9FB3E4E723ABE211005E1095 /* adviceData_german.json in Resources */ = {isa = PBXBuildFile; fileRef = 9FB3E4B923ABE211005E1095 /* adviceData_german.json */; };
+		9FB3E4E823ABE211005E1095 /* difficultSituationsData_german.json in Resources */ = {isa = PBXBuildFile; fileRef = 9FB3E4BA23ABE211005E1095 /* difficultSituationsData_german.json */; };
+		9FB3E4E923ABE211005E1095 /* policeData_spanish.json in Resources */ = {isa = PBXBuildFile; fileRef = 9FB3E4BC23ABE211005E1095 /* policeData_spanish.json */; };
+		9FB3E4EA23ABE211005E1095 /* adviceData_spanish.json in Resources */ = {isa = PBXBuildFile; fileRef = 9FB3E4BD23ABE211005E1095 /* adviceData_spanish.json */; };
+		9FB3E4EB23ABE211005E1095 /* consulatesData_spanish.json in Resources */ = {isa = PBXBuildFile; fileRef = 9FB3E4BE23ABE211005E1095 /* consulatesData_spanish.json */; };
+		9FB3E4EC23ABE211005E1095 /* searchKeywords_spanish.json in Resources */ = {isa = PBXBuildFile; fileRef = 9FB3E4BF23ABE211005E1095 /* searchKeywords_spanish.json */; };
+		9FB3E4ED23ABE211005E1095 /* translateData_spanish.json in Resources */ = {isa = PBXBuildFile; fileRef = 9FB3E4C023ABE211005E1095 /* translateData_spanish.json */; };
+		9FB3E4EE23ABE211005E1095 /* phoneNumbersData_spanish.json in Resources */ = {isa = PBXBuildFile; fileRef = 9FB3E4C123ABE211005E1095 /* phoneNumbersData_spanish.json */; };
+		9FB3E4EF23ABE211005E1095 /* difficultSituationsData_spanish.json in Resources */ = {isa = PBXBuildFile; fileRef = 9FB3E4C223ABE211005E1095 /* difficultSituationsData_spanish.json */; };
+		9FB3E4F023ABE211005E1095 /* lawsData_spanish.json in Resources */ = {isa = PBXBuildFile; fileRef = 9FB3E4C323ABE211005E1095 /* lawsData_spanish.json */; };
+		9FB3E4F123ABE211005E1095 /* hospitalsData_spanish.json in Resources */ = {isa = PBXBuildFile; fileRef = 9FB3E4C423ABE211005E1095 /* hospitalsData_spanish.json */; };
+		9FB3E4FC23ABE2C4005E1095 /* policeData.json in Resources */ = {isa = PBXBuildFile; fileRef = 9FB3E4F323ABE2C4005E1095 /* policeData.json */; };
+		9FB3E4FD23ABE2C4005E1095 /* hospitalsData.json in Resources */ = {isa = PBXBuildFile; fileRef = 9FB3E4F423ABE2C4005E1095 /* hospitalsData.json */; };
+		9FB3E4FE23ABE2C4005E1095 /* searchKeywords.json in Resources */ = {isa = PBXBuildFile; fileRef = 9FB3E4F523ABE2C4005E1095 /* searchKeywords.json */; };
+		9FB3E4FF23ABE2C4005E1095 /* translateData.json in Resources */ = {isa = PBXBuildFile; fileRef = 9FB3E4F623ABE2C4005E1095 /* translateData.json */; };
+		9FB3E50023ABE2C4005E1095 /* consulatesData.json in Resources */ = {isa = PBXBuildFile; fileRef = 9FB3E4F723ABE2C4005E1095 /* consulatesData.json */; };
+		9FB3E50123ABE2C4005E1095 /* difficultSituationsData.json in Resources */ = {isa = PBXBuildFile; fileRef = 9FB3E4F823ABE2C4005E1095 /* difficultSituationsData.json */; };
+		9FB3E50223ABE2C4005E1095 /* adviceData.json in Resources */ = {isa = PBXBuildFile; fileRef = 9FB3E4F923ABE2C4005E1095 /* adviceData.json */; };
+		9FB3E50323ABE2C4005E1095 /* phoneNumbersData.json in Resources */ = {isa = PBXBuildFile; fileRef = 9FB3E4FA23ABE2C4005E1095 /* phoneNumbersData.json */; };
+		9FB3E50423ABE2C4005E1095 /* lawsData.json in Resources */ = {isa = PBXBuildFile; fileRef = 9FB3E4FB23ABE2C4005E1095 /* lawsData.json */; };
 		A151BB18237F1E89007CEEC1 /* AdviceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A151BB17237F1E89007CEEC1 /* AdviceView.swift */; };
 		A151BB1C237F2A7A007CEEC1 /* TranslateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A151BB1B237F2A7A007CEEC1 /* TranslateView.swift */; };
 		A151BB1E237F2A8F007CEEC1 /* PhoneNumbersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A151BB1D237F2A8F007CEEC1 /* PhoneNumbersView.swift */; };
@@ -52,21 +105,16 @@
 		C01907BEF0A423E69187A72B /* Pods_EmergencyUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38F29B74A73222348AB45E64 /* Pods_EmergencyUITests.framework */; };
 		C7DA29D6DD0ADAAD141A1B1D /* Pods_EmergencyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5337DBD89CD585332792FABD /* Pods_EmergencyTests.framework */; };
 		E82DE11D23999E57009F0F37 /* MailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E82DE11C23999E57009F0F37 /* MailView.swift */; };
-		E83E445F23A3D31F003AB246 /* searchKeywords.json in Resources */ = {isa = PBXBuildFile; fileRef = E83E445E23A3D31F003AB246 /* searchKeywords.json */; };
 		E83E446123A3E62F003AB246 /* SearchKeywords.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83E446023A3E62F003AB246 /* SearchKeywords.swift */; };
 		E83E446323A3F29B003AB246 /* Page.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83E446223A3F29B003AB246 /* Page.swift */; };
 		E83E446523A3FDB4003AB246 /* SearchResultsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83E446423A3FDB4003AB246 /* SearchResultsView.swift */; };
 		E8590BB92398469B00C37EE8 /* CustomTextFieldStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8590BB82398469B00C37EE8 /* CustomTextFieldStyle.swift */; };
 		E8AD7F43239BEA87005150A7 /* DifficultSituationsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8AD7F42239BEA87005150A7 /* DifficultSituationsCell.swift */; };
 		E8AD7F45239BEAA0005150A7 /* DifficultSituationsDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8AD7F44239BEAA0005150A7 /* DifficultSituationsDetailView.swift */; };
-		E8AD7F47239BEEEA005150A7 /* difficultSituationsData.json in Resources */ = {isa = PBXBuildFile; fileRef = E8AD7F46239BEEEA005150A7 /* difficultSituationsData.json */; };
 		E8AD7F49239BF04E005150A7 /* DifficultSituations.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8AD7F48239BF04E005150A7 /* DifficultSituations.swift */; };
-		E8AD7F52239C4A48005150A7 /* adviceData.json in Resources */ = {isa = PBXBuildFile; fileRef = E8AD7F51239C4A48005150A7 /* adviceData.json */; };
 		E8AD7F54239C4AB8005150A7 /* Advice.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8AD7F53239C4AB8005150A7 /* Advice.swift */; };
-		E8DFAD68239D285B00D4CD74 /* phoneNumbersData.json in Resources */ = {isa = PBXBuildFile; fileRef = E8DFAD67239D285B00D4CD74 /* phoneNumbersData.json */; };
 		E8DFAD6A239D2A1E00D4CD74 /* PhoneNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8DFAD69239D2A1E00D4CD74 /* PhoneNumber.swift */; };
 		E8DFAD6C239D2C5D00D4CD74 /* PhoneNumbersCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8DFAD6B239D2C5D00D4CD74 /* PhoneNumbersCell.swift */; };
-		E8DFAD70239D461400D4CD74 /* translateData.json in Resources */ = {isa = PBXBuildFile; fileRef = E8DFAD6F239D461400D4CD74 /* translateData.json */; };
 		E8DFAD72239D467400D4CD74 /* Translate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8DFAD71239D467400D4CD74 /* Translate.swift */; };
 		E8DFAD74239D48B400D4CD74 /* TranslateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8DFAD73239D48B400D4CD74 /* TranslateCell.swift */; };
 /* End PBXBuildFile section */
@@ -102,23 +150,21 @@
 		9F169A87237F6740005A8618 /* PoliceDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoliceDetailView.swift; sourceTree = "<group>"; };
 		9F169A89237F67F5005A8618 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		9F169A8B237F6844005A8618 /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
-		9F169A91237F7132005A8618 /* policeData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = policeData.json; sourceTree = "<group>"; };
 		9F483A77237F32F1000E35A8 /* NewsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsView.swift; sourceTree = "<group>"; };
 		9F7A4F1D238D878B001C4B7A /* CustomButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButtons.swift; sourceTree = "<group>"; };
 		9F7A4F20238DA049001C4B7A /* HospitalsRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HospitalsRow.swift; sourceTree = "<group>"; };
 		9F7A4F22238DA05A001C4B7A /* HospitalsDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HospitalsDetailView.swift; sourceTree = "<group>"; };
 		9F7A4F24238DA101001C4B7A /* Hospitals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hospitals.swift; sourceTree = "<group>"; };
-		9F7A4F26238DA150001C4B7A /* hospitalsData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = hospitalsData.json; sourceTree = "<group>"; };
 		9F7A4F29238DA348001C4B7A /* ConsulatesRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsulatesRow.swift; sourceTree = "<group>"; };
 		9F7A4F2B238DA355001C4B7A /* ConsulatesDetailRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsulatesDetailRow.swift; sourceTree = "<group>"; };
 		9F7A4F2D238DA388001C4B7A /* Consulates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Consulates.swift; sourceTree = "<group>"; };
-		9F7A4F2F238DA535001C4B7A /* consulatesData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = consulatesData.json; sourceTree = "<group>"; };
-		9F7D3A742397CF7B0092ADD6 /* lawsData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = lawsData.json; sourceTree = "<group>"; };
 		9F7D3A772397CFD10092ADD6 /* Laws.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Laws.swift; sourceTree = "<group>"; };
 		9F7D3A792397D0330092ADD6 /* LawsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LawsCell.swift; sourceTree = "<group>"; };
 		9F7D3A7B2397D2E80092ADD6 /* LawsDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LawsDetailView.swift; sourceTree = "<group>"; };
 		9F8F031023AA7865004FB4A0 /* ChangeLanguageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeLanguageView.swift; sourceTree = "<group>"; };
 		9F8F031323AA7A79004FB4A0 /* ChangeLanguageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeLanguageCell.swift; sourceTree = "<group>"; };
+		9F8F037C23AAA9A0004FB4A0 /* DrawerContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawerContent.swift; sourceTree = "<group>"; };
+		9F8F037E23AAA9BB004FB4A0 /* NavigationDrawer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationDrawer.swift; sourceTree = "<group>"; };
 		9FAACF812379B65600C3CF94 /* Emergency.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Emergency.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FAACF842379B65600C3CF94 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9FAACF862379B65600C3CF94 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -134,6 +180,61 @@
 		9FAACFA62379B65900C3CF94 /* EmergencyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmergencyUITests.swift; sourceTree = "<group>"; };
 		9FAACFA82379B65900C3CF94 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9FAACFB42379B68D00C3CF94 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		9FB3E43323AB7FB9005E1095 /* UserSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSettings.swift; sourceTree = "<group>"; };
+		9FB3E49423ABE211005E1095 /* adviceData_english.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = adviceData_english.json; sourceTree = "<group>"; };
+		9FB3E49523ABE211005E1095 /* policeData_english.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = policeData_english.json; sourceTree = "<group>"; };
+		9FB3E49623ABE211005E1095 /* searchKeywords_english.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = searchKeywords_english.json; sourceTree = "<group>"; };
+		9FB3E49723ABE211005E1095 /* translateData_english.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = translateData_english.json; sourceTree = "<group>"; };
+		9FB3E49823ABE211005E1095 /* consulatesData_english.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = consulatesData_english.json; sourceTree = "<group>"; };
+		9FB3E49923ABE211005E1095 /* difficultSituationsData_english.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = difficultSituationsData_english.json; sourceTree = "<group>"; };
+		9FB3E49A23ABE211005E1095 /* phoneNumbersData_english.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = phoneNumbersData_english.json; sourceTree = "<group>"; };
+		9FB3E49B23ABE211005E1095 /* hospitalsData_english.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = hospitalsData_english.json; sourceTree = "<group>"; };
+		9FB3E49C23ABE211005E1095 /* lawsData_english.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = lawsData_english.json; sourceTree = "<group>"; };
+		9FB3E49E23ABE211005E1095 /* lawsData_polish.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = lawsData_polish.json; sourceTree = "<group>"; };
+		9FB3E49F23ABE211005E1095 /* phoneNumbersData_polish.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = phoneNumbersData_polish.json; sourceTree = "<group>"; };
+		9FB3E4A023ABE211005E1095 /* hospitalsData_polish.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = hospitalsData_polish.json; sourceTree = "<group>"; };
+		9FB3E4A123ABE211005E1095 /* translateData_polish.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = translateData_polish.json; sourceTree = "<group>"; };
+		9FB3E4A223ABE211005E1095 /* adviceData_polish.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = adviceData_polish.json; sourceTree = "<group>"; };
+		9FB3E4A323ABE211005E1095 /* difficultSituationsData_polish.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = difficultSituationsData_polish.json; sourceTree = "<group>"; };
+		9FB3E4A423ABE211005E1095 /* searchKeywords_polish.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = searchKeywords_polish.json; sourceTree = "<group>"; };
+		9FB3E4A523ABE211005E1095 /* consulatesData_polish.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = consulatesData_polish.json; sourceTree = "<group>"; };
+		9FB3E4A623ABE211005E1095 /* policeData_polish.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = policeData_polish.json; sourceTree = "<group>"; };
+		9FB3E4A823ABE211005E1095 /* phoneNumbersData_ukrainian.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = phoneNumbersData_ukrainian.json; sourceTree = "<group>"; };
+		9FB3E4A923ABE211005E1095 /* translateData_ukrainian.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = translateData_ukrainian.json; sourceTree = "<group>"; };
+		9FB3E4AA23ABE211005E1095 /* difficultSituationsData_ukrainian.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = difficultSituationsData_ukrainian.json; sourceTree = "<group>"; };
+		9FB3E4AB23ABE211005E1095 /* adviceData_ukrainian.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = adviceData_ukrainian.json; sourceTree = "<group>"; };
+		9FB3E4AC23ABE211005E1095 /* lawsData_ukrainian.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = lawsData_ukrainian.json; sourceTree = "<group>"; };
+		9FB3E4AD23ABE211005E1095 /* hospitalsData_ukrainian.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = hospitalsData_ukrainian.json; sourceTree = "<group>"; };
+		9FB3E4AE23ABE211005E1095 /* consulatesData_ukrainian.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = consulatesData_ukrainian.json; sourceTree = "<group>"; };
+		9FB3E4AF23ABE211005E1095 /* policeData_ukrainian.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = policeData_ukrainian.json; sourceTree = "<group>"; };
+		9FB3E4B023ABE211005E1095 /* searchKeywords_ukrainian.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = searchKeywords_ukrainian.json; sourceTree = "<group>"; };
+		9FB3E4B223ABE211005E1095 /* hospitalsData_german.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = hospitalsData_german.json; sourceTree = "<group>"; };
+		9FB3E4B323ABE211005E1095 /* translateData_german.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = translateData_german.json; sourceTree = "<group>"; };
+		9FB3E4B423ABE211005E1095 /* lawsData_german.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = lawsData_german.json; sourceTree = "<group>"; };
+		9FB3E4B523ABE211005E1095 /* phoneNumbersData_german.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = phoneNumbersData_german.json; sourceTree = "<group>"; };
+		9FB3E4B623ABE211005E1095 /* consulatesData_german.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = consulatesData_german.json; sourceTree = "<group>"; };
+		9FB3E4B723ABE211005E1095 /* searchKeywords_german.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = searchKeywords_german.json; sourceTree = "<group>"; };
+		9FB3E4B823ABE211005E1095 /* policeData_german.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = policeData_german.json; sourceTree = "<group>"; };
+		9FB3E4B923ABE211005E1095 /* adviceData_german.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = adviceData_german.json; sourceTree = "<group>"; };
+		9FB3E4BA23ABE211005E1095 /* difficultSituationsData_german.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = difficultSituationsData_german.json; sourceTree = "<group>"; };
+		9FB3E4BC23ABE211005E1095 /* policeData_spanish.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = policeData_spanish.json; sourceTree = "<group>"; };
+		9FB3E4BD23ABE211005E1095 /* adviceData_spanish.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = adviceData_spanish.json; sourceTree = "<group>"; };
+		9FB3E4BE23ABE211005E1095 /* consulatesData_spanish.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = consulatesData_spanish.json; sourceTree = "<group>"; };
+		9FB3E4BF23ABE211005E1095 /* searchKeywords_spanish.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = searchKeywords_spanish.json; sourceTree = "<group>"; };
+		9FB3E4C023ABE211005E1095 /* translateData_spanish.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = translateData_spanish.json; sourceTree = "<group>"; };
+		9FB3E4C123ABE211005E1095 /* phoneNumbersData_spanish.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = phoneNumbersData_spanish.json; sourceTree = "<group>"; };
+		9FB3E4C223ABE211005E1095 /* difficultSituationsData_spanish.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = difficultSituationsData_spanish.json; sourceTree = "<group>"; };
+		9FB3E4C323ABE211005E1095 /* lawsData_spanish.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = lawsData_spanish.json; sourceTree = "<group>"; };
+		9FB3E4C423ABE211005E1095 /* hospitalsData_spanish.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = hospitalsData_spanish.json; sourceTree = "<group>"; };
+		9FB3E4F323ABE2C4005E1095 /* policeData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = policeData.json; sourceTree = "<group>"; };
+		9FB3E4F423ABE2C4005E1095 /* hospitalsData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = hospitalsData.json; sourceTree = "<group>"; };
+		9FB3E4F523ABE2C4005E1095 /* searchKeywords.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = searchKeywords.json; sourceTree = "<group>"; };
+		9FB3E4F623ABE2C4005E1095 /* translateData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = translateData.json; sourceTree = "<group>"; };
+		9FB3E4F723ABE2C4005E1095 /* consulatesData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = consulatesData.json; sourceTree = "<group>"; };
+		9FB3E4F823ABE2C4005E1095 /* difficultSituationsData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = difficultSituationsData.json; sourceTree = "<group>"; };
+		9FB3E4F923ABE2C4005E1095 /* adviceData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = adviceData.json; sourceTree = "<group>"; };
+		9FB3E4FA23ABE2C4005E1095 /* phoneNumbersData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = phoneNumbersData.json; sourceTree = "<group>"; };
+		9FB3E4FB23ABE2C4005E1095 /* lawsData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = lawsData.json; sourceTree = "<group>"; };
 		A151BB17237F1E89007CEEC1 /* AdviceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdviceView.swift; sourceTree = "<group>"; };
 		A151BB1B237F2A7A007CEEC1 /* TranslateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslateView.swift; sourceTree = "<group>"; };
 		A151BB1D237F2A8F007CEEC1 /* PhoneNumbersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNumbersView.swift; sourceTree = "<group>"; };
@@ -146,21 +247,16 @@
 		BEEFCFFC5EDA393F1CA178AF /* Pods-EmergencyUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EmergencyUITests.release.xcconfig"; path = "Target Support Files/Pods-EmergencyUITests/Pods-EmergencyUITests.release.xcconfig"; sourceTree = "<group>"; };
 		C4C29EC31A572AC3686977D1 /* Pods-Emergency.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Emergency.release.xcconfig"; path = "Target Support Files/Pods-Emergency/Pods-Emergency.release.xcconfig"; sourceTree = "<group>"; };
 		E82DE11C23999E57009F0F37 /* MailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailView.swift; sourceTree = "<group>"; };
-		E83E445E23A3D31F003AB246 /* searchKeywords.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = searchKeywords.json; sourceTree = "<group>"; };
 		E83E446023A3E62F003AB246 /* SearchKeywords.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchKeywords.swift; sourceTree = "<group>"; };
 		E83E446223A3F29B003AB246 /* Page.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page.swift; sourceTree = "<group>"; };
 		E83E446423A3FDB4003AB246 /* SearchResultsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultsView.swift; sourceTree = "<group>"; };
 		E8590BB82398469B00C37EE8 /* CustomTextFieldStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextFieldStyle.swift; sourceTree = "<group>"; };
 		E8AD7F42239BEA87005150A7 /* DifficultSituationsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DifficultSituationsCell.swift; sourceTree = "<group>"; };
 		E8AD7F44239BEAA0005150A7 /* DifficultSituationsDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DifficultSituationsDetailView.swift; sourceTree = "<group>"; };
-		E8AD7F46239BEEEA005150A7 /* difficultSituationsData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = difficultSituationsData.json; sourceTree = "<group>"; };
 		E8AD7F48239BF04E005150A7 /* DifficultSituations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DifficultSituations.swift; sourceTree = "<group>"; };
-		E8AD7F51239C4A48005150A7 /* adviceData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = adviceData.json; sourceTree = "<group>"; };
 		E8AD7F53239C4AB8005150A7 /* Advice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Advice.swift; sourceTree = "<group>"; };
-		E8DFAD67239D285B00D4CD74 /* phoneNumbersData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = phoneNumbersData.json; sourceTree = "<group>"; };
 		E8DFAD69239D2A1E00D4CD74 /* PhoneNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNumber.swift; sourceTree = "<group>"; };
 		E8DFAD6B239D2C5D00D4CD74 /* PhoneNumbersCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNumbersCell.swift; sourceTree = "<group>"; };
-		E8DFAD6F239D461400D4CD74 /* translateData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = translateData.json; sourceTree = "<group>"; };
 		E8DFAD71239D467400D4CD74 /* Translate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Translate.swift; sourceTree = "<group>"; };
 		E8DFAD73239D48B400D4CD74 /* TranslateCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslateCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -240,6 +336,7 @@
 				E8DFAD71239D467400D4CD74 /* Translate.swift */,
 				E83E446023A3E62F003AB246 /* SearchKeywords.swift */,
 				E83E446223A3F29B003AB246 /* Page.swift */,
+				9FB3E43323AB7FB9005E1095 /* UserSettings.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -281,6 +378,15 @@
 				9F8F031323AA7A79004FB4A0 /* ChangeLanguageCell.swift */,
 			);
 			path = ChangeLanguage;
+			sourceTree = "<group>";
+		};
+		9F8F037B23AAA986004FB4A0 /* DrawerMenu */ = {
+			isa = PBXGroup;
+			children = (
+				9F8F037C23AAA9A0004FB4A0 /* DrawerContent.swift */,
+				9F8F037E23AAA9BB004FB4A0 /* NavigationDrawer.swift */,
+			);
+			path = DrawerMenu;
 			sourceTree = "<group>";
 		};
 		9FAACF782379B65600C3CF94 = {
@@ -350,6 +456,102 @@
 			path = EmergencyUITests;
 			sourceTree = "<group>";
 		};
+		9FB3E49323ABE211005E1095 /* english */ = {
+			isa = PBXGroup;
+			children = (
+				9FB3E49423ABE211005E1095 /* adviceData_english.json */,
+				9FB3E49523ABE211005E1095 /* policeData_english.json */,
+				9FB3E49623ABE211005E1095 /* searchKeywords_english.json */,
+				9FB3E49723ABE211005E1095 /* translateData_english.json */,
+				9FB3E49823ABE211005E1095 /* consulatesData_english.json */,
+				9FB3E49923ABE211005E1095 /* difficultSituationsData_english.json */,
+				9FB3E49A23ABE211005E1095 /* phoneNumbersData_english.json */,
+				9FB3E49B23ABE211005E1095 /* hospitalsData_english.json */,
+				9FB3E49C23ABE211005E1095 /* lawsData_english.json */,
+			);
+			path = english;
+			sourceTree = "<group>";
+		};
+		9FB3E49D23ABE211005E1095 /* polish */ = {
+			isa = PBXGroup;
+			children = (
+				9FB3E49E23ABE211005E1095 /* lawsData_polish.json */,
+				9FB3E49F23ABE211005E1095 /* phoneNumbersData_polish.json */,
+				9FB3E4A023ABE211005E1095 /* hospitalsData_polish.json */,
+				9FB3E4A123ABE211005E1095 /* translateData_polish.json */,
+				9FB3E4A223ABE211005E1095 /* adviceData_polish.json */,
+				9FB3E4A323ABE211005E1095 /* difficultSituationsData_polish.json */,
+				9FB3E4A423ABE211005E1095 /* searchKeywords_polish.json */,
+				9FB3E4A523ABE211005E1095 /* consulatesData_polish.json */,
+				9FB3E4A623ABE211005E1095 /* policeData_polish.json */,
+			);
+			path = polish;
+			sourceTree = "<group>";
+		};
+		9FB3E4A723ABE211005E1095 /* ukrainian */ = {
+			isa = PBXGroup;
+			children = (
+				9FB3E4A823ABE211005E1095 /* phoneNumbersData_ukrainian.json */,
+				9FB3E4A923ABE211005E1095 /* translateData_ukrainian.json */,
+				9FB3E4AA23ABE211005E1095 /* difficultSituationsData_ukrainian.json */,
+				9FB3E4AB23ABE211005E1095 /* adviceData_ukrainian.json */,
+				9FB3E4AC23ABE211005E1095 /* lawsData_ukrainian.json */,
+				9FB3E4AD23ABE211005E1095 /* hospitalsData_ukrainian.json */,
+				9FB3E4AE23ABE211005E1095 /* consulatesData_ukrainian.json */,
+				9FB3E4AF23ABE211005E1095 /* policeData_ukrainian.json */,
+				9FB3E4B023ABE211005E1095 /* searchKeywords_ukrainian.json */,
+			);
+			path = ukrainian;
+			sourceTree = "<group>";
+		};
+		9FB3E4B123ABE211005E1095 /* german */ = {
+			isa = PBXGroup;
+			children = (
+				9FB3E4B223ABE211005E1095 /* hospitalsData_german.json */,
+				9FB3E4B323ABE211005E1095 /* translateData_german.json */,
+				9FB3E4B423ABE211005E1095 /* lawsData_german.json */,
+				9FB3E4B523ABE211005E1095 /* phoneNumbersData_german.json */,
+				9FB3E4B623ABE211005E1095 /* consulatesData_german.json */,
+				9FB3E4B723ABE211005E1095 /* searchKeywords_german.json */,
+				9FB3E4B823ABE211005E1095 /* policeData_german.json */,
+				9FB3E4B923ABE211005E1095 /* adviceData_german.json */,
+				9FB3E4BA23ABE211005E1095 /* difficultSituationsData_german.json */,
+			);
+			path = german;
+			sourceTree = "<group>";
+		};
+		9FB3E4BB23ABE211005E1095 /* spanish */ = {
+			isa = PBXGroup;
+			children = (
+				9FB3E4BC23ABE211005E1095 /* policeData_spanish.json */,
+				9FB3E4BD23ABE211005E1095 /* adviceData_spanish.json */,
+				9FB3E4BE23ABE211005E1095 /* consulatesData_spanish.json */,
+				9FB3E4BF23ABE211005E1095 /* searchKeywords_spanish.json */,
+				9FB3E4C023ABE211005E1095 /* translateData_spanish.json */,
+				9FB3E4C123ABE211005E1095 /* phoneNumbersData_spanish.json */,
+				9FB3E4C223ABE211005E1095 /* difficultSituationsData_spanish.json */,
+				9FB3E4C323ABE211005E1095 /* lawsData_spanish.json */,
+				9FB3E4C423ABE211005E1095 /* hospitalsData_spanish.json */,
+			);
+			path = spanish;
+			sourceTree = "<group>";
+		};
+		9FB3E4F223ABE2C4005E1095 /* previewData */ = {
+			isa = PBXGroup;
+			children = (
+				9FB3E4F323ABE2C4005E1095 /* policeData.json */,
+				9FB3E4F423ABE2C4005E1095 /* hospitalsData.json */,
+				9FB3E4F523ABE2C4005E1095 /* searchKeywords.json */,
+				9FB3E4F623ABE2C4005E1095 /* translateData.json */,
+				9FB3E4F723ABE2C4005E1095 /* consulatesData.json */,
+				9FB3E4F823ABE2C4005E1095 /* difficultSituationsData.json */,
+				9FB3E4F923ABE2C4005E1095 /* adviceData.json */,
+				9FB3E4FA23ABE2C4005E1095 /* phoneNumbersData.json */,
+				9FB3E4FB23ABE2C4005E1095 /* lawsData.json */,
+			);
+			path = previewData;
+			sourceTree = "<group>";
+		};
 		E8AD7F41239BE9B9005150A7 /* DifficultSituations */ = {
 			isa = PBXGroup;
 			children = (
@@ -363,15 +565,12 @@
 		E8AD7F4A239BF4F2005150A7 /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				9F7A4F26238DA150001C4B7A /* hospitalsData.json */,
-				9F7D3A742397CF7B0092ADD6 /* lawsData.json */,
-				9F169A91237F7132005A8618 /* policeData.json */,
-				9F7A4F2F238DA535001C4B7A /* consulatesData.json */,
-				E8AD7F46239BEEEA005150A7 /* difficultSituationsData.json */,
-				E8AD7F51239C4A48005150A7 /* adviceData.json */,
-				E8DFAD67239D285B00D4CD74 /* phoneNumbersData.json */,
-				E8DFAD6F239D461400D4CD74 /* translateData.json */,
-				E83E445E23A3D31F003AB246 /* searchKeywords.json */,
+				9FB3E4F223ABE2C4005E1095 /* previewData */,
+				9FB3E49323ABE211005E1095 /* english */,
+				9FB3E4B123ABE211005E1095 /* german */,
+				9FB3E49D23ABE211005E1095 /* polish */,
+				9FB3E4BB23ABE211005E1095 /* spanish */,
+				9FB3E4A723ABE211005E1095 /* ukrainian */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -379,6 +578,7 @@
 		E8AD7F4B239BF509005150A7 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				9F8F037B23AAA986004FB4A0 /* DrawerMenu */,
 				9FAACF882379B65600C3CF94 /* ContentView.swift */,
 				E82DE11C23999E57009F0F37 /* MailView.swift */,
 				E83E446423A3FDB4003AB246 /* SearchResultsView.swift */,
@@ -460,7 +660,6 @@
 				9FAACF7D2379B65600C3CF94 /* Sources */,
 				9FAACF7E2379B65600C3CF94 /* Frameworks */,
 				9FAACF7F2379B65600C3CF94 /* Resources */,
-				5BBFADA91EF1F93E6E649171 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -557,19 +756,64 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9F169A92237F7132005A8618 /* policeData.json in Resources */,
-				9F7A4F30238DA535001C4B7A /* consulatesData.json in Resources */,
-				9F7D3A752397CF7B0092ADD6 /* lawsData.json in Resources */,
-				9F7A4F27238DA150001C4B7A /* hospitalsData.json in Resources */,
-				E8DFAD68239D285B00D4CD74 /* phoneNumbersData.json in Resources */,
-				E8AD7F47239BEEEA005150A7 /* difficultSituationsData.json in Resources */,
+				9FB3E4D723ABE211005E1095 /* phoneNumbersData_ukrainian.json in Resources */,
+				9FB3E4D523ABE211005E1095 /* consulatesData_polish.json in Resources */,
+				9FB3E4DE23ABE211005E1095 /* policeData_ukrainian.json in Resources */,
+				9FB3E4F023ABE211005E1095 /* lawsData_spanish.json in Resources */,
+				9FB3E4E823ABE211005E1095 /* difficultSituationsData_german.json in Resources */,
+				9FB3E4DA23ABE211005E1095 /* adviceData_ukrainian.json in Resources */,
+				9FB3E4E923ABE211005E1095 /* policeData_spanish.json in Resources */,
+				9FB3E4E223ABE211005E1095 /* lawsData_german.json in Resources */,
+				9FB3E4E723ABE211005E1095 /* adviceData_german.json in Resources */,
+				9FB3E4D023ABE211005E1095 /* hospitalsData_polish.json in Resources */,
+				9FB3E4E323ABE211005E1095 /* phoneNumbersData_german.json in Resources */,
+				9FB3E4ED23ABE211005E1095 /* translateData_spanish.json in Resources */,
+				9FB3E4CC23ABE211005E1095 /* hospitalsData_english.json in Resources */,
+				9FB3E4EE23ABE211005E1095 /* phoneNumbersData_spanish.json in Resources */,
 				9FAACF912379B65900C3CF94 /* LaunchScreen.storyboard in Resources */,
+				9FB3E4FC23ABE2C4005E1095 /* policeData.json in Resources */,
+				9FB3E4DB23ABE211005E1095 /* lawsData_ukrainian.json in Resources */,
+				9FB3E4D623ABE211005E1095 /* policeData_polish.json in Resources */,
+				9FB3E4CD23ABE211005E1095 /* lawsData_english.json in Resources */,
+				9FB3E4EB23ABE211005E1095 /* consulatesData_spanish.json in Resources */,
+				9FB3E4CE23ABE211005E1095 /* lawsData_polish.json in Resources */,
+				9FB3E4E023ABE211005E1095 /* hospitalsData_german.json in Resources */,
 				9FAACF8E2379B65900C3CF94 /* Preview Assets.xcassets in Resources */,
+				9FB3E4D323ABE211005E1095 /* difficultSituationsData_polish.json in Resources */,
+				9FB3E4CF23ABE211005E1095 /* phoneNumbersData_polish.json in Resources */,
+				9FB3E50323ABE2C4005E1095 /* phoneNumbersData.json in Resources */,
+				9FB3E4FD23ABE2C4005E1095 /* hospitalsData.json in Resources */,
+				9FB3E4C623ABE211005E1095 /* policeData_english.json in Resources */,
+				9FB3E4C923ABE211005E1095 /* consulatesData_english.json in Resources */,
+				9FB3E4D423ABE211005E1095 /* searchKeywords_polish.json in Resources */,
+				9FB3E4EF23ABE211005E1095 /* difficultSituationsData_spanish.json in Resources */,
+				9FB3E4C823ABE211005E1095 /* translateData_english.json in Resources */,
+				9FB3E4C523ABE211005E1095 /* adviceData_english.json in Resources */,
+				9FB3E50023ABE2C4005E1095 /* consulatesData.json in Resources */,
+				9FB3E4CA23ABE211005E1095 /* difficultSituationsData_english.json in Resources */,
+				9FB3E4CB23ABE211005E1095 /* phoneNumbersData_english.json in Resources */,
+				9FB3E4DF23ABE211005E1095 /* searchKeywords_ukrainian.json in Resources */,
+				9FB3E4EA23ABE211005E1095 /* adviceData_spanish.json in Resources */,
+				9FB3E50423ABE2C4005E1095 /* lawsData.json in Resources */,
+				9FB3E50223ABE2C4005E1095 /* adviceData.json in Resources */,
 				9FAACF8B2379B65900C3CF94 /* Assets.xcassets in Resources */,
+				9FB3E4FE23ABE2C4005E1095 /* searchKeywords.json in Resources */,
+				9FB3E4E523ABE211005E1095 /* searchKeywords_german.json in Resources */,
+				9FB3E4E423ABE211005E1095 /* consulatesData_german.json in Resources */,
+				9FB3E50123ABE2C4005E1095 /* difficultSituationsData.json in Resources */,
+				9FB3E4FF23ABE2C4005E1095 /* translateData.json in Resources */,
+				9FB3E4D923ABE211005E1095 /* difficultSituationsData_ukrainian.json in Resources */,
+				9FB3E4DC23ABE211005E1095 /* hospitalsData_ukrainian.json in Resources */,
+				9FB3E4D223ABE211005E1095 /* adviceData_polish.json in Resources */,
+				9FB3E4C723ABE211005E1095 /* searchKeywords_english.json in Resources */,
+				9FB3E4D823ABE211005E1095 /* translateData_ukrainian.json in Resources */,
+				9FB3E4DD23ABE211005E1095 /* consulatesData_ukrainian.json in Resources */,
+				9FB3E4E123ABE211005E1095 /* translateData_german.json in Resources */,
+				9FB3E4D123ABE211005E1095 /* translateData_polish.json in Resources */,
+				9FB3E4F123ABE211005E1095 /* hospitalsData_spanish.json in Resources */,
 				9FAACFB52379B68E00C3CF94 /* GoogleService-Info.plist in Resources */,
-				E8DFAD70239D461400D4CD74 /* translateData.json in Resources */,
-				E83E445F23A3D31F003AB246 /* searchKeywords.json in Resources */,
-				E8AD7F52239C4A48005150A7 /* adviceData.json in Resources */,
+				9FB3E4EC23ABE211005E1095 /* searchKeywords_spanish.json in Resources */,
+				9FB3E4E623ABE211005E1095 /* policeData_german.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -634,23 +878,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		5BBFADA91EF1F93E6E649171 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Emergency/Pods-Emergency-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Emergency/Pods-Emergency-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Emergency/Pods-Emergency-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		DF08FAC3D90C360703E518BD /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -698,6 +925,7 @@
 				9FAACF852379B65600C3CF94 /* AppDelegate.swift in Sources */,
 				9F7A4F2A238DA348001C4B7A /* ConsulatesRow.swift in Sources */,
 				A151BB2A237F2AFE007CEEC1 /* PoliceRow.swift in Sources */,
+				9FB3E43423AB7FB9005E1095 /* UserSettings.swift in Sources */,
 				9F169A88237F6740005A8618 /* PoliceDetailView.swift in Sources */,
 				9F169A8A237F67F5005A8618 /* MapView.swift in Sources */,
 				E8590BB92398469B00C37EE8 /* CustomTextFieldStyle.swift in Sources */,
@@ -706,6 +934,7 @@
 				E8AD7F45239BEAA0005150A7 /* DifficultSituationsDetailView.swift in Sources */,
 				A151BB28237F2AF1007CEEC1 /* HospitalsView.swift in Sources */,
 				A151BB22237F2AB3007CEEC1 /* LawsView.swift in Sources */,
+				9F8F037F23AAA9BB004FB4A0 /* NavigationDrawer.swift in Sources */,
 				9F8F031123AA7865004FB4A0 /* ChangeLanguageView.swift in Sources */,
 				9F7A4F21238DA049001C4B7A /* HospitalsRow.swift in Sources */,
 				9F169A82237F428D005A8618 /* Police.swift in Sources */,
@@ -721,6 +950,7 @@
 				E8DFAD72239D467400D4CD74 /* Translate.swift in Sources */,
 				E83E446523A3FDB4003AB246 /* SearchResultsView.swift in Sources */,
 				A151BB20237F2AA1007CEEC1 /* HelpView.swift in Sources */,
+				9F8F037D23AAA9A0004FB4A0 /* DrawerContent.swift in Sources */,
 				E83E446123A3E62F003AB246 /* SearchKeywords.swift in Sources */,
 				9FAACF892379B65600C3CF94 /* ContentView.swift in Sources */,
 				9F7A4F23238DA05A001C4B7A /* HospitalsDetailView.swift in Sources */,
