@@ -9,30 +9,50 @@
 import SwiftUI
 
 struct SearchResultsView: View {
+    @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
+    
     var searchTerm: String
     var results: [Page]
     
     var body: some View {
         GeometryReader { geometry in
-            VStack {
+            VStack(alignment: HorizontalAlignment.leading) {
+                Button(action: {
+                    self.presentationMode.wrappedValue.dismiss()
+                }) {
+                    VStack {
+                        Image("magnifier")
+                            .renderingMode(.original)
+                        Image("left_arrow")
+                            .renderingMode(.original)
+                        
+                    }.padding(.leading, 15)
+                }
                 Text("Rezultaty dla '" + self.searchTerm + "':").font(.title)
                 if(self.results.count == 0) {
-                    ZStack {
-                        RoundedRectangle(cornerRadius: 10)
+                    ScrollView{
+                        ZStack {
+                            RoundedRectangle(cornerRadius: 10)
                             .stroke(Color(red: 219 / 255, green: 2 / 255, blue: 109 / 255), lineWidth: 10)
                             .background(Color(red: 219 / 255, green: 2 / 255, blue: 109 / 255))
-                        Text("No results were found")
-                    }.padding(15)
-                } else {
-                    ForEach(self.results) { result in
-                        NavigationLink(destination: getDestination(pageName: result.name, pageNumber: result.page)) {
-                            ZStack {
-                                RoundedRectangle(cornerRadius: 10)
-                                    .stroke(Color(red: 219 / 255, green: 2 / 255, blue: 109 / 255), lineWidth: 10)
-                                    .background(Color(red: 219 / 255, green: 2 / 255, blue: 109 / 255))
-                                Text(result.name)
-                            }
+                            Text("No results were found").padding(15)
                         }.padding(15)
+                    }
+                } else {
+                    ScrollView {
+                        ForEach(self.results) { result in
+                            NavigationLink(destination: getDestination(name: result.name, pageName: result.pageName, pageNumber: result.page)) {
+                                ZStack {
+                                    RoundedRectangle(cornerRadius: 10)
+                                        .stroke(Color(red: 219 / 255, green: 2 / 255, blue: 109 / 255), lineWidth: 10)
+                                        .background(Color(red: 219 / 255, green: 2 / 255, blue: 109 / 255))
+                                    Text(result.pageName).padding(15)
+//                                  if(result.page > 0) {
+//                                      Text("Page: " + result.page).padding(.bottom, 15)
+//                                  }
+                                }
+                            }.padding(15)
+                        }
                     }
                 }
             }
@@ -40,24 +60,27 @@ struct SearchResultsView: View {
                 .padding(15)
                 .padding(.top, 30)
         }
+            .navigationBarTitle("")
+            .navigationBarHidden(true)
+            .navigationBarBackButtonHidden(true)
             .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity)
             .background(Color(red: 19 / 255, green: 42 / 255, blue: 122 / 255))
             .edgesIgnoringSafeArea(.all)
     }
 }
 
-func getDestination(pageName: String, pageNumber: Int) -> AnyView {
-    var police = AnyView(PoliceView())
-    var advice = AnyView(AdviceView())
-    var phone = AnyView(PhoneNumbersView())
-    var translate = AnyView(TranslateView())
-    var consulates = AnyView(ConsulatesView())
-    var hospitals = AnyView(HospitalsView())
-    var difficultSituations = AnyView(DifficultSituationsView())
-    var law = AnyView(LawsView())
-    var home = AnyView(ContentView())
+func getDestination(name: String, pageName: String, pageNumber: Int) -> AnyView {
+    let police = AnyView(PoliceView())
+    let advice = AnyView(AdviceView())
+    let phone = AnyView(PhoneNumbersView())
+    let translate = AnyView(TranslateView())
+    let consulates = AnyView(ConsulatesView())
+    let hospitals = AnyView(HospitalsView())
+    let difficultSituations = AnyView(DifficultSituationsView())
+    let law = AnyView(LawsView())
+    let home = AnyView(ContentView())
     
-    switch pageName {
+    switch name {
         case "police": return police
         case "advice": return advice
         case "phoneNumbers": return phone
@@ -72,6 +95,6 @@ func getDestination(pageName: String, pageNumber: Int) -> AnyView {
 
 struct SearchResultsView_Previews: PreviewProvider {
     static var previews: some View {
-        SearchResultsView(searchTerm: "policja", results: [Page(id: 1, name: "name", page: 1), Page(id: 2, name: "name2", page: 1)])
+        SearchResultsView(searchTerm: "policja", results: [Page(id: 1, name: "name", page: 1, pageName: "Numery"), Page(id: 2, name: "name2", page: 1, pageName: "Pomoc")])
     }
 }

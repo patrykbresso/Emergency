@@ -8,15 +8,11 @@
 
 import Foundation
 
-struct SearchKeywords: Decodable {
-    var language: String
-    var views: [Views]
-}
-
-struct Views: Identifiable, Decodable {
+struct SearchKeywords: Identifiable, Decodable {
     var id: Int
     var name: String
     var page: Int
+    var title: String
     var keywords: [Keyword]
 }
 

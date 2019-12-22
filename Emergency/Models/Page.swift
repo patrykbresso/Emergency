@@ -12,4 +12,5 @@ struct Page: Decodable, Identifiable {
     var id: Int
     var name: String
     var page: Int
+    var pageName: String
 }

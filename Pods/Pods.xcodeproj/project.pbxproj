@@ -41,23 +41,23 @@
 		116C31D508C39AD5BAAEC24A89ACBF9E /* Pods-EmergencyTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-EmergencyTests-acknowledgements.plist"; sourceTree = "<group>"; };
 		128E61FD0E91FBCA0FDAC9F7F236F309 /* Pods-EmergencyUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-EmergencyUITests-umbrella.h"; sourceTree = "<group>"; };
 		15F9A67758FE287A36281E630B346F5D /* Pods-EmergencyUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-EmergencyUITests-Info.plist"; sourceTree = "<group>"; };
-		1A88A33D003E268575C5D4087CE005FB /* Pods_EmergencyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_EmergencyTests.framework; path = "Pods-EmergencyTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A88A33D003E268575C5D4087CE005FB /* Pods_EmergencyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EmergencyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2958129DED0CD06A3FA6F51F099C508C /* Pods-Emergency-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Emergency-acknowledgements.markdown"; sourceTree = "<group>"; };
 		31510DA172B9A3A86A080F42B048F3F4 /* Pods-EmergencyUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-EmergencyUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		488322FFBE321BA053B6DA0B83B6DAA8 /* Pods-EmergencyTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-EmergencyTests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		64B842B677EAAC3955FF6240A30A7ADB /* Pods-EmergencyUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-EmergencyUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		70AE93565828126A36B7B517802C2992 /* Pods_Emergency.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Emergency.framework; path = "Pods-Emergency.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		70AE93565828126A36B7B517802C2992 /* Pods_Emergency.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Emergency.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		743CACF595B368E76D9D9E714805B7EC /* Pods-EmergencyUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-EmergencyUITests.release.xcconfig"; sourceTree = "<group>"; };
 		77807FC846BFA519632697C37A13E85E /* Pods-EmergencyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-EmergencyTests.release.xcconfig"; sourceTree = "<group>"; };
 		78F7CC92B84DC63D52CD66A1F9909E03 /* Pods-EmergencyUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-EmergencyUITests-acknowledgements.plist"; sourceTree = "<group>"; };
 		7F44829601EA092105D52C5018677694 /* Pods-EmergencyUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-EmergencyUITests.modulemap"; sourceTree = "<group>"; };
-		896B2CD778E0D05F88D2E7D67C80C14A /* Pods_EmergencyUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_EmergencyUITests.framework; path = "Pods-EmergencyUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		896B2CD778E0D05F88D2E7D67C80C14A /* Pods_EmergencyUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EmergencyUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E1BF350BBC1BD7B4A4C1825A611C74A /* Pods-EmergencyUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-EmergencyUITests-dummy.m"; sourceTree = "<group>"; };
 		90BA5A58F8B8B61DDD5D3E88FDF4BBF0 /* Pods-Emergency.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Emergency.release.xcconfig"; sourceTree = "<group>"; };
 		914E955D32D7180AEABF9F66C25E9F54 /* Pods-EmergencyTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-EmergencyTests-umbrella.h"; sourceTree = "<group>"; };
 		94F61C5719484C83834ACEFF53446B63 /* Pods-Emergency.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Emergency.debug.xcconfig"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A407FFD760A51B12B76551DFF5940157 /* Pods-EmergencyTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-EmergencyTests-dummy.m"; sourceTree = "<group>"; };
 		A910CA51EA5E5147547719053169631F /* Pods-EmergencyTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-EmergencyTests-Info.plist"; sourceTree = "<group>"; };
 		AE4F24995576CE22C5EE839393085231 /* Pods-Emergency-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Emergency-Info.plist"; sourceTree = "<group>"; };
@@ -290,6 +290,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
 			productRefGroup = BB5440B2E4FE6E5484E1C729E239A697 /* Products */;
