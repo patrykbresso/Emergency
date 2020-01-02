@@ -53,9 +53,6 @@ struct SearchResultsView: View {
                                                 .font(.body).padding(.bottom, 15)
                                         }
                                     }
-//                                  if(result.page > 0) {
-//                                      Text("Page: " + result.page).padding(.bottom, 15)
-//                                  }
                                 }
                             }.padding(15)
                         }

@@ -1,1 +1,551 @@
-[]
+[
+    {
+        "id": 1,
+        "name": "translate",
+        "page": 0,
+        "title": "Frases útiles",
+        "subtitle": "",
+        "keywords": [
+            {
+                "keyword": "ayuda"
+            },
+            {
+                "keyword": "médico"
+            },
+            {
+                "keyword": "hospital"
+            },
+            {
+                "keyword": "policía"
+            },
+            {
+                "keyword": "robo"
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "name": "phoneNumbers",
+        "page": 0,
+        "title": "Numeros telefonicos",
+        "subtitle": "",
+        "keywords": [
+            {
+                "keyword": "teléfono"
+            },
+            {
+                "keyword": "ambulancia"
+            },
+            {
+                "keyword": "policía"
+            },
+            {
+                "keyword": "bomberos"
+            },
+            {
+                "keyword": "línea de ayuda"
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "name": "advice",
+        "page": 0,
+        "title": "Varios consejos",
+        "subtitle": "",
+        "keywords": [
+            {
+                "keyword": "cajero automático"
+            },
+            {
+                "keyword": "retiro"
+            },
+            {
+                "keyword": "efectivo"
+            },
+            {
+                "keyword": "ayuda"
+            },
+            {
+                "keyword": "tranvía"
+            },
+            {
+                "keyword": "autobús"
+            },
+            {
+                "keyword": "pasear"
+            },
+            {
+                "keyword": "por la noche"
+            },
+            {
+                "keyword": "habitación"
+            },
+            {
+                "keyword": "piso"
+            },
+            {
+                "keyword": "alquiler"
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "name": "laws",
+        "page": 1,
+        "title": "Regulaciones",
+        "subtitle": "¿Mis deberes y derechos como extranjero en Polonia?",
+        "keywords": [
+            {
+                "keyword": "regulaciones"
+            },
+            {
+                "keyword": "derechos"
+            },
+            {
+                "keyword": "obligaciones"
+            },
+            {
+                "keyword": "documento"
+            },
+            {
+                "keyword": "pasaporte"
+            },
+            {
+                "keyword": "carné de conducir"
+            },
+            {
+                "keyword": "identidad"
+            }
+        ]
+    },
+    {
+        "id": 5,
+        "name": "laws",
+        "page": 2,
+        "title": "Regulaciones",
+        "subtitle": "Alteración del orden público durante la noche",
+        "keywords": [
+            {
+                "keyword": "oras de silencio nocturanas"
+            },
+            {
+                "keyword": "ruido"
+            },
+            {
+                "keyword": "fiesta"
+            }
+        ]
+    },
+    {
+        "id": 6,
+        "name": "laws",
+        "page": 3,
+        "title": "Regulaciones",
+        "subtitle": "¿Se puede consumir alcohol en un lugar público?",
+        "keywords": [
+            {
+                "keyword": "alcohol"
+            },
+            {
+                "keyword": "consumo"
+            },
+            {
+                "keyword": "lugar"
+            }
+        ]
+    },
+    {
+        "id": 7,
+        "name": "laws",
+        "page": 4,
+        "title": "Regulaciones",
+        "subtitle": "¿Dónde no puedo fumar cigarrillos y cigarrillos electrónicos?",
+        "keywords": [
+            {
+                "keyword": "cigarrillo"
+            },
+            {
+                "keyword": "cigarrillo electrónico"
+            },
+            {
+                "keyword": "fumar"
+            },
+            {
+                "keyword": "lugar"
+            }
+        ]
+    },
+    {
+        "id": 8,
+        "name": "laws",
+        "page": 5,
+        "title": "Regulaciones",
+        "subtitle": "La posesión de drogas está prohibida en Polonia",
+        "keywords": [
+            {
+                "keyword": "drogas"
+            },
+            {
+                "keyword": "designada de drogas"
+            }
+        ]
+    },
+    {
+        "id": 9,
+        "name": "laws",
+        "page": 6,
+        "title": "Regulaciones",
+        "subtitle": "¿Por qué y cuándo puedo obtener una multa?",
+        "keywords": [
+            {
+                "keyword": "multa"
+            },
+            {
+                "keyword": "velocidad"
+            },
+            {
+                "keyword": "semáforos"
+            },
+            {
+                "keyword": "cinturones de seguridad"
+            },
+            {
+                "keyword": "alcohol"
+            },
+            {
+                "keyword": "perturbar la tranquilidad"
+            }
+        ]
+    },
+    {
+        "id": 10,
+        "name": "laws",
+        "page": 7,
+        "title": "Regulaciones",
+        "subtitle": "¿Puedo conducir después de beber alcohol?",
+        "keywords": [
+            {
+                "keyword": "alcohol"
+            },
+            {
+                "keyword": "coche"
+            },
+            {
+                "keyword": "conducir"
+            }
+        ]
+    },
+    {
+        "id": 11,
+        "name": "laws",
+        "page": 8,
+        "title": "Regulaciones",
+        "subtitle": "¿Qué es WrOPON?",
+        "keywords": [
+            {
+                "keyword": "intoxicación"
+            },
+            {
+                "keyword": "ayuda"
+            },
+            {
+                "keyword": "embriaguez"
+            },
+            {
+                "keyword": "alojamiento"
+            }
+        ]
+    },
+    {
+        "id": 12,
+        "name": "laws",
+        "page": 9,
+        "title": "Regulaciones",
+        "subtitle": "¿Qué es un crimen de odio?",
+        "keywords": [
+            {
+                "keyword": "odio"
+            },
+            {
+                "keyword": "inviolabilidad"
+            },
+            {
+                "keyword": "amenaza"
+            },
+            {
+                "keyword": "insultos"
+            }
+        ]
+    },
+    {
+        "id": 13,
+        "name": "laws",
+        "page": 10,
+        "title": "Regulaciones",
+        "subtitle": "¿Qué es una indecencia pública?",
+        "keywords": [
+            {
+                "keyword": "indecencia"
+            },
+            {
+                "keyword": "inmoralidad"
+            },
+            {
+                "keyword": "broma"
+            },
+            {
+                "keyword": "comportamiento"
+            }
+        ]
+    },
+    {
+        "id": 14,
+        "name": "difficultSituations",
+        "page": 1,
+        "title": "Situaciones difíciles",
+        "subtitle": "He perdido documentos",
+        "keywords": [
+            {
+                "keyword": "documento"
+            },
+            {
+                "keyword": "pérdida"
+            },
+            {
+                "keyword": "robo"
+            },
+            {
+                "keyword": "pasaporte"
+            },
+            {
+                "keyword": "carné de conducir"
+            },
+            {
+                "keyword": "notificación a la policía"
+            }
+        ]
+    },
+    {
+        "id": 15,
+        "name": "difficultSituations",
+        "page": 2,
+        "title": "Situaciones difíciles",
+        "subtitle": "Robo",
+        "keywords": [
+            {
+                "keyword": "robo"
+            },
+            {
+                "keyword": "lugar"
+            },
+            {
+                "keyword": "comisaría de policía"
+            },
+            {
+                "keyword": "objetos"
+            },
+            {
+                "keyword": "descripción"
+            }
+        ]
+    },
+    {
+        "id": 16,
+        "name": "difficultSituations",
+        "page": 3,
+        "title": "Situaciones difíciles",
+        "subtitle": "Crimen de odio",
+        "keywords": [
+            {
+                "keyword": "odio"
+            },
+            {
+                "keyword": "racismo"
+            },
+            {
+                "keyword": "xenofobia"
+            },
+            {
+                "keyword": "Internet"
+            },
+            {
+                "keyword": "policía"
+            },
+            {
+                "keyword": "fiscal"
+            }
+        ]
+    },
+    {
+        "id": 17,
+        "name": "difficultSituations",
+        "page": 4,
+        "title": "Situaciones difíciles",
+        "subtitle": "Crimen sexual",
+        "keywords": [
+            {
+                "keyword": "violación"
+            },
+            {
+                "keyword": "sexo"
+            },
+            {
+                "keyword": "drogas"
+            },
+            {
+                "keyword": "alcohol"
+            }
+        ]
+    },
+    {
+        "id": 18,
+        "name": "difficultSituations",
+        "page": 5,
+        "title": "Situaciones difíciles",
+        "subtitle": "Otros crímenes",
+        "keywords": [
+            {
+                "keyword": "crimen"
+            },
+            {
+                "keyword": "vida"
+            },
+            {
+                "keyword": "salud"
+            },
+            {
+                "keyword": "seguridad"
+            },
+            {
+                "keyword": "propiedad"
+            },
+            {
+                "keyword": "orden"
+            },
+            {
+                "keyword": "libertad"
+            }
+        ]
+    },
+    {
+        "id": 19,
+        "name": "difficultSituations",
+        "page": 6,
+        "title": "Situaciones difíciles",
+        "subtitle": "Identificación por la policía",
+        "keywords": [
+            {
+                "keyword": "identificación"
+            },
+            {
+                "keyword": "policía"
+            },
+            {
+                "keyword": "documento de identidad"
+            }
+        ]
+    },
+    {
+        "id": 20,
+        "name": "difficultSituations",
+        "page": 7,
+        "title": "Situaciones difíciles",
+        "subtitle": "Detención por la policía",
+        "keywords": [
+            {
+                "keyword": "policía"
+            },
+            {
+                "keyword": "detención"
+            },
+            {
+                "keyword": "abogado"
+            },
+            {
+                "keyword": "asesor legal"
+            }
+        ]
+    },
+    {
+        "id": 21,
+        "name": "difficultSituations",
+        "page": 8,
+        "title": "Situaciones difíciles",
+        "subtitle": "Informar sobre un incidente a la policía",
+        "keywords": [
+            {
+                "keyword": "policía"
+            },
+            {
+                "keyword": "notificación"
+            },
+            {
+                "keyword": "incidente"
+            },
+            {
+                "keyword": "apoyo"
+            },
+            {
+                "keyword": "psicólogo"
+            },
+            {
+                "keyword": "abogado"
+            }
+        ]
+    },
+    {
+        "id": 22,
+        "name": "police",
+        "page": 0,
+        "title": "Comisarías de policia",
+        "subtitle": "",
+        "keywords": [
+            {
+                "keyword": "policía"
+            },
+            {
+                "keyword": "comisaría"
+            },
+            {
+                "keyword": "comisariado"
+            }
+        ]
+    },
+    {
+        "id": 23,
+        "name": "hospitals",
+        "page": 0,
+        "title": "Urgencias",
+        "subtitle": "",
+        "keywords": [
+            {
+                "keyword": "ayuda"
+            },
+            {
+                "keyword": "hospital"
+            },
+            {
+                "keyword": "enfermedad"
+            },
+            {
+                "keyword": "salud"
+            }
+        ]
+    },
+    {
+        "id": 24,
+        "name": "consulates",
+        "page": 0,
+        "title": "Consulados",
+        "subtitle": "",
+        "keywords": [
+            {
+                "keyword": "Consulados"
+            },
+            {
+                "keyword": "Wrocław"
+            }
+        ]
+    }
+]

@@ -1,1 +1,590 @@
-[]
+[
+    {
+        "id": 1,
+        "name": "translate",
+        "page": 0,
+        "title": "Übersetzungen",
+        "subtitle": "",
+        "keywords": [
+            {
+                "keyword": "Hilfe"
+            },
+            {
+                "keyword": "Arzt"
+            },
+            {
+                "keyword": "Krankenhaus"
+            },
+            {
+                "keyword": "Polizei"
+            },
+            {
+                "keyword": "Diebstahl"
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "name": "phoneNumbers",
+        "page": 0,
+        "title": "Telefonnummern",
+        "subtitle": "",
+        "keywords": [
+            {
+                "keyword": "Telefon"
+            },
+            {
+                "keyword": "Rettungsdienst"
+            },
+            {
+                "keyword": "Polizei"
+            },
+            {
+                "keyword": "Feuerwehr"
+            },
+            {
+                "keyword": "Infolinie"
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "name": "advice",
+        "page": 0,
+        "title": "Verschiedene Ratschläge",
+        "subtitle": "",
+        "keywords": [
+            {
+                "keyword": "Geldautomat"
+            },
+            {
+                "keyword": "Auszahlung"
+            },
+            {
+                "keyword": "Bargeld"
+            },
+            {
+                "keyword": "Hilfe"
+            },
+            {
+                "keyword": "Straßenbahn"
+            },
+            {
+                "keyword": "Bus"
+            },
+            {
+                "keyword": "öffentliche Verkehrsmittel"
+            },
+            {
+                "keyword": "Abend"
+            },
+            {
+                "keyword": "Spaziergang"
+            },
+            {
+                "keyword": "Wohnzimmer"
+            },
+            {
+                "keyword": "Wohnung"
+            },
+            {
+                "keyword": "Wohnungsmiete"
+            },
+            {
+                "keyword": "Wohnzimmermiete"
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "name": "laws",
+        "page": 1,
+        "title": "Rechtsvorschriften",
+        "subtitle": "Meine Pflichten und Rechte als Ausländer in Polen",
+        "keywords": [
+            {
+                "keyword": "Rechtsvorschriften"
+            },
+            {
+                "keyword": "Rechte"
+            },
+            {
+                "keyword": "Pflichten"
+            },
+            {
+                "keyword": "Personalausweis"
+            },
+            {
+                "keyword": "Reisepass"
+            },
+            {
+                "keyword": "Führerschein"
+            },
+            {
+                "keyword": "Identität"
+            }
+        ]
+    },
+    {
+        "id": 5,
+        "name": "laws",
+        "page": 2,
+        "title": "Rechtsvorschriften",
+        "subtitle": "Ruhestörung und Nachtruhestörung",
+        "keywords": [
+            {
+                "keyword": "Nachtruhe"
+            },
+            {
+                "keyword": "Lärm"
+            },
+            {
+                "keyword": "Veranstaltung"
+            },
+            {
+                "keyword": "Fette"
+            }
+        ]
+    },
+    {
+        "id": 6,
+        "name": "laws",
+        "page": 3,
+        "title": "Rechtsvorschriften",
+        "subtitle": "Ist der Konsum vom Alkohol in der Öffentlichkeit erlaubt?",
+        "keywords": [
+            {
+                "keyword": "Alkohol"
+            },
+            {
+                "keyword": "Alkoholkonsum"
+            },
+            {
+                "keyword": "Ort des Alkoholkonsums"
+            }
+        ]
+    },
+    {
+        "id": 7,
+        "name": "laws",
+        "page": 4,
+        "title": "Rechtsvorschriften",
+        "subtitle": "Dürfen weder elektronische noch gewöhnliche Zigaretten geraucht werden?",
+        "keywords": [
+            {
+                "keyword": "Zigarette"
+            },
+            {
+                "keyword": "e-Zigarette"
+            },
+            {
+                "keyword": "Rauchen"
+            },
+            {
+                "keyword": "Ort des Rauchens"
+            }
+        ]
+    },
+    {
+        "id": 8,
+        "name": "laws",
+        "page": 5,
+        "title": "Rechtsvorschriften",
+        "subtitle": "Der Drogenbesitzist in Polen verboten.",
+        "keywords": [
+            {
+                "keyword": "Drogen"
+            },
+            {
+                "keyword": "Designerdrogen"
+            },
+            {
+                "keyword": "Rauschmittel"
+            },
+            {
+                "keyword": "Besitz"
+            },
+            {
+                "keyword": "Gebrauch"
+            }
+        ]
+    },
+    {
+        "id": 9,
+        "name": "laws",
+        "page": 6,
+        "title": "Rechtsvorschriften",
+        "subtitle": "Wofür und wann darf ich mit einem Strafzettel bestraft werden?",
+        "keywords": [
+            {
+                "keyword": "Strafzettel"
+            },
+            {
+                "keyword": "Geschwindigkeit"
+            },
+            {
+                "keyword": "Licht"
+            },
+            {
+                "keyword": "Beleuchtung"
+            },
+            {
+                "keyword": "Sicherheitsgürtel"
+            },
+            {
+                "keyword": "Alkohol"
+            },
+            {
+                "keyword": "Ruhestörung"
+            }
+        ]
+    },
+    {
+        "id": 10,
+        "name": "laws",
+        "page": 7,
+        "title": "Rechtsvorschriften",
+        "subtitle": "Darf ich nach Alkoholkonsum Auto fahren?",
+        "keywords": [
+            {
+                "keyword": "Alkohol"
+            },
+            {
+                "keyword": "Auto"
+            },
+            {
+                "keyword": "Fahrzeug"
+            },
+            {
+                "keyword": "Autoführung"
+            }
+        ]
+    },
+    {
+        "id": 11,
+        "name": "laws",
+        "page": 8,
+        "title": "Rechtsvorschriften",
+        "subtitle": "Was ist WrOPON?",
+        "keywords": [
+            {
+                "keyword": "Trunkenheit"
+            },
+            {
+                "keyword": "Hilfe"
+            },
+            {
+                "keyword": "Trunksucht"
+            },
+            {
+                "keyword": "Übernachtung"
+            }
+        ]
+    },
+    {
+        "id": 12,
+        "name": "laws",
+        "page": 9,
+        "title": "Rechtsvorschriften",
+        "subtitle": "Was ist ein Hassverbrechen?",
+        "keywords": [
+            {
+                "keyword": "Hass"
+            },
+            {
+                "keyword": "Unversehrtbarkeit"
+            },
+            {
+                "keyword": "Bedrohung"
+            },
+            {
+                "keyword": "Beleidigung"
+            }
+        ]
+    },
+    {
+        "id": 13,
+        "name": "laws",
+        "page": 10,
+        "title": "Rechtsvorschriften",
+        "subtitle": "Was ist eine unsittliche Ausschreitung?",
+        "keywords": [
+            {
+                "keyword": "Unanständigkeit"
+            },
+            {
+                "keyword": "Unsittlichkeit"
+            },
+            {
+                "keyword": "Ausschreitung"
+            },
+            {
+                "keyword": "Verhalten"
+            },
+            {
+                "keyword": "Benehmen"
+            }
+        ]
+    },
+    {
+        "id": 14,
+        "name": "difficultSituations",
+        "page": 1,
+        "title": "Schwierige Situationen",
+        "subtitle": "Ich habe meine Papiere verloren",
+        "keywords": [
+            {
+                "keyword": "Papiere"
+            },
+            {
+                "keyword": "Dokumentenverlust"
+            },
+            {
+                "keyword": "Diebstahl"
+            },
+            {
+                "keyword": "Reisepass"
+            },
+            {
+                "keyword": "Führerschein"
+            },
+            {
+                "keyword": "Anmeldung bei der Polizei"
+            }
+        ]
+    },
+    {
+        "id": 15,
+        "name": "difficultSituations",
+        "page": 2,
+        "title": "Schwierige Situationen",
+        "subtitle": "Diebstahl",
+        "keywords": [
+            {
+                "keyword": "Diebstahl"
+            },
+            {
+                "keyword": "Tatort"
+            },
+            {
+                "keyword": "Polizeirevier"
+            },
+            {
+                "keyword": "Polizeidienststelle"
+            },
+            {
+                "keyword": "Gegenstände"
+            },
+            {
+                "keyword": "Beschreibung"
+            }
+        ]
+    },
+    {
+        "id": 16,
+        "name": "difficultSituations",
+        "page": 3,
+        "title": "Schwierige Situationen",
+        "subtitle": "Hassverbrechen",
+        "keywords": [
+            {
+                "keyword": "Hass"
+            },
+            {
+                "keyword": "Rassismus"
+            },
+            {
+                "keyword": "Fremdenfeindlichkeit"
+            },
+            {
+                "keyword": "Internet"
+            },
+            {
+                "keyword": "Polizei"
+            },
+            {
+                "keyword": "Staatsanwalt"
+            }
+        ]
+    },
+    {
+        "id": 17,
+        "name": "difficultSituations",
+        "page": 4,
+        "title": "Schwierige Situationen",
+        "subtitle": "Sexualdelikt",
+        "keywords": [
+            {
+                "keyword": "Gewalt"
+            },
+            {
+                "keyword": "Sex"
+            },
+            {
+                "keyword": "Droge"
+            },
+            {
+                "keyword": "Alkohol"
+            }
+        ]
+    },
+    {
+        "id": 18,
+        "name": "difficultSituations",
+        "page": 5,
+        "title": "Schwierige Situationen",
+        "subtitle": "Andere Delikte",
+        "keywords": [
+            {
+                "keyword": "Straftat"
+            },
+            {
+                "keyword": "Leben"
+            },
+            {
+                "keyword": "Gesundheit"
+            },
+            {
+                "keyword": "Sicherheit"
+            },
+            {
+                "keyword": "Vermögen"
+            },
+            {
+                "keyword": "Ordnung"
+            },
+            {
+                "keyword": "Freiheit"
+            }
+        ]
+    },
+    {
+        "id": 19,
+        "name": "difficultSituations",
+        "page": 6,
+        "title": "Schwierige Situationen",
+        "subtitle": "Ausweispflicht",
+        "keywords": [
+            {
+                "keyword": "Ausweisen"
+            },
+            {
+                "keyword": "Polizei"
+            },
+            {
+                "keyword": "Personalausweis"
+            }
+        ]
+    },
+    {
+        "id": 20,
+        "name": "difficultSituations",
+        "page": 7,
+        "title": "Schwierige Situationen",
+        "subtitle": "Polizeiliche Festnahme",
+        "keywords": [
+            {
+                "keyword": "Polizei"
+            },
+            {
+                "keyword": "Festnahme"
+            },
+            {
+                "keyword": "Rechtsanwalt"
+            },
+            {
+                "keyword": "Rechtsberater"
+            }
+        ]
+    },
+    {
+        "id": 21,
+        "name": "difficultSituations",
+        "page": 8,
+        "title": "Schwierige Situationen",
+        "subtitle": "Anmeldung des Vorfalls bei der Polizei",
+        "keywords": [
+            {
+                "keyword": "Polizei"
+            },
+            {
+                "keyword": "Benachrichtigung"
+            },
+            {
+                "keyword": "Mitteilung"
+            },
+            {
+                "keyword": "Ereignis"
+            },
+            {
+                "keyword": "Vorfall"
+            },
+            {
+                "keyword": "Unterstützung"
+            },
+            {
+                "keyword": "Psychologe"
+            },
+            {
+                "keyword": "Rechtsanwalt"
+            }
+        ]
+    },
+    {
+        "id": 22,
+        "name": "police",
+        "page": 0,
+        "title": "Polizeidienststellen",
+        "subtitle": "",
+        "keywords": [
+            {
+                "keyword": "Polizei"
+            },
+            {
+                "keyword": "Polizeirevier"
+            },
+            {
+                "keyword": "Polizeidienststelle"
+            },
+            {
+                "keyword": "Polizeipräsidium"
+            }
+        ]
+    },
+    {
+        "id": 23,
+        "name": "hospitals",
+        "page": 0,
+        "title": "Krankenhaus-Notaufnahmen",
+        "subtitle": "",
+        "keywords": [
+            {
+                "keyword": "Hilfe"
+            },
+            {
+                "keyword": "Krankenhaus"
+            },
+            {
+                "keyword": "Krankheit"
+            },
+            {
+                "keyword": "Gesundheit"
+            }
+        ]
+    },
+    {
+        "id": 24,
+        "name": "consulates",
+        "page": 0,
+        "title": "Konsulate",
+        "subtitle": "",
+        "keywords": [
+            {
+                "keyword": "Konsulate"
+            },
+            {
+                "keyword": "Breslau"
+            }
+        ]
+    }
+]

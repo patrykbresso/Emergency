@@ -3,7 +3,7 @@
         "id": 1,
         "name": "translate",
         "page": 0,
-        "title": "",
+        "title": "Tłumaczenia",
         "subtitle": "",
         "keywords": [
             {
@@ -27,7 +27,7 @@
         "id": 2,
         "name": "phoneNumbers",
         "page": 0,
-        "title": "",
+        "title": "Numery Telefonów",
         "subtitle": "",
         "keywords": [
             {
@@ -51,7 +51,7 @@
         "id": 3,
         "name": "advice",
         "page": 0,
-        "title": "",
+        "title": "Porady Różne",
         "subtitle": "",
         "keywords": [
             {
@@ -93,8 +93,8 @@
         "id": 4,
         "name": "laws",
         "page": 1,
-        "title": "",
-        "subtitle": "",
+        "title": "Prawo",
+        "subtitle": "Moje obowiązki i prawa jako cudzoziemca w Polsce",
         "keywords": [
             {
                 "keyword": "przepisy"
@@ -123,8 +123,8 @@
         "id": 5,
         "name": "laws",
         "page": 2,
-        "title": "",
-        "subtitle": "",
+        "title": "Prawo",
+        "subtitle": "Zakłócanie spokoju i ciszy nocnej",
         "keywords": [
             {
                 "keyword": "cisza nocna"
@@ -141,8 +141,8 @@
         "id": 6,
         "name": "laws",
         "page": 3,
-        "title": "",
-        "subtitle": "",
+        "title": "Prawo",
+        "subtitle": "Czy można spożywać alkohol w miejscu publicznym?",
         "keywords": [
             {
                 "keyword": "alkohol"
@@ -159,8 +159,8 @@
         "id": 7,
         "name": "laws",
         "page": 4,
-        "title": "",
-        "subtitle": "",
+        "title": "Prawo",
+        "subtitle": "Gdzie nie można palić papierosów i e-papierosów?",
         "keywords": [
             {
                 "keyword": "papieros"
@@ -180,8 +180,8 @@
         "id": 8,
         "name": "laws",
         "page": 5,
-        "title": "",
-        "subtitle": "",
+        "title": "Prawo",
+        "subtitle": "Posiadanie narkotyków jest w Polsce zabronione",
         "keywords": [
             {
                 "keyword": "narkotyk"
@@ -204,8 +204,8 @@
         "id": 9,
         "name": "laws",
         "page": 6,
-        "title": "",
-        "subtitle": "",
+        "title": "Prawo",
+        "subtitle": "Za co i kiedy mogę dostać mandat?",
         "keywords": [
             {
                 "keyword": "mandat"
@@ -231,8 +231,8 @@
         "id": 10,
         "name": "laws",
         "page": 7,
-        "title": "",
-        "subtitle": "",
+        "title": "Prawo",
+        "subtitle": "Czy mogę prowadzić samochód po spożyciu alkoholu?",
         "keywords": [
             {
                 "keyword": "alkohol"
@@ -249,8 +249,8 @@
         "id": 11,
         "name": "laws",
         "page": 8,
-        "title": "",
-        "subtitle": "",
+        "title": "Prawo",
+        "subtitle": "Co to jest WrOPON?",
         "keywords": [
             {
                 "keyword": "nietrzeźwość"
@@ -270,8 +270,8 @@
         "id": 12,
         "name": "laws",
         "page": 9,
-        "title": "",
-        "subtitle": "",
+        "title": "Prawo",
+        "subtitle": "Co to jest przestępstwo z nienawiści?",
         "keywords": [
             {
                 "keyword": "nienawiść"
@@ -291,8 +291,8 @@
         "id": 13,
         "name": "laws",
         "page": 10,
-        "title": "",
-        "subtitle": "",
+        "title": "Prawo",
+        "subtitle": "Co to jest nieobyczajny wybryk?",
         "keywords": [
             {
                 "keyword": "nieprzyzwoitość"
@@ -312,8 +312,8 @@
         "id": 14,
         "name": "difficultSituations",
         "page": 1,
-        "title": "",
-        "subtitle": "",
+        "title": "Trudne Sytuacje",
+        "subtitle": "Straciłem dokumenty",
         "keywords": [
             {
                 "keyword": "dokument"
@@ -339,8 +339,8 @@
         "id": 15,
         "name": "difficultSituations",
         "page": 2,
-        "title": "",
-        "subtitle": "",
+        "title": "Trudne Sytuacje",
+        "subtitle": "Kradzież",
         "keywords": [
             {
                 "keyword": "kradzież"
@@ -363,8 +363,8 @@
         "id": 16,
         "name": "difficultSituations",
         "page": 3,
-        "title": "",
-        "subtitle": "",
+        "title": "Trudne Sytuacje",
+        "subtitle": "Przestępstwo z nienawiści",
         "keywords": [
             {
                 "keyword": "nienawiść"
@@ -390,8 +390,8 @@
         "id": 17,
         "name": "difficultSituations",
         "page": 4,
-        "title": "",
-        "subtitle": "",
+        "title": "Trudne Sytuacje",
+        "subtitle": "Przestępstwo na tle seksualnym",
         "keywords": [
             {
                 "keyword": "gwałt"
@@ -411,8 +411,8 @@
         "id": 18,
         "name": "difficultSituations",
         "page": 5,
-        "title": "",
-        "subtitle": "",
+        "title": "Trudne Sytuacje",
+        "subtitle": "Przestępstwa inne",
         "keywords": [
             {
                 "keyword": "przestępstwo"
@@ -441,8 +441,8 @@
         "id": 19,
         "name": "difficultSituations",
         "page": 6,
-        "title": "",
-        "subtitle": "",
+        "title": "Trudne Sytuacje",
+        "subtitle": "Legitymowanie przez Policję",
         "keywords": [
             {
                 "keyword": "legitymowanie"
@@ -459,8 +459,8 @@
         "id": 20,
         "name": "difficultSituations",
         "page": 7,
-        "title": "",
-        "subtitle": "",
+        "title": "Trudne Sytuacje",
+        "subtitle": "Zatrzymanie przez Policję",
         "keywords": [
             {
                 "keyword": "policja"
@@ -480,8 +480,8 @@
         "id": 21,
         "name": "difficultSituations",
         "page": 8,
-        "title": "",
-        "subtitle": "",
+        "title": "Trudne Sytuacje",
+        "subtitle": "Zgłoszenie zdarzenia na Policji",
         "keywords": [
             {
                 "keyword": "policja"
@@ -507,7 +507,7 @@
         "id": 22,
         "name": "police",
         "page": 0,
-        "title": "",
+        "title": "Komisariaty Policji",
         "subtitle": "",
         "keywords": [
             {
@@ -525,7 +525,7 @@
         "id": 23,
         "name": "hospitals",
         "page": 0,
-        "title": "",
+        "title": "Szpitale",
         "subtitle": "",
         "keywords": [
             {
@@ -546,7 +546,7 @@
         "id": 24,
         "name": "consulates",
         "page": 0,
-        "title": "",
+        "title": "Konulaty",
         "subtitle": "",
         "keywords": [
             {

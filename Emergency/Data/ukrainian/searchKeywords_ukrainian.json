@@ -1,1 +1,572 @@
-[]
+[
+    {
+        "id": 1,
+        "name": "translate",
+        "page": 0,
+        "title": "Переклади",
+        "subtitle": "",
+        "keywords": [
+            {
+                "keyword": "допомога"
+            },
+            {
+                "keyword": "лікар"
+            },
+            {
+                "keyword": "лікарня"
+            },
+            {
+                "keyword": "поліція"
+            },
+            {
+                "keyword": "крадіжка"
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "name": "phoneNumbers",
+        "page": 0,
+        "title": "Номери телефонів",
+        "subtitle": "",
+        "keywords": [
+            {
+                "keyword": "телефон"
+            },
+            {
+                "keyword": "пильний"
+            },
+            {
+                "keyword": "поліція"
+            },
+            {
+                "keyword": "пожежна команда"
+            },
+            {
+                "keyword": "телефон довіри"
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "name": "advice",
+        "page": 0,
+        "title": "Різні поради",
+        "subtitle": "",
+        "keywords": [
+            {
+                "keyword": "банкомат"
+            },
+            {
+                "keyword": "зняття"
+            },
+            {
+                "keyword": "готівка"
+            },
+            {
+                "keyword": "допомога"
+            },
+            {
+                "keyword": "трамвай"
+            },
+            {
+                "keyword": "автобус"
+            },
+            {
+                "keyword": "прогулянка"
+            },
+            {
+                "keyword": "вечір"
+            },
+            {
+                "keyword": "кімната"
+            },
+            {
+                "keyword": "квартира"
+            },
+            {
+                "keyword": "оренда"
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "name": "laws",
+        "page": 1,
+        "title": "Закон",
+        "subtitle": "Мої обов'язки та права як іноземця в Польщі",
+        "keywords": [
+            {
+                "keyword": "положення"
+            },
+            {
+                "keyword": "права"
+            },
+            {
+                "keyword": "обов'язки"
+            },
+            {
+                "keyword": "документ"
+            },
+            {
+                "keyword": "паспорт"
+            },
+            {
+                "keyword": "посвідчення водія"
+            },
+            {
+                "keyword": "посвідчення особи"
+            }
+        ]
+    },
+    {
+        "id": 5,
+        "name": "laws",
+        "page": 2,
+        "title": "Закон",
+        "subtitle": "Порушення спокою та тиші вночі",
+        "keywords": [
+            {
+                "keyword": "комендантська година"
+            },
+            {
+                "keyword": "шум"
+            },
+            {
+                "keyword": "вечірка"
+            }
+        ]
+    },
+    {
+        "id": 6,
+        "name": "laws",
+        "page": 3,
+        "title": "Закон",
+        "subtitle": "Чи можете ви споживати алкоголь у громадському місці?",
+        "keywords": [
+            {
+                "keyword": "алкоголь"
+            },
+            {
+                "keyword": "споживання"
+            },
+            {
+                "keyword": "місце"
+            }
+        ]
+    },
+    {
+        "id": 7,
+        "name": "laws",
+        "page": 4,
+        "title": "Закон",
+        "subtitle": "Де не можна курити сигарети і електронні цигарки?",
+        "keywords": [
+            {
+                "keyword": "сигаретa"
+            },
+            {
+                "keyword": "цигарка"
+            },
+            {
+                "keyword": "електронна цигарка"
+            },
+            {
+                "keyword": "куріння"
+            },
+            {
+                "keyword": "місце"
+            }
+        ]
+    },
+    {
+        "id": 8,
+        "name": "laws",
+        "page": 5,
+        "title": "Закон",
+        "subtitle": "У Польщі заборонено володіння наркотиками",
+        "keywords": [
+            {
+                "keyword": "наркотики"
+            },
+            {
+                "keyword": "післяпалювання"
+            },
+            {
+                "keyword": "наркотичні засоби"
+            },
+            {
+                "keyword": "володіння"
+            },
+            {
+                "keyword": "використання"
+            },
+        ]
+    },
+    {
+        "id": 9,
+        "name": "laws",
+        "page": 6,
+        "title": "Закон",
+        "subtitle": "За що і коли я можу отримати штраф?",
+        "keywords": [
+            {
+                "keyword": "квиток"
+            },
+            {
+                "keyword": "швидкість"
+            },
+            {
+                "keyword": "світло"
+            },
+            {
+                "keyword": "ремені безпеки"
+            },
+            {
+                "keyword": "алкоголь"
+            },
+            {
+                "keyword": "порушує спокій"
+            }
+        ]
+    },
+    {
+        "id": 10,
+        "name": "laws",
+        "page": 7,
+        "title": "Закон",
+        "subtitle": "Чи можу я керувати автомобілем після вживання алкоголю?",
+        "keywords": [
+            {
+                "keyword": "алкоголь"
+            },
+            {
+                "keyword": "автомобіль"
+            },
+            {
+                "keyword": "керування автомобілем"
+            }
+        ]
+    },
+    {
+        "id": 11,
+        "name": "laws",
+        "page": 8,
+        "title": "Закон",
+        "subtitle": "Що таке WrOPON?",
+        "keywords": [
+            {
+                "keyword": "сп’яніння"
+            },
+            {
+                "keyword": "допомога"
+            },
+            {
+                "keyword": "пияцтво"
+            },
+            {
+                "keyword": "проживання"
+            }
+        ]
+    },
+    {
+        "id": 12,
+        "name": "laws",
+        "page": 9,
+        "title": "Закон",
+        "subtitle": "Що таке злочин ненависті?",
+        "keywords": [
+            {
+                "keyword": "ненависть"
+            },
+            {
+                "keyword": "недоторканність"
+            },
+            {
+                "keyword": "загроза"
+            },
+            {
+                "keyword": "образи"
+            }
+        ]
+    },
+    {
+        "id": 13,
+        "name": "laws",
+        "page": 10,
+        "title": "Закон",
+        "subtitle": "Що таке непристойна витівка?",
+        "keywords": [
+            {
+                "keyword": "непристойність"
+            },
+            {
+                "keyword": "вульгарність"
+            },
+            {
+                "keyword": "витівка"
+            },
+            {
+                "keyword": "поведінка"
+            }
+        ]
+    },
+    {
+        "id": 14,
+        "name": "difficultSituations",
+        "page": 1,
+        "title": "Складні ситуації",
+        "subtitle": "Я втратив документи",
+        "keywords": [
+            {
+                "keyword": "документ"
+            },
+            {
+                "keyword": "втрата"
+            },
+            {
+                "keyword": "крадіжка"
+            },
+            {
+                "keyword": "паспорт"
+            },
+            {
+                "keyword": "посвідчення водія"
+            },
+            {
+                "keyword": "повідомлення поліції"
+            }
+        ]
+    },
+    {
+        "id": 15,
+        "name": "difficultSituations",
+        "page": 2,
+        "title": "Складні ситуації",
+        "subtitle": "Крадіжка",
+        "keywords": [
+            {
+                "keyword": "крадіжка"
+            },
+            {
+                "keyword": "місце"
+            },
+            {
+                "keyword": "поліція"
+            },
+            {
+                "keyword": "предмети"
+            },
+            {
+                "keyword": "опис"
+            }
+        ]
+    },
+    {
+        "id": 16,
+        "name": "difficultSituations",
+        "page": 3,
+        "title": "Складні ситуації",
+        "subtitle": "Злочин ненависті",
+        "keywords": [
+            {
+                "keyword": "ненависть"
+            },
+            {
+                "keyword": "расизм"
+            },
+            {
+                "keyword": "ксенофобія"
+            },
+            {
+                "keyword": "Інтернет"
+            },
+            {
+                "keyword": "поліція"
+            },
+            {
+                "keyword": "прокурор"
+            }
+        ]
+    },
+    {
+        "id": 17,
+        "name": "difficultSituations",
+        "page": 4,
+        "title": "Складні ситуації",
+        "subtitle": "Сексуальний злочин",
+        "keywords": [
+            {
+                "keyword": "зґвалтування"
+            },
+            {
+                "keyword": "секс"
+            },
+            {
+                "keyword": "наркотики"
+            },
+            {
+                "keyword": "алкоголь"
+            }
+        ]
+    },
+    {
+        "id": 18,
+        "name": "difficultSituations",
+        "page": 5,
+        "title": "Складні ситуації",
+        "subtitle": "Інші правопорушення",
+        "keywords": [
+            {
+                "keyword": "злочин"
+            },
+            {
+                "keyword": "життя"
+            },
+            {
+                "keyword": "здоров'я"
+            },
+            {
+                "keyword": "безпека"
+            },
+            {
+                "keyword": "propiedad"
+            },
+            {
+                "keyword": "власність"
+            },
+            {
+                "keyword": "порядок"
+            },
+            {
+                "keyword": "свобода"
+            }
+        ]
+    },
+    {
+        "id": 19,
+        "name": "difficultSituations",
+        "page": 6,
+        "title": "Складні ситуації",
+        "subtitle": "Перевірка документів поліцією",
+        "keywords": [
+            {
+                "keyword": "посвідчення особи"
+            },
+            {
+                "keyword": "поліція"
+            },
+            {
+                "keyword": "документ"
+            },
+            {
+                "keyword": "що посвідчує особу"
+            }
+        ]
+    },
+    {
+        "id": 20,
+        "name": "difficultSituations",
+        "page": 7,
+        "title": "Складні ситуації",
+        "subtitle": "Затримання поліцією",
+        "keywords": [
+            {
+                "keyword": "поліція"
+            },
+            {
+                "keyword": "затримання"
+            },
+            {
+                "keyword": "адвокат"
+            },
+            {
+                "keyword": "юрист консультант"
+            }
+        ]
+    },
+    {
+        "id": 21,
+        "name": "difficultSituations",
+        "page": 8,
+        "title": "Складні ситуації",
+        "subtitle": "Повідомлення про інцидент у поліції",
+        "keywords": [
+            {
+                "keyword": "поліція"
+            },
+            {
+                "keyword": "повідомлення"
+            },
+            {
+                "keyword": "incidente"
+            },
+            {
+                "keyword": "подія"
+            },
+            {
+                "keyword": "підтримка"
+            },
+            {
+                "keyword": "психолог"
+            },
+            {
+                "keyword": "юрист"
+            }
+        ]
+    },
+    {
+        "id": 22,
+        "name": "police",
+        "page": 0,
+        "title": "Поліційні комісаріати",
+        "subtitle": "",
+        "keywords": [
+            {
+                "keyword": "поліція"
+            },
+            {
+                "keyword": "комісаріат"
+            },
+            {
+                "keyword": "штаб"
+            }
+        ]
+    },
+    {
+        "id": 23,
+        "name": "hospitals",
+        "page": 0,
+        "title": "Лікарні швидкої медичної допомоги",
+        "subtitle": "",
+        "keywords": [
+            {
+                "keyword": "рятування"
+            },
+            {
+                "keyword": "лікарня"
+            },
+            {
+                "keyword": "хвороба"
+            },
+            {
+                "keyword": "здоров’я"
+            }
+        ]
+    },
+    {
+        "id": 24,
+        "name": "consulates",
+        "page": 0,
+        "title": "консульства",
+        "subtitle": "",
+        "keywords": [
+            {
+                "keyword": "консульства"
+            },
+            {
+                "keyword": "Вроцлав"
+            }
+        ]
+    }
+]
