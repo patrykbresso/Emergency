@@ -10,7 +10,9 @@ import SwiftUI
 
 struct NewsView: View {
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
-    
+    @EnvironmentObject var dataLoader: DataLoader
+    @State var searchResults: [Page] = []
+    @State var show: Bool = false
     @State private var keyword: String = ""
     
     var body: some View {
@@ -32,11 +34,16 @@ struct NewsView: View {
                     HStack {
                         Image("magnifier")
                         .renderingMode(.original)
+                        Spacer(minLength: 50)
                         ZStack {
                             if(self.keyword.isEmpty) {
                                 Text("szukaj...")
                             }
-                            TextField("", text: self.$keyword)
+                            TextField("", text: self.$keyword, onCommit: {
+                                let searchController: SearchController = SearchController(dataLoader: self.dataLoader)
+                                self.searchResults = searchController.searchByKeywords(searchedPhrase: self.keyword)
+                                self.show = true
+                            })
                             .textFieldStyle(CustomTextFieldStyle())
                         }
                         .foregroundColor(.white)
@@ -46,6 +53,7 @@ struct NewsView: View {
                     .padding(.trailing, 35)
                     .foregroundColor(.white)
                 }
+            NavigationLink(destination: SearchResultsView(searchTerm: self.keyword, results: self.searchResults), isActive: self.$show, label: { EmptyView()})
             }
             .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity)
             .background(Color(red: 19 / 255, green: 42 / 255, blue: 122 / 255)

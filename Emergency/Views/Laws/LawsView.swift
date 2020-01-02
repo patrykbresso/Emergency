@@ -11,6 +11,8 @@ import SwiftUI
 struct LawsView: View {
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     @State private var keyword: String = ""
+    @State var searchResults: [Page] = []
+    @State var show: Bool = false
     @EnvironmentObject var dataLoader: DataLoader
     let rows = Row.read()
     
@@ -59,11 +61,16 @@ struct LawsView: View {
                     HStack {
                         Image("magnifier")
                         .renderingMode(.original)
+                        Spacer(minLength: 50)
                         ZStack {
                             if(self.keyword.isEmpty) {
                                 Text("szukaj...")
                             }
-                            TextField("", text: self.$keyword)
+                            TextField("", text: self.$keyword, onCommit: {
+                                let searchController: SearchController = SearchController(dataLoader: self.dataLoader)
+                                self.searchResults = searchController.searchByKeywords(searchedPhrase: self.keyword)
+                                self.show = true
+                            })
                             .textFieldStyle(CustomTextFieldStyle())
                         }
                         .foregroundColor(.white)
@@ -73,7 +80,7 @@ struct LawsView: View {
                     .padding(.trailing, 35)
                     .foregroundColor(.white)
                 }
-            
+            NavigationLink(destination: SearchResultsView(searchTerm: self.keyword, results: self.searchResults), isActive: self.$show, label: { EmptyView()})
         }
         .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity)
         .background(Color(red: 19 / 255, green: 42 / 255, blue: 122 / 255)

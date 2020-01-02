@@ -12,6 +12,8 @@ import SwiftUI
 struct HospitalsView: View {
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     @State private var keyword: String = ""
+    @State var searchResults: [Page] = []
+    @State var show: Bool = false
     @EnvironmentObject var dataLoader: DataLoader
     
     private let title = "Szpitalne Oddziały Ratunkowe SOR"
@@ -66,17 +68,23 @@ struct HospitalsView: View {
                         Image("magnifier")
                         .renderingMode(.original)
                         .padding(.leading, 80)
+                        Spacer(minLength: 50)
                         ZStack {
                             if(self.keyword.isEmpty) {
                                 Text("szukaj...")
                             }
-                            TextField("", text: self.$keyword)
+                            TextField("", text: self.$keyword, onCommit: {
+                                let searchController: SearchController = SearchController(dataLoader: self.dataLoader)
+                                self.searchResults = searchController.searchByKeywords(searchedPhrase: self.keyword)
+                                self.show = true
+                            })
                             .textFieldStyle(CustomTextFieldStyle())
                         }
                         .padding(.trailing, 40)
                         .foregroundColor(.white)
                     }
                 }
+                NavigationLink(destination: SearchResultsView(searchTerm: self.keyword, results: self.searchResults), isActive: self.$show, label: { EmptyView()})
             }
             
         }

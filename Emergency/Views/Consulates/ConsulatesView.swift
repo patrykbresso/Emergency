@@ -13,6 +13,8 @@ import SwiftUI
 struct ConsulatesView: View {
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     @State private var keyword: String = ""
+    @State var searchResults: [Page] = []
+    @State var show: Bool = false
     @EnvironmentObject var dataLoader: DataLoader
     
     var body: some View {
@@ -44,24 +46,28 @@ struct ConsulatesView: View {
                                 }.padding(.leading, 40)
                         }.frame(width: geometry.size.width / 0.95, alignment: .center)
                     }.padding(.leading, geometry.size.width / 8)
-                    //searchbar
                     HStack {
                         Image("magnifier")
                         .renderingMode(.original)
                         .padding(.leading, 80)
+                        Spacer(minLength: 50)
                         ZStack {
                             if(self.keyword.isEmpty) {
                                 Text("szukaj...")
                             }
-                            TextField("", text: self.$keyword)
+                            TextField("", text: self.$keyword, onCommit: {
+                                let searchController: SearchController = SearchController(dataLoader: self.dataLoader)
+                                self.searchResults = searchController.searchByKeywords(searchedPhrase: self.keyword)
+                                self.show = true
+                            })
                             .textFieldStyle(CustomTextFieldStyle())
                         }
                         .padding(.trailing, 40)
                         .foregroundColor(.white)
                     }
                 }
+                NavigationLink(destination: SearchResultsView(searchTerm: self.keyword, results: self.searchResults), isActive: self.$show, label: { EmptyView()})
             }
-            
         }
         .navigationBarTitle("")
         .navigationBarHidden(true)
