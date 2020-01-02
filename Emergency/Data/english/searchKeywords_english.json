@@ -4,6 +4,7 @@
         "name": "translate",
         "page": 0,
         "title": "Translate",
+        "subtitle": "",
         "keywords": [
             {
                 "keyword": "help"
@@ -27,6 +28,7 @@
         "name": "phoneNumbers",
         "page": 0,
         "title": "Phone Numbers",
+        "subtitle": "",
         "keywords": [
             {
                 "keyword": "phone"
@@ -50,6 +52,7 @@
         "name": "advice",
         "page": 0,
         "title": "Advice",
+        "subtitle": "",
         "keywords": [
             {
                 "keyword": "ATM"
@@ -91,6 +94,7 @@
         "name": "laws",
         "page": 1,
         "title": "Law",
+        "subtitle": "My Rights and Obligations as a Foreigner in Poland",
         "keywords": [
             {
                 "keyword": "provisions"
@@ -120,6 +124,7 @@
         "name": "laws",
         "page": 2,
         "title": "Law",
+        "subtitle": "Disturbing Peace and Quiet",
         "keywords": [
             {
                 "keyword": "quiet hours"
@@ -137,6 +142,7 @@
         "name": "laws",
         "page": 3,
         "title": "Law",
+        "subtitle": "Can I Drink Alcohol in a Public Place?",
         "keywords": [
             {
                 "keyword": "alcohol"
@@ -154,6 +160,7 @@
         "name": "laws",
         "page": 4,
         "title": "Law",
+        "subtitle": "Where Is Smoking and Vaping Prohibited?",
         "keywords": [
             {
                 "keyword": "cigarette"
@@ -174,6 +181,7 @@
         "name": "laws",
         "page": 5,
         "title": "Law",
+        "subtitle": "Possession of Drugs is Prohibited in Poland",
         "keywords": [
             {
                 "keyword": "drug"
@@ -197,6 +205,7 @@
         "name": "laws",
         "page": 6,
         "title": "Law",
+        "subtitle": "When and For What May I Be Given a Penalty Notice?",
         "keywords": [
             {
                 "keyword": "penalty notice"
@@ -223,6 +232,7 @@
         "name": "laws",
         "page": 7,
         "title": "Law",
+        "subtitle": "May I Drink And Drive?",
         "keywords": [
             {
                 "keyword": "alcohol"
@@ -240,6 +250,7 @@
         "name": "laws",
         "page": 8,
         "title": "Law",
+        "subtitle": "What Is WrOPON?",
         "keywords": [
             {
                 "keyword": "drunkedness"
@@ -257,6 +268,7 @@
         "name": "laws",
         "page": 9,
         "title": "Law",
+        "subtitle": "What Is a Hate Crime?",
         "keywords": [
             {
                 "keyword": "hate"
@@ -277,6 +289,7 @@
         "name": "laws",
         "page": 10,
         "title": "Law",
+        "subtitle": "What Constitutes Indecent Behaviour?",
         "keywords": [
             {
                 "keyword": "indecency"
@@ -297,6 +310,7 @@
         "name": "difficultSituations",
         "page": 1,
         "title": "Difficult Situations",
+        "subtitle": "I Lost My Documents",
         "keywords": [
             {
                 "keyword": "document"
@@ -323,6 +337,7 @@
         "name": "difficultSituations",
         "page": 2,
         "title": "Difficult Situations",
+        "subtitle": "Theft",
         "keywords": [
             {
                 "keyword": "theft"
@@ -346,6 +361,7 @@
         "name": "difficultSituations",
         "page": 3,
         "title": "Difficult Situations",
+        "subtitle": "Hate Crime",
         "keywords": [
             {
                 "keyword": "hate"
@@ -372,6 +388,7 @@
         "name": "difficultSituations",
         "page": 4,
         "title": "Difficult Situations",
+        "subtitle": "Sex Crime",
         "keywords": [
             {
                 "keyword": "rape"
@@ -392,6 +409,7 @@
         "name": "difficultSituations",
         "page": 5,
         "title": "Difficult Situations",
+        "subtitle": "Other Crimes",
         "keywords": [
             {
                 "keyword": "crime"
@@ -421,6 +439,7 @@
         "name": "difficultSituations",
         "page": 6,
         "title": "Difficult Situations",
+        "subtitle": "Obligation to Prove Your Identity",
         "keywords": [
             {
                 "keyword": "checking the identification"
@@ -438,6 +457,7 @@
         "name": "difficultSituations",
         "page": 7,
         "title": "Difficult Situations",
+        "subtitle": "Detention",
         "keywords": [
             {
                 "keyword": "police"
@@ -458,6 +478,7 @@
         "name": "difficultSituations",
         "page": 8,
         "title": "Difficult Situations",
+        "subtitle": "Reporting an Event to the Police",
         "keywords": [
             {
                 "keyword": "police"
@@ -484,6 +505,7 @@
         "name": "police",
         "page": 0,
         "title": "Police Stations",
+        "subtitle": "",
         "keywords": [
             {
                 "keyword": "police"
@@ -501,6 +523,7 @@
         "name": "hospitals",
         "page": 0,
         "title": "Hospitals",
+        "subtitle": "",
         "keywords": [
             {
                 "keyword": "hospital"
@@ -521,6 +544,7 @@
         "name": "consulates",
         "page": 0,
         "title": "Consulates",
+        "subtitle": "",
         "keywords": [
             {
                 "keyword": "consulate"

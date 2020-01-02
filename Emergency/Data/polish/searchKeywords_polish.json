@@ -4,6 +4,7 @@
         "name": "translate",
         "page": 0,
         "title": "",
+        "subtitle": "",
         "keywords": [
             {
                 "keyword": "pomoc"
@@ -27,6 +28,7 @@
         "name": "phoneNumbers",
         "page": 0,
         "title": "",
+        "subtitle": "",
         "keywords": [
             {
                 "keyword": "telefon"
@@ -50,6 +52,7 @@
         "name": "advice",
         "page": 0,
         "title": "",
+        "subtitle": "",
         "keywords": [
             {
                 "keyword": "bankomat"
@@ -91,6 +94,7 @@
         "name": "laws",
         "page": 1,
         "title": "",
+        "subtitle": "",
         "keywords": [
             {
                 "keyword": "przepisy"
@@ -120,6 +124,7 @@
         "name": "laws",
         "page": 2,
         "title": "",
+        "subtitle": "",
         "keywords": [
             {
                 "keyword": "cisza nocna"
@@ -137,6 +142,7 @@
         "name": "laws",
         "page": 3,
         "title": "",
+        "subtitle": "",
         "keywords": [
             {
                 "keyword": "alkohol"
@@ -154,6 +160,7 @@
         "name": "laws",
         "page": 4,
         "title": "",
+        "subtitle": "",
         "keywords": [
             {
                 "keyword": "papieros"
@@ -174,6 +181,7 @@
         "name": "laws",
         "page": 5,
         "title": "",
+        "subtitle": "",
         "keywords": [
             {
                 "keyword": "narkotyk"
@@ -197,6 +205,7 @@
         "name": "laws",
         "page": 6,
         "title": "",
+        "subtitle": "",
         "keywords": [
             {
                 "keyword": "mandat"
@@ -223,6 +232,7 @@
         "name": "laws",
         "page": 7,
         "title": "",
+        "subtitle": "",
         "keywords": [
             {
                 "keyword": "alkohol"
@@ -240,6 +250,7 @@
         "name": "laws",
         "page": 8,
         "title": "",
+        "subtitle": "",
         "keywords": [
             {
                 "keyword": "nietrzeźwość"
@@ -260,6 +271,7 @@
         "name": "laws",
         "page": 9,
         "title": "",
+        "subtitle": "",
         "keywords": [
             {
                 "keyword": "nienawiść"
@@ -280,6 +292,7 @@
         "name": "laws",
         "page": 10,
         "title": "",
+        "subtitle": "",
         "keywords": [
             {
                 "keyword": "nieprzyzwoitość"
@@ -300,6 +313,7 @@
         "name": "difficultSituations",
         "page": 1,
         "title": "",
+        "subtitle": "",
         "keywords": [
             {
                 "keyword": "dokument"
@@ -326,6 +340,7 @@
         "name": "difficultSituations",
         "page": 2,
         "title": "",
+        "subtitle": "",
         "keywords": [
             {
                 "keyword": "kradzież"
@@ -349,6 +364,7 @@
         "name": "difficultSituations",
         "page": 3,
         "title": "",
+        "subtitle": "",
         "keywords": [
             {
                 "keyword": "nienawiść"
@@ -375,6 +391,7 @@
         "name": "difficultSituations",
         "page": 4,
         "title": "",
+        "subtitle": "",
         "keywords": [
             {
                 "keyword": "gwałt"
@@ -395,6 +412,7 @@
         "name": "difficultSituations",
         "page": 5,
         "title": "",
+        "subtitle": "",
         "keywords": [
             {
                 "keyword": "przestępstwo"
@@ -424,6 +442,7 @@
         "name": "difficultSituations",
         "page": 6,
         "title": "",
+        "subtitle": "",
         "keywords": [
             {
                 "keyword": "legitymowanie"
@@ -441,6 +460,7 @@
         "name": "difficultSituations",
         "page": 7,
         "title": "",
+        "subtitle": "",
         "keywords": [
             {
                 "keyword": "policja"
@@ -461,6 +481,7 @@
         "name": "difficultSituations",
         "page": 8,
         "title": "",
+        "subtitle": "",
         "keywords": [
             {
                 "keyword": "policja"
@@ -487,6 +508,7 @@
         "name": "police",
         "page": 0,
         "title": "",
+        "subtitle": "",
         "keywords": [
             {
                 "keyword": "policja"
@@ -504,6 +526,7 @@
         "name": "hospitals",
         "page": 0,
         "title": "",
+        "subtitle": "",
         "keywords": [
             {
                 "keyword": "szpital"
@@ -524,6 +547,7 @@
         "name": "consulates",
         "page": 0,
         "title": "",
+        "subtitle": "",
         "keywords": [
             {
                 "keyword": "konsulat"

@@ -46,7 +46,13 @@ struct SearchResultsView: View {
                                     RoundedRectangle(cornerRadius: 10)
                                         .stroke(Color(red: 219 / 255, green: 2 / 255, blue: 109 / 255), lineWidth: 10)
                                         .background(Color(red: 219 / 255, green: 2 / 255, blue: 109 / 255))
-                                    Text(result.pageName).padding(15)
+                                    VStack {
+                                        Text(result.pageName).fontWeight(.bold).padding(15)
+                                        if(result.pageSubtitle != "") {
+                                            Text(result.pageSubtitle)
+                                                .font(.body).padding(.bottom, 15)
+                                        }
+                                    }
 //                                  if(result.page > 0) {
 //                                      Text("Page: " + result.page).padding(.bottom, 15)
 //                                  }
@@ -58,7 +64,7 @@ struct SearchResultsView: View {
             }
                 .foregroundColor(.white)
                 .padding(15)
-                .padding(.top, 30)
+                .padding(.top, 45)
         }
             .navigationBarTitle("")
             .navigationBarHidden(true)
@@ -95,6 +101,6 @@ func getDestination(name: String, pageName: String, pageNumber: Int) -> AnyView 
 
 struct SearchResultsView_Previews: PreviewProvider {
     static var previews: some View {
-        SearchResultsView(searchTerm: "policja", results: [Page(id: 1, name: "name", page: 1, pageName: "Numery"), Page(id: 2, name: "name2", page: 1, pageName: "Pomoc")])
+        SearchResultsView(searchTerm: "policja", results: [Page(id: 1, name: "name", page: 1, pageName: "Numery", pageSubtitle: ""), Page(id: 2, name: "name2", page: 1, pageName: "Trudne Sytuacje", pageSubtitle: "Zbrodnia z nienawisci")])
     }
 }

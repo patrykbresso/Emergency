@@ -13,6 +13,7 @@ struct SearchKeywords: Identifiable, Decodable {
     var name: String
     var page: Int
     var title: String
+    var subtitle: String
     var keywords: [Keyword]
 }
 

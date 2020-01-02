@@ -191,7 +191,7 @@ struct ContentView: View {
         for view in dataLoader.searchKeywords {
             for word in view.keywords {
                 if(searchedPhrase.lowercased().contains(word.keyword.lowercased())) {
-                    let result: Page = Page(id: i,name: view.name, page: view.page, pageName: view.title)
+                    let result: Page = Page(id: i,name: view.name, page: view.page, pageName: view.title, pageSubtitle: view.subtitle)
                     i = i + 1
                     results.append(result)
                 }
