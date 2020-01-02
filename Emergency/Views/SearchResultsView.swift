@@ -10,6 +10,7 @@ import SwiftUI
 
 struct SearchResultsView: View {
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
+    @EnvironmentObject var dataLoader: DataLoader
     
     var searchTerm: String
     var results: [Page]
@@ -27,6 +28,7 @@ struct SearchResultsView: View {
                             .renderingMode(.original)
                         
                     }.padding(.leading, 15)
+                    .padding(.top, 15)
                 }
                 Text("Rezultaty dla '" + self.searchTerm + "':").font(.title)
                 if(self.results.count == 0) {
@@ -41,7 +43,7 @@ struct SearchResultsView: View {
                 } else {
                     ScrollView {
                         ForEach(self.results) { result in
-                            NavigationLink(destination: getDestination(name: result.name, pageName: result.pageName, pageNumber: result.page)) {
+                            NavigationLink(destination: self.getDestination(name: result.name, pageName: result.pageName, pageNumber: result.page)) {
                                 ZStack {
                                     RoundedRectangle(cornerRadius: 10)
                                         .stroke(Color(red: 219 / 255, green: 2 / 255, blue: 109 / 255), lineWidth: 10)
@@ -70,29 +72,33 @@ struct SearchResultsView: View {
             .background(Color(red: 19 / 255, green: 42 / 255, blue: 122 / 255))
             .edgesIgnoringSafeArea(.all)
     }
-}
-
-func getDestination(name: String, pageName: String, pageNumber: Int) -> AnyView {
-    let police = AnyView(PoliceView())
-    let advice = AnyView(AdviceView())
-    let phone = AnyView(PhoneNumbersView())
-    let translate = AnyView(TranslateView())
-    let consulates = AnyView(ConsulatesView())
-    let hospitals = AnyView(HospitalsView())
-    let difficultSituations = AnyView(DifficultSituationsView())
-    let law = AnyView(LawsView())
-    let home = AnyView(ContentView())
     
-    switch name {
-        case "police": return police
-        case "advice": return advice
-        case "phoneNumbers": return phone
-        case "translate": return translate
-        case "consulates": return consulates
-        case "hospitals": return hospitals
-        case "difficultSituations": return difficultSituations
-        case "laws": return law
-        default: return home
+    func getDestination(name: String, pageName: String, pageNumber: Int) -> AnyView {
+        let police = AnyView(PoliceView())
+        let advice = AnyView(AdviceView())
+        let phone = AnyView(PhoneNumbersView())
+        let translate = AnyView(TranslateView())
+        let consulates = AnyView(ConsulatesView())
+        let hospitals = AnyView(HospitalsView())
+        if(name == "difficultSituations") {
+            let data = self.dataLoader.difficultSituationsData[pageNumber - 1]
+            return AnyView(DifficultSituationsDetailView(difficultSituation: DifficultSituations(id: pageNumber, title: data.title, text: data.text)))
+        }
+        if(name == "laws") {
+            let data = self.dataLoader.lawsData[pageNumber]
+            return AnyView(LawsDetailView(law: Laws(id: pageNumber, title: data.title, text: data.text)))
+        }
+        let home = AnyView(ContentView())
+        
+        switch name {
+            case "police": return police
+            case "advice": return advice
+            case "phoneNumbers": return phone
+            case "translate": return translate
+            case "consulates": return consulates
+            case "hospitals": return hospitals
+            default: return home
+        }
     }
 }
 

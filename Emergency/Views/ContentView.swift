@@ -9,9 +9,9 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var show: Bool = false
     @State var isDrawerOpen: Bool = false
     @State private var keyword: String = ""
-    @State var show: Bool = false
     @State var searchResults: [Page] = []
     @EnvironmentObject var settings: UserSettings
     @EnvironmentObject var dataLoader: DataLoader
@@ -147,7 +147,9 @@ struct ContentView: View {
                                     Text("szukaj...")
                                 }
                                 TextField("", text: self.$keyword, onCommit: {
-                                    self.searchResults = self.searchByKeywords(searchedPhrase: self.keyword)
+                                    let searchController: SearchController = SearchController(dataLoader: self.dataLoader)
+                                    self.searchResults = searchController.searchByKeywords(searchedPhrase: self.keyword)
+                                    self.show = true
                                 })
                                 .textFieldStyle(CustomTextFieldStyle())
                             }
@@ -183,22 +185,6 @@ struct ContentView: View {
             print(self.settings.language)
             }
         }
-    }
-
-    func searchByKeywords(searchedPhrase: String) -> [Page] {
-        var results: [Page] = []
-        var i: Int = 1
-        for view in dataLoader.searchKeywords {
-            for word in view.keywords {
-                if(searchedPhrase.lowercased().contains(word.keyword.lowercased())) {
-                    let result: Page = Page(id: i,name: view.name, page: view.page, pageName: view.title, pageSubtitle: view.subtitle)
-                    i = i + 1
-                    results.append(result)
-                }
-            }
-        }
-        self.show = true
-        return results
     }
 }
 
