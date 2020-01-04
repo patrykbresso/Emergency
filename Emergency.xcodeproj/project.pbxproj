@@ -37,7 +37,6 @@
 		9FAACF9C2379B65900C3CF94 /* EmergencyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FAACF9B2379B65900C3CF94 /* EmergencyTests.swift */; };
 		9FAACFA72379B65900C3CF94 /* EmergencyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FAACFA62379B65900C3CF94 /* EmergencyUITests.swift */; };
 		9FAACFB52379B68E00C3CF94 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9FAACFB42379B68D00C3CF94 /* GoogleService-Info.plist */; };
-		9FB3E43423AB7FB9005E1095 /* UserSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB3E43323AB7FB9005E1095 /* UserSettings.swift */; };
 		9FB3E4C523ABE211005E1095 /* adviceData_english.json in Resources */ = {isa = PBXBuildFile; fileRef = 9FB3E49423ABE211005E1095 /* adviceData_english.json */; };
 		9FB3E4C623ABE211005E1095 /* policeData_english.json in Resources */ = {isa = PBXBuildFile; fileRef = 9FB3E49523ABE211005E1095 /* policeData_english.json */; };
 		9FB3E4C723ABE211005E1095 /* searchKeywords_english.json in Resources */ = {isa = PBXBuildFile; fileRef = 9FB3E49623ABE211005E1095 /* searchKeywords_english.json */; };
@@ -181,7 +180,6 @@
 		9FAACFA62379B65900C3CF94 /* EmergencyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmergencyUITests.swift; sourceTree = "<group>"; };
 		9FAACFA82379B65900C3CF94 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9FAACFB42379B68D00C3CF94 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		9FB3E43323AB7FB9005E1095 /* UserSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSettings.swift; sourceTree = "<group>"; };
 		9FB3E49423ABE211005E1095 /* adviceData_english.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = adviceData_english.json; sourceTree = "<group>"; };
 		9FB3E49523ABE211005E1095 /* policeData_english.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = policeData_english.json; sourceTree = "<group>"; };
 		9FB3E49623ABE211005E1095 /* searchKeywords_english.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = searchKeywords_english.json; sourceTree = "<group>"; };
@@ -338,7 +336,6 @@
 				E8DFAD71239D467400D4CD74 /* Translate.swift */,
 				E83E446023A3E62F003AB246 /* SearchKeywords.swift */,
 				E83E446223A3F29B003AB246 /* Page.swift */,
-				9FB3E43323AB7FB9005E1095 /* UserSettings.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -936,7 +933,6 @@
 				9FAACF852379B65600C3CF94 /* AppDelegate.swift in Sources */,
 				9F7A4F2A238DA348001C4B7A /* ConsulatesRow.swift in Sources */,
 				A151BB2A237F2AFE007CEEC1 /* PoliceRow.swift in Sources */,
-				9FB3E43423AB7FB9005E1095 /* UserSettings.swift in Sources */,
 				9F169A88237F6740005A8618 /* PoliceDetailView.swift in Sources */,
 				9F169A8A237F67F5005A8618 /* MapView.swift in Sources */,
 				E8590BB92398469B00C37EE8 /* CustomTextFieldStyle.swift in Sources */,

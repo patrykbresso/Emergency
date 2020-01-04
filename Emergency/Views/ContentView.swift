@@ -13,7 +13,6 @@ struct ContentView: View {
     @State var isDrawerOpen: Bool = false
     @State private var keyword: String = ""
     @State var searchResults: [Page] = []
-    @EnvironmentObject var settings: UserSettings
     @EnvironmentObject var dataLoader: DataLoader
     
     var body: some View {
@@ -181,8 +180,6 @@ struct ContentView: View {
                if self.isDrawerOpen {
                    self.isDrawerOpen.toggle()
                }
-        }.onAppear{
-            print(self.settings.language)
             }
         }
     }

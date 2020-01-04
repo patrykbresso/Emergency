@@ -9,39 +9,6 @@
 import UIKit
 import SwiftUI
 import CoreLocation
-/*
-class DataLoader: DataJSON, ObservableObject {
-    
-    
-    @Published var policeData: [Police]
-    @Published var hospitalsData: [Hospitals]
-    @Published var consulatesData: [Consulates]
-    @Published var lawsData: [Laws]
-    @Published var difficultSituationsData: [DifficultSituations]
-    @Published var adviceData: Advice
-    @Published var phoneNumbersData: [PhoneNumber]
-    @Published var translateData: [Translate]
-    @Published var searchKeywords: [SearchKeywords]
-    
-    @EnvironmentObject var settings: UserSettings
-    
-    init() {
-        let dataJSON = DataJSON()
-        super.init()
-        hospitalsData = dataJSON.load("hospitalsData_\(settings.language).json")
-        policeData = dataJSON.load("policeData_\(settings.language).json")
-       
-        consulatesData = dataJSON.load("consulatesData_\(settings.language).json")
-        lawsData = dataJSON.load("lawsData_\(settings.language).json")
-        difficultSituationsData = dataJSON.load("difficultSituationsData_\(settings.language).json")
-        adviceData = dataJSON.load("adviceData_\(settings.language)json")
-        phoneNumbersData = dataJSON.load("phoneNumbersData._\(settings.language)json")
-        translateData = dataJSON.load("translateData_\(settings.language).json")
-        searchKeywords = dataJSON.load("searchKeywords_\(settings.language).json")
-    }
-}
-*/
-
 
 class DataLoader: ObservableObject {
 
@@ -54,11 +21,24 @@ class DataLoader: ObservableObject {
        @Published var phoneNumbersData: [PhoneNumber]
        @Published var translateData: [Translate]
        @Published var searchKeywords: [SearchKeywords]
-       @EnvironmentObject var settings: UserSettings
     
     
    
     init(language: String) {
+        hospitalsData = DataLoader.load("hospitalsData_\(language).json")
+        policeData = DataLoader.load("policeData_\(language).json")
+       
+        consulatesData = DataLoader.load("consulatesData_\(language).json")
+        lawsData = DataLoader.load("lawsData_\(language).json")
+        difficultSituationsData = DataLoader.load("difficultSituationsData_\(language).json")
+        adviceData = DataLoader.load("adviceData_\(language).json")
+        phoneNumbersData = DataLoader.load("phoneNumbersData_\(language).json")
+        translateData = DataLoader.load("translateData_\(language).json")
+        searchKeywords = DataLoader.load("searchKeywords_\(language).json")
+    
+    }
+    
+    func loadLanguage(language: String) {
         hospitalsData = DataLoader.load("hospitalsData_\(language).json")
         policeData = DataLoader.load("policeData_\(language).json")
        

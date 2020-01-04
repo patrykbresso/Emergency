@@ -14,7 +14,7 @@ import Combine
 
 struct ChangeLanguageView: View {
     
-    @EnvironmentObject var settings: UserSettings
+    @EnvironmentObject var dataLoader: DataLoader
     @State private var showContentView = false
     @Environment(\.presentationMode) var presentationMode
     
@@ -32,15 +32,14 @@ struct ChangeLanguageView: View {
                 Spacer()
                 HStack {
                     Button(action: {
-                        self.settings.language = "polish"
-                        
+                        UserDefaults.standard.set("polish", forKey: "language")
                         self.showContentView = true
                     }) {
                         ChangeLanguageCell(language: "POLSKI")
                     }
                     Spacer()
                     Button(action: {
-                        self.settings.language = "spanish"
+                        UserDefaults.standard.set("spanish", forKey: "language")
                         self.showContentView = true
                     }) {
                         ChangeLanguageCell(language: "Español")
@@ -48,27 +47,26 @@ struct ChangeLanguageView: View {
                 }
                 HStack {
                     Button(action: {
-                        self.settings.language = "english"
+                        UserDefaults.standard.set("english", forKey: "language")
                         self.showContentView = true
                     }) {
                         ChangeLanguageCell(language: "ENGLISH")
                     }
                     Spacer()
                     Button(action: {
-                        self.settings.language = "ukrainian"
+                        UserDefaults.standard.set("ukrainian", forKey: "language")
                         self.showContentView = true
                     }) {
                         ChangeLanguageCell(language: "Україна")
                     }
                 }
                 Button(action: {
-                    self.settings.language = "german"
+                    UserDefaults.standard.set("german", forKey: "language")
                     self.showContentView = true
                 }) {
                     ChangeLanguageCell(language: "DEUTSCH")
                 }.onDisappear {
-                    DataLoader(language: self.settings.language)
-                   
+                    self.dataLoader.loadLanguage(language: UserDefaults.standard.string(forKey: "language") ?? "english")
                 }
                 
                 NavigationLink(destination: ContentView(), isActive: self.$showContentView) { EmptyView() }
