@@ -100,6 +100,174 @@
             "latitude": 59.980167
         },
         "imageName": "1"
+    },
+    {
+        "id": 9,
+        "name": "Konsulat Honorowy Królestwa Hiszpanii",
+        "consulName": "Konsul Honorowy - Jesús García-Nieto Moreno",
+        "address": "ul. Ludwika Rydygiera 2a/15 50-249 Wrocław",
+        "number": "+48 669 505 300",
+        "email": "konsulat@fira.pm",
+        "coordinates": {
+            "longitude": -152.665167,
+            "latitude": 59.980167
+        },
+        "imageName": "1"
+    },
+    {
+           "id": 10,
+           "name": "Konsulat Honorowy Indii",
+           "consulName": "Konsul Honorowy – Johri Kartikey",
+           "address": "ul. Wita Stwosza 16, 50-148 Wrocław",
+           "number": "502 411 355",
+           "email": "2@2.pl",
+           "coordinates": {
+               "longitude": -152.665167,
+               "latitude": 59.980167
+           },
+           "imageName": "1"
+    },
+    {
+        "id": 11,
+        "name": "Konsulat Honorowy Luksemburga",
+        "consulName": "Konsul Honorowy - Krzysztof Bramorski",
+        "address": "ul. Rzeźnicza 32 - 33, II p. 50-130 Wrocław",
+        "number": "71 346 70 87",
+        "email": "luxemburg@konsulat.wroclaw.pl ",
+        "coordinates": {
+            "longitude": -152.665167,
+            "latitude": 59.980167
+        },
+        "imageName": "1"
+    },
+    {
+        "id": 12,
+        "name": "Konsulat Królestwa Norwegii",
+        "consulName": "Konsul Honorowy - Bartosz Masternak",
+        "address": "Rynek 7, V piętro 50 - 106 Wrocław",
+        "number": "601 701 158",
+        "email": "consulate@norway.wroc.pl",
+        "coordinates": {
+            "longitude": -152.665167,
+            "latitude": 59.980167
+        },
+        "imageName": "1"
+    },
+    {
+        "id": 13,
+        "name": "Konsulat Stanów Zjednoczonych Meksyku",
+        "consulName": "Konsul Honorowy - Bogdan Spiż",
+        "address": "ul. Przejście Garncarskie 12 50-106 Wrocław",
+        "number": "71 344 68 56",
+        "email": "wroclaw@spiz.pl",
+        "coordinates": {
+            "longitude": -152.665167,
+            "latitude": 59.980167
+        },
+        "imageName": "1"
+    },
+    {
+        "id": 14,
+        "name": "Konsulat Honorowy Republiki Słowackiej",
+        "consulName": "Konsul Honorowy - Maciej Kaczmarski",
+        "address": "ul. Danuty Siedzikówny 12 51 - 214 Wrocław",
+        "number": "71 78 50 369",
+        "email": "konsulat@slowacji.wroclaw.pl",
+        "coordinates": {
+            "longitude": -152.665167,
+            "latitude": 59.980167
+        },
+        "imageName": "1"
+    },
+    {
+        "id": 15,
+        "name": "Konsulat Honorowy Szwecji",
+        "consulName": "Konsul Honorowa - Małgorzata Ryniak",
+        "address": "ul. Mydlana 2 51 - 502 Wrocław",
+        "number": "71 30 21 300",
+        "email": "administration.swecons.wro@volvo.com",
+        "coordinates": {
+            "longitude": -152.665167,
+            "latitude": 59.980167
+        },
+        "imageName": "1"
+    },
+    {
+        "id": 16,
+        "name": "Konsulat Honorowy Wielkiej Brytanii",
+        "consulName": "Konsul Honorowy - Marek Grzegorzewicz",
+        "address": "ul. Oławska 2 50 - 123 Wrocław",
+        "number": "71 344 89 61",
+        "email": "12321323123.swecons.wro@volvo.com",
+        "coordinates": {
+            "longitude": -152.665167,
+            "latitude": 59.980167
+        },
+        "imageName": "1"
+    },
+    {
+        "id": 17,
+        "name": "Konsulat Honorowy Ukrainy",
+        "consulName": "Konsul Honorowy - Grzegorz Dzik",
+        "address": "ul. Jedności Narodowej 89 50 - 262 Wrocław",
+        "number": "71 788 44 50",
+        "email": "info@konsulat-ukraina.wroclaw.pl ",
+        "coordinates": {
+            "longitude": -152.665167,
+            "latitude": 59.980167
+        },
+        "imageName": "1"
+    },
+    {
+        "id": 18,
+        "name": "Konsulat Honorowy Republiki Włoskiej",
+        "consulName": "Konsul Honorowa - Monika Przemysława Kwiatosz",
+        "address": "Plac Kościuszki 10/1 50 - 028 Wrocław",
+        "number": "795 413 015",
+        "email": "consolatoitaliano.wro@gmail.com",
+        "coordinates": {
+            "longitude": -152.665167,
+            "latitude": 59.980167
+        },
+        "imageName": "1"
+    },
+    {
+        "id": 19,
+        "name": "Konsulat Honorowy Republiki Litewskiej",
+        "consulName": "Konsul Honorowy - Tomasz Kosoń",
+        "address": "Pl. Powstańców Śląskich 1/114 53 - 332 Wrocław",
+        "number": "71 360 24 00/ 10",
+        "email": "wroclaw@lithuaniaconsulatepoland.pl",
+        "coordinates": {
+            "longitude": -152.665167,
+            "latitude": 59.980167
+        },
+        "imageName": "1"
+    },
+    {
+        "id": 20,
+        "name": "Konsulat Honorowy Republiki Korei",
+        "consulName": "Konsul Honorowy - Tomasz Szpikowski",
+        "address": "ul. Leona Petrażyckiego 57 52 - 434 Wrocław ",
+        "number": "508 040 367 ",
+        "email": "beata.chelpa@korea-consul.wroc.pl",
+        "coordinates": {
+            "longitude": -152.665167,
+            "latitude": 59.980167
+        },
+        "imageName": "1"
+    },
+    {
+        "id": 21,
+        "name": "Konsulat Honorowy Republiki Łotewskiej",
+        "consulName": "Konsul Honorowy - Martin Kaczmarski",
+        "address": "ul. Danuty Siedzikówny 12",
+        "number": "71 773 74 64",
+        "email": "konsulat@lotwy.wroclaw.pl",
+        "coordinates": {
+            "longitude": -152.665167,
+            "latitude": 59.980167
+        },
+        "imageName": "1"
     }
-    
 ]

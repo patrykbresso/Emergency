@@ -33,6 +33,11 @@ struct PoliceDetailView: View {
                     Spacer()
                     Button(action: {
                         let formattedString = "http://maps.apple.com/maps?saddr=\(self.policeStation.coordinates.latitude),\(self.policeStation.coordinates.longitude)"
+                        /*let deleteStreet = self.policeStation.address.replacingOccurrences(of: "ul. ", with: "")
+                        let formattedStreet = deleteStreet.replacingOccurrences(of: " ", with: "+")
+                        let formattedAddress = formattedStreet+","+self.policeStation.city
+                        let formattedString = "http://maps.apple.com/maps?address=\(formattedAddress)"
+                        print(formattedAddress)*/
                         let url: NSURL = URL(string: formattedString)! as NSURL
                         UIApplication.shared.open(url as URL)
                     }) {

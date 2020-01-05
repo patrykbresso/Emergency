@@ -2,31 +2,31 @@
     {
         "id": 1,
         "originalText": "Potrzebuje pomocy!",
-        "translation": "I need help!"
+        "translation": "Ich brauche Hilfe!"
     },
     {
         "id": 2,
         "originalText": "Potrzebuje lekarza!",
-        "translation": "I need a doctor!"
+        "translation": "Ich benötige einen Arzt!"
     },
     {
         "id": 3,
         "originalText": "Prosze zabierz mnie do szpitala!",
-        "translation": "Please take me to a hospital!"
+        "translation": "Bringen Sie mich bitte ins Krankenhaus!"
     },
     {
         "id": 4,
         "originalText": "Prosze zadzwonic na policje!",
-        "translation": "Please call the police!"
+        "translation": "Rufen Sie die Polizei an!"
     },
     {
         "id": 5,
         "originalText": "Zostalem okradziony!",
-        "translation": "I've been robbed!"
+        "translation": "Man hat mich bestohlen!"
     },
     {
         "id": 6,
         "originalText": "Jestem teraz na (...) ulicy.",
-        "translation": "I'm on the (...) street."
+        "translation": "Im Moment bin ich in der ul. …(Strasse)"
     }
 ]

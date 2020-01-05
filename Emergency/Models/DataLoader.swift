@@ -21,6 +21,7 @@ class DataLoader: ObservableObject {
        @Published var phoneNumbersData: [PhoneNumber]
        @Published var translateData: [Translate]
        @Published var searchKeywords: [SearchKeywords]
+    @Published var menuData: Menu
     
     
    
@@ -35,6 +36,7 @@ class DataLoader: ObservableObject {
         phoneNumbersData = DataLoader.load("phoneNumbersData_\(language).json")
         translateData = DataLoader.load("translateData_\(language).json")
         searchKeywords = DataLoader.load("searchKeywords_\(language).json")
+        menuData = DataLoader.load("mainMenu_\(language).json")
     
     }
     
@@ -49,7 +51,7 @@ class DataLoader: ObservableObject {
         phoneNumbersData = DataLoader.load("phoneNumbersData_\(language).json")
         translateData = DataLoader.load("translateData_\(language).json")
         searchKeywords = DataLoader.load("searchKeywords_\(language).json")
-    
+        menuData = DataLoader.load("mainMenu_\(language).json")
     }
     
 static func load<T: Decodable>(_ filename: String, as type: T.Type = T.self) -> T {
@@ -90,6 +92,7 @@ var adviceData: Advice = load("adviceData.json")
 var phoneNumbersData: [PhoneNumber] = load("phoneNumbersData.json")
 var translateData: [Translate] = load("translateData.json")
 var searchKeywords: [SearchKeywords] = load("searchKeywords.json")
+var menuData: Menu = DataLoader.load("mainMenu.json")
 
 func load<T: Decodable>(_ filename: String, as type: T.Type = T.self) -> T {
     

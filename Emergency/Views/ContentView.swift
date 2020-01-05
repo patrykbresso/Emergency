@@ -35,7 +35,7 @@ struct ContentView: View {
                                 VStack {
                                     Image("news")
                                         .renderingMode(.original)
-                                    Text("NEWSY")
+                                    Text(self.dataLoader.menuData.news)
                                     .fontWeight(.bold)
                                     .multilineTextAlignment(.center)
                                 }.frame(width: geometry.size.width / 2 - 60)
@@ -45,7 +45,7 @@ struct ContentView: View {
                                 VStack {
                                     Image("advice")
                                         .renderingMode(.original)
-                                    Text("PORADY RÓŻNE")
+                                    Text(self.dataLoader.menuData.advice)
                                         .fontWeight(.bold)
                                         .multilineTextAlignment(.center)
                                 }.frame(width: geometry.size.width / 2 - 60)
@@ -56,7 +56,7 @@ struct ContentView: View {
                                 VStack {
                                     Image("translate")
                                         .renderingMode(.original)
-                                    Text("TLUMACZENIE")
+                                    Text(self.dataLoader.menuData.translate)
                                         .fontWeight(.bold)
                                         .multilineTextAlignment(.center)
                                 }.frame(width: geometry.size.width / 2 - 60)
@@ -66,7 +66,7 @@ struct ContentView: View {
                                 VStack {
                                     Image("phone")
                                         .renderingMode(.original)
-                                    Text("NUMERY TELEFONOW")
+                                    Text(self.dataLoader.menuData.phone)
                                         .fontWeight(.bold)
                                         .multilineTextAlignment(.center)
                                 }.frame(width: geometry.size.width / 2 - 60)
@@ -77,7 +77,7 @@ struct ContentView: View {
                                 VStack {
                                     Image("help")
                                         .renderingMode(.original)
-                                    Text("POMOC")
+                                    Text(self.dataLoader.menuData.help)
                                         .fontWeight(.bold)
                                         .multilineTextAlignment(.center)
                                 }.frame(width: geometry.size.width / 2 - 60)
@@ -87,7 +87,7 @@ struct ContentView: View {
                                 VStack {
                                     Image("law")
                                         .renderingMode(.original)
-                                    Text("PRAWO")
+                                    Text(self.dataLoader.menuData.law)
                                         .fontWeight(.bold)
                                         .multilineTextAlignment(.center)
                                 }.frame(width: geometry.size.width / 2 - 60)
@@ -98,7 +98,7 @@ struct ContentView: View {
                                 VStack {
                                     Image("difficultsituations")
                                         .renderingMode(.original)
-                                    Text("TRUDNE SYTUACJE")
+                                    Text(self.dataLoader.menuData.difficultsituations)
                                         .fontWeight(.bold)
                                         .multilineTextAlignment(.center)
                                 }.frame(width: geometry.size.width / 2 - 60)
@@ -109,7 +109,7 @@ struct ContentView: View {
                                 VStack {
                                     Image("consulate")
                                         .renderingMode(.original)
-                                    Text("KONSULATY")
+                                    Text(self.dataLoader.menuData.consulate)
                                         .fontWeight(.bold)
                                         .multilineTextAlignment(.center)
                                 }.frame(width: geometry.size.width / 2 - 60)
@@ -120,7 +120,7 @@ struct ContentView: View {
                                 VStack {
                                     Image("hospital")
                                         .renderingMode(.original)
-                                    Text("SZPITALE")
+                                    Text(self.dataLoader.menuData.hospital)
                                         .fontWeight(.bold)
                                         .multilineTextAlignment(.center)
                                 }.frame(width: geometry.size.width / 2 - 60)
@@ -130,7 +130,7 @@ struct ContentView: View {
                                 VStack {
                                     Image("police")
                                         .renderingMode(.original)
-                                    Text("POLICJA")
+                                    Text(self.dataLoader.menuData.police)
                                         .fontWeight(.bold)
                                         .multilineTextAlignment(.center)
                                 }.frame(width: geometry.size.width / 2 - 60)
@@ -172,8 +172,11 @@ struct ContentView: View {
                 .navigationBarHidden(true)
                 .navigationBarBackButtonHidden(true)
             }
+            //Check if its first launch of app
             
             }
+            
+            //Show drawer menu
             NavigationDrawer(isOpen: self.isDrawerOpen)
             }
            .onTapGesture {
@@ -181,8 +184,10 @@ struct ContentView: View {
                    self.isDrawerOpen.toggle()
                }
             }
+            
         }
     }
+    
 }
 
 

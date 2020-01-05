@@ -1,44 +1,44 @@
 [
     {
         "id": 1,
-        "name": "Telefon Alarmowy",
+        "name": "Notruf",
         "number": "112",
-        "available": "czynny 24/7",
-        "description": "Telefon służy do powiadamiania w sytuacjach zagrożenia życia."
+        "available": "rund um die Uhr in Betrieb",
+        "description": "Betrieb rund um die Uhr Dieses Telefon dient dazu, über die Lebensbedrohung zu benachrichtigen "
     },
     {
         "id": 2,
-        "name": "Pogotowie Ratunkowe",
+        "name": "Telefon des Rettungsdienstes",
         "number": "999",
-        "available": "czynny 24/7",
+        "available": "rund um die Uhr in Betrieb",
         "description": ""
     },
     {
         "id": 3,
-        "name": "Policja",
+        "name": "Telefon der Polizei",
         "number": "997",
-        "available": "czynny 24/7",
+        "available": "rund um die Uhr in Betrieb",
         "description": ""
     },
     {
         "id": 4,
-        "name": "Straż Pożarna",
+        "name": "Telefon des Feuerwehrs",
         "number": "998",
-        "available": "czynny 24/7",
+        "available": "rund um die Uhr in Betrieb",
         "description": ""
     },
     {
         "id": 5,
-        "name": "Straż Miejska",
+        "name": "Telefon der Stadtpolizei",
         "number": "986",
-        "available": "czynny 24/7",
+        "available": "rund um die Uhr in Betrieb",
         "description": ""
     },
     {
         "id": 6,
-        "name": "Infolinia",
+        "name": "Infolinie",
         "number": "71 77 24 950",
-        "available": "czynny: (Pn, Wt, Pt, 9:00 - 16:00), (Śr, Czw, 11:00 – 18:00)",
-        "description": "Miejski punkt  informacji telefonicznej dla obcokrajowców, dostępny również  języku angielskim."
+        "available": "In Betrieb: Montags, Dienstags, Freitags 9:00 - 16:00 , Mittwochs, Donnerstags 11:00 – 18:00",
+        "description": "Infolinie, Städtische Telefoninformation für Ausländer, auch in der englischen Sprache"
     }
 ]

@@ -3,7 +3,9 @@
     {
         "id": 1,
         "name": "Komenda Miejska Policji we Wrocławiu",
-        "address": "ul. Sołtysowicka 21, 51-168 Wrocław",
+        "address": "ul. Sołtysowicka 21",
+        "postalCode": "51-168",
+        "city": "Wrocław",
         "number": "+71 340 44 90",
         "email": "kontakt@wroclaw.wr.policja.gov.pl",
         "coordinates": {
@@ -15,7 +17,9 @@
     {
         "id": 2,
         "name": "Wydział Ruchu Drogowego",
-        "address": "ul: Hubska 29/33, 50-501 Wrocław",
+        "address": "ul. Hubska 29/33",
+        "postalCode": "50-501",
+        "city": "Wrocław",
         "number": "71 340 32 12",
         "coordinates": {
             "longitude": 17.042646,
@@ -26,7 +30,9 @@
     {
         "id": 3,
         "name": "Komisariat Wrocław-Stare Miasto",
-        "address": "ul. Trzemeska 12, 50-040 Wrocław",
+        "address": "ul. Trzemeska 12",
+        "postalCode": "50-040",
+        "city": "Wrocław",
         "number": "71 340 31 31",
         "coordinates": {
             "longitude": 17.010767,
@@ -37,7 +43,9 @@
     {
         "id": 4,
         "name": "Komisariat Wrocław-Ołbin",
-        "address": "ul. Rydygiera 46 /48, 50-249 Wrocław",
+        "address": "ul. Rydygiera 46 /48",
+        "postalCode": "50-249",
+        "city": "Wrocław",
         "number": "71 340 43 06",
         "coordinates": {
             "longitude":17.032310,
@@ -48,7 +56,9 @@
     {
         "id": 5,
         "name": "Komisariat Wrocław-Śródmieście",
-        "address": "ul. Grunwaldzka 6, 50-355 Wrocław",
+        "address": "ul. Grunwaldzka 6",
+        "postalCode": "50-355",
+        "city": "Wrocław",
         "number": "71 340 43 58",
         "coordinates": {
             "longitude": 17.055712,
@@ -59,7 +69,9 @@
     {
         "id": 6,
         "name": "Komisariat Wrocław-Krzyki",
-        "address": "ul. Slężna 115-129, 53-123 Wrocław",
+        "address": "ul. Slężna 115-129",
+        "postalCode": "53-123",
+        "city": "Wrocław",
         "number": "71 782 46 00",
         "coordinates": {
             "longitude": 17.025356,
@@ -70,7 +82,9 @@
     {
         "id": 7,
         "name": "Komisariat Wrocław-Rakowiec",
-        "address": "ul. Traugutta 94, 50-420 Wrocław",
+        "address": "ul. Traugutta 94",
+        "postalCode": "50-420",
+        "city": "Wrocław",
         "number": "71 340 43 44",
         "coordinates": {
             "longitude": 17.052681,
@@ -81,12 +95,144 @@
     {
         "id": 8,
         "name": "Komisariat Wrocław-Fabryczna",
-        "address": "ul. Połbina 1, 54-151 Wrocław",
+        "address": "ul. Połbina 1",
+        "postalCode": "54-151",
+        "city": "Wrocław",
         "number": "71 340 43 80",
         "coordinates": {
             "longitude": 16.973529,
             "latitude": 51.140285
         },
         "imageName": "policja_fabryczna"
-    }
+    },
+    {
+        "id": 9,
+        "name": "Komisariat Wrocław-Leśnica",
+        "address": "ul. Sredzka 42",
+        "postalCode": "54-055",
+        "city": "Wrocław",
+        "number": "71 340 28 50",
+        "coordinates": {
+            "longitude": 16.973529,
+            "latitude": 51.140285
+        },
+        "imageName": "policja_lesnica"
+    },
+    {
+        "id": 10,
+        "name": "Komisariat Wrocław-Grabiszynek",
+        "address": "ul. Grabiszyńska 255",
+        "postalCode": "53-234",
+        "city": "Wrocław",
+        "number": "71 363 14 21",
+        "coordinates": {
+            "longitude": 16.973529,
+            "latitude": 51.140285
+        },
+        "imageName": "policja_grabiszynek"
+    },
+    {
+       "id": 11,
+       "name": "Komisariat Wrocław-Psie Pole",
+       "address": "pl. Piłsudskiego 6 /8",
+       "postalCode": "51-152",
+       "city": "Wrocław",
+       "number": "71 340 46 05",
+       "coordinates": {
+           "longitude": 16.973529,
+           "latitude": 51.140285
+       },
+       "imageName": "policja_psie_pole"
+    },
+    {
+       "id": 12,
+       "name": "Komisariat Wrocław-Osiedle",
+       "address": "ul. Kiełczowska 15",
+       "postalCode": "51-315",
+       "city": "Wrocław",
+       "number": "71 345 78 94",
+       "coordinates": {
+           "longitude": 16.973529,
+           "latitude": 51.140285
+       },
+       "imageName": "policja_psie_pole"
+    },
+    {
+       "id": 13,
+       "name": "Komisariat Wodny (Komenda Wojewódzka)",
+       "address": "ul. Wybrzeże Wyspiańskiego 39 b",
+       "postalCode": "50-370",
+       "city": "Wrocław",
+       "number": "71 340 27 00",
+       "coordinates": {
+           "longitude": 16.973529,
+           "latitude": 51.140285
+       },
+       "imageName": "policja_psie_pole"
+    },
+    {
+      "id": 14,
+      "name": "Komisariat Kolejowy (Komenda Wojewódzka)",
+      "address": "ul. Piłsudskiego 105",
+      "postalCode": "50-085",
+      "city": "Wrocław",
+      "number": "71 782 44 20",
+      "coordinates": {
+          "longitude": 16.973529,
+          "latitude": 51.140285
+      },
+      "imageName": "policja_psie_pole"
+   },
+     {
+       "id": 15,
+       "name": "Komisariat Policji w Długołęce",
+       "address": "ul. Wrocławska 24",
+       "postalCode": "55-095",
+       "city": "Długołęka",
+       "number": "71 374 76 24",
+       "coordinates": {
+           "longitude": 16.973529,
+           "latitude": 51.140285
+       },
+       "imageName": "policja_psie_pole"
+    },
+     {
+        "id": 16,
+        "name": "Komisariat Policji w Sobótce",
+        "address": "ul. Ogrodowa 8/10",
+        "postalCode": "55-050",
+        "city": "Sobótka",
+        "number": "71 316 21 59",
+        "coordinates": {
+            "longitude": 16.973529,
+            "latitude": 51.140285
+        },
+        "imageName": "policja_psie_pole"
+     },
+     {
+        "id": 17,
+        "name": "Komisariat Policji w Kątach Wrocławskich",
+        "address": "ul.1-go Maja 16",
+        "postalCode": "55-080",
+        "city": "Kąty Wrocławskie",
+        "number": "71 391 17 24",
+        "coordinates": {
+            "longitude": 16.973529,
+            "latitude": 51.140285
+        },
+        "imageName": "policja_psie_pole"
+     },
+     {
+        "id": 18,
+        "name": "Komisariat Policji w Siechnicach",
+        "address": "ul. Jana Pawła II 12",
+        "postalCode": "55-011",
+        "city": "Siechnice",
+        "number": "71 311 62 77",
+        "coordinates": {
+            "longitude": 16.973529,
+            "latitude": 51.140285
+        },
+        "imageName": "policja_psie_pole"
+     }
 ]

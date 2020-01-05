@@ -42,6 +42,18 @@
             "latitude": 59.980167
         },
         "imageName": "1"
+    },
+    {
+        "id": 5,
+        "name": "Chirurgiczny 24 h – Klinika Chirurgii i Urologii Dziecięcej w SPSK1",
+        "address": "ul. M. Curie-Skłodowskiej 50/52, 50-369 Wrocław",
+        "number": "71 770 30 15",
+        "coordinates": {
+            "longitude": -152.665167,
+            "latitude": 59.980167
+        },
+        "imageName": "1"
     }
+
     
 ]

@@ -13,6 +13,8 @@ struct Police: Identifiable, Decodable {
     var id: Int
     var name: String
     var address: String
+    var postalCode: String
+    var city: String
     var number: String
     var imageName: String
     var coordinates: Coordinates

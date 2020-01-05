@@ -1,22 +1,22 @@
 {
-    "intro": "DOJCZ Wrocław to przyjazne miasto, zwłaszcza dla studentów i młodych ludzi. W trudnych sytuacjach może pomóc Ci wiedza, którą podzielili się wrocławscy Policjanci. Aplikacja została utworzona dla wszystkich osób, które szczególnie chcą zadbać o bezpieczeństwo. Tak jak wszędzie, mogą zdarzyć się pewne trudne sytuacje, dlatego zapraszamy Cię do zapoznania z kilkoma poradami, które mogą być przydatne:",
+    "intro": "Wrocław ist eine freundliche Stadt, besonders für die Studenten und junge Menschen.In schwierigen Situationen können Ihnen Informationen behilflich sein, welche die Breslauer Polizisten Ihnen gerne mitteilen. Die Applikation ist für alle Personen, die sich besonders um ihre Sicherheit kümmern wollen. Wie überall, können auch in Wrocławschwierige Situationen vorkommen. Deswegen laden wir Sie dazu ein, einige Ratschläge, die behilflich sein können,zur Kenntnis zu nehmen:",
     "advice": [
         {
             "id": 1,
-            "text": "GERMAN Porada nr #1: Gdy wypłacasz gotówkę z bankomatu – chroń swój numer PIN. Najlepiej zasłoń klawiaturę dłonią, aby nikt go nie zobaczył. Wypłaconej gotówki nie przeliczaj na oczach innych ludzi."
+            "text": "Immer dann, wenn Sie Bargeld aus dem Geldautomaten abheben, schützen Sie Ihre Geheimzahl (PIN). Am besten ist es, die PIN-Tastatur beim Eingeben der Nummer immer mit einer Hand abzuschirmen, damit sie ein potentieller Täter nicht erspähen kann. Die ausgezahlten Banknoten sollen Sie nicht vor Augen anderer nachzählen."
             
         },
         {
             "id": 2,
-            "text": "Porada nr #2: W środkach transportu publicznego (tramwajach i autobusach) jest monitoring. Gdy zdarzy się coś niepokojącego, poinformuj kierowcę. Będzie on mógł odpowiednio zareagować w sytuacji, gdybyś potrzebował pomocy lub wskazać Ci właściwy przystanek."
+            "text": "In den öffentlichen Verkehrsmitteln (in den Strassenbahnen und in den Büssen)gibt es Videoüberwachung. Falls etwas Beunruhigendes passiert, teilen Sie das dem Straßenbahn- bzw. dem Busführer mit. Er kann dann entsprechend reagieren, wenn Sie Hilfe brauchen,oder er kann Ihnen helfen, die entsprechende Haltestelle zu finden."
         },
         {
             "id": 3,
-            "text": "Porada nr #3: Gdy wychodzisz wieczorem, zaplanuj swoją pieszą trasę tak, aby wybierać większe i oświetlone ulice. Ciemne podwórka albo przejścia podziemne mogą Cię czymś zaskoczyć. W miarę możliwości nie spaceruj samotnie."
+            "text": "Wenn Sie am Abend ausgehen, richten Sie Ihre Wandelroute so ein, dass sie entlang größeren und beleuchteten Straßen verläuft. Dunkle Innenhöfe bzw. Fußgängertunnel können Siemit etwas überraschen. Nach Möglichkeit spazieren Sie nicht allein."
         },
         {
             "id": 4,
-            "text": "Porada nr #4: Pamiętaj, aby wszelkie umowy dotyczące wynajmu pokoju/mieszkania zawierać w formie papierowej. Powinieneś jeden egzemplarz umowy otrzymać dla siebie. Jeśli właściciel pobiera kaucję, również powinieneś otrzymać potwierdzenie na kwotę wpłaconej kaucji, abyś nie miał problemów z jej zwrotem. Jeśli umowa na najem lokalu została zawarta na czas nieoznaczony, a czynsz jest płatny miesięcznie, wtedy umowę można wypowiedzieć na trzy miesiące naprzód, zrób to na koniec miesiąca kalendarzowego."
+            "text": "Beachten Sie, dass alle Mietverträge Ihres Wohnzimmers bzw. Ihrer Wohnungimmer in Papierform geschlossen werden.Sie sollen ein Exemplar des Vertrages für sich behalten.Verlangt der Eigentümer Pfand, sollen Sie eine Bestätigung für das eingezahlte Pfand bekommen, damit Sie keine Schwierigkeiten damit haben, das Pfand zurückzubekommen. Wurde der Mietvertrag für unbestimmte Zeit abgeschlossen, und ist die Miete monatlich zahlbar, kann der Vertrag drei Monate im Voraus aufgekündigt werden, tun Sie das am Ende des Kalendermonats."
         }
     ]
 }
