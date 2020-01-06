@@ -2,7 +2,7 @@
 [
     {
         "id": 1,
-        "name": "Komenda Miejska Policji we Wrocławiu",
+        "name": "Komenda Miejska Policji we Wrocławiu [StädtischePolizeidirektion]",
         "address": "ul. Sołtysowicka 21",
         "postalCode": "51-168",
         "city": "Wrocław",
@@ -16,7 +16,7 @@
     },
     {
         "id": 2,
-        "name": "Wydział Ruchu Drogowego",
+        "name": "Wydział Ruchu Drogowego / AbteilungfürStraßenverkehr",
         "address": "ul. Hubska 29/33",
         "postalCode": "50-501",
         "city": "Wrocław",
@@ -29,7 +29,7 @@
     },
     {
         "id": 3,
-        "name": "Komisariat Wrocław-Stare Miasto",
+        "name": "Komisariat Wrocław-Stare Miasto / Polizeirevier Wrocław-Stare Miasto",
         "address": "ul. Trzemeska 12",
         "postalCode": "50-040",
         "city": "Wrocław",
@@ -42,7 +42,7 @@
     },
     {
         "id": 4,
-        "name": "Komisariat Wrocław-Ołbin",
+        "name": "Komisariat Wrocław-Ołbin / Polizeirevier Wrocław-Ołbin",
         "address": "ul. Rydygiera 46 /48",
         "postalCode": "50-249",
         "city": "Wrocław",
@@ -55,7 +55,7 @@
     },
     {
         "id": 5,
-        "name": "Komisariat Wrocław-Śródmieście",
+        "name": "Komisariat Wrocław-Śródmieście / Polizeirevier Wrocław-Śródmieście",
         "address": "ul. Grunwaldzka 6",
         "postalCode": "50-355",
         "city": "Wrocław",
@@ -68,7 +68,7 @@
     },
     {
         "id": 6,
-        "name": "Komisariat Wrocław-Krzyki",
+        "name": "Komisariat Wrocław-Krzyki / Polizeirevier Wrocław-Krzyki",
         "address": "ul. Slężna 115-129",
         "postalCode": "53-123",
         "city": "Wrocław",
@@ -81,7 +81,7 @@
     },
     {
         "id": 7,
-        "name": "Komisariat Wrocław-Rakowiec",
+        "name": "Komisariat Wrocław-Rakowiec / Polizeirevier Wrocław-Rakowiec",
         "address": "ul. Traugutta 94",
         "postalCode": "50-420",
         "city": "Wrocław",
@@ -94,7 +94,7 @@
     },
     {
         "id": 8,
-        "name": "Komisariat Wrocław-Fabryczna",
+        "name": "Komisariat Wrocław-Fabryczna / Polizeirevier Wrocław-Fabryczna",
         "address": "ul. Połbina 1",
         "postalCode": "54-151",
         "city": "Wrocław",
@@ -107,7 +107,7 @@
     },
     {
         "id": 9,
-        "name": "Komisariat Wrocław-Leśnica",
+        "name": "Komisariat Wrocław-Leśnica / Polizeirevier Wrocław-Leśnica",
         "address": "ul. Sredzka 42",
         "postalCode": "54-055",
         "city": "Wrocław",
@@ -120,7 +120,7 @@
     },
     {
         "id": 10,
-        "name": "Komisariat Wrocław-Grabiszynek",
+        "name": "Komisariat Wrocław-Grabiszynek / Polizeirevier Wrocław-Grabiszynek",
         "address": "ul. Grabiszyńska 255",
         "postalCode": "53-234",
         "city": "Wrocław",
@@ -133,7 +133,7 @@
     },
     {
        "id": 11,
-       "name": "Komisariat Wrocław-Psie Pole",
+       "name": "Komisariat Wrocław-Psie Pole / Polizeirevier Wrocław-Psie Pole",
        "address": "pl. Piłsudskiego 6 /8",
        "postalCode": "51-152",
        "city": "Wrocław",
@@ -146,7 +146,7 @@
     },
     {
        "id": 12,
-       "name": "Komisariat Wrocław-Osiedle",
+       "name": "Komisariat Wrocław-Osiedle / Polizeirevier Wrocław-Osiedle",
        "address": "ul. Kiełczowska 15",
        "postalCode": "51-315",
        "city": "Wrocław",
@@ -159,7 +159,7 @@
     },
     {
        "id": 13,
-       "name": "Komisariat Wodny (Komenda Wojewódzka)",
+       "name": "Komisariat Wodny (Komenda Wojewódzka) / Revier der Wasserschutzpolizei ",
        "address": "ul. Wybrzeże Wyspiańskiego 39 b",
        "postalCode": "50-370",
        "city": "Wrocław",
@@ -172,7 +172,7 @@
     },
     {
       "id": 14,
-      "name": "Komisariat Kolejowy (Komenda Wojewódzka)",
+      "name": "Komisariat Kolejowy (KomendaWojewódzka) / Revier der Bahnschutzpolizei ",
       "address": "ul. Piłsudskiego 105",
       "postalCode": "50-085",
       "city": "Wrocław",
@@ -185,7 +185,7 @@
    },
      {
        "id": 15,
-       "name": "Komisariat Policji w Długołęce",
+       "name": "KomisariatPolicji w Długołęce / Polizeirevier in Długołęka",
        "address": "ul. Wrocławska 24",
        "postalCode": "55-095",
        "city": "Długołęka",
@@ -198,7 +198,7 @@
     },
      {
         "id": 16,
-        "name": "Komisariat Policji w Sobótce",
+        "name": "Komisariat Policji w Sobótce / Polizeirevier in Sobótka",
         "address": "ul. Ogrodowa 8/10",
         "postalCode": "55-050",
         "city": "Sobótka",
@@ -211,7 +211,7 @@
      },
      {
         "id": 17,
-        "name": "Komisariat Policji w Kątach Wrocławskich",
+        "name": "Komisariat Policji w Kątach Wrocławskich / Polizeirevier in Kąty Wrocławskie",
         "address": "ul.1-go Maja 16",
         "postalCode": "55-080",
         "city": "Kąty Wrocławskie",
@@ -224,7 +224,7 @@
      },
      {
         "id": 18,
-        "name": "Komisariat Policji w Siechnicach",
+        "name": "Komisariat Policji w Siechnicach / Polizeirevier in Siechnice",
         "address": "ul. Jana Pawła II 12",
         "postalCode": "55-011",
         "city": "Siechnice",

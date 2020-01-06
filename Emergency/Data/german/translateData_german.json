@@ -1,27 +1,27 @@
 [
     {
         "id": 1,
-        "originalText": "Potrzebuje pomocy!",
+        "originalText": "Potrzebuję pomocy!",
         "translation": "Ich brauche Hilfe!"
     },
     {
         "id": 2,
-        "originalText": "Potrzebuje lekarza!",
+        "originalText": "Potrzebuję lekarza!",
         "translation": "Ich benötige einen Arzt!"
     },
     {
         "id": 3,
-        "originalText": "Prosze zabierz mnie do szpitala!",
+        "originalText": "Proszę zabierz mnie do szpitala!",
         "translation": "Bringen Sie mich bitte ins Krankenhaus!"
     },
     {
         "id": 4,
-        "originalText": "Prosze zadzwonic na policje!",
+        "originalText": "Proszę zadzwonić na policje!",
         "translation": "Rufen Sie die Polizei an!"
     },
     {
         "id": 5,
-        "originalText": "Zostalem okradziony!",
+        "originalText": "Zostałem okradziony!",
         "translation": "Man hat mich bestohlen!"
     },
     {

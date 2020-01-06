@@ -1,12 +1,12 @@
 {
-  "news": "News",
-  "advice": "Miscellaneous",
-  "translate": "Useful phrases",
-  "phone": "Emergency aid",
-  "help": "Assistance",
-  "law": "Polish Law",
-  "difficultsituations": "Emergency Situations",
-  "consulate": "Consulates",
-  "hospital": "Hospital",
-  "police": "Police Stations"
+  "news": "Aktuelles",
+  "advice": "Ratschläge",
+  "translate": "Übersetzungen",
+  "phone": "Telefonnummern",
+  "help": "Hilfe",
+  "law": "Gesetze",
+  "difficultsituations": "Notfällen",
+  "consulate": "Konsulate",
+  "hospital": "Krankenhäuser",
+  "police": "Polizeireviere"
 }
