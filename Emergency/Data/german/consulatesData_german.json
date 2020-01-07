@@ -1,4 +1,3 @@
-
 [
     {
         "id": 1,
@@ -44,7 +43,7 @@
         "consulName": "Ehrenkonsul - Zbigniew Sebastian",
         "address": "ul. Świdnicka 39 50-029 Wrocław",
         "number": "71 372 44 91",
-        "email": "konsulatchile@dig.wroc.pl"",
+        "email": "konsulatchile@dig.wroc.pl",
         "coordinates": {
             "longitude": -152.665167,
             "latitude": 59.980167
