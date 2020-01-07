@@ -19,27 +19,35 @@ struct PhoneNumbersCell: View {
                 .background(Color(red: 219 / 255, green: 2 / 255, blue: 109 / 255))
             VStack {
                 Text(phoneNumber.name)
+                    .multilineTextAlignment(.center)
                     .fixedSize(horizontal: false, vertical: true)
                     .lineLimit(nil)
                 Text(phoneNumber.number)
                     .font(.headline)
                     .fontWeight(.bold)
+                    .multilineTextAlignment(.center)
                     .fixedSize(horizontal: false, vertical: true)
                     .lineLimit(nil)
                 if(showDescription) {
                     Text(phoneNumber.available)
                         .font(.body)
                         .fontWeight(.bold)
+                        .multilineTextAlignment(.center)
                         .fixedSize(horizontal: false, vertical: true)
                         .lineLimit(nil)
                         .padding(.leading, 5)
                         .padding(.trailing, 5)
                     Text(phoneNumber.description)
                         .font(.body)
+                        .multilineTextAlignment(.center)
                         .fixedSize(horizontal: false, vertical: true)
                         .lineLimit(nil)
+                        .padding(.leading, 5)
+                        .padding(.trailing, 5)
                 }
             }
+                .padding(.bottom, 5)
+                .padding(.top, 5)
                     
         }
         .foregroundColor(.white)

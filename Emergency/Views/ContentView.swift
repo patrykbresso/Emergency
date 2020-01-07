@@ -36,8 +36,10 @@ struct ContentView: View {
                                     Image("news")
                                         .renderingMode(.original)
                                     Text(self.dataLoader.menuData.news)
-                                    .fontWeight(.bold)
-                                    .multilineTextAlignment(.center)
+                                        .fontWeight(.bold)
+                                        .multilineTextAlignment(.center)
+                                        .fixedSize(horizontal: false, vertical: true)
+                                        .lineLimit(nil)
                                 }.frame(width: geometry.size.width / 2 - 60)
                             }
                             Spacer()
@@ -48,6 +50,8 @@ struct ContentView: View {
                                     Text(self.dataLoader.menuData.advice)
                                         .fontWeight(.bold)
                                         .multilineTextAlignment(.center)
+                                        .fixedSize(horizontal: false, vertical: true)
+                                        .lineLimit(nil)
                                 }.frame(width: geometry.size.width / 2 - 60)
                             }
                         }
@@ -59,6 +63,8 @@ struct ContentView: View {
                                     Text(self.dataLoader.menuData.translate)
                                         .fontWeight(.bold)
                                         .multilineTextAlignment(.center)
+                                        .fixedSize(horizontal: false, vertical: true)
+                                        .lineLimit(nil)
                                 }.frame(width: geometry.size.width / 2 - 60)
                             }
                             Spacer()
@@ -69,6 +75,8 @@ struct ContentView: View {
                                     Text(self.dataLoader.menuData.phone)
                                         .fontWeight(.bold)
                                         .multilineTextAlignment(.center)
+                                        .fixedSize(horizontal: false, vertical: true)
+                                        .lineLimit(nil)
                                 }.frame(width: geometry.size.width / 2 - 60)
                             }
                         }
@@ -79,7 +87,9 @@ struct ContentView: View {
                                         .renderingMode(.original)
                                     Text(self.dataLoader.menuData.help)
                                         .fontWeight(.bold)
+                                        .fixedSize(horizontal: false, vertical: true)
                                         .multilineTextAlignment(.center)
+                                        .lineLimit(nil)
                                 }.frame(width: geometry.size.width / 2 - 60)
                             }
                             Spacer()
@@ -90,6 +100,8 @@ struct ContentView: View {
                                     Text(self.dataLoader.menuData.law)
                                         .fontWeight(.bold)
                                         .multilineTextAlignment(.center)
+                                        .fixedSize(horizontal: false, vertical: true)
+                                        .lineLimit(nil)
                                 }.frame(width: geometry.size.width / 2 - 60)
                             }
                         }
@@ -101,6 +113,8 @@ struct ContentView: View {
                                     Text(self.dataLoader.menuData.difficultsituations)
                                         .fontWeight(.bold)
                                         .multilineTextAlignment(.center)
+                                        .fixedSize(horizontal: false, vertical: true)
+                                        .lineLimit(nil)
                                 }.frame(width: geometry.size.width / 2 - 60)
                                 
                             }
@@ -112,6 +126,8 @@ struct ContentView: View {
                                     Text(self.dataLoader.menuData.consulate)
                                         .fontWeight(.bold)
                                         .multilineTextAlignment(.center)
+                                        .fixedSize(horizontal: false, vertical: true)
+                                        .lineLimit(nil)
                                 }.frame(width: geometry.size.width / 2 - 60)
                             }
                         }
@@ -123,6 +139,8 @@ struct ContentView: View {
                                     Text(self.dataLoader.menuData.hospital)
                                         .fontWeight(.bold)
                                         .multilineTextAlignment(.center)
+                                        .fixedSize(horizontal: false, vertical: true)
+                                        .lineLimit(nil)
                                 }.frame(width: geometry.size.width / 2 - 60)
                             }
                             Spacer()
@@ -133,6 +151,8 @@ struct ContentView: View {
                                     Text(self.dataLoader.menuData.police)
                                         .fontWeight(.bold)
                                         .multilineTextAlignment(.center)
+                                        .fixedSize(horizontal: false, vertical: true)
+                                        .lineLimit(nil)
                                 }.frame(width: geometry.size.width / 2 - 60)
                             }
                         }

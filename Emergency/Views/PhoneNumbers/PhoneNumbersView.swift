@@ -41,8 +41,8 @@ struct PhoneNumbersView: View {
                                     self.onBoxClick(boxNo: row.id - 1)
                                 }) {
                                     PhoneNumbersCell(phoneNumber: row, showDescription: self.boxClicked[row.id - 1])
-                                        .frame(width: 150)
-                                }
+                                        
+                                }.frame(width: 155)
                                 Spacer()
                                 }
                                 .padding(.bottom, 5)
@@ -53,15 +53,15 @@ struct PhoneNumbersView: View {
                                     self.onBoxClick(boxNo: row.id - 1)
                                 }) {
                                     PhoneNumbersCell(phoneNumber: row, showDescription: self.boxClicked[row.id - 1])
-                                    .frame(width: 150)
-                                }
+                                    
+                                }.frame(width: 155)
                             }
                             .padding(.bottom, 5)
                         }
                     }
                 }
-                .padding(.leading, geometry.size.width / 10)
-                .padding(.trailing, geometry.size.width / 10)
+                .padding(.leading, 15)
+                .padding(.trailing, 15)
                 .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity)
                 HStack {
                     Image("magnifier")

@@ -19,7 +19,7 @@ struct TranslateCell: View {
             .stroke(Color(red: 219 / 255, green: 2 / 255, blue: 109 / 255), lineWidth: 10)
             .background(Color(red: 219 / 255, green: 2 / 255, blue: 109 / 255))
             
-            if(showTranslation) {
+            if(!showTranslation) {
                 Text(row.translation)
             } else {
                 Text(row.originalText)

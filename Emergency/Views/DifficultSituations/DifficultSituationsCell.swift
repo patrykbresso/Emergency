@@ -18,6 +18,8 @@ struct DifficultSituationsCell: View {
             .background(Color(red: 219 / 255, green: 2 / 255, blue: 109 / 255))
             
             Text(difficultSituation.title)
+            .fixedSize(horizontal: false, vertical: true)
+            .lineLimit(nil)
         }
         .foregroundColor(.white)
     }

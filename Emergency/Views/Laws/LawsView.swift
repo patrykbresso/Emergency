@@ -14,18 +14,13 @@ struct LawsView: View {
     @State var searchResults: [Page] = []
     @State var show: Bool = false
     @EnvironmentObject var dataLoader: DataLoader
-    let rows = Row.read()
     
     
     var body: some View {
         
         GeometryReader { geometry in
-                
-                
                 VStack(spacing: 30) {
-                    
                     HStack {
-
                         Button(action: {
                             self.presentationMode.wrappedValue.dismiss()
                         }) {
@@ -44,17 +39,19 @@ struct LawsView: View {
                     }
                     .padding(.trailing, 35)
                     .padding(.leading, 35)
-                    
-                    
-                    ForEach(self.rows) { row in
-                        HStack(spacing: 30) {
-                            ForEach(row.cells) { cell in
-                                NavigationLink(destination: LawsDetailView(law: cell)) {
-                                    LawsCell(law: cell)
-                                    }
+                    ForEach((1...(self.dataLoader.lawsData.count - 1)), id: \.self) { i in
+                        
+                            HStack(spacing: 30) {
+                                if(i % 2 == 1) {
+                                    NavigationLink(destination: LawsDetailView(law: self.dataLoader.lawsData[i])) {
+                                        LawsCell(law: self.dataLoader.lawsData[i])
+                                        }.frame(width: geometry.size.width / 2.7)
+                                    
+                                    NavigationLink(destination: LawsDetailView(law: self.dataLoader.lawsData[i])) {
+                                        LawsCell(law: self.dataLoader.lawsData[i + 1])
+                                    }.frame(width: geometry.size.width / 2.7)
+                                }
                             }
-                            .frame(width: geometry.size.width / 2.7)
-                        }
                     }
                     
                     

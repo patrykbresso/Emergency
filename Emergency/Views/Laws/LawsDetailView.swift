@@ -30,13 +30,10 @@ struct LawsDetailView: View {
                     }
                 ScrollView {
                     VStack {
-                        
-                        
                             Text(self.law.title)
                                 .bold()
                             Spacer()
                             Text(self.law.text)
-                        
                     }
                     .padding(20)
                     .frame(width: geometry.size.width / 1.3)
