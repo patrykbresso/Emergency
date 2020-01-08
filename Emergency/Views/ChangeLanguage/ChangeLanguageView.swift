@@ -33,14 +33,14 @@ struct ChangeLanguageView: View {
                 HStack {
                     Button(action: {
                         UserDefaults.standard.set("polish", forKey: "language")
-                        self.showContentView = true
+                        self.presentationMode.wrappedValue.dismiss()
                     }) {
                         ChangeLanguageCell(language: "POLSKI")
                     }
                     Spacer()
                     Button(action: {
                         UserDefaults.standard.set("spanish", forKey: "language")
-                        self.showContentView = true
+                        self.presentationMode.wrappedValue.dismiss()
                     }) {
                         ChangeLanguageCell(language: "Español")
                     }
@@ -48,28 +48,27 @@ struct ChangeLanguageView: View {
                 HStack {
                     Button(action: {
                         UserDefaults.standard.set("english", forKey: "language")
-                        self.showContentView = true
+                        self.presentationMode.wrappedValue.dismiss()
                     }) {
                         ChangeLanguageCell(language: "ENGLISH")
                     }
                     Spacer()
                     Button(action: {
                         UserDefaults.standard.set("ukrainian", forKey: "language")
-                        self.showContentView = true
+                        self.presentationMode.wrappedValue.dismiss()
                     }) {
                         ChangeLanguageCell(language: "Україна")
                     }
                 }
                 Button(action: {
                     UserDefaults.standard.set("german", forKey: "language")
-                    self.showContentView = true
+                    self.presentationMode.wrappedValue.dismiss()
                 }) {
                     ChangeLanguageCell(language: "DEUTSCH")
                 }.onDisappear {
                     self.dataLoader.loadLanguage(language: UserDefaults.standard.string(forKey: "language") ?? "english")
                 }
-                
-                NavigationLink(destination: ContentView(), isActive: self.$showContentView) { EmptyView() }
+
                 
             }
         }

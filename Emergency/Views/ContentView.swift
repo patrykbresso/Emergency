@@ -18,17 +18,22 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
         GeometryReader { geometry in
-            ZStack() {
+            
             if !self.isDrawerOpen {
+                
+                ZStack() {
             VStack(alignment: HorizontalAlignment.leading) {
                     VStack(alignment: .leading, spacing: 30) {
-                        Button(action: {
-                            DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
-                                self.isDrawerOpen.toggle()
+                        HStack() {
+                            Spacer()
+                            Button(action: {
+                                DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+                                    self.isDrawerOpen.toggle()
+                                }
+                            }) {
+                                Text("...")
+                                    .foregroundColor(.red)
                             }
-                        }) {
-                            Text("...")
-                                .foregroundColor(.red)
                         }
                         HStack() {
                             NavigationLink(destination: NewsView()) {
@@ -199,12 +204,13 @@ struct ContentView: View {
             //Show drawer menu
             NavigationDrawer(isOpen: self.isDrawerOpen)
             }
-           .onTapGesture {
-               if self.isDrawerOpen {
-                   self.isDrawerOpen.toggle()
-               }
-            }
+           
             
+        }
+        .onTapGesture {
+           if self.isDrawerOpen {
+               self.isDrawerOpen.toggle()
+           }
         }
     }
     

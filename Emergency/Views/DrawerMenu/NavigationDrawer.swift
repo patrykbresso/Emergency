@@ -10,16 +10,22 @@ import Foundation
 import SwiftUI
 
 struct NavigationDrawer: View {
-    private let width = UIScreen.main.bounds.width - 100
+    private let width = UIScreen.main.bounds.width - 200
+    private let height = UIScreen.main.bounds.height - 700
     let isOpen: Bool
     
     var body: some View {
-        HStack {
-            DrawerContent()
-                .frame(width: self.width)
-                .offset(x: self.isOpen ? 0 : -self.width)
-                .animation(.default)
-            Spacer()
+        GeometryReader { geometry in
+            HStack() {
+                VStack() {
+                    DrawerContent()
+                        .frame(width: !self.isOpen ? 0 : self.width, height: !self.isOpen ? 0 : self.height)
+                        .offset(x: geometry.size.width - 220)
+                        .animation(.default)
+                        .background(Color.white)
+                    Spacer()
+                }
+            }
         }
     }
 }
