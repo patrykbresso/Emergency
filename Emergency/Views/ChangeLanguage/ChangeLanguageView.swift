@@ -14,6 +14,7 @@ import Combine
 
 struct ChangeLanguageView: View {
     
+    @EnvironmentObject var dropDown : DropDownMenu
     @EnvironmentObject var dataLoader: DataLoader
     @State private var showContentView = false
     @Environment(\.presentationMode) var presentationMode
@@ -67,6 +68,7 @@ struct ChangeLanguageView: View {
                     ChangeLanguageCell(language: "DEUTSCH")
                 }.onDisappear {
                     self.dataLoader.loadLanguage(language: UserDefaults.standard.string(forKey: "language") ?? "english")
+                    self.dropDown.isDropDownMenuOpen.toggle()
                 }
 
                 

@@ -31,10 +31,9 @@
 		9F7D3A782397CFD10092ADD6 /* Laws.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F7D3A772397CFD10092ADD6 /* Laws.swift */; };
 		9F7D3A7A2397D0330092ADD6 /* LawsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F7D3A792397D0330092ADD6 /* LawsCell.swift */; };
 		9F7D3A7C2397D2E80092ADD6 /* LawsDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F7D3A7B2397D2E80092ADD6 /* LawsDetailView.swift */; };
+		9F87D2DD23D74E5500CDAB7C /* DropDown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F87D2DC23D74E5500CDAB7C /* DropDown.swift */; };
 		9F8F031123AA7865004FB4A0 /* ChangeLanguageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8F031023AA7865004FB4A0 /* ChangeLanguageView.swift */; };
 		9F8F031423AA7A79004FB4A0 /* ChangeLanguageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8F031323AA7A79004FB4A0 /* ChangeLanguageCell.swift */; };
-		9F8F037D23AAA9A0004FB4A0 /* DrawerContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8F037C23AAA9A0004FB4A0 /* DrawerContent.swift */; };
-		9F8F037F23AAA9BB004FB4A0 /* NavigationDrawer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8F037E23AAA9BB004FB4A0 /* NavigationDrawer.swift */; };
 		9FAACF852379B65600C3CF94 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FAACF842379B65600C3CF94 /* AppDelegate.swift */; };
 		9FAACF872379B65600C3CF94 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FAACF862379B65600C3CF94 /* SceneDelegate.swift */; };
 		9FAACF892379B65600C3CF94 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FAACF882379B65600C3CF94 /* ContentView.swift */; };
@@ -175,10 +174,9 @@
 		9F7D3A772397CFD10092ADD6 /* Laws.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Laws.swift; sourceTree = "<group>"; };
 		9F7D3A792397D0330092ADD6 /* LawsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LawsCell.swift; sourceTree = "<group>"; };
 		9F7D3A7B2397D2E80092ADD6 /* LawsDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LawsDetailView.swift; sourceTree = "<group>"; };
+		9F87D2DC23D74E5500CDAB7C /* DropDown.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropDown.swift; sourceTree = "<group>"; };
 		9F8F031023AA7865004FB4A0 /* ChangeLanguageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeLanguageView.swift; sourceTree = "<group>"; };
 		9F8F031323AA7A79004FB4A0 /* ChangeLanguageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeLanguageCell.swift; sourceTree = "<group>"; };
-		9F8F037C23AAA9A0004FB4A0 /* DrawerContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawerContent.swift; sourceTree = "<group>"; };
-		9F8F037E23AAA9BB004FB4A0 /* NavigationDrawer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationDrawer.swift; sourceTree = "<group>"; };
 		9FAACF812379B65600C3CF94 /* Emergency.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Emergency.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FAACF842379B65600C3CF94 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9FAACF862379B65600C3CF94 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -394,13 +392,12 @@
 			path = ChangeLanguage;
 			sourceTree = "<group>";
 		};
-		9F8F037B23AAA986004FB4A0 /* DrawerMenu */ = {
+		9F8F037B23AAA986004FB4A0 /* DropMenu */ = {
 			isa = PBXGroup;
 			children = (
-				9F8F037C23AAA9A0004FB4A0 /* DrawerContent.swift */,
-				9F8F037E23AAA9BB004FB4A0 /* NavigationDrawer.swift */,
+				9F87D2DC23D74E5500CDAB7C /* DropDown.swift */,
 			);
-			path = DrawerMenu;
+			path = DropMenu;
 			sourceTree = "<group>";
 		};
 		9FAACF782379B65600C3CF94 = {
@@ -607,7 +604,7 @@
 		E8AD7F4B239BF509005150A7 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				9F8F037B23AAA986004FB4A0 /* DrawerMenu */,
+				9F8F037B23AAA986004FB4A0 /* DropMenu */,
 				9FAACF882379B65600C3CF94 /* ContentView.swift */,
 				E82DE11C23999E57009F0F37 /* MailView.swift */,
 				E83E446423A3FDB4003AB246 /* SearchResultsView.swift */,
@@ -961,6 +958,7 @@
 				9F7A4F2A238DA348001C4B7A /* ConsulatesRow.swift in Sources */,
 				A151BB2A237F2AFE007CEEC1 /* PoliceRow.swift in Sources */,
 				9F169A88237F6740005A8618 /* PoliceDetailView.swift in Sources */,
+				9F87D2DD23D74E5500CDAB7C /* DropDown.swift in Sources */,
 				9F169A8A237F67F5005A8618 /* MapView.swift in Sources */,
 				E8590BB92398469B00C37EE8 /* CustomTextFieldStyle.swift in Sources */,
 				A151BB1C237F2A7A007CEEC1 /* TranslateView.swift in Sources */,
@@ -968,7 +966,6 @@
 				E8AD7F45239BEAA0005150A7 /* DifficultSituationsDetailView.swift in Sources */,
 				A151BB28237F2AF1007CEEC1 /* HospitalsView.swift in Sources */,
 				A151BB22237F2AB3007CEEC1 /* LawsView.swift in Sources */,
-				9F8F037F23AAA9BB004FB4A0 /* NavigationDrawer.swift in Sources */,
 				9F8F031123AA7865004FB4A0 /* ChangeLanguageView.swift in Sources */,
 				9F7A4F21238DA049001C4B7A /* HospitalsRow.swift in Sources */,
 				9F169A82237F428D005A8618 /* Police.swift in Sources */,
@@ -986,7 +983,6 @@
 				A151BB20237F2AA1007CEEC1 /* HelpView.swift in Sources */,
 				9F43E11023C23D7E0023E14D /* Menu.swift in Sources */,
 				E8625AB723BE0ABD00C6D983 /* SearchController.swift in Sources */,
-				9F8F037D23AAA9A0004FB4A0 /* DrawerContent.swift in Sources */,
 				E83E446123A3E62F003AB246 /* SearchKeywords.swift in Sources */,
 				9FAACF892379B65600C3CF94 /* ContentView.swift in Sources */,
 				9F7A4F23238DA05A001C4B7A /* HospitalsDetailView.swift in Sources */,

@@ -10,31 +10,18 @@ import SwiftUI
 
 struct ContentView: View {
     @State var show: Bool = false
-    @State var isDrawerOpen: Bool = false
     @State private var keyword: String = ""
     @State var searchResults: [Page] = []
     @EnvironmentObject var dataLoader: DataLoader
+    @EnvironmentObject var dropDown : DropDownMenu
+    @State var isDropDownOpen = false
     
     var body: some View {
         NavigationView {
         GeometryReader { geometry in
-            
-            if !self.isDrawerOpen {
-                
                 ZStack() {
-            VStack(alignment: HorizontalAlignment.leading) {
                     VStack(alignment: .leading, spacing: 30) {
-                        HStack() {
-                            Spacer()
-                            Button(action: {
-                                DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
-                                    self.isDrawerOpen.toggle()
-                                }
-                            }) {
-                                Text("...")
-                                    .foregroundColor(.red)
-                            }
-                        }
+                        //Drop down menu
                         HStack() {
                             NavigationLink(destination: NewsView()) {
                                 VStack {
@@ -185,6 +172,7 @@ struct ContentView: View {
                         .foregroundColor(.white)
                         NavigationLink(destination: SearchResultsView(searchTerm: self.keyword, results: self.searchResults), isActive: self.$show, label: { EmptyView()})
                     }
+                    .padding(.top, 30)
                     .padding(.leading, 30)
                     .padding(.trailing, 30)
                     .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: .topLeading)
@@ -192,26 +180,29 @@ struct ContentView: View {
                         .edgesIgnoringSafeArea(.all))
                     .foregroundColor(.white)
                     
+                
                 }
                 .navigationBarTitle("")
                 .navigationBarHidden(true)
                 .navigationBarBackButtonHidden(true)
+                .disabled(self.dropDown.isDropDownMenuOpen)
+                .blur(radius: self.dropDown.isDropDownMenuOpen ? 20 : 0)
+                HStack() {
+                    Spacer()
+                    DropDown()
+                }.offset(x: -30)
+        }.onTapGesture {
+                if self.dropDown.isDropDownMenuOpen {
+                    self.dropDown.isDropDownMenuOpen.toggle()
+                }
             }
-            //Check if its first launch of app
             
-            }
             
-            //Show drawer menu
-            NavigationDrawer(isOpen: self.isDrawerOpen)
-            }
+            
            
             
         }
-        .onTapGesture {
-           if self.isDrawerOpen {
-               self.isDrawerOpen.toggle()
-           }
-        }
+        
     }
     
 }
