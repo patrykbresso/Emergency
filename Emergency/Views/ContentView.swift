@@ -14,12 +14,21 @@ struct ContentView: View {
     @State var searchResults: [Page] = []
     @EnvironmentObject var dataLoader: DataLoader
     @EnvironmentObject var dropDown : DropDownMenu
-    @State var isDropDownOpen = false
+    @EnvironmentObject var launch: FirstLaunch
+    @State private var alwaysTrue: Bool = true
+    
+    
     
     var body: some View {
         NavigationView {
         GeometryReader { geometry in
                 ZStack() {
+                    
+                    if !self.launch.firstLoad {
+                        NavigationLink(destination: ChangeLanguageView(), isActive:  self.$alwaysTrue) {
+                                              EmptyView()
+                                      }
+                    }
                     VStack(alignment: .leading, spacing: 30) {
                         //Drop down menu
                         HStack() {
@@ -202,7 +211,6 @@ struct ContentView: View {
            
             
         }
-        
     }
     
 }

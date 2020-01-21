@@ -32,6 +32,7 @@
 		9F7D3A7A2397D0330092ADD6 /* LawsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F7D3A792397D0330092ADD6 /* LawsCell.swift */; };
 		9F7D3A7C2397D2E80092ADD6 /* LawsDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F7D3A7B2397D2E80092ADD6 /* LawsDetailView.swift */; };
 		9F87D2DD23D74E5500CDAB7C /* DropDown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F87D2DC23D74E5500CDAB7C /* DropDown.swift */; };
+		9F87D2DF23D76FD400CDAB7C /* FirstLaunch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F87D2DE23D76FD400CDAB7C /* FirstLaunch.swift */; };
 		9F8F031123AA7865004FB4A0 /* ChangeLanguageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8F031023AA7865004FB4A0 /* ChangeLanguageView.swift */; };
 		9F8F031423AA7A79004FB4A0 /* ChangeLanguageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8F031323AA7A79004FB4A0 /* ChangeLanguageCell.swift */; };
 		9FAACF852379B65600C3CF94 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FAACF842379B65600C3CF94 /* AppDelegate.swift */; };
@@ -175,6 +176,7 @@
 		9F7D3A792397D0330092ADD6 /* LawsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LawsCell.swift; sourceTree = "<group>"; };
 		9F7D3A7B2397D2E80092ADD6 /* LawsDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LawsDetailView.swift; sourceTree = "<group>"; };
 		9F87D2DC23D74E5500CDAB7C /* DropDown.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropDown.swift; sourceTree = "<group>"; };
+		9F87D2DE23D76FD400CDAB7C /* FirstLaunch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstLaunch.swift; sourceTree = "<group>"; };
 		9F8F031023AA7865004FB4A0 /* ChangeLanguageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeLanguageView.swift; sourceTree = "<group>"; };
 		9F8F031323AA7A79004FB4A0 /* ChangeLanguageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeLanguageCell.swift; sourceTree = "<group>"; };
 		9FAACF812379B65600C3CF94 /* Emergency.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Emergency.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -438,6 +440,7 @@
 				9FAACF922379B65900C3CF94 /* Info.plist */,
 				9FAACF8C2379B65900C3CF94 /* Preview Content */,
 				E8590BB82398469B00C37EE8 /* CustomTextFieldStyle.swift */,
+				9F87D2DE23D76FD400CDAB7C /* FirstLaunch.swift */,
 			);
 			path = Emergency;
 			sourceTree = "<group>";
@@ -965,6 +968,7 @@
 				E8DFAD6C239D2C5D00D4CD74 /* PhoneNumbersCell.swift in Sources */,
 				E8AD7F45239BEAA0005150A7 /* DifficultSituationsDetailView.swift in Sources */,
 				A151BB28237F2AF1007CEEC1 /* HospitalsView.swift in Sources */,
+				9F87D2DF23D76FD400CDAB7C /* FirstLaunch.swift in Sources */,
 				A151BB22237F2AB3007CEEC1 /* LawsView.swift in Sources */,
 				9F8F031123AA7865004FB4A0 /* ChangeLanguageView.swift in Sources */,
 				9F7A4F21238DA049001C4B7A /* HospitalsRow.swift in Sources */,

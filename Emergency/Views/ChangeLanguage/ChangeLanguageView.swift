@@ -18,7 +18,7 @@ struct ChangeLanguageView: View {
     @EnvironmentObject var dataLoader: DataLoader
     @State private var showContentView = false
     @Environment(\.presentationMode) var presentationMode
-    
+    @EnvironmentObject var launch: FirstLaunch
 
     var body: some View {
         GeometryReader { geometry in
@@ -67,8 +67,9 @@ struct ChangeLanguageView: View {
                 }) {
                     ChangeLanguageCell(language: "DEUTSCH")
                 }.onDisappear {
+                    UserDefaults.standard.set(true, forKey: "launchedBefore")
                     self.dataLoader.loadLanguage(language: UserDefaults.standard.string(forKey: "language") ?? "english")
-                    self.dropDown.isDropDownMenuOpen.toggle()
+                    self.dropDown.isDropDownMenuOpen = false
                 }
 
                 

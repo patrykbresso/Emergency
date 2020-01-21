@@ -12,7 +12,6 @@ import SwiftUI
 struct DropDown : View {
 
     @EnvironmentObject var dropDown : DropDownMenu
-   
     var body: some View {
         VStack(alignment: .trailing) {
             HStack() {
@@ -29,11 +28,9 @@ struct DropDown : View {
                                     .renderingMode(.original)
                                     .resizable()
                                     .frame(width: 35, height: 30)
-                                    
                                 Text("Language")
                                     .foregroundColor(Color.white)
                             }
-
                     }
                     HStack {
                         Image("group_of_people")
@@ -54,6 +51,3 @@ struct DropDown : View {
     }
 }
 
-class DropDownMenu : ObservableObject {
-    @Published var isDropDownMenuOpen = false
-}
