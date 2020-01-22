@@ -31,8 +31,8 @@ struct AdviceView: View {
                     }.padding(.leading, 15)
                     ZStack {
                         RoundedRectangle(cornerRadius: 10)
-                        .stroke(Color(red: 219 / 255, green: 2 / 255, blue: 109 / 255), lineWidth: 10)
-                            .background(Color(red: 219 / 255, green: 2 / 255, blue: 109 / 255))
+                            .stroke(Color.primaryPink, lineWidth: 10)
+                            .background(Color.primaryPink)
                         
                          Text(self.dataLoader.adviceData.intro).padding(15)
                         
@@ -41,8 +41,8 @@ struct AdviceView: View {
                         ForEach(self.dataLoader.adviceData.advice) { advice in
                             ZStack {
                                 RoundedRectangle(cornerRadius: 10)
-                                .stroke(Color(red: 219 / 255, green: 2 / 255, blue: 109 / 255), lineWidth: 10)
-                                .background(Color(red: 219 / 255, green: 2 / 255, blue: 109 / 255))
+                                    .stroke(Color.primaryPink, lineWidth: 10)
+                                .background(Color.primaryPink)
                                 
                                 Text(advice.text).padding(15).lineLimit(nil)
                                     .fixedSize(horizontal: false, vertical: true)
@@ -74,7 +74,7 @@ struct AdviceView: View {
             NavigationLink(destination: SearchResultsView(searchTerm: self.keyword, results: self.searchResults), isActive: self.$show, label: { EmptyView()})
         }
         .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity)
-        .background(Color(red: 19 / 255, green: 42 / 255, blue: 122 / 255)
+        .background(Color.primaryBlue
         .edgesIgnoringSafeArea(.all)
         )
         .navigationBarTitle("")

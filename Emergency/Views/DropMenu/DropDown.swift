@@ -12,42 +12,49 @@ import SwiftUI
 struct DropDown : View {
 
     @EnvironmentObject var dropDown : DropDownMenu
+    @EnvironmentObject var dataLoader: DataLoader
+    
     var body: some View {
         VStack(alignment: .trailing) {
             HStack() {
                Text("...")
-                }.foregroundColor(Color(red: 219 / 255, green: 2 / 255, blue: 109 / 255))
+            }.foregroundColor(Color.primaryPink)
                 .onTapGesture {
                     self.dropDown.isDropDownMenuOpen.toggle()
                 }
             if self.dropDown.isDropDownMenuOpen {
-                VStack(alignment: .leading) {
-                    NavigationLink(destination: ChangeLanguageView()) {
-                            HStack {
-                                Image("translate")
-                                    .renderingMode(.original)
-                                    .resizable()
-                                    .frame(width: 35, height: 30)
-                                Text("Language")
-                                    .foregroundColor(Color.white)
-                            }
-                    }
-                    HStack {
-                        Image("group_of_people")
-                            .renderingMode(.original)
-                            .resizable()
-                            .frame(width: 55, height: 55)
-                        Text("Stopka")
+                VStack() {
+                        Text(self.dataLoader.footerData.footer)
+                            .multilineTextAlignment(.center)
                             .foregroundColor(Color.white)
-                    }
-                    }.padding(5)
-                    .overlay(
-                        RoundedRectangle(cornerRadius: 6)
-                            .stroke(Color(red: 219 / 255, green: 2 / 255, blue: 109 / 255), lineWidth: 2)
-                    )
+                            Spacer()
+                        NavigationLink(destination: ChangeLanguageView()) {
+                            Text(self.dataLoader.footerData.changeLanguage)
+                                .multilineTextAlignment(.center)
+                                .foregroundColor(Color.primaryPink)
+                                .frame(width: UIScreen.screenWidth * 0.56, height: UIScreen.screenHeight * 0.07)
+                                
+                                .overlay(
+                                    RoundedRectangle(cornerRadius: 6)
+                                        .stroke(Color.primaryPink)
+                                    
+                                )
+                        }
+                }.frame(width: self.dropDown.isDropDownMenuOpen ? UIScreen.screenWidth * 0.63 : 10, height: self.dropDown.isDropDownMenuOpen ? UIScreen.screenHeight * 0.63 : 10)
+                    .padding(UIScreen.screenWidth * 0.07)
+                .overlay(
+                    RoundedRectangle(cornerRadius: 6)
+                        .stroke(Color.primaryPink)
+                )
             }
-        }.background(Color(red: 19 / 255, green: 42 / 255, blue: 122 / 255))
+        }
+        .background(Color.primaryBlue)
         
     }
 }
 
+struct DropDown_Previews: PreviewProvider {
+    static var previews: some View {
+        DropDown()
+    }
+}

@@ -58,8 +58,8 @@ struct PoliceDetailView: View {
 
                 ZStack {
                     RoundedRectangle(cornerRadius: 10)
-                    .stroke(Color(red: 219 / 255, green: 2 / 255, blue: 109 / 255), lineWidth: 10)
-                    .background(Color(red: 219 / 255, green: 2 / 255, blue: 109 / 255))
+                    .stroke(Color.primaryPink, lineWidth: 10)
+                    .background(Color.primaryPink)
                         .frame(width: geometry.size.width / 1.25, height: geometry.size.height / 6)
                     VStack {
                         Text(self.policeStation.name)
@@ -81,7 +81,7 @@ struct PoliceDetailView: View {
                 
             }
             .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: .center)
-            .background(Color(red: 19 / 255, green: 42 / 255, blue: 122 / 255)
+            .background(Color.primaryBlue
             .edgesIgnoringSafeArea(.all)
             )
             .navigationBarTitle("")

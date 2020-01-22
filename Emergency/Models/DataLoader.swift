@@ -13,14 +13,15 @@ import CoreLocation
 class DataLoader: ObservableObject {
 
     @Published var policeData: [Police]
-       @Published var hospitalsData: [Hospitals]
-       @Published var consulatesData: [Consulates]
-       @Published var lawsData: [Laws]
-       @Published var difficultSituationsData: [DifficultSituations]
-       @Published var adviceData: Advice
-       @Published var phoneNumbersData: [PhoneNumber]
-       @Published var translateData: [Translate]
-       @Published var searchKeywords: [SearchKeywords]
+    @Published var hospitalsData: [Hospitals]
+    @Published var consulatesData: [Consulates]
+    @Published var lawsData: [Laws]
+    @Published var difficultSituationsData: [DifficultSituations]
+    @Published var adviceData: Advice
+    @Published var phoneNumbersData: [PhoneNumber]
+    @Published var translateData: [Translate]
+    @Published var footerData: Footer
+    @Published var searchKeywords: [SearchKeywords]
     @Published var menuData: Menu
     
     
@@ -35,6 +36,7 @@ class DataLoader: ObservableObject {
         adviceData = DataLoader.load("adviceData_\(language).json")
         phoneNumbersData = DataLoader.load("phoneNumbersData_\(language).json")
         translateData = DataLoader.load("translateData_\(language).json")
+        footerData = DataLoader.load("footer_changelanguage_\(language).json")
         searchKeywords = DataLoader.load("searchKeywords_\(language).json")
         menuData = DataLoader.load("mainMenu_\(language).json")
     
@@ -50,6 +52,7 @@ class DataLoader: ObservableObject {
         adviceData = DataLoader.load("adviceData_\(language).json")
         phoneNumbersData = DataLoader.load("phoneNumbersData_\(language).json")
         translateData = DataLoader.load("translateData_\(language).json")
+        footerData = DataLoader.load("footer_changelanguage_\(language).json")
         searchKeywords = DataLoader.load("searchKeywords_\(language).json")
         menuData = DataLoader.load("mainMenu_\(language).json")
     }

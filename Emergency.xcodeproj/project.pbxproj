@@ -33,6 +33,18 @@
 		9F7D3A7C2397D2E80092ADD6 /* LawsDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F7D3A7B2397D2E80092ADD6 /* LawsDetailView.swift */; };
 		9F87D2DD23D74E5500CDAB7C /* DropDown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F87D2DC23D74E5500CDAB7C /* DropDown.swift */; };
 		9F87D2DF23D76FD400CDAB7C /* FirstLaunch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F87D2DE23D76FD400CDAB7C /* FirstLaunch.swift */; };
+		9F87D2E123D8347500CDAB7C /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F87D2E023D8347500CDAB7C /* Color.swift */; };
+		9F87D2E523D83D8E00CDAB7C /* footer_changelanguage_english.json in Resources */ = {isa = PBXBuildFile; fileRef = 9F87D2E423D83D8E00CDAB7C /* footer_changelanguage_english.json */; };
+		9F87D2E723D83D9F00CDAB7C /* footer_changelanguage_german.json in Resources */ = {isa = PBXBuildFile; fileRef = 9F87D2E623D83D9F00CDAB7C /* footer_changelanguage_german.json */; };
+		9F87D2E923D83DB400CDAB7C /* footer_changelanguage_polish.json in Resources */ = {isa = PBXBuildFile; fileRef = 9F87D2E823D83DB400CDAB7C /* footer_changelanguage_polish.json */; };
+		9F87D2EB23D83DD300CDAB7C /* footer_changelanguage_ukrainian.json in Resources */ = {isa = PBXBuildFile; fileRef = 9F87D2EA23D83DD300CDAB7C /* footer_changelanguage_ukrainian.json */; };
+		9F87D2ED23D83DE100CDAB7C /* footer_changelanguage_spanish.json in Resources */ = {isa = PBXBuildFile; fileRef = 9F87D2EC23D83DE100CDAB7C /* footer_changelanguage_spanish.json */; };
+		9F87D2EF23D83DF400CDAB7C /* footer_changelanguage.json in Resources */ = {isa = PBXBuildFile; fileRef = 9F87D2EE23D83DF400CDAB7C /* footer_changelanguage.json */; };
+		9F87D2F123D83E2900CDAB7C /* Footer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F87D2F023D83E2900CDAB7C /* Footer.swift */; };
+		9F87D2F323D849DF00CDAB7C /* UIScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F87D2F223D849DF00CDAB7C /* UIScreen.swift */; };
+		9F87D2F723D85B2C00CDAB7C /* ITC_Avant_Garde_Gothic_Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9F87D2F623D85B2C00CDAB7C /* ITC_Avant_Garde_Gothic_Medium.otf */; };
+		9F87D2F823D85B2C00CDAB7C /* ITC_Avant_Garde_Gothic_Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9F87D2F623D85B2C00CDAB7C /* ITC_Avant_Garde_Gothic_Medium.otf */; };
+		9F87D2F923D85B2C00CDAB7C /* ITC_Avant_Garde_Gothic_Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9F87D2F623D85B2C00CDAB7C /* ITC_Avant_Garde_Gothic_Medium.otf */; };
 		9F8F031123AA7865004FB4A0 /* ChangeLanguageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8F031023AA7865004FB4A0 /* ChangeLanguageView.swift */; };
 		9F8F031423AA7A79004FB4A0 /* ChangeLanguageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8F031323AA7A79004FB4A0 /* ChangeLanguageCell.swift */; };
 		9FAACF852379B65600C3CF94 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FAACF842379B65600C3CF94 /* AppDelegate.swift */; };
@@ -177,6 +189,16 @@
 		9F7D3A7B2397D2E80092ADD6 /* LawsDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LawsDetailView.swift; sourceTree = "<group>"; };
 		9F87D2DC23D74E5500CDAB7C /* DropDown.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropDown.swift; sourceTree = "<group>"; };
 		9F87D2DE23D76FD400CDAB7C /* FirstLaunch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstLaunch.swift; sourceTree = "<group>"; };
+		9F87D2E023D8347500CDAB7C /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		9F87D2E423D83D8E00CDAB7C /* footer_changelanguage_english.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = footer_changelanguage_english.json; sourceTree = "<group>"; };
+		9F87D2E623D83D9F00CDAB7C /* footer_changelanguage_german.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = footer_changelanguage_german.json; sourceTree = "<group>"; };
+		9F87D2E823D83DB400CDAB7C /* footer_changelanguage_polish.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = footer_changelanguage_polish.json; sourceTree = "<group>"; };
+		9F87D2EA23D83DD300CDAB7C /* footer_changelanguage_ukrainian.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = footer_changelanguage_ukrainian.json; sourceTree = "<group>"; };
+		9F87D2EC23D83DE100CDAB7C /* footer_changelanguage_spanish.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = footer_changelanguage_spanish.json; sourceTree = "<group>"; };
+		9F87D2EE23D83DF400CDAB7C /* footer_changelanguage.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = footer_changelanguage.json; sourceTree = "<group>"; };
+		9F87D2F023D83E2900CDAB7C /* Footer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Footer.swift; sourceTree = "<group>"; };
+		9F87D2F223D849DF00CDAB7C /* UIScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIScreen.swift; sourceTree = "<group>"; };
+		9F87D2F623D85B2C00CDAB7C /* ITC_Avant_Garde_Gothic_Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ITC_Avant_Garde_Gothic_Medium.otf; sourceTree = "<group>"; };
 		9F8F031023AA7865004FB4A0 /* ChangeLanguageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeLanguageView.swift; sourceTree = "<group>"; };
 		9F8F031323AA7A79004FB4A0 /* ChangeLanguageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeLanguageCell.swift; sourceTree = "<group>"; };
 		9FAACF812379B65600C3CF94 /* Emergency.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Emergency.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -351,6 +373,7 @@
 				E83E446023A3E62F003AB246 /* SearchKeywords.swift */,
 				E83E446223A3F29B003AB246 /* Page.swift */,
 				9F43E10F23C23D7E0023E14D /* Menu.swift */,
+				9F87D2F023D83E2900CDAB7C /* Footer.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -383,6 +406,14 @@
 				9F7D3A7B2397D2E80092ADD6 /* LawsDetailView.swift */,
 			);
 			path = Laws;
+			sourceTree = "<group>";
+		};
+		9F87D2F423D85B0700CDAB7C /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				9F87D2F623D85B2C00CDAB7C /* ITC_Avant_Garde_Gothic_Medium.otf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 		9F8F031223AA7A55004FB4A0 /* ChangeLanguage */ = {
@@ -427,6 +458,7 @@
 		9FAACF832379B65600C3CF94 /* Emergency */ = {
 			isa = PBXGroup;
 			children = (
+				9F87D2F423D85B0700CDAB7C /* Fonts */,
 				E8625AB523BE0AA000C6D983 /* Controllers */,
 				E8AD7F4B239BF509005150A7 /* Views */,
 				E8AD7F4A239BF4F2005150A7 /* Data */,
@@ -441,6 +473,8 @@
 				9FAACF8C2379B65900C3CF94 /* Preview Content */,
 				E8590BB82398469B00C37EE8 /* CustomTextFieldStyle.swift */,
 				9F87D2DE23D76FD400CDAB7C /* FirstLaunch.swift */,
+				9F87D2E023D8347500CDAB7C /* Color.swift */,
+				9F87D2F223D849DF00CDAB7C /* UIScreen.swift */,
 			);
 			path = Emergency;
 			sourceTree = "<group>";
@@ -474,6 +508,7 @@
 		9FB3E49323ABE211005E1095 /* english */ = {
 			isa = PBXGroup;
 			children = (
+				9F87D2E423D83D8E00CDAB7C /* footer_changelanguage_english.json */,
 				9F43E11123C240440023E14D /* mainMenu_english.json */,
 				9FB3E49423ABE211005E1095 /* adviceData_english.json */,
 				9FB3E49523ABE211005E1095 /* policeData_english.json */,
@@ -491,6 +526,7 @@
 		9FB3E49D23ABE211005E1095 /* polish */ = {
 			isa = PBXGroup;
 			children = (
+				9F87D2E823D83DB400CDAB7C /* footer_changelanguage_polish.json */,
 				9F43E11923C2409A0023E14D /* mainMenu_polish.json */,
 				9FB3E49E23ABE211005E1095 /* lawsData_polish.json */,
 				9FB3E49F23ABE211005E1095 /* phoneNumbersData_polish.json */,
@@ -508,6 +544,7 @@
 		9FB3E4A723ABE211005E1095 /* ukrainian */ = {
 			isa = PBXGroup;
 			children = (
+				9F87D2EA23D83DD300CDAB7C /* footer_changelanguage_ukrainian.json */,
 				9F43E11D23C240B70023E14D /* mainMenu_ukrainian.json */,
 				9FB3E4A823ABE211005E1095 /* phoneNumbersData_ukrainian.json */,
 				9FB3E4A923ABE211005E1095 /* translateData_ukrainian.json */,
@@ -525,6 +562,7 @@
 		9FB3E4B123ABE211005E1095 /* german */ = {
 			isa = PBXGroup;
 			children = (
+				9F87D2E623D83D9F00CDAB7C /* footer_changelanguage_german.json */,
 				9F43E11723C240850023E14D /* mainMenu_german.json */,
 				9FB3E4B223ABE211005E1095 /* hospitalsData_german.json */,
 				9FB3E4B323ABE211005E1095 /* translateData_german.json */,
@@ -542,6 +580,7 @@
 		9FB3E4BB23ABE211005E1095 /* spanish */ = {
 			isa = PBXGroup;
 			children = (
+				9F87D2EC23D83DE100CDAB7C /* footer_changelanguage_spanish.json */,
 				9F43E11B23C240A60023E14D /* mainMenu_spanish.json */,
 				9FB3E4BC23ABE211005E1095 /* policeData_spanish.json */,
 				9FB3E4BD23ABE211005E1095 /* adviceData_spanish.json */,
@@ -559,6 +598,7 @@
 		9FB3E4F223ABE2C4005E1095 /* previewData */ = {
 			isa = PBXGroup;
 			children = (
+				9F87D2EE23D83DF400CDAB7C /* footer_changelanguage.json */,
 				9FB3E4F323ABE2C4005E1095 /* policeData.json */,
 				9FB3E4F423ABE2C4005E1095 /* hospitalsData.json */,
 				9F43E11323C2405C0023E14D /* mainMenu.json */,
@@ -816,12 +856,15 @@
 				9FB3E4FD23ABE2C4005E1095 /* hospitalsData.json in Resources */,
 				9FB3E4C623ABE211005E1095 /* policeData_english.json in Resources */,
 				9F43E11823C240850023E14D /* mainMenu_german.json in Resources */,
+				9F87D2F723D85B2C00CDAB7C /* ITC_Avant_Garde_Gothic_Medium.otf in Resources */,
 				9FB3E4C923ABE211005E1095 /* consulatesData_english.json in Resources */,
 				9FB3E4D423ABE211005E1095 /* searchKeywords_polish.json in Resources */,
+				9F87D2EB23D83DD300CDAB7C /* footer_changelanguage_ukrainian.json in Resources */,
 				9FB3E4EF23ABE211005E1095 /* difficultSituationsData_spanish.json in Resources */,
 				9F43E11423C2405C0023E14D /* mainMenu.json in Resources */,
 				9FB3E4C823ABE211005E1095 /* translateData_english.json in Resources */,
 				9FB3E4C523ABE211005E1095 /* adviceData_english.json in Resources */,
+				9F87D2ED23D83DE100CDAB7C /* footer_changelanguage_spanish.json in Resources */,
 				9FB3E50023ABE2C4005E1095 /* consulatesData.json in Resources */,
 				9F43E11223C240440023E14D /* mainMenu_english.json in Resources */,
 				9FB3E4CA23ABE211005E1095 /* difficultSituationsData_english.json in Resources */,
@@ -830,6 +873,7 @@
 				9FB3E4EA23ABE211005E1095 /* adviceData_spanish.json in Resources */,
 				9FB3E50423ABE2C4005E1095 /* lawsData.json in Resources */,
 				9FB3E50223ABE2C4005E1095 /* adviceData.json in Resources */,
+				9F87D2E523D83D8E00CDAB7C /* footer_changelanguage_english.json in Resources */,
 				9FAACF8B2379B65900C3CF94 /* Assets.xcassets in Resources */,
 				9FB3E4FE23ABE2C4005E1095 /* searchKeywords.json in Resources */,
 				9FB3E4E523ABE211005E1095 /* searchKeywords_german.json in Resources */,
@@ -840,13 +884,16 @@
 				9FB3E4D923ABE211005E1095 /* difficultSituationsData_ukrainian.json in Resources */,
 				9FB3E4DC23ABE211005E1095 /* hospitalsData_ukrainian.json in Resources */,
 				9FB3E4D223ABE211005E1095 /* adviceData_polish.json in Resources */,
+				9F87D2EF23D83DF400CDAB7C /* footer_changelanguage.json in Resources */,
 				9FB3E4C723ABE211005E1095 /* searchKeywords_english.json in Resources */,
 				9FB3E4D823ABE211005E1095 /* translateData_ukrainian.json in Resources */,
 				9FB3E4DD23ABE211005E1095 /* consulatesData_ukrainian.json in Resources */,
 				9FB3E4E123ABE211005E1095 /* translateData_german.json in Resources */,
 				9FB3E4D123ABE211005E1095 /* translateData_polish.json in Resources */,
 				9FB3E4F123ABE211005E1095 /* hospitalsData_spanish.json in Resources */,
+				9F87D2E723D83D9F00CDAB7C /* footer_changelanguage_german.json in Resources */,
 				9FAACFB52379B68E00C3CF94 /* GoogleService-Info.plist in Resources */,
+				9F87D2E923D83DB400CDAB7C /* footer_changelanguage_polish.json in Resources */,
 				9FB3E4EC23ABE211005E1095 /* searchKeywords_spanish.json in Resources */,
 				9FB3E4E623ABE211005E1095 /* policeData_german.json in Resources */,
 			);
@@ -856,6 +903,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F87D2F823D85B2C00CDAB7C /* ITC_Avant_Garde_Gothic_Medium.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -863,6 +911,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F87D2F923D85B2C00CDAB7C /* ITC_Avant_Garde_Gothic_Medium.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -946,6 +995,7 @@
 				9F7D3A782397CFD10092ADD6 /* Laws.swift in Sources */,
 				E8AD7F54239C4AB8005150A7 /* Advice.swift in Sources */,
 				A151BB24237F2AC7007CEEC1 /* DifficultSituationsView.swift in Sources */,
+				9F87D2F123D83E2900CDAB7C /* Footer.swift in Sources */,
 				E82DE11D23999E57009F0F37 /* MailView.swift in Sources */,
 				9F7A4F1E238D878B001C4B7A /* CustomButtons.swift in Sources */,
 				E8DFAD74239D48B400D4CD74 /* TranslateCell.swift in Sources */,
@@ -965,6 +1015,7 @@
 				9F169A8A237F67F5005A8618 /* MapView.swift in Sources */,
 				E8590BB92398469B00C37EE8 /* CustomTextFieldStyle.swift in Sources */,
 				A151BB1C237F2A7A007CEEC1 /* TranslateView.swift in Sources */,
+				9F87D2E123D8347500CDAB7C /* Color.swift in Sources */,
 				E8DFAD6C239D2C5D00D4CD74 /* PhoneNumbersCell.swift in Sources */,
 				E8AD7F45239BEAA0005150A7 /* DifficultSituationsDetailView.swift in Sources */,
 				A151BB28237F2AF1007CEEC1 /* HospitalsView.swift in Sources */,
@@ -980,6 +1031,7 @@
 				9F7A4F2C238DA355001C4B7A /* ConsulatesDetailRow.swift in Sources */,
 				9F169A8C237F6844005A8618 /* CircleImage.swift in Sources */,
 				9F7D3A7C2397D2E80092ADD6 /* LawsDetailView.swift in Sources */,
+				9F87D2F323D849DF00CDAB7C /* UIScreen.swift in Sources */,
 				E83E446323A3F29B003AB246 /* Page.swift in Sources */,
 				9FAACF872379B65600C3CF94 /* SceneDelegate.swift in Sources */,
 				E8DFAD72239D467400D4CD74 /* Translate.swift in Sources */,

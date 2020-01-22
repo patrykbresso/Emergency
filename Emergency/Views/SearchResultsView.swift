@@ -35,8 +35,8 @@ struct SearchResultsView: View {
                     ScrollView{
                         ZStack {
                             RoundedRectangle(cornerRadius: 10)
-                            .stroke(Color(red: 219 / 255, green: 2 / 255, blue: 109 / 255), lineWidth: 10)
-                            .background(Color(red: 219 / 255, green: 2 / 255, blue: 109 / 255))
+                                .stroke(Color.primaryPink, lineWidth: 10)
+                                .background(Color.primaryPink)
                             Text("No results were found").padding(15)
                         }.padding(15)
                     }
@@ -46,8 +46,8 @@ struct SearchResultsView: View {
                             NavigationLink(destination: self.getDestination(name: result.name, pageName: result.pageName, pageNumber: result.page)) {
                                 ZStack {
                                     RoundedRectangle(cornerRadius: 10)
-                                        .stroke(Color(red: 219 / 255, green: 2 / 255, blue: 109 / 255), lineWidth: 10)
-                                        .background(Color(red: 219 / 255, green: 2 / 255, blue: 109 / 255))
+                                        .stroke(Color.primaryPink, lineWidth: 10)
+                                        .background(Color.primaryPink)
                                     VStack {
                                         Text(result.pageName).fontWeight(.bold).padding(15)
                                         if(result.pageSubtitle != "") {
@@ -69,7 +69,7 @@ struct SearchResultsView: View {
             .navigationBarHidden(true)
             .navigationBarBackButtonHidden(true)
             .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity)
-            .background(Color(red: 19 / 255, green: 42 / 255, blue: 122 / 255))
+            .background(Color.primaryBlue)
             .edgesIgnoringSafeArea(.all)
     }
     

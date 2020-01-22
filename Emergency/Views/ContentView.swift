@@ -185,7 +185,7 @@ struct ContentView: View {
                     .padding(.leading, 30)
                     .padding(.trailing, 30)
                     .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: .topLeading)
-                    .background(Color(red: 19 / 255, green: 42 / 255, blue: 122 / 255)
+                    .background(Color.primaryBlue
                         .edgesIgnoringSafeArea(.all))
                     .foregroundColor(.white)
                     
@@ -195,7 +195,7 @@ struct ContentView: View {
                 .navigationBarHidden(true)
                 .navigationBarBackButtonHidden(true)
                 .disabled(self.dropDown.isDropDownMenuOpen)
-                .blur(radius: self.dropDown.isDropDownMenuOpen ? 20 : 0)
+                .blur(radius: self.dropDown.isDropDownMenuOpen ? 2 : 0)
                 HStack() {
                     Spacer()
                     DropDown()

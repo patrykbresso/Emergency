@@ -15,8 +15,8 @@ struct PhoneNumbersCell: View {
     var body: some View {
         ZStack {
             RoundedRectangle(cornerRadius: 10)
-                .stroke(Color(red: 219 / 255, green: 2 / 255, blue: 109 / 255), lineWidth: 10)
-                .background(Color(red: 219 / 255, green: 2 / 255, blue: 109 / 255))
+                .stroke(Color.primaryPink, lineWidth: 10)
+                .background(Color.primaryPink)
             VStack {
                 Text(phoneNumber.name)
                     .multilineTextAlignment(.center)

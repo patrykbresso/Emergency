@@ -22,7 +22,7 @@ struct HospitalsView: View {
           
         GeometryReader { geometry in
             ZStack(alignment: .top) {
-                Color(red: 19 / 255, green: 42 / 255, blue: 122 / 255)
+                Color.primaryBlue
                 .edgesIgnoringSafeArea(.all)
                 VStack(spacing: 40) {
                     HStack {
@@ -41,8 +41,8 @@ struct HospitalsView: View {
                     }.padding(.leading, 80)
                     ZStack() {
                         RoundedRectangle(cornerRadius: 10)
-                        .stroke(Color(red: 219 / 255, green: 2 / 255, blue: 109 / 255), lineWidth: 10)
-                        .background(Color(red: 219 / 255, green: 2 / 255, blue: 109 / 255))
+                        .stroke(Color.primaryPink, lineWidth: 10)
+                        .background(Color.primaryPink)
                         
                         VStack {
                             Text(self.title)

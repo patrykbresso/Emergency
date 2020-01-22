@@ -49,8 +49,8 @@ struct HospitalsDetailView: View {
 
             ZStack {
                 RoundedRectangle(cornerRadius: 10)
-                .stroke(Color(red: 219 / 255, green: 2 / 255, blue: 109 / 255), lineWidth: 10)
-                .background(Color(red: 219 / 255, green: 2 / 255, blue: 109 / 255))
+                .stroke(Color.primaryPink, lineWidth: 10)
+                .background(Color.primaryPink)
                 .frame(width: 170, height: 120)
                 VStack {
                     Text(hospital.name)
@@ -63,7 +63,7 @@ struct HospitalsDetailView: View {
             .offset(y: 50)
         }
         .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: .center)
-        .background(Color(red: 19 / 255, green: 42 / 255, blue: 122 / 255))
+        .background(Color.primaryBlue)
         .edgesIgnoringSafeArea(.all)
         .navigationBarTitle("")
         .navigationBarHidden(true)

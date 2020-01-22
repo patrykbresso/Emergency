@@ -21,7 +21,7 @@ struct ConsulatesView: View {
           
         GeometryReader { geometry in
             ZStack(alignment: .top) {
-                Color(red: 19 / 255, green: 42 / 255, blue: 122 / 255)
+                Color.primaryBlue
                 .edgesIgnoringSafeArea(.all)
                 VStack(spacing: 40) {
                     HStack {

@@ -13,7 +13,7 @@ struct CustomTextFieldStyle: TextFieldStyle {
     public func _body(configuration: TextField<Self._Label>) -> some View {
         configuration
             .background(RoundedRectangle(cornerRadius: 5.0)
-                .stroke(Color(red: 219 / 255, green: 2 / 255, blue: 109 / 255), lineWidth: 3)
+                .stroke(Color.primaryPink, lineWidth: 3)
                 .frame(width: 250, height: 30)
             )
             .foregroundColor(.white)

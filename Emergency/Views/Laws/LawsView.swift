@@ -80,7 +80,7 @@ struct LawsView: View {
             NavigationLink(destination: SearchResultsView(searchTerm: self.keyword, results: self.searchResults), isActive: self.$show, label: { EmptyView()})
         }
         .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity)
-        .background(Color(red: 19 / 255, green: 42 / 255, blue: 122 / 255)
+        .background(Color.primaryBlue
             .edgesIgnoringSafeArea(.all)
         )
         
