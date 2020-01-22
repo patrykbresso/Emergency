@@ -43,6 +43,7 @@ struct PoliceView: View {
                     //Map button
                     Button(action: {
                         
+                        print(self.dataLoader.policeData)
                         let listOfPoliceDepartments: [MKMapItem] = loadListOfPolicePins(listOfDepartments: self.dataLoader.policeData)
                         
                         
@@ -126,7 +127,7 @@ struct PoliceView: View {
 func loadListOfPolicePins(listOfDepartments: [Police]) -> [MKMapItem] {
     var listOfPoliceDepartments: [MKMapItem] = []
     var policeDepartment: MKMapItem
-    for index in 0..<listOfPoliceDepartments.count {
+    for index in 0..<listOfDepartments.count {
         let latitude = listOfDepartments[index].locationCoordinate.latitude
         let longitude = listOfDepartments[index].locationCoordinate.longitude
         let coordinate = CLLocationCoordinate2D(latitude: latitude,longitude: longitude)
