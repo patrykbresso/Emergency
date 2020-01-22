@@ -23,10 +23,8 @@
 		9F483A78237F32F1000E35A8 /* NewsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F483A77237F32F1000E35A8 /* NewsView.swift */; };
 		9F7A4F1E238D878B001C4B7A /* CustomButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F7A4F1D238D878B001C4B7A /* CustomButtons.swift */; };
 		9F7A4F21238DA049001C4B7A /* HospitalsRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F7A4F20238DA049001C4B7A /* HospitalsRow.swift */; };
-		9F7A4F23238DA05A001C4B7A /* HospitalsDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F7A4F22238DA05A001C4B7A /* HospitalsDetailView.swift */; };
 		9F7A4F25238DA101001C4B7A /* Hospitals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F7A4F24238DA101001C4B7A /* Hospitals.swift */; };
 		9F7A4F2A238DA348001C4B7A /* ConsulatesRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F7A4F29238DA348001C4B7A /* ConsulatesRow.swift */; };
-		9F7A4F2C238DA355001C4B7A /* ConsulatesDetailRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F7A4F2B238DA355001C4B7A /* ConsulatesDetailRow.swift */; };
 		9F7A4F2E238DA388001C4B7A /* Consulates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F7A4F2D238DA388001C4B7A /* Consulates.swift */; };
 		9F7D3A782397CFD10092ADD6 /* Laws.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F7D3A772397CFD10092ADD6 /* Laws.swift */; };
 		9F7D3A7A2397D0330092ADD6 /* LawsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F7D3A792397D0330092ADD6 /* LawsCell.swift */; };
@@ -179,10 +177,8 @@
 		9F483A77237F32F1000E35A8 /* NewsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsView.swift; sourceTree = "<group>"; };
 		9F7A4F1D238D878B001C4B7A /* CustomButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButtons.swift; sourceTree = "<group>"; };
 		9F7A4F20238DA049001C4B7A /* HospitalsRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HospitalsRow.swift; sourceTree = "<group>"; };
-		9F7A4F22238DA05A001C4B7A /* HospitalsDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HospitalsDetailView.swift; sourceTree = "<group>"; };
 		9F7A4F24238DA101001C4B7A /* Hospitals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hospitals.swift; sourceTree = "<group>"; };
 		9F7A4F29238DA348001C4B7A /* ConsulatesRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsulatesRow.swift; sourceTree = "<group>"; };
-		9F7A4F2B238DA355001C4B7A /* ConsulatesDetailRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsulatesDetailRow.swift; sourceTree = "<group>"; };
 		9F7A4F2D238DA388001C4B7A /* Consulates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Consulates.swift; sourceTree = "<group>"; };
 		9F7D3A772397CFD10092ADD6 /* Laws.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Laws.swift; sourceTree = "<group>"; };
 		9F7D3A792397D0330092ADD6 /* LawsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LawsCell.swift; sourceTree = "<group>"; };
@@ -382,7 +378,6 @@
 			isa = PBXGroup;
 			children = (
 				9F7A4F20238DA049001C4B7A /* HospitalsRow.swift */,
-				9F7A4F22238DA05A001C4B7A /* HospitalsDetailView.swift */,
 				A151BB27237F2AF1007CEEC1 /* HospitalsView.swift */,
 			);
 			path = Hospitals;
@@ -392,7 +387,6 @@
 			isa = PBXGroup;
 			children = (
 				9F7A4F29238DA348001C4B7A /* ConsulatesRow.swift */,
-				9F7A4F2B238DA355001C4B7A /* ConsulatesDetailRow.swift */,
 				A151BB25237F2AE3007CEEC1 /* ConsulatesView.swift */,
 			);
 			path = Consulates;
@@ -1028,7 +1022,6 @@
 				9F483A78237F32F1000E35A8 /* NewsView.swift in Sources */,
 				A151BB26237F2AE3007CEEC1 /* ConsulatesView.swift in Sources */,
 				A151BB18237F1E89007CEEC1 /* AdviceView.swift in Sources */,
-				9F7A4F2C238DA355001C4B7A /* ConsulatesDetailRow.swift in Sources */,
 				9F169A8C237F6844005A8618 /* CircleImage.swift in Sources */,
 				9F7D3A7C2397D2E80092ADD6 /* LawsDetailView.swift in Sources */,
 				9F87D2F323D849DF00CDAB7C /* UIScreen.swift in Sources */,
@@ -1041,7 +1034,6 @@
 				E8625AB723BE0ABD00C6D983 /* SearchController.swift in Sources */,
 				E83E446123A3E62F003AB246 /* SearchKeywords.swift in Sources */,
 				9FAACF892379B65600C3CF94 /* ContentView.swift in Sources */,
-				9F7A4F23238DA05A001C4B7A /* HospitalsDetailView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

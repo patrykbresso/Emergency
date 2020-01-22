@@ -96,7 +96,7 @@ struct PoliceDetailView: View {
 
 struct PoliceDetailView_Preview: PreviewProvider {
     static var previews: some View {
-        PoliceDetailView(policeStation: policeData[1])
+        PoliceDetailView(policeStation: policeData.police[1])
     }
 }
 

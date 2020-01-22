@@ -9,7 +9,13 @@
 import Foundation
 import CoreLocation
 
-struct Hospitals: Identifiable, Decodable {
+struct HospitalsList: Decodable {
+    var title: String
+    var subtitle: String
+    var hospitals: [Hospital]
+}
+
+struct Hospital: Identifiable, Decodable {
     var id: Int
     var name: String
     var address: String

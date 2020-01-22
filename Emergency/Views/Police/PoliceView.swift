@@ -18,8 +18,7 @@ struct PoliceView: View {
     @State var searchResults: [Page] = []
     @State var show: Bool = false
     
-    private let title = "POLICYJNE KONTAKTY I ADRESY"
-    private let subtitle = "Uwaga! We wszystkich pilnych sprawach należy dzwonić na numer alarmowy 112"
+
     
     var body: some View {
            
@@ -44,7 +43,7 @@ struct PoliceView: View {
                     Button(action: {
                         
                         print(self.dataLoader.policeData)
-                        let listOfPoliceDepartments: [MKMapItem] = loadListOfPolicePins(listOfDepartments: self.dataLoader.policeData)
+                        let listOfPoliceDepartments: [MKMapItem] = loadListOfPolicePins(listOfDepartments: self.dataLoader.policeData.police)
                         
                         
                         MKMapItem.openMaps(with: listOfPoliceDepartments, launchOptions: nil)
@@ -63,9 +62,9 @@ struct PoliceView: View {
                     .background(Color.primaryPink)
                     
                     VStack {
-                        Text(self.title)
+                        Text(self.dataLoader.policeData.title)
                             .bold()
-                        Text(self.subtitle)
+                        Text(self.dataLoader.policeData.subtitle)
                     }
                     .multilineTextAlignment(.leading)
                     .font(.system(size: 14))
@@ -79,7 +78,7 @@ struct PoliceView: View {
                     Spacer(minLength: 30)
                     VStack(spacing: 80) {
                         
-                        ForEach(self.dataLoader.policeData) { policeStation in
+                        ForEach(self.dataLoader.policeData.police) { policeStation in
                                 NavigationLink(destination: PoliceDetailView(policeStation: policeStation)) {
                                     PoliceRow(policeStation: policeStation)
                                     }

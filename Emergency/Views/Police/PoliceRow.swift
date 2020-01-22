@@ -39,8 +39,8 @@ struct PoliceRow: View {
 struct PoliceRow_Previews: PreviewProvider {
     static var previews: some View {
         Group{
-            PoliceRow(policeStation: policeData[0])
-            PoliceRow(policeStation: policeData[1])
+            PoliceRow(policeStation: policeData.police[0])
+            PoliceRow(policeStation: policeData.police[1])
         }
     }
 }

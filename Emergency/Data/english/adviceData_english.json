@@ -1,22 +1,22 @@
 {
-    "intro": "ENG Wrocław to przyjazne miasto, zwłaszcza dla studentów i młodych ludzi. W trudnych sytuacjach może pomóc Ci wiedza, którą podzielili się wrocławscy Policjanci. Aplikacja została utworzona dla wszystkich osób, które szczególnie chcą zadbać o bezpieczeństwo. Tak jak wszędzie, mogą zdarzyć się pewne trudne sytuacje, dlatego zapraszamy Cię do zapoznania z kilkoma poradami, które mogą być przydatne:",
+    "intro": "Wrocław is a youth- and student-friendly city.\nIn challenging circumstances you may use the knowledge shared by the Wrocław Police. The app has been created for everyone wishing to ensure their own safety. Just as anywhere, you may find yourself in some difficult situations, so please take a look at some advice which may come in handy:",
     "advice": [
         {
             "id": 1,
-            "text": "ENGLISH Porada nr #1: Gdy wypłacasz gotówkę z bankomatu – chroń swój numer PIN. Najlepiej zasłoń klawiaturę dłonią, aby nikt go nie zobaczył. Wypłaconej gotówki nie przeliczaj na oczach innych ludzi."
+            "text": "When withdrawing money from an ATM, protect your PIN. Cover the keypad with your hand so that no one can see your number. When you get your cash, don’t count it in public."
             
         },
         {
             "id": 2,
-            "text": "Porada nr #2: W środkach transportu publicznego (tramwajach i autobusach) jest monitoring. Gdy zdarzy się coś niepokojącego, poinformuj kierowcę. Będzie on mógł odpowiednio zareagować w sytuacji, gdybyś potrzebował pomocy lub wskazać Ci właściwy przystanek."
+            "text": "There are cameras in public transport such as trams and buses. If something happens, inform the driver. He or she will be able to react if you need help or direct you to the right stop."
         },
         {
             "id": 3,
-            "text": "Porada nr #3: Gdy wychodzisz wieczorem, zaplanuj swoją pieszą trasę tak, aby wybierać większe i oświetlone ulice. Ciemne podwórka albo przejścia podziemne mogą Cię czymś zaskoczyć. W miarę możliwości nie spaceruj samotnie."
+            "text": "Plan out your on-foot route so that you walk along main and lit up streets. Dark courtyards or underground passages can be dangerous. If possible, avoid walking alone."
         },
         {
             "id": 4,
-            "text": "Porada nr #4: Pamiętaj, aby wszelkie umowy dotyczące wynajmu pokoju/mieszkania zawierać w formie papierowej. Powinieneś jeden egzemplarz umowy otrzymać dla siebie. Jeśli właściciel pobiera kaucję, również powinieneś otrzymać potwierdzenie na kwotę wpłaconej kaucji, abyś nie miał problemów z jej zwrotem. Jeśli umowa na najem lokalu została zawarta na czas nieoznaczony, a czynsz jest płatny miesięcznie, wtedy umowę można wypowiedzieć na trzy miesiące naprzód, zrób to na koniec miesiąca kalendarzowego."
+            "text": "Remember to conclude written agreements on renting a room/flat. You should keep one copy for yourself. If the owner collects a deposit, you should be given a receipt with the paid amount written on it, so that you won’t have any problems with its refund later. If the rent agreement has been concluded for an indefinite time and the rent is paid monthly, then you can terminate the agreement with a three-month notice at the end of a calendar month."
         }
     ]
 }

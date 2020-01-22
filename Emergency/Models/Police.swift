@@ -11,6 +11,12 @@ import CoreLocation
 import SwiftUI
 import MapKit
 
+struct PoliceList: Decodable {
+    var title: String
+    var subtitle: String
+    var police: [Police]
+}
+
 struct Police: Identifiable, Decodable {
     var id: Int
     var name: String
@@ -25,11 +31,6 @@ struct Police: Identifiable, Decodable {
             latitude: coordinates.latitude,
             longitude: coordinates.longitude)
     }
-    
-    
-
-    
-    
 }
 
 struct Coordinates: Hashable, Codable {

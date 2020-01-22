@@ -1,47 +1,51 @@
-[
-    {
-        "id": 1,
-        "name": "SOR  Wojskowy Szpital Kliniczny / Militärkrankenhaus",
-        "address": "ul. Rudolfa Weigla 5, 50-981 Wrocław",
-        "number": "71 76 60 208",
-        "coordinates": {
-            "longitude": 51.115019,
-            "latitude": 17.055712
+{
+    "title": "Hospital Emergency Departments (Szpitalny Oddział Ratunkowy - SOR)",
+    "subtitle":  "in Wrocław are open all day. They provide medical assistance in the case of emergencies. This takes a form of establishing an initial diagnosis and providing treatment necessary to stabilise life functions of patients whose health or life are in danger.",
+    "hospitals": [
+        {
+            "id": 1,
+            "name": "SOR  Wojskowy Szpital Kliniczny / Militärkrankenhaus",
+            "address": "ul. Rudolfa Weigla 5, 50-981 Wrocław",
+            "number": "71 76 60 208",
+            "coordinates": {
+                "longitude": 51.115019,
+                "latitude": 17.055712
+            },
+            "imageName": "1"
         },
-        "imageName": "1"
-    },
-    {
-        "id": 2,
-        "name": "SOR Uniwersytecki Szpital Kliniczny we Wrocławiu / Universitätspoliklinik",
-        "address": "ul. Borowska 213,  50-556 Wrocław,",
-        "number": "71 733 29 64 ",
-        "coordinates": {
-            "longitude": -152.665167,
-            "latitude": 59.980167
+        {
+            "id": 2,
+            "name": "SOR Uniwersytecki Szpital Kliniczny we Wrocławiu / Universitätspoliklinik",
+            "address": "ul. Borowska 213,  50-556 Wrocław,",
+            "number": "71 733 29 64 ",
+            "coordinates": {
+                "longitude": -152.665167,
+                "latitude": 59.980167
+            },
+            "imageName": "1"
         },
-        "imageName": "1"
-    },
-    {
-        "id": 3,
-        "name": "SOR Wojewódzki Szpital Specjalistyczny we Wrocławiu / Woiwodschaftsfachkrankenhaus",
-        "address": "ul. H. M. Kamieńskiego 73a, 51-124 Wrocław",
-        "number": "71 32 70 100",
-        "coordinates": {
-            "longitude": -116.166868,
-            "latitude": 34.011286
+        {
+            "id": 3,
+            "name": "SOR Wojewódzki Szpital Specjalistyczny we Wrocławiu / Woiwodschaftsfachkrankenhaus",
+            "address": "ul. H. M. Kamieńskiego 73a, 51-124 Wrocław",
+            "number": "71 32 70 100",
+            "coordinates": {
+                "longitude": -116.166868,
+                "latitude": 34.011286
+            },
+            "imageName": "1"
         },
-        "imageName": "1"
-    },
-    {
-        "id": 4,
-        "name": "SOR Dolnośląski Szpital Specjalistyczny im. T. Marciniaka / Niederschlesisches T.-Marciniak-Fachkrankenhaus",
-        "address": "ul. Gen. A. E. Fieldorfa 2, 50-996 Wrocław ",
-        "number": "71 306 44 19 ",
-        "coordinates": {
-            "longitude": -152.665167,
-            "latitude": 59.980167
-        },
-        "imageName": "1"
-    }
-    
-]
+        {
+            "id": 4,
+            "name": "SOR Dolnośląski Szpital Specjalistyczny im. T. Marciniaka / Niederschlesisches T.-Marciniak-Fachkrankenhaus",
+            "address": "ul. Gen. A. E. Fieldorfa 2, 50-996 Wrocław ",
+            "number": "71 306 44 19 ",
+            "coordinates": {
+                "longitude": -152.665167,
+                "latitude": 59.980167
+            },
+            "imageName": "1"
+        }
+        
+    ]
+}

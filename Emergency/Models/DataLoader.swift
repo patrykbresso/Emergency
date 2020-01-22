@@ -12,8 +12,8 @@ import CoreLocation
 
 class DataLoader: ObservableObject {
 
-    @Published var policeData: [Police]
-    @Published var hospitalsData: [Hospitals]
+    @Published var policeData: PoliceList
+    @Published var hospitalsData: HospitalsList
     @Published var consulatesData: [Consulates]
     @Published var lawsData: [Laws]
     @Published var difficultSituationsData: [DifficultSituations]
@@ -86,8 +86,8 @@ static func load<T: Decodable>(_ filename: String, as type: T.Type = T.self) -> 
 
 
 //For previews
-var policeData: [Police] = load("policeData.json")
-var hospitalsData: [Hospitals] = load("hospitalsData.json")
+var policeData: PoliceList = load("policeData.json")
+var hospitalsData: HospitalsList = load("hospitalsData.json")
 var consulatesData: [Consulates] = load("consulatesData.json")
 var lawsData: [Laws] = load("lawsData.json")
 var difficultSituationsData: [DifficultSituations] = load("difficultSituationsData.json")

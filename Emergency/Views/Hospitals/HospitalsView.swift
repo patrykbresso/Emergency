@@ -15,9 +15,7 @@ struct HospitalsView: View {
     @State var searchResults: [Page] = []
     @State var show: Bool = false
     @EnvironmentObject var dataLoader: DataLoader
-    
-    private let title = "Szpitalne Oddziały Ratunkowe SOR"
-    private let subtitle = "we Wrocławiu czynne przez całą dobę. SOR udziela świadczeń zdrowotnych w stanach nagłych. Polegają one na wstępnej diagnostyce i leczeniu w zakresie niezbędnym do stabilizacji funkcji życiowych osób, które znajdują się w stanie zagrożenia życia lub zdrowia."
+
     var body: some View {
           
         GeometryReader { geometry in
@@ -45,9 +43,9 @@ struct HospitalsView: View {
                         .background(Color.primaryPink)
                         
                         VStack {
-                            Text(self.title)
+                            Text(self.dataLoader.hospitalsData.title)
                                 .bold()
-                            Text(self.subtitle)
+                            Text(self.dataLoader.hospitalsData.subtitle)
                         }
                         .multilineTextAlignment(.leading)
                         
@@ -58,7 +56,7 @@ struct HospitalsView: View {
                     ScrollView() {
                         Spacer(minLength: 30)
                         VStack(alignment: .center, spacing: 80) {
-                            ForEach(self.dataLoader.hospitalsData) { hospital in
+                            ForEach(self.dataLoader.hospitalsData.hospitals) { hospital in
                                 HospitalsRow(hospital: hospital)
                                 }.padding(.leading, 40)
                         }.frame(width: geometry.size.width / 0.95, alignment: .center)

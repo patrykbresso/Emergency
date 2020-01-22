@@ -13,7 +13,7 @@ import CoreLocation
 
 struct HospitalsRow: View {
 
-    var hospital: Hospitals
+    var hospital: Hospital
     var body: some View {
         
         GeometryReader { geometry in
@@ -49,8 +49,8 @@ struct HospitalsRow: View {
 struct HospitalsRow_Previews: PreviewProvider {
     static var previews: some View {
         Group{
-            HospitalsRow(hospital: hospitalsData[0])
-            HospitalsRow(hospital: hospitalsData[0])
+            HospitalsRow(hospital: hospitalsData.hospitals[0])
+            HospitalsRow(hospital: hospitalsData.hospitals[0])
         }
         .previewLayout(.fixed(width: 300, height: 100))
     }
