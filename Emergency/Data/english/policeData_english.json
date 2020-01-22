@@ -100,8 +100,8 @@
         "city": "Wrocław",
         "number": "71 340 43 80",
         "coordinates": {
-            "longitude": 16.973529,
-            "latitude": 51.140285
+            "longitude": 16.973718,
+            "latitude": 51.140234
         },
         "imageName": "policja_fabryczna"
     },
@@ -113,8 +113,8 @@
         "city": "Wrocław",
         "number": "71 340 28 50",
         "coordinates": {
-            "longitude": 16.973529,
-            "latitude": 51.140285
+            "longitude": 16.863231,
+            "latitude": 51.146585
         },
         "imageName": "policja_lesnica"
     },
@@ -126,21 +126,21 @@
         "city": "Wrocław",
         "number": "71 363 14 21",
         "coordinates": {
-            "longitude": 16.973529,
-            "latitude": 51.140285
+            "longitude": 16.983154,
+            "latitude": 51.095593
         },
         "imageName": "policja_grabiszynek"
     },
     {
        "id": 11,
        "name": "Komisariat Wrocław-Psie Pole",
-       "address": "pl. Piłsudskiego 6 /8",
+       "address": "pl. Piłsudskiego 6/8",
        "postalCode": "51-152",
        "city": "Wrocław",
        "number": "71 340 46 05",
        "coordinates": {
-           "longitude": 16.973529,
-           "latitude": 51.140285
+           "longitude": 17.056761,
+           "latitude": 51.137445
        },
        "imageName": "policja_psie_pole"
     },
@@ -152,8 +152,8 @@
        "city": "Wrocław",
        "number": "71 345 78 94",
        "coordinates": {
-           "longitude": 16.973529,
-           "latitude": 51.140285
+           "longitude": 17.117308,
+           "latitude": 51.146688
        },
        "imageName": "policja_psie_pole"
     },
@@ -165,8 +165,8 @@
        "city": "Wrocław",
        "number": "71 340 27 00",
        "coordinates": {
-           "longitude": 16.973529,
-           "latitude": 51.140285
+           "longitude": 17.065012,
+           "latitude": 51.106096
        },
        "imageName": "policja_psie_pole"
     },
@@ -178,8 +178,8 @@
       "city": "Wrocław",
       "number": "71 782 44 20",
       "coordinates": {
-          "longitude": 16.973529,
-          "latitude": 51.140285
+          "longitude": 17.036570,
+          "latitude": 51.098803
       },
       "imageName": "policja_psie_pole"
    },
@@ -191,8 +191,8 @@
        "city": "Długołęka",
        "number": "71 374 76 24",
        "coordinates": {
-           "longitude": 16.973529,
-           "latitude": 51.140285
+           "longitude": 17.184659,
+           "latitude": 51.177753
        },
        "imageName": "policja_psie_pole"
     },
@@ -204,8 +204,8 @@
         "city": "Sobótka",
         "number": "71 316 21 59",
         "coordinates": {
-            "longitude": 16.973529,
-            "latitude": 51.140285
+            "longitude": 16.747308,
+            "latitude": 50.900539
         },
         "imageName": "policja_psie_pole"
      },
@@ -217,8 +217,8 @@
         "city": "Kąty Wrocławskie",
         "number": "71 391 17 24",
         "coordinates": {
-            "longitude": 16.973529,
-            "latitude": 51.140285
+            "longitude": 16.765961,
+            "latitude": 51.031487
         },
         "imageName": "policja_psie_pole"
      },
@@ -230,8 +230,8 @@
         "city": "Siechnice",
         "number": "71 311 62 77",
         "coordinates": {
-            "longitude": 16.973529,
-            "latitude": 51.140285
+            "longitude": 17.151008,
+            "latitude": 51.032614
         },
         "imageName": "policja_psie_pole"
      }

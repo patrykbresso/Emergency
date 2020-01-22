@@ -26,7 +26,7 @@ struct PoliceRow: View {
                 VStack {
                     Text(self.policeStation.name)
                         .bold()
-                    Text(self.policeStation.address+self.policeStation.postalCode+self.policeStation.city)
+                    Text(self.policeStation.address+" "+self.policeStation.postalCode+" "+self.policeStation.city)
                     Text(self.policeStation.number)
                 }.font(.system(size: 15))
             }.frame(width: geometry.size.width / 1.25, height: geometry.size.height / 6)

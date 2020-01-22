@@ -32,12 +32,10 @@ struct PoliceDetailView: View {
                     }
                     Spacer()
                     Button(action: {
-                        let formattedString = "http://maps.apple.com/maps?saddr=\(self.policeStation.coordinates.latitude),\(self.policeStation.coordinates.longitude)"
-                        /*let deleteStreet = self.policeStation.address.replacingOccurrences(of: "ul. ", with: "")
-                        let formattedStreet = deleteStreet.replacingOccurrences(of: " ", with: "+")
+                        let formattedString = "http://maps.apple.com/maps?daddr=\(self.policeStation.coordinates.latitude),\(self.policeStation.coordinates.longitude)"
+                        /*let formattedStreet = self.policeStation.address.replacingOccurrences(of: " ", with: "+")
                         let formattedAddress = formattedStreet+","+self.policeStation.city
-                        let formattedString = "http://maps.apple.com/maps?address=\(formattedAddress)"
-                        print(formattedAddress)*/
+                        let formattedString = "http://maps.apple.com/maps?address=\(formattedAddress)"*/
                         let url: NSURL = URL(string: formattedString)! as NSURL
                         UIApplication.shared.open(url as URL)
                     }) {
@@ -58,8 +56,8 @@ struct PoliceDetailView: View {
 
                 ZStack {
                     RoundedRectangle(cornerRadius: 10)
-                    .stroke(Color.primaryPink, lineWidth: 10)
-                    .background(Color.primaryPink)
+                    .stroke(Color(red: 219 / 255, green: 2 / 255, blue: 109 / 255), lineWidth: 10)
+                    .background(Color(red: 219 / 255, green: 2 / 255, blue: 109 / 255))
                         .frame(width: geometry.size.width / 1.25, height: geometry.size.height / 6)
                     VStack {
                         Text(self.policeStation.name)
@@ -81,7 +79,7 @@ struct PoliceDetailView: View {
                 
             }
             .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: .center)
-            .background(Color.primaryBlue
+            .background(Color(red: 19 / 255, green: 42 / 255, blue: 122 / 255)
             .edgesIgnoringSafeArea(.all)
             )
             .navigationBarTitle("")

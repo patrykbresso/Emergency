@@ -40,7 +40,7 @@ struct ContentView: View {
                                         .fontWeight(.bold)
                                         .multilineTextAlignment(.center)
                                         .fixedSize(horizontal: false, vertical: true)
-                                        .lineLimit(nil)
+                                        .lineLimit(2)
                                 }.frame(width: geometry.size.width / 2 - 60)
                             }
                             Spacer()
@@ -52,7 +52,7 @@ struct ContentView: View {
                                         .fontWeight(.bold)
                                         .multilineTextAlignment(.center)
                                         .fixedSize(horizontal: false, vertical: true)
-                                        .lineLimit(nil)
+                                        .lineLimit(2)
                                 }.frame(width: geometry.size.width / 2 - 60)
                             }
                         }
@@ -65,7 +65,7 @@ struct ContentView: View {
                                         .fontWeight(.bold)
                                         .multilineTextAlignment(.center)
                                         .fixedSize(horizontal: false, vertical: true)
-                                        .lineLimit(nil)
+                                        .lineLimit(2)
                                 }.frame(width: geometry.size.width / 2 - 60)
                             }
                             Spacer()
@@ -77,7 +77,7 @@ struct ContentView: View {
                                         .fontWeight(.bold)
                                         .multilineTextAlignment(.center)
                                         .fixedSize(horizontal: false, vertical: true)
-                                        .lineLimit(nil)
+                                        .lineLimit(2)
                                 }.frame(width: geometry.size.width / 2 - 60)
                             }
                         }
@@ -90,7 +90,7 @@ struct ContentView: View {
                                         .fontWeight(.bold)
                                         .fixedSize(horizontal: false, vertical: true)
                                         .multilineTextAlignment(.center)
-                                        .lineLimit(nil)
+                                        .lineLimit(2)
                                 }.frame(width: geometry.size.width / 2 - 60)
                             }
                             Spacer()
@@ -102,7 +102,7 @@ struct ContentView: View {
                                         .fontWeight(.bold)
                                         .multilineTextAlignment(.center)
                                         .fixedSize(horizontal: false, vertical: true)
-                                        .lineLimit(nil)
+                                        .lineLimit(2)
                                 }.frame(width: geometry.size.width / 2 - 60)
                             }
                         }
@@ -115,7 +115,7 @@ struct ContentView: View {
                                         .fontWeight(.bold)
                                         .multilineTextAlignment(.center)
                                         .fixedSize(horizontal: false, vertical: true)
-                                        .lineLimit(nil)
+                                        .lineLimit(2)
                                 }.frame(width: geometry.size.width / 2 - 60)
                                 
                             }
@@ -128,7 +128,7 @@ struct ContentView: View {
                                         .fontWeight(.bold)
                                         .multilineTextAlignment(.center)
                                         .fixedSize(horizontal: false, vertical: true)
-                                        .lineLimit(nil)
+                                        .lineLimit(2)
                                 }.frame(width: geometry.size.width / 2 - 60)
                             }
                         }
@@ -141,7 +141,7 @@ struct ContentView: View {
                                         .fontWeight(.bold)
                                         .multilineTextAlignment(.center)
                                         .fixedSize(horizontal: false, vertical: true)
-                                        .lineLimit(nil)
+                                        .lineLimit(2)
                                 }.frame(width: geometry.size.width / 2 - 60)
                             }
                             Spacer()
@@ -153,7 +153,7 @@ struct ContentView: View {
                                         .fontWeight(.bold)
                                         .multilineTextAlignment(.center)
                                         .fixedSize(horizontal: false, vertical: true)
-                                        .lineLimit(nil)
+                                        .lineLimit(2)
                                 }.frame(width: geometry.size.width / 2 - 60)
                             }
                         }
