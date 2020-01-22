@@ -8,6 +8,7 @@
 
 
 import SwiftUI
+import MapKit
 
 struct PoliceDetailView: View {
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
@@ -32,12 +33,14 @@ struct PoliceDetailView: View {
                     }
                     Spacer()
                     Button(action: {
-                        let formattedString = "http://maps.apple.com/maps?daddr=\(self.policeStation.coordinates.latitude),\(self.policeStation.coordinates.longitude)"
-                        /*let formattedStreet = self.policeStation.address.replacingOccurrences(of: " ", with: "+")
-                        let formattedAddress = formattedStreet+","+self.policeStation.city
-                        let formattedString = "http://maps.apple.com/maps?address=\(formattedAddress)"*/
-                        let url: NSURL = URL(string: formattedString)! as NSURL
-                        UIApplication.shared.open(url as URL)
+                        
+                        let coordinate = CLLocationCoordinate2D(latitude: self.policeStation.coordinates.latitude,longitude: self.policeStation.coordinates.longitude)
+                        
+                        let placemark = MKPlacemark(coordinate: coordinate, addressDictionary: nil)
+                        let mapItem = MKMapItem(placemark: placemark)
+                        mapItem.name = self.policeStation.name
+                        mapItem.openInMaps(launchOptions: nil)
+
                     }) {
                         Image("map")
                             .renderingMode(.original)
