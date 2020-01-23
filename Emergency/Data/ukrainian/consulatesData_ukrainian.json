@@ -2,104 +2,170 @@
 [
     {
         "id": 1,
-        "name": "Konsulat Generalny Niemiec",
-        "consulName": "Konsul Generalny – Hans Jörg Neumann",
+        "name": "Генеральне консульство Німеччини",
+        "consulName": "Генеральний консул - Hans Jörg Neumann",
         "address": "ul. Podwale 76 50-499 Wrocław",
-        "number": "71 377 27 00",
-        "coordinates": {
-            "longitude": -116.166868,
-            "latitude": 34.011286
-        },
-        "imageName": "1"
+        "number": "71 377 27 00"
     },
     {
         "id": 2,
-        "name": "Konsulat Austrii we Wrocławiu",
-        "consulName": "Konsul Honorowy - dr Edward Wąsiewicz",
+        "name": "Консульство Австрії у Вроцлаві",
+        "consulName": "Почесний консул - dr Edward Wąsiewicz",
         "address": "ul. Skwierzyńska 21/10 53-521 Wrocław",
-        "number": "+48 782 173 777",
-        "coordinates": {
-            "longitude": -116.166868,
-            "latitude": 34.011286
-        },
-        "imageName": "1"
+        "number": "+48 782 173 777"
     },
     {
         "id": 3,
-        "name": "Konsulat Republiki Bułgarii",
-        "consulName": "Konsul Honorowy - Jan Chorostkowski",
+        "name": "Консульство Республіки Болгарія",
+        "consulName": "Почесний консул - Jan Chorostkowski",
         "address": "ul. ks. P. Skargi 7/1 50-082 Wrocław",
-        "number": "71 783 39 28",
-        "coordinates": {
-            "longitude": -116.166868,
-            "latitude": 34.011286
-        },
-        "imageName": "1"
+        "number": "71 783 39 28"
     },
     {
         "id": 4,
-        "name": "Konsulat Republiki Chile",
-        "consulName": "Konsul Honorowy - Zbigniew Sebastian",
+        "name": "Консульство Республіки Чилі",
+        "consulName": "Почесний консул - Zbigniew Sebastian",
         "address": "ul. Świdnicka 39 50-029 Wrocław",
         "number": "71 372 44 91",
-        "email": "2@2.pl",
-        "coordinates": {
-            "longitude": -152.665167,
-            "latitude": 59.980167
-        },
-        "imageName": "1"
+        "email": "2@2.pl"
     },
     {
         "id": 5,
-        "name": "Konsulat Honorowy Republiki Czeskiej",
-        "consulName": "Konsul Honorowy - Arkadiusz Ignasiak",
+        "name": "Почесне консульство Чехії",
+        "consulName": "Почесний консул - Arkadiusz Ignasiak",
         "address": "ul. Szkocka 5/2 54-402 Wrocław",
         "number": "71 350 97 00",
-        "email": "2@2.pl",
-        "coordinates": {
-            "longitude": -152.665167,
-            "latitude": 59.980167
-        },
-        "imageName": "1"
+        "email": "2@2.pl"
     },
     {
         "id": 6,
-        "name": "Konsulat Królestwa Danii",
-        "consulName": "Konsul Honorowa - Maria Keller",
+        "name": "Консульство Королівства Данії",
+        "consulName": "Почесний консул - Maria Keller",
         "address": "ul. Świdnicka 36/15 50-068 Wrocław",
         "number": "71 372 39 50",
-        "email": "2@2.pl",
-        "coordinates": {
-            "longitude": -152.665167,
-            "latitude": 59.980167
-        },
-        "imageName": "1"
+        "email": "2@2.pl"
     },
     {
         "id": 7,
-        "name": "Konsulat Honorowy Finlandii",
-        "consulName": "Konsul Honorowa - Małgorzata Węgrzyn-Wysocka",
+        "name": "Почесне консульство Фінляндії",
+        "consulName": "Почесний консул - Małgorzata Węgrzyn-Wysocka",
         "address": "ul. Włodkowica 10/11 50-072 Wrocław",
         "number": "71 780 76 00",
-        "email": "2@2.pl",
-        "coordinates": {
-            "longitude": -152.665167,
-            "latitude": 59.980167
-        },
-        "imageName": "1"
+        "email": "2@2.pl"
     },
     {
         "id": 8,
-        "name": "Konsulat Honorowy Francji",
-        "consulName": "Konsul Honorowy - Richard Kepinski",
+        "name": "Почесне консульство Франції",
+        "consulName": "Почесний консул - Richard Kepinski",
         "address": "Rynek 58/300 50-116 Wrocław",
         "number": "71 341 02 80 ",
-        "email": "2@2.pl",
-        "coordinates": {
-            "longitude": -152.665167,
-            "latitude": 59.980167
-        },
-        "imageName": "1"
+        "email": "2@2.pl"
+    },
+    {
+        "id": 9,
+        "name": "Почесне консульство Королівства Іспанія",
+        "consulName": "Почесний консул - Jesús García-Nieto Moreno",
+        "address": "ul. Ludwika Rydygiera 2a/15 50-249 Wrocław",
+        "number": "+48 669 505 300",
+        "email": "konsulat@fira.pm"
+    },
+    {
+       "id": 10,
+       "name": "Почесне консульство Індії",
+       "consulName": "Почесний консул - Johri Kartikey",
+       "address": "ul. Wita Stwosza 16, 50-148 Wrocław",
+       "number": "502 411 355",
+       "email": "2@2.pl"
+    },
+    {
+        "id": 11,
+        "name": "Почесне консульство Люксембурга",
+        "consulName": "Почесний консул - Krzysztof Bramorski",
+        "address": "ul. Rzeźnicza 32 - 33, II p. 50-130 Wrocław",
+        "number": "71 346 70 87",
+        "email": "luxemburg@konsulat.wroclaw.pl "
+    },
+    {
+        "id": 12,
+        "name": "Консульство Королівства Норвегія",
+        "consulName": "Почесний консул - Bartosz Masternak",
+        "address": "Rynek 7, V piętro 50 - 106 Wrocław",
+        "number": "601 701 158",
+        "email": "consulate@norway.wroc.pl"
+    },
+    {
+        "id": 13,
+        "name": "Консульство Мексики",
+        "consulName": "Почесний консул - Bogdan Spiż",
+        "address": "ul. Przejście Garncarskie 12 50-106 Wrocław",
+        "number": "71 344 68 56",
+        "email": "wroclaw@spiz.pl"
+    },
+    {
+        "id": 14,
+        "name": "Почесне консульство Словацької Республіки",
+        "consulName": "Почесний консул - Maciej Kaczmarski",
+        "address": "ul. Danuty Siedzikówny 12 51 - 214 Wrocław",
+        "number": "71 78 50 369",
+        "email": "konsulat@slowacji.wroclaw.pl"
+    },
+    {
+        "id": 15,
+        "name": "Почесне консульство Швеції",
+        "consulName": "Почесний консул - Małgorzata Ryniak",
+        "address": "ul. Mydlana 2 51 - 502 Wrocław",
+        "number": "71 30 21 300",
+        "email": "administration.swecons.wro@volvo.com"
+    },
+    {
+        "id": 16,
+        "name": "Почесне консульство Великобританії",
+        "consulName": "Почесний консул - Marek Grzegorzewicz",
+        "address": "ul. Oławska 2 50 - 123 Wrocław",
+        "number": "71 344 89 61",
+        "email": "12321323123.swecons.wro@volvo.com"
+    },
+    {
+        "id": 17,
+        "name": "Почесне консульство України",
+        "consulName": "Почесний консул - Grzegorz Dzik",
+        "address": "ul. Jedności Narodowej 89 50 - 262 Wrocław",
+        "number": "71 788 44 50",
+        "email": "info@konsulat-ukraina.wroclaw.pl "
+    },
+    {
+        "id": 18,
+        "name": "Почесне консульство Італійської Республіки",
+        "consulName": "Почесний консул - Monika Przemysława Kwiatosz",
+        "address": "Plac Kościuszki 10/1 50 - 028 Wrocław",
+        "number": "795 413 015",
+        "email": "consolatoitaliano.wro@gmail.com"
+    },
+    {
+        "id": 19,
+        "name": "Почесне консульство Республіки Литви",
+        "consulName": "Почесний консул - Tomasz Kosoń",
+        "address": "Pl. Powstańców Śląskich 1/114 53 - 332 Wrocław",
+        "number": "71 360 24 00/ 10",
+        "email": "wroclaw@lithuaniaconsulatepoland.pl"
+    },
+    {
+        "id": 20,
+        "name": "Почесне консульство Республіки Корея",
+        "consulName": "Почесний консул - Tomasz Szpikowski",
+        "address": "ul. Leona Petrażyckiego 57 52 - 434 Wrocław ",
+        "number": "508 040 367 ",
+        "email": "beata.chelpa@korea-consul.wroc.pl"
+    },
+    {
+        "id": 21,
+        "name": "Почесне консульство Республіки Латвії",
+        "consulName": "Почесний консул - Martin Kaczmarski",
+        "address": "ul. Danuty Siedzikówny 12",
+        "number": "71 773 74 64",
+        "email": "konsulat@lotwy.wroclaw.pl"
     }
-    
+
+
 ]
+

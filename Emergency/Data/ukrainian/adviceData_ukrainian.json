@@ -1,22 +1,23 @@
+
 {
-    "intro": "UKR Wrocław to przyjazne miasto, zwłaszcza dla studentów i młodych ludzi. W trudnych sytuacjach może pomóc Ci wiedza, którą podzielili się wrocławscy Policjanci. Aplikacja została utworzona dla wszystkich osób, które szczególnie chcą zadbać o bezpieczeństwo. Tak jak wszędzie, mogą zdarzyć się pewne trudne sytuacje, dlatego zapraszamy Cię do zapoznania z kilkoma poradami, które mogą być przydatne:",
+    "intro": "Вроцлав - доброзичливе місто, особливо для студентів та молоді.\n\nУ складних ситуаціях вам можуть допомогти знання, якими поділилися вроцлавські поліцейські. Додаток створено для всіх людей, які особливо хочуть піклуватися про безпеку. Як і скрізь, можуть виникнути складні ситуації, тому ми пропонуємо вам ознайомитися з деякими порадами, які можуть бути корисними:",
     "advice": [
         {
             "id": 1,
-            "text": "UKR Porada nr #1: Gdy wypłacasz gotówkę z bankomatu – chroń swój numer PIN. Najlepiej zasłoń klawiaturę dłonią, aby nikt go nie zobaczył. Wypłaconej gotówki nie przeliczaj na oczach innych ludzi."
+            "text": "оли ви знімаєте готівку з банкомату - захистіть свій PIN-код. Найкраще накрити клавіатуру рукою, щоб ніхто її не бачив. Не конвертуйте готівку перед очима інших людей."
             
         },
         {
             "id": 2,
-            "text": "Porada nr #2: W środkach transportu publicznego (tramwajach i autobusach) jest monitoring. Gdy zdarzy się coś niepokojącego, poinformuj kierowcę. Będzie on mógł odpowiednio zareagować w sytuacji, gdybyś potrzebował pomocy lub wskazać Ci właściwy przystanek."
+            "text": "Є моніторинг у громадському транспорті (трамваї та автобуси). Якщо трапиться щось тривожне, повідомте водія. Він зможе відповідним чином зреагувати, якщо вам потрібна допомога, або покаже вам потрібну зупинку."
         },
         {
             "id": 3,
-            "text": "Porada nr #3: Gdy wychodzisz wieczorem, zaplanuj swoją pieszą trasę tak, aby wybierać większe i oświetlone ulice. Ciemne podwórka albo przejścia podziemne mogą Cię czymś zaskoczyć. W miarę możliwości nie spaceruj samotnie."
+            "text": "Kоли ви виходите ввечері - плануйте пішохідний маршрут, вибираючи великі та освітлені вулиці. Темні внутрішні двори або підземні переходи можуть бути небезпечними, особливо вечорами. Якщо можливо, не ходіть самі."
         },
         {
             "id": 4,
-            "text": "Porada nr #4: Pamiętaj, aby wszelkie umowy dotyczące wynajmu pokoju/mieszkania zawierać w formie papierowej. Powinieneś jeden egzemplarz umowy otrzymać dla siebie. Jeśli właściciel pobiera kaucję, również powinieneś otrzymać potwierdzenie na kwotę wpłaconej kaucji, abyś nie miał problemów z jej zwrotem. Jeśli umowa na najem lokalu została zawarta na czas nieoznaczony, a czynsz jest płatny miesięcznie, wtedy umowę można wypowiedzieć na trzy miesiące naprzód, zrób to na koniec miesiąca kalendarzowego."
+            "text": "Пам'ятайте, що всі договори оренди кімнати / квартири повинні бути в паперовому вигляді. Ви повинні отримати одну копію договору для себе. Якщо власник бере заставу за проживання, ви також повинні отримати письмове підтвердження суми оплати, щоб у вас не було проблем з її поверненням. Якщо договір оренди укладається на невизначений термін і орендна плата сплачується щомісяця, то договір може бути розірваний за три місяці наперед, зробiть це в кінці календарного місяця."
         }
     ]
 }

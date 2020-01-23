@@ -5,36 +5,21 @@
         "name": "Consulate General of Germany",
         "consulName": "Consul – Hans Jörg Neumann",
         "address": "ul. Podwale 76 50-499 Wrocław",
-        "number": "71 377 27 00",
-        "coordinates": {
-            "longitude": -116.166868,
-            "latitude": 34.011286
-        },
-        "imageName": "1"
+        "number": "71 377 27 00"
     },
     {
         "id": 2,
         "name": "Consulate of Austria in Wrocław",
         "consulName": "Consul - dr Edward Wąsiewicz",
         "address": "ul. Skwierzyńska 21/10 53-521 Wrocław",
-        "number": "+48 782 173 777",
-        "coordinates": {
-            "longitude": -116.166868,
-            "latitude": 34.011286
-        },
-        "imageName": "1"
+        "number": "+48 782 173 777"
     },
     {
         "id": 3,
         "name": "Consulate of the Republic of Bulgaria",
         "consulName": "Consul - Jan Chorostkowski",
         "address": "ul. ks. P. Skargi 7/1 50-082 Wrocław",
-        "number": "71 783 39 28",
-        "coordinates": {
-            "longitude": -116.166868,
-            "latitude": 34.011286
-        },
-        "imageName": "1"
+        "number": "71 783 39 28"
     },
     {
         "id": 4,
@@ -42,12 +27,7 @@
         "consulName": "Consul - Zbigniew Sebastian",
         "address": "ul. Świdnicka 39 50-029 Wrocław",
         "number": "71 372 44 91",
-        "email": "2@2.pl",
-        "coordinates": {
-            "longitude": -152.665167,
-            "latitude": 59.980167
-        },
-        "imageName": "1"
+        "email": "2@2.pl"
     },
     {
         "id": 5,
@@ -55,12 +35,7 @@
         "consulName": "Consul - Arkadiusz Ignasiak",
         "address": "ul. Szkocka 5/2 54-402 Wrocław",
         "number": "71 350 97 00",
-        "email": "2@2.pl",
-        "coordinates": {
-            "longitude": -152.665167,
-            "latitude": 59.980167
-        },
-        "imageName": "1"
+        "email": "2@2.pl"
     },
     {
         "id": 6,
@@ -68,12 +43,7 @@
         "consulName": "Consul - Maria Keller",
         "address": "ul. Świdnicka 36/15 50-068 Wrocław",
         "number": "71 372 39 50",
-        "email": "2@2.pl",
-        "coordinates": {
-            "longitude": -152.665167,
-            "latitude": 59.980167
-        },
-        "imageName": "1"
+        "email": "2@2.pl"
     },
     {
         "id": 7,
@@ -81,12 +51,7 @@
         "consulName": "Consul - Małgorzata Węgrzyn-Wysocka",
         "address": "ul. Włodkowica 10/11 50-072 Wrocław",
         "number": "71 780 76 00",
-        "email": "2@2.pl",
-        "coordinates": {
-            "longitude": -152.665167,
-            "latitude": 59.980167
-        },
-        "imageName": "1"
+        "email": "2@2.pl"
     },
     {
         "id": 8,
@@ -94,12 +59,7 @@
         "consulName": "Consul - Richard Kepinski",
         "address": "Rynek 58/300 50-116 Wrocław",
         "number": "71 341 02 80 ",
-        "email": "2@2.pl",
-        "coordinates": {
-            "longitude": -152.665167,
-            "latitude": 59.980167
-        },
-        "imageName": "1"
+        "email": "2@2.pl"
     },
     {
         "id": 9,
@@ -107,12 +67,7 @@
         "consulName": "Consul - Jesús García-Nieto Moreno",
         "address": "ul. Ludwika Rydygiera 2a/15 50-249 Wrocław",
         "number": "+48 669 505 300",
-        "email": "konsulat@fira.pm",
-        "coordinates": {
-            "longitude": -152.665167,
-            "latitude": 59.980167
-        },
-        "imageName": "1"
+        "email": "konsulat@fira.pm"
     },
     {
            "id": 10,
@@ -120,12 +75,7 @@
            "consulName": "Consul – Johri Kartikey",
            "address": "ul. Wita Stwosza 16, 50-148 Wrocław",
            "number": "502 411 355",
-           "email": "2@2.pl",
-           "coordinates": {
-               "longitude": -152.665167,
-               "latitude": 59.980167
-           },
-           "imageName": "1"
+           "email": "2@2.pl"
     },
     {
         "id": 11,
@@ -133,12 +83,7 @@
         "consulName": "Consul - Krzysztof Bramorski",
         "address": "ul. Rzeźnicza 32 - 33, II p. 50-130 Wrocław",
         "number": "71 346 70 87",
-        "email": "luxemburg@konsulat.wroclaw.pl ",
-        "coordinates": {
-            "longitude": -152.665167,
-            "latitude": 59.980167
-        },
-        "imageName": "1"
+        "email": "luxemburg@konsulat.wroclaw.pl "
     },
     {
         "id": 12,
@@ -146,12 +91,7 @@
         "consulName": "Consul - Bartosz Masternak",
         "address": "Rynek 7, V piętro 50 - 106 Wrocław",
         "number": "601 701 158",
-        "email": "consulate@norway.wroc.pl",
-        "coordinates": {
-            "longitude": -152.665167,
-            "latitude": 59.980167
-        },
-        "imageName": "1"
+        "email": "consulate@norway.wroc.pl"
     },
     {
         "id": 13,
@@ -159,12 +99,7 @@
         "consulName": "Consul - Bogdan Spiż",
         "address": "ul. Przejście Garncarskie 12 50-106 Wrocław",
         "number": "71 344 68 56",
-        "email": "wroclaw@spiz.pl",
-        "coordinates": {
-            "longitude": -152.665167,
-            "latitude": 59.980167
-        },
-        "imageName": "1"
+        "email": "wroclaw@spiz.pl"
     },
     {
         "id": 14,
@@ -172,12 +107,7 @@
         "consulName": "Consul - Maciej Kaczmarski",
         "address": "ul. Danuty Siedzikówny 12 51 - 214 Wrocław",
         "number": "71 78 50 369",
-        "email": "konsulat@slowacji.wroclaw.pl",
-        "coordinates": {
-            "longitude": -152.665167,
-            "latitude": 59.980167
-        },
-        "imageName": "1"
+        "email": "konsulat@slowacji.wroclaw.pl"
     },
     {
         "id": 15,
@@ -185,12 +115,7 @@
         "consulName": "Consul - Małgorzata Ryniak",
         "address": "ul. Mydlana 2 51 - 502 Wrocław",
         "number": "71 30 21 300",
-        "email": "administration.swecons.wro@volvo.com",
-        "coordinates": {
-            "longitude": -152.665167,
-            "latitude": 59.980167
-        },
-        "imageName": "1"
+        "email": "administration.swecons.wro@volvo.com"
     },
     {
         "id": 16,
@@ -198,12 +123,7 @@
         "consulName": "Consul - Marek Grzegorzewicz",
         "address": "ul. Oławska 2 50 - 123 Wrocław",
         "number": "71 344 89 61",
-        "email": "12321323123.swecons.wro@volvo.com",
-        "coordinates": {
-            "longitude": -152.665167,
-            "latitude": 59.980167
-        },
-        "imageName": "1"
+        "email": "12321323123.swecons.wro@volvo.com"
     },
     {
         "id": 17,
@@ -211,12 +131,7 @@
         "consulName": "Consul - Grzegorz Dzik",
         "address": "ul. Jedności Narodowej 89 50 - 262 Wrocław",
         "number": "71 788 44 50",
-        "email": "info@konsulat-ukraina.wroclaw.pl ",
-        "coordinates": {
-            "longitude": -152.665167,
-            "latitude": 59.980167
-        },
-        "imageName": "1"
+        "email": "info@konsulat-ukraina.wroclaw.pl "
     },
     {
         "id": 18,
@@ -224,12 +139,7 @@
         "consulName": "Consul - Monika Przemysława Kwiatosz",
         "address": "Plac Kościuszki 10/1 50 - 028 Wrocław",
         "number": "795 413 015",
-        "email": "consolatoitaliano.wro@gmail.com",
-        "coordinates": {
-            "longitude": -152.665167,
-            "latitude": 59.980167
-        },
-        "imageName": "1"
+        "email": "consolatoitaliano.wro@gmail.com"
     },
     {
         "id": 19,
@@ -237,12 +147,7 @@
         "consulName": "Consul - Tomasz Kosoń",
         "address": "Pl. Powstańców Śląskich 1/114 53 - 332 Wrocław",
         "number": "71 360 24 00/ 10",
-        "email": "wroclaw@lithuaniaconsulatepoland.pl",
-        "coordinates": {
-            "longitude": -152.665167,
-            "latitude": 59.980167
-        },
-        "imageName": "1"
+        "email": "wroclaw@lithuaniaconsulatepoland.pl"
     },
     {
         "id": 20,
@@ -250,12 +155,7 @@
         "consulName": "Consul - Tomasz Szpikowski",
         "address": "ul. Leona Petrażyckiego 57 52 - 434 Wrocław ",
         "number": "508 040 367 ",
-        "email": "beata.chelpa@korea-consul.wroc.pl",
-        "coordinates": {
-            "longitude": -152.665167,
-            "latitude": 59.980167
-        },
-        "imageName": "1"
+        "email": "beata.chelpa@korea-consul.wroc.pl"
     },
     {
         "id": 21,
@@ -263,12 +163,7 @@
         "consulName": "Consul - Martin Kaczmarski",
         "address": "ul. Danuty Siedzikówny 12",
         "number": "71 773 74 64",
-        "email": "konsulat@lotwy.wroclaw.pl",
-        "coordinates": {
-            "longitude": -152.665167,
-            "latitude": 59.980167
-        },
-        "imageName": "1"
+        "email": "konsulat@lotwy.wroclaw.pl" 
     }
 
 

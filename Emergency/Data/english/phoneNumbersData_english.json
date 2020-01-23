@@ -1,44 +1,45 @@
+
 [
     {
         "id": 1,
-        "name": "Telefon Alarmowy",
+        "name": "Emergency number",
         "number": "112",
-        "available": "czynny 24/7",
-        "description": "Telefon służy do powiadamiania w sytuacjach zagrożenia życia."
+        "available": "available 24/7",
+        "description": "Used for notifying life-threatening situations"
     },
     {
         "id": 2,
-        "name": "Pogotowie Ratunkowe",
+        "name": "Ambulance services",
         "number": "999",
-        "available": "czynny 24/7",
+        "available": "available 24/7",
         "description": ""
     },
     {
         "id": 3,
-        "name": "Policja",
+        "name": "Police",
         "number": "997",
-        "available": "czynny 24/7",
+        "available": "available 24/7",
         "description": ""
     },
     {
         "id": 4,
-        "name": "Straż Pożarna",
+        "name": "Fire brigade",
         "number": "998",
-        "available": "czynny 24/7",
+        "available": "available 24/7",
         "description": ""
     },
     {
         "id": 5,
-        "name": "Straż Miejska",
+        "name": "Municipal Wardens",
         "number": "986",
-        "available": "czynny 24/7",
+        "available": "available 24/7",
         "description": ""
     },
     {
         "id": 6,
-        "name": "Infolinia",
+        "name": "Helpline",
         "number": "71 77 24 950",
-        "available": "czynny: (Pn, Wt, Pt, 9:00 - 16:00), (Śr, Czw, 11:00 – 18:00)",
-        "description": "Miejski punkt  informacji telefonicznej dla obcokrajowców, dostępny również  języku angielskim."
+        "available": "available (Mon, Tue, Fri 9 AM – 4 PM ), (Wed, Thu 11 AM –6 PM)",
+        "description": "Helpline, municipal information centre for foreigners, also available in English"
     }
 ]

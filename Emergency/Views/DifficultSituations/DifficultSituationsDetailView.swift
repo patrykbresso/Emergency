@@ -39,7 +39,9 @@ struct DifficultSituationsDetailView: View {
                         Text(self.difficultSituation.title)
                             .font(.title)
                             .padding(.bottom, 15)
-                        Text(self.difficultSituation.text)
+                        ScrollView(){
+                            Text(self.difficultSituation.text)
+                        }
                         .padding(15)
                     }
                 }

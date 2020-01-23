@@ -17,45 +17,25 @@
             "id": 2,
             "name": "University Clinical Hospital",
             "address": "ul. Borowska 213,  50-556 Wrocław,",
-            "number": "71 733 29 64 ",
-            "coordinates": {
-                "longitude": -152.665167,
-                "latitude": 59.980167
-            },
-            "imageName": "1"
+            "number": "71 733 29 64 "
         },
         {
             "id": 3,
             "name": "Provincial Specialist Hospital",
             "address": "ul. H. M. Kamieńskiego 73a, 51-124 Wrocław",
-            "number": "71 32 70 100",
-            "coordinates": {
-                "longitude": -116.166868,
-                "latitude": 34.011286
-            },
-            "imageName": "1"
+            "number": "71 32 70 100"
         },
         {
             "id": 4,
             "name": "T. Marciniak Lower Silesian Specialist Hospital",
             "address": "ul. Gen. A. E. Fieldorfa 2, 50-996 Wrocław ",
-            "number": "71 306 44 19 ",
-            "coordinates": {
-                "longitude": -152.665167,
-                "latitude": 59.980167
-            },
-            "imageName": "1"
+            "number": "71 306 44 19 "
         },
         {
             "id": 5,
             "name": "For children\nSurgery unit 24/7\nPediatric Surgery and Urology Clinic",
             "address": "ul. M. Curie-Skłodowskiej 50/52, 50-369 Wrocław",
-            "number": "71 770 30 15",
-            "coordinates": {
-                "longitude": 17.064365,
-                "latitude": 51.110238
-            },
-            "imageName": "1"
+            "number": "71 770 30 15"
         }
         
     ]

@@ -1,44 +1,45 @@
+
 [
     {
         "id": 1,
-        "name": "Telefon Alarmowy",
+        "name": "Телефон екстреної ",
         "number": "112",
-        "available": "czynny 24/7",
-        "description": "Telefon służy do powiadamiania w sytuacjach zagrożenia życia."
+        "available": "працює цілодобово",
+        "description": "Телефон використовується для оповіщення про небезпечні для життя ситуації."
     },
     {
         "id": 2,
-        "name": "Pogotowie Ratunkowe",
+        "name": "Служба швидкої допомоги",
         "number": "999",
-        "available": "czynny 24/7",
+        "available": "працює цілодобово",
         "description": ""
     },
     {
         "id": 3,
-        "name": "Policja",
+        "name": "Поліція",
         "number": "997",
-        "available": "czynny 24/7",
+        "available": "працює цілодобово",
         "description": ""
     },
     {
         "id": 4,
-        "name": "Straż Pożarna",
+        "name": "Пожежна служба",
         "number": "998",
-        "available": "czynny 24/7",
+        "available": "працює цілодобово",
         "description": ""
     },
     {
         "id": 5,
-        "name": "Straż Miejska",
+        "name": "Міська гвардія",
         "number": "986",
-        "available": "czynny 24/7",
+        "available": "працює цілодобово",
         "description": ""
     },
     {
         "id": 6,
-        "name": "Infolinia",
+        "name": "Гаряча лінія",
         "number": "71 77 24 950",
-        "available": "czynny: (Pn, Wt, Pt, 9:00 - 16:00), (Śr, Czw, 11:00 – 18:00)",
-        "description": "Miejski punkt  informacji telefonicznej dla obcokrajowców, dostępny również  języku angielskim."
+        "available": "працює: (пн, вт, пт, 9.00 – 16.00), (ср, чт, 11.00–18.00)",
+        "description": "телефонний інформаційний пункт для іноземців, також доступний англійською мовою"
     }
 ]

@@ -86,8 +86,8 @@ struct PoliceView: View {
                     }.frame(width: geometry.size.width / 1.1, alignment: .center)
                 }.padding(.leading, geometry.size.width / 8)
                     .padding(.top, 20)
-                
                 //searchbar
+                Spacer()
                 HStack {
                     Image("magnifier")
                     .renderingMode(.original)
@@ -105,7 +105,6 @@ struct PoliceView: View {
                     }
                     .foregroundColor(.white)
                 }
-                .padding(.top, 20)
                 .padding(.leading, 35)
                 .padding(.trailing, 35)
                 .foregroundColor(.white)

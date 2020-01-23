@@ -15,13 +15,6 @@ struct Consulates: Identifiable, Decodable {
     var consulName: String
     var address: String
     var number: String
-    var imageName: String
-    var coordinates: Coordinates
-    var locationCoordinate: CLLocationCoordinate2D {
-        CLLocationCoordinate2D(
-            latitude: coordinates.latitude,
-            longitude: coordinates.longitude)
-    }
 }
 
 

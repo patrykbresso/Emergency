@@ -5,36 +5,21 @@
         "name": "Konsulat Generalny Niemiec",
         "consulName": "Konsul Generalny – Hans Jörg Neumann",
         "address": "ul. Podwale 76 50-499 Wrocław",
-        "number": "71 377 27 00",
-        "coordinates": {
-            "longitude": -116.166868,
-            "latitude": 34.011286
-        },
-        "imageName": "1"
+        "number": "71 377 27 00"
     },
     {
         "id": 2,
         "name": "Konsulat Austrii we Wrocławiu",
         "consulName": "Konsul Honorowy - dr Edward Wąsiewicz",
         "address": "ul. Skwierzyńska 21/10 53-521 Wrocław",
-        "number": "+48 782 173 777",
-        "coordinates": {
-            "longitude": -116.166868,
-            "latitude": 34.011286
-        },
-        "imageName": "1"
+        "number": "+48 782 173 777"
     },
     {
         "id": 3,
         "name": "Konsulat Republiki Bułgarii",
         "consulName": "Konsul Honorowy - Jan Chorostkowski",
         "address": "ul. ks. P. Skargi 7/1 50-082 Wrocław",
-        "number": "71 783 39 28",
-        "coordinates": {
-            "longitude": -116.166868,
-            "latitude": 34.011286
-        },
-        "imageName": "1"
+        "number": "71 783 39 28"
     },
     {
         "id": 4,
@@ -42,12 +27,7 @@
         "consulName": "Konsul Honorowy - Zbigniew Sebastian",
         "address": "ul. Świdnicka 39 50-029 Wrocław",
         "number": "71 372 44 91",
-        "email": "2@2.pl",
-        "coordinates": {
-            "longitude": -152.665167,
-            "latitude": 59.980167
-        },
-        "imageName": "1"
+        "email": "2@2.pl"
     },
     {
         "id": 5,
@@ -55,12 +35,7 @@
         "consulName": "Konsul Honorowy - Arkadiusz Ignasiak",
         "address": "ul. Szkocka 5/2 54-402 Wrocław",
         "number": "71 350 97 00",
-        "email": "2@2.pl",
-        "coordinates": {
-            "longitude": -152.665167,
-            "latitude": 59.980167
-        },
-        "imageName": "1"
+        "email": "2@2.pl"
     },
     {
         "id": 6,
@@ -68,12 +43,7 @@
         "consulName": "Konsul Honorowa - Maria Keller",
         "address": "ul. Świdnicka 36/15 50-068 Wrocław",
         "number": "71 372 39 50",
-        "email": "2@2.pl",
-        "coordinates": {
-            "longitude": -152.665167,
-            "latitude": 59.980167
-        },
-        "imageName": "1"
+        "email": "2@2.pl"
     },
     {
         "id": 7,
@@ -81,12 +51,7 @@
         "consulName": "Konsul Honorowa - Małgorzata Węgrzyn-Wysocka",
         "address": "ul. Włodkowica 10/11 50-072 Wrocław",
         "number": "71 780 76 00",
-        "email": "2@2.pl",
-        "coordinates": {
-            "longitude": -152.665167,
-            "latitude": 59.980167
-        },
-        "imageName": "1"
+        "email": "2@2.pl"
     },
     {
         "id": 8,
@@ -94,12 +59,7 @@
         "consulName": "Konsul Honorowy - Richard Kepinski",
         "address": "Rynek 58/300 50-116 Wrocław",
         "number": "71 341 02 80 ",
-        "email": "2@2.pl",
-        "coordinates": {
-            "longitude": -152.665167,
-            "latitude": 59.980167
-        },
-        "imageName": "1"
+        "email": "2@2.pl" 
     }
     
 ]
