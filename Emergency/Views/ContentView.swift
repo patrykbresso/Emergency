@@ -164,7 +164,7 @@ struct ContentView: View {
                             ZStack {
                                 
                                 if(self.keyword.isEmpty) {
-                                    Text("szukaj...")
+                                    Text(self.dataLoader.menuData.search)
                                 }
                                 TextField("", text: self.$keyword, onCommit: {
                                     self.keyboardOpened.toggle()

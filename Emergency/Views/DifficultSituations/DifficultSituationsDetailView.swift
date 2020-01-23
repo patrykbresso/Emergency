@@ -21,15 +21,16 @@ struct DifficultSituationsDetailView: View {
                         self.presentationMode.wrappedValue.dismiss()
                     }) {
                         VStack {
-                            Image("difficultsituations")
-                                .renderingMode(.original)
                             Image("left_arrow")
                                 .renderingMode(.original)
                             
-                        }.padding(.leading, 15)
+                        }
                     }
                     Spacer()
-                }
+                    Image("difficultsituations")
+                        .renderingMode(.original)
+                    Spacer()
+                }.padding(15)
                 
                 ZStack {
                     RoundedRectangle(cornerRadius: 10)

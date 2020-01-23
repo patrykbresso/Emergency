@@ -15,32 +15,37 @@ struct LawsDetailView: View {
 
     
     var body: some View {
-        
-        GeometryReader { geometry in
-            VStack(alignment: .leading) {
+
+            VStack() {
+                HStack {
                     Button(action: {
                         self.presentationMode.wrappedValue.dismiss()
                     }) {
                         VStack {
-                            Image("law")
-                                .renderingMode(.original)
                             Image("left_arrow")
                                 .renderingMode(.original)
                         }             
                     }
-                ScrollView {
+                    Spacer()
+                    Image("law")
+                        .renderingMode(.original)
+                    Spacer()
+                }.padding(15)
+                Spacer()
                     VStack {
+                        ScrollView {
                             Text(self.law.title)
                                 .bold()
                             Spacer()
                             Text(self.law.text)
+                        }
                     }
                     .padding(20)
-                    .frame(width: geometry.size.width / 1.3)
+                    .frame(width: UIScreen.screenWidth / 1.3, alignment: .center)
                     .foregroundColor(.white)
                     .background(Color.primaryPink)
                     .cornerRadius(10)
-                }.padding(.bottom, 20)
+               
             }
             .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity)
             .background(Color.primaryBlue
@@ -49,7 +54,7 @@ struct LawsDetailView: View {
             .navigationBarTitle("")
             .navigationBarHidden(true)
             .navigationBarBackButtonHidden(true)
-        }
+        
         
     }
 }

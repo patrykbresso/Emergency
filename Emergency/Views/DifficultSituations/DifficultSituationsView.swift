@@ -11,26 +11,25 @@ import SwiftUI
 struct DifficultSituationsView: View {
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     @EnvironmentObject var dataLoader: DataLoader
-    @State private var keyword: String = ""
-    @State var searchResults: [Page] = []
-    @State var show: Bool = false
-    
+
     var body: some View {
         GeometryReader { geometry in
-            VStack(alignment: HorizontalAlignment.leading) {
-                
-                Button(action: {
-                    self.presentationMode.wrappedValue.dismiss()
-                }) {
-                    VStack {
-                        Image("difficultsituations")
-                            .renderingMode(.original)
-                        Image("left_arrow")
-                            .renderingMode(.original)
-                        
-                    }.padding(.leading, 15)
-                }
-                
+            VStack() {
+                HStack {
+                    Button(action: {
+                        self.presentationMode.wrappedValue.dismiss()
+                    }) {
+                        VStack {
+                            Image("left_arrow")
+                                .renderingMode(.original)
+                            
+                        }
+                    }
+                    Spacer()
+                    Image("difficultsituations")
+                        .renderingMode(.original)
+                    Spacer()
+                }.padding(15)
                 VStack {
                     ForEach(self.dataLoader.difficultSituationsData){ row in
                         if(row.id % 2 == 0) {
@@ -56,29 +55,9 @@ struct DifficultSituationsView: View {
                 }
                 .padding(.leading, geometry.size.width / 10)
                 .padding(.trailing, geometry.size.width / 10)
-                HStack {
-                    Image("magnifier")
-                    .renderingMode(.original)
-                    Spacer(minLength: 50)
-                    ZStack {
-                        if(self.keyword.isEmpty) {
-                            Text("szukaj...")
-                        }
-                        TextField("", text: self.$keyword, onCommit: {
-                            let searchController: SearchController = SearchController(dataLoader: self.dataLoader)
-                            self.searchResults = searchController.searchByKeywords(searchedPhrase: self.keyword)
-                            self.show = true
-                        })
-                        .textFieldStyle(CustomTextFieldStyle())
-                    }
-                    .foregroundColor(.white)
-                }
-                .padding(.top, 20)
-                .padding(.leading, 35)
-                .padding(.trailing, 35)
-                .foregroundColor(.white)
+
             }
-            NavigationLink(destination: SearchResultsView(searchTerm: self.keyword, results: self.searchResults), isActive: self.$show, label: { EmptyView()})
+
         }
         .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity)
         .background(Color.primaryBlue

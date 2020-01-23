@@ -15,8 +15,7 @@ struct HospitalsRow: View {
 
     var hospital: Hospital
     var body: some View {
-        
-        GeometryReader { geometry in
+
             ZStack() {
                 RoundedRectangle(cornerRadius: 10)
                 .stroke(Color.primaryPink, lineWidth: 10)
@@ -25,6 +24,7 @@ struct HospitalsRow: View {
                 VStack {
                     Text(self.hospital.name)
                         .bold()
+                        .multilineTextAlignment(.center)
                     Text(self.hospital.address)
                     Button(action: {
                         let cleanString = String(self.hospital.number.filter { !" \n\t\r".contains($0) })
@@ -39,9 +39,9 @@ struct HospitalsRow: View {
                 }
             }
             .font(.system(size: 14))
-            .frame(width: geometry.size.width / 1.3, height: geometry.size.height / 6)
+            .frame(width: UIScreen.screenWidth / 1.3, height: UIScreen.screenHeight / 6)
             .foregroundColor(.white)
-        }
+        
     }
 }
 

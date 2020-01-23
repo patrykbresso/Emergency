@@ -43,9 +43,6 @@
 		9F87D2EF23D83DF400CDAB7C /* footer_changelanguage.json in Resources */ = {isa = PBXBuildFile; fileRef = 9F87D2EE23D83DF400CDAB7C /* footer_changelanguage.json */; };
 		9F87D2F123D83E2900CDAB7C /* Footer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F87D2F023D83E2900CDAB7C /* Footer.swift */; };
 		9F87D2F323D849DF00CDAB7C /* UIScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F87D2F223D849DF00CDAB7C /* UIScreen.swift */; };
-		9F87D2F723D85B2C00CDAB7C /* ITC_Avant_Garde_Gothic_Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9F87D2F623D85B2C00CDAB7C /* ITC_Avant_Garde_Gothic_Medium.otf */; };
-		9F87D2F823D85B2C00CDAB7C /* ITC_Avant_Garde_Gothic_Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9F87D2F623D85B2C00CDAB7C /* ITC_Avant_Garde_Gothic_Medium.otf */; };
-		9F87D2F923D85B2C00CDAB7C /* ITC_Avant_Garde_Gothic_Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9F87D2F623D85B2C00CDAB7C /* ITC_Avant_Garde_Gothic_Medium.otf */; };
 		9F8F031123AA7865004FB4A0 /* ChangeLanguageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8F031023AA7865004FB4A0 /* ChangeLanguageView.swift */; };
 		9F8F031423AA7A79004FB4A0 /* ChangeLanguageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8F031323AA7A79004FB4A0 /* ChangeLanguageCell.swift */; };
 		9FAACF852379B65600C3CF94 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FAACF842379B65600C3CF94 /* AppDelegate.swift */; };
@@ -200,7 +197,6 @@
 		9F87D2EE23D83DF400CDAB7C /* footer_changelanguage.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = footer_changelanguage.json; sourceTree = "<group>"; };
 		9F87D2F023D83E2900CDAB7C /* Footer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Footer.swift; sourceTree = "<group>"; };
 		9F87D2F223D849DF00CDAB7C /* UIScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIScreen.swift; sourceTree = "<group>"; };
-		9F87D2F623D85B2C00CDAB7C /* ITC_Avant_Garde_Gothic_Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ITC_Avant_Garde_Gothic_Medium.otf; sourceTree = "<group>"; };
 		9F8F031023AA7865004FB4A0 /* ChangeLanguageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeLanguageView.swift; sourceTree = "<group>"; };
 		9F8F031323AA7A79004FB4A0 /* ChangeLanguageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeLanguageCell.swift; sourceTree = "<group>"; };
 		9FAACF812379B65600C3CF94 /* Emergency.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Emergency.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -446,7 +442,6 @@
 		9F87D2F423D85B0700CDAB7C /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
-				9F87D2F623D85B2C00CDAB7C /* ITC_Avant_Garde_Gothic_Medium.otf */,
 			);
 			path = Fonts;
 			sourceTree = "<group>";
@@ -891,7 +886,6 @@
 				9FB3E4FD23ABE2C4005E1095 /* hospitalsData.json in Resources */,
 				9FB3E4C623ABE211005E1095 /* policeData_english.json in Resources */,
 				9F43E11823C240850023E14D /* mainMenu_german.json in Resources */,
-				9F87D2F723D85B2C00CDAB7C /* ITC_Avant_Garde_Gothic_Medium.otf in Resources */,
 				9FB3E4C923ABE211005E1095 /* consulatesData_english.json in Resources */,
 				9FB3E4D423ABE211005E1095 /* searchKeywords_polish.json in Resources */,
 				9F87D2EB23D83DD300CDAB7C /* footer_changelanguage_ukrainian.json in Resources */,
@@ -938,7 +932,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9F87D2F823D85B2C00CDAB7C /* ITC_Avant_Garde_Gothic_Medium.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -946,7 +939,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9F87D2F923D85B2C00CDAB7C /* ITC_Avant_Garde_Gothic_Medium.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -19,4 +19,5 @@ struct Menu: Decodable {
     var consulate: String
     var hospital: String
     var police: String
+    var search: String
 }
