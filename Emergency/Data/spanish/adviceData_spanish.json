@@ -1,22 +1,22 @@
 {
-    "intro": "ESP Wrocław to przyjazne miasto, zwłaszcza dla studentów i młodych ludzi. W trudnych sytuacjach może pomóc Ci wiedza, którą podzielili się wrocławscy Policjanci. Aplikacja została utworzona dla wszystkich osób, które szczególnie chcą zadbać o bezpieczeństwo. Tak jak wszędzie, mogą zdarzyć się pewne trudne sytuacje, dlatego zapraszamy Cię do zapoznania z kilkoma poradami, które mogą być przydatne:",
+    "intro": "Wrocław es una ciudad amigable, especialmente para los estudiantes y los jóvenes.\n\nEn situaciones difíciles, el conocimiento que los policías de Wroclaw han compartido puede ayudarlo. La aplicación ha sido creada para todas las personas que pricipalmente quieren estar seguras. Como en todas partes, puede haber algunas situaciones difíciles, por lo que le invitamos a familiarizarse con algunos consejos que le pueden ser útiles:",
     "advice": [
         {
             "id": 1,
-            "text": "SPANISH Porada nr #1: Gdy wypłacasz gotówkę z bankomatu – chroń swój numer PIN. Najlepiej zasłoń klawiaturę dłonią, aby nikt go nie zobaczył. Wypłaconej gotówki nie przeliczaj na oczach innych ludzi."
+            "text": "Consejo n.º #1: Si retira efectivo de un cajero automático, protege su código PIN. Lo mejor es cubrir el teclado con la mano para que nadie vea su número. Una vez retirado efectivo, no lo cuente a la vista."
             
         },
         {
             "id": 2,
-            "text": "Porada nr #2: W środkach transportu publicznego (tramwajach i autobusach) jest monitoring. Gdy zdarzy się coś niepokojącego, poinformuj kierowcę. Będzie on mógł odpowiednio zareagować w sytuacji, gdybyś potrzebował pomocy lub wskazać Ci właściwy przystanek."
+            "text": "Consejo n.º #2: Hay monitoreo en los medios de transporte público (tranvías y autobuses). Si sucede algo inquietante, informe al conductor. Él podrá reaccionar adecuadamente si necesita ayuda o le muestra la parada correcta."
         },
         {
             "id": 3,
-            "text": "Porada nr #3: Gdy wychodzisz wieczorem, zaplanuj swoją pieszą trasę tak, aby wybierać większe i oświetlone ulice. Ciemne podwórka albo przejścia podziemne mogą Cię czymś zaskoczyć. W miarę możliwości nie spaceruj samotnie."
+            "text": "Consejo n.º #3: Cuando salga por la noche, planifique su ruta de caminata para elegir calles más grandes e iluminadas. Patios oscuros o pasadizos subterráneos pueden sorprenderte con algo. Si es posible, no camine solo."
         },
         {
             "id": 4,
-            "text": "Porada nr #4: Pamiętaj, aby wszelkie umowy dotyczące wynajmu pokoju/mieszkania zawierać w formie papierowej. Powinieneś jeden egzemplarz umowy otrzymać dla siebie. Jeśli właściciel pobiera kaucję, również powinieneś otrzymać potwierdzenie na kwotę wpłaconej kaucji, abyś nie miał problemów z jej zwrotem. Jeśli umowa na najem lokalu została zawarta na czas nieoznaczony, a czynsz jest płatny miesięcznie, wtedy umowę można wypowiedzieć na trzy miesiące naprzód, zrób to na koniec miesiąca kalendarzowego."
+            "text": "Consejo n.º #4: Recuerde firmar todos los contratos de alquiler de habitaciones / pisos por escrito. Debería recibir una copia del contrato para usted. Si el propietario cobra la fianza, también debe recibir la confirmación de la cuota de la fianza pagada para que no tenga problemas con su reembolso. Si el contrato de alguiler de un local se ha celebrado por un período indefinido, y el alquiler se paga mensualmente, el contrato puede resolverse con tres meses de antelación, al final del mes."
         }
     ]
 }

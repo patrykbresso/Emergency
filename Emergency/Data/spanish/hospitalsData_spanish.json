@@ -1,28 +1,28 @@
     {
-    "title": "Hospital Emergency Departments (Szpitalny Oddział Ratunkowy - SOR)",
-    "subtitle":  "in Wrocław are open all day. They provide medical assistance in the case of emergencies. This takes a form of establishing an initial diagnosis and providing treatment necessary to stabilise life functions of patients whose health or life are in danger.",
+    "title": "Departamentos de urgencias hospitalarios (Szpitalny Oddział Ratunkowy - SOR)",
+    "subtitle":  "Las urgencias (en polaco llamadas SOR)</b> en Wrocław están abiertas las 24 horas.  Las urgencias proporcionan servicios de salud de emergencia. Consisten en el diagnóstico y el tratamiento iniciales en la medida necesaria para estabilizar las funciones vitales de las personas que se encuentran en un estado de vida o amenaza para la salud.",
     "hospitals": [
         {
             "id": 1,
-            "name": "SOR  Wojskowy Szpital Kliniczny",
+            "name": "Urgencias (SOR) del Hospital Clínico Militar",
             "address": "ul. Rudolfa Weigla 5, 50-981 Wrocław",
             "number": "71 76 60 208"
         },
         {
             "id": 2,
-            "name": "SOR Uniwersytecki Szpital Kliniczny we Wrocławiu",
+            "name": "Urgencias (SOR) Hospital Clínico Universitario en Wrocław",
             "address": "ul. Borowska 213,  50-556 Wrocław,",
             "number": "71 733 29 64 "
         },
         {
             "id": 3,
-            "name": "SOR Wojewódzki Szpital Specjalistyczny we Wrocławiu",
+            "name": "Urgencias (SOR) Hospital EspecialistaProvincial en Wrocław",
             "address": "ul. H. M. Kamieńskiego 73a, 51-124 Wrocław",
             "number": "71 32 70 100"
         },
         {
             "id": 4,
-            "name": "SOR Dolnośląski Szpital Specjalistyczny im. T. Marciniaka",
+            "name": "Urgencias (SOR) Hospital Especialista de Baja Silesia de  T. Marciniak",
             "address": "ul. Gen. A. E. Fieldorfa 2, 50-996 Wrocław ",
             "number": "71 306 44 19 "
         }

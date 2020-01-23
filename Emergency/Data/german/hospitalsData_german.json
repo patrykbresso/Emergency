@@ -4,25 +4,25 @@
     "hospitals": [
         {
             "id": 1,
-            "name": "Militärkrankenhaus / SOR  Wojskowy Szpital Kliniczny",
+            "name": "Militärkrankenhaus",
             "address": "ul. Rudolfa Weigla 5, 50-981 Wrocław",
             "number": "71 76 60 208"
         },
         {
             "id": 2,
-            "name": "Universitätspoliklinik / SOR Uniwersytecki Szpital Kliniczny we Wrocławiu",
+            "name": "Universitätspoliklinik",
             "address": "ul. Borowska 213,  50-556 Wrocław,",
             "number": "71 733 29 64 "
         },
         {
             "id": 3,
-            "name": "Woiwodschaftsfachkrankenhaus / SOR Wojewódzki Szpital Specjalistyczny we Wrocławiu",
+            "name": "Woiwodschaftsfachkrankenhaus",
             "address": "ul. H. M. Kamieńskiego 73a, 51-124 Wrocław",
             "number": "71 32 70 100"
         },
         {
             "id": 4,
-            "name": "Niederschlesisches T.-Marciniak-Fachkrankenhaus / SOR Dolnośląski Szpital Specjalistyczny im. T. Marciniaka",
+            "name": "Niederschlesisches T.-Marciniak-Fachkrankenhaus",
             "address": "ul. Gen. A. E. Fieldorfa 2, 50-996 Wrocław ",
             "number": "71 306 44 19 "
         }

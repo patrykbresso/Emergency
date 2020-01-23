@@ -1,44 +1,44 @@
 [
     {
         "id": 1,
-        "name": "Telefon Alarmowy",
+        "name": "Número de teléfono de emergencia ",
         "number": "112",
-        "available": "czynny 24/7",
-        "description": "Telefon służy do powiadamiania w sytuacjach zagrożenia życia."
+        "available": "abierto las 24 horas",
+        "description": "El teléfono se utiliza para notificar sobre las situaciones que amenazan la vida."
     },
     {
         "id": 2,
-        "name": "Pogotowie Ratunkowe",
+        "name": "Ambulanica",
         "number": "999",
-        "available": "czynny 24/7",
+        "available": "abierto las 24 horas",
         "description": ""
     },
     {
         "id": 3,
-        "name": "Policja",
+        "name": "Policía",
         "number": "997",
-        "available": "czynny 24/7",
+        "available": "abierto las 24 horas",
         "description": ""
     },
     {
         "id": 4,
-        "name": "Straż Pożarna",
+        "name": "Bomberos",
         "number": "998",
-        "available": "czynny 24/7",
+        "available": "abierto las 24 horas",
         "description": ""
     },
     {
         "id": 5,
-        "name": "Straż Miejska",
+        "name": "Guardia de la ciudad",
         "number": "986",
-        "available": "czynny 24/7",
+        "available": "abierto las 24 horas",
         "description": ""
     },
     {
         "id": 6,
-        "name": "Infolinia",
+        "name": "Línea de ayuda",
         "number": "71 77 24 950",
-        "available": "czynny: (Pn, Wt, Pt, 9:00 - 16:00), (Śr, Czw, 11:00 – 18:00)",
-        "description": "Miejski punkt  informacji telefonicznej dla obcokrajowców, dostępny również  języku angielskim."
+        "available": "horario: (lunes, martes, viernes, de 9:00 a 16:00), (miércoles, jueves, de 11:00 a 18:00)",
+        "description": "Punto de información telefónica municipal para extranjeros, también disponible en inglés."
     }
 ]
