@@ -7,14 +7,10 @@
 //
 
 import Foundation
+import SwiftUI
 
 class FirstLaunch : ObservableObject {
     
     @Published var firstLoad: Bool = UserDefaults.standard.bool(forKey: "launchedBefore") 
-     
-
 }
 
-class DropDownMenu : ObservableObject {
-    @Published var isDropDownMenuOpen = false
-}

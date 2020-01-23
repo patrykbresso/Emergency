@@ -16,8 +16,7 @@ struct ContentView: View {
     @EnvironmentObject var dropDown : DropDownMenu
     @EnvironmentObject var launch: FirstLaunch
     @State private var alwaysTrue: Bool = true
-    
-    
+    @State private var keyboardOpened = false
     
     var body: some View {
         NavigationView {
@@ -157,6 +156,7 @@ struct ContentView: View {
                                 }.frame(width: geometry.size.width / 2 - 60)
                             }
                         }
+                        //search bar
                         HStack {
                             Image("magnifier")
                             .renderingMode(.original)
@@ -167,21 +167,24 @@ struct ContentView: View {
                                     Text("szukaj...")
                                 }
                                 TextField("", text: self.$keyword, onCommit: {
+                                    self.keyboardOpened.toggle()
                                     let searchController: SearchController = SearchController(dataLoader: self.dataLoader)
                                     self.searchResults = searchController.searchByKeywords(searchedPhrase: self.keyword)
                                     self.show = true
-                                })
+                                    
+                                }).onTapGesture {
+                                    self.keyboardOpened.toggle()
+                                }
                                 .textFieldStyle(CustomTextFieldStyle())
+                                
                             }
-                            .foregroundColor(.white)
                         }
-                        .padding(.bottom, 20)
-                        .padding(.leading, 35)
-                        .padding(.trailing, 35)
-                        .foregroundColor(.white)
+
+                        //move view up when keyboard appears
+                         
                         NavigationLink(destination: SearchResultsView(searchTerm: self.keyword, results: self.searchResults), isActive: self.$show, label: { EmptyView()})
-                    }
-                    .padding(.top, 30)
+                        
+                    }.padding(.top, 30)
                     .padding(.leading, 30)
                     .padding(.trailing, 30)
                     .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: .topLeading)
@@ -190,7 +193,8 @@ struct ContentView: View {
                     .foregroundColor(.white)
                     
                 
-                }
+                }.keyboardObserving()
+                    
                 .navigationBarTitle("")
                 .navigationBarHidden(true)
                 .navigationBarBackButtonHidden(true)
@@ -200,16 +204,12 @@ struct ContentView: View {
                     Spacer()
                     DropDown()
                 }.offset(x: -30)
-        }.onTapGesture {
+        }
+        .onTapGesture {
                 if self.dropDown.isDropDownMenuOpen {
                     self.dropDown.isDropDownMenuOpen.toggle()
                 }
             }
-            
-            
-            
-           
-            
         }
     }
     

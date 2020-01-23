@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9F0B293123DA0AFC00C22577 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F0B293023DA0AFC00C22577 /* View.swift */; };
+		9F0B293623DA0B8000C22577 /* DropDownMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F0B293523DA0B8000C22577 /* DropDownMenu.swift */; };
 		9F169A80237F4192005A8618 /* DataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F169A7F237F4192005A8618 /* DataLoader.swift */; };
 		9F169A82237F428D005A8618 /* Police.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F169A81237F428D005A8618 /* Police.swift */; };
 		9F169A86237F62EB005A8618 /* PoliceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F169A85237F62EB005A8618 /* PoliceView.swift */; };
@@ -29,6 +31,7 @@
 		9F7D3A782397CFD10092ADD6 /* Laws.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F7D3A772397CFD10092ADD6 /* Laws.swift */; };
 		9F7D3A7A2397D0330092ADD6 /* LawsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F7D3A792397D0330092ADD6 /* LawsCell.swift */; };
 		9F7D3A7C2397D2E80092ADD6 /* LawsDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F7D3A7B2397D2E80092ADD6 /* LawsDetailView.swift */; };
+		9F828F9323D9F36C00EC721B /* KeyboardObserving.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F828F9223D9F36C00EC721B /* KeyboardObserving.swift */; };
 		9F87D2DD23D74E5500CDAB7C /* DropDown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F87D2DC23D74E5500CDAB7C /* DropDown.swift */; };
 		9F87D2DF23D76FD400CDAB7C /* FirstLaunch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F87D2DE23D76FD400CDAB7C /* FirstLaunch.swift */; };
 		9F87D2E123D8347500CDAB7C /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F87D2E023D8347500CDAB7C /* Color.swift */; };
@@ -161,6 +164,8 @@
 		6B8A3546851A58DF668DB42E /* Pods-EmergencyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EmergencyTests.release.xcconfig"; path = "Target Support Files/Pods-EmergencyTests/Pods-EmergencyTests.release.xcconfig"; sourceTree = "<group>"; };
 		73221E569343D12298A063AF /* Pods-EmergencyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EmergencyTests.debug.xcconfig"; path = "Target Support Files/Pods-EmergencyTests/Pods-EmergencyTests.debug.xcconfig"; sourceTree = "<group>"; };
 		9C62C0887FF051036269EA58 /* Pods_Emergency.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Emergency.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F0B293023DA0AFC00C22577 /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
+		9F0B293523DA0B8000C22577 /* DropDownMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropDownMenu.swift; sourceTree = "<group>"; };
 		9F169A7F237F4192005A8618 /* DataLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataLoader.swift; sourceTree = "<group>"; };
 		9F169A81237F428D005A8618 /* Police.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Police.swift; sourceTree = "<group>"; };
 		9F169A85237F62EB005A8618 /* PoliceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoliceView.swift; sourceTree = "<group>"; };
@@ -183,6 +188,7 @@
 		9F7D3A772397CFD10092ADD6 /* Laws.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Laws.swift; sourceTree = "<group>"; };
 		9F7D3A792397D0330092ADD6 /* LawsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LawsCell.swift; sourceTree = "<group>"; };
 		9F7D3A7B2397D2E80092ADD6 /* LawsDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LawsDetailView.swift; sourceTree = "<group>"; };
+		9F828F9223D9F36C00EC721B /* KeyboardObserving.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardObserving.swift; sourceTree = "<group>"; };
 		9F87D2DC23D74E5500CDAB7C /* DropDown.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropDown.swift; sourceTree = "<group>"; };
 		9F87D2DE23D76FD400CDAB7C /* FirstLaunch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstLaunch.swift; sourceTree = "<group>"; };
 		9F87D2E023D8347500CDAB7C /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
@@ -334,6 +340,41 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		9F0B293223DA0B2000C22577 /* Mail */ = {
+			isa = PBXGroup;
+			children = (
+				E82DE11C23999E57009F0F37 /* MailView.swift */,
+			);
+			path = Mail;
+			sourceTree = "<group>";
+		};
+		9F0B293323DA0B2900C22577 /* SearchResults */ = {
+			isa = PBXGroup;
+			children = (
+				E83E446423A3FDB4003AB246 /* SearchResultsView.swift */,
+			);
+			path = SearchResults;
+			sourceTree = "<group>";
+		};
+		9F0B293423DA0B6B00C22577 /* GlobalVariables */ = {
+			isa = PBXGroup;
+			children = (
+				9F0B293523DA0B8000C22577 /* DropDownMenu.swift */,
+				9F87D2DE23D76FD400CDAB7C /* FirstLaunch.swift */,
+			);
+			path = GlobalVariables;
+			sourceTree = "<group>";
+		};
+		9F0B293723DA0BEC00C22577 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				9F87D2E023D8347500CDAB7C /* Color.swift */,
+				9F0B293023DA0AFC00C22577 /* View.swift */,
+				9F87D2F223D849DF00CDAB7C /* UIScreen.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		9F169A8D237F693D005A8618 /* Police */ = {
 			isa = PBXGroup;
 			children = (
@@ -452,6 +493,8 @@
 		9FAACF832379B65600C3CF94 /* Emergency */ = {
 			isa = PBXGroup;
 			children = (
+				9F0B293723DA0BEC00C22577 /* Extensions */,
+				9F0B293423DA0B6B00C22577 /* GlobalVariables */,
 				9F87D2F423D85B0700CDAB7C /* Fonts */,
 				E8625AB523BE0AA000C6D983 /* Controllers */,
 				E8AD7F4B239BF509005150A7 /* Views */,
@@ -466,9 +509,7 @@
 				9FAACF922379B65900C3CF94 /* Info.plist */,
 				9FAACF8C2379B65900C3CF94 /* Preview Content */,
 				E8590BB82398469B00C37EE8 /* CustomTextFieldStyle.swift */,
-				9F87D2DE23D76FD400CDAB7C /* FirstLaunch.swift */,
-				9F87D2E023D8347500CDAB7C /* Color.swift */,
-				9F87D2F223D849DF00CDAB7C /* UIScreen.swift */,
+				9F828F9223D9F36C00EC721B /* KeyboardObserving.swift */,
 			);
 			path = Emergency;
 			sourceTree = "<group>";
@@ -641,10 +682,10 @@
 		E8AD7F4B239BF509005150A7 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				9F8F037B23AAA986004FB4A0 /* DropMenu */,
 				9FAACF882379B65600C3CF94 /* ContentView.swift */,
-				E82DE11C23999E57009F0F37 /* MailView.swift */,
-				E83E446423A3FDB4003AB246 /* SearchResultsView.swift */,
+				9F0B293323DA0B2900C22577 /* SearchResults */,
+				9F0B293223DA0B2000C22577 /* Mail */,
+				9F8F037B23AAA986004FB4A0 /* DropMenu */,
 				9F8F031223AA7A55004FB4A0 /* ChangeLanguage */,
 				E8AD7F4C239BF53B005150A7 /* Advice */,
 				E8AD7F50239BF578005150A7 /* News */,
@@ -1000,6 +1041,7 @@
 				9F7A4F25238DA101001C4B7A /* Hospitals.swift in Sources */,
 				E8DFAD6A239D2A1E00D4CD74 /* PhoneNumber.swift in Sources */,
 				9F169A86237F62EB005A8618 /* PoliceView.swift in Sources */,
+				9F0B293623DA0B8000C22577 /* DropDownMenu.swift in Sources */,
 				9F7A4F2E238DA388001C4B7A /* Consulates.swift in Sources */,
 				9FAACF852379B65600C3CF94 /* AppDelegate.swift in Sources */,
 				9F7A4F2A238DA348001C4B7A /* ConsulatesRow.swift in Sources */,
@@ -1016,12 +1058,14 @@
 				9F87D2DF23D76FD400CDAB7C /* FirstLaunch.swift in Sources */,
 				A151BB22237F2AB3007CEEC1 /* LawsView.swift in Sources */,
 				9F8F031123AA7865004FB4A0 /* ChangeLanguageView.swift in Sources */,
+				9F828F9323D9F36C00EC721B /* KeyboardObserving.swift in Sources */,
 				9F7A4F21238DA049001C4B7A /* HospitalsRow.swift in Sources */,
 				9F169A82237F428D005A8618 /* Police.swift in Sources */,
 				9F8F031423AA7A79004FB4A0 /* ChangeLanguageCell.swift in Sources */,
 				9F483A78237F32F1000E35A8 /* NewsView.swift in Sources */,
 				A151BB26237F2AE3007CEEC1 /* ConsulatesView.swift in Sources */,
 				A151BB18237F1E89007CEEC1 /* AdviceView.swift in Sources */,
+				9F0B293123DA0AFC00C22577 /* View.swift in Sources */,
 				9F169A8C237F6844005A8618 /* CircleImage.swift in Sources */,
 				9F7D3A7C2397D2E80092ADD6 /* LawsDetailView.swift in Sources */,
 				9F87D2F323D849DF00CDAB7C /* UIScreen.swift in Sources */,
