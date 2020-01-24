@@ -34,7 +34,8 @@ struct KeyboardObserving: ViewModifier {
     if keyboardFrame.origin.y == UIScreen.main.bounds.height {
         keyboardHeight = 0
     } else {
-        keyboardHeight = keyboardFrame.height - UIScreen.screenHeight * 0.04
+        keyboardHeight = keyboardFrame.height
+    
     }
   }
 }

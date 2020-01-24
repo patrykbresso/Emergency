@@ -108,6 +108,7 @@
 		9FB3E50223ABE2C4005E1095 /* adviceData.json in Resources */ = {isa = PBXBuildFile; fileRef = 9FB3E4F923ABE2C4005E1095 /* adviceData.json */; };
 		9FB3E50323ABE2C4005E1095 /* phoneNumbersData.json in Resources */ = {isa = PBXBuildFile; fileRef = 9FB3E4FA23ABE2C4005E1095 /* phoneNumbersData.json */; };
 		9FB3E50423ABE2C4005E1095 /* lawsData.json in Resources */ = {isa = PBXBuildFile; fileRef = 9FB3E4FB23ABE2C4005E1095 /* lawsData.json */; };
+		9FE032EA23DAFFEA006B56EC /* GeometryGetter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE032E923DAFFEA006B56EC /* GeometryGetter.swift */; };
 		A151BB18237F1E89007CEEC1 /* AdviceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A151BB17237F1E89007CEEC1 /* AdviceView.swift */; };
 		A151BB1C237F2A7A007CEEC1 /* TranslateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A151BB1B237F2A7A007CEEC1 /* TranslateView.swift */; };
 		A151BB1E237F2A8F007CEEC1 /* PhoneNumbersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A151BB1D237F2A8F007CEEC1 /* PhoneNumbersView.swift */; };
@@ -268,6 +269,7 @@
 		9FB3E4F923ABE2C4005E1095 /* adviceData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = adviceData.json; sourceTree = "<group>"; };
 		9FB3E4FA23ABE2C4005E1095 /* phoneNumbersData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = phoneNumbersData.json; sourceTree = "<group>"; };
 		9FB3E4FB23ABE2C4005E1095 /* lawsData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = lawsData.json; sourceTree = "<group>"; };
+		9FE032E923DAFFEA006B56EC /* GeometryGetter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeometryGetter.swift; sourceTree = "<group>"; };
 		A151BB17237F1E89007CEEC1 /* AdviceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdviceView.swift; sourceTree = "<group>"; };
 		A151BB1B237F2A7A007CEEC1 /* TranslateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslateView.swift; sourceTree = "<group>"; };
 		A151BB1D237F2A8F007CEEC1 /* PhoneNumbersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNumbersView.swift; sourceTree = "<group>"; };
@@ -505,6 +507,7 @@
 				9FAACF8C2379B65900C3CF94 /* Preview Content */,
 				E8590BB82398469B00C37EE8 /* CustomTextFieldStyle.swift */,
 				9F828F9223D9F36C00EC721B /* KeyboardObserving.swift */,
+				9FE032E923DAFFEA006B56EC /* GeometryGetter.swift */,
 			);
 			path = Emergency;
 			sourceTree = "<group>";
@@ -1052,6 +1055,7 @@
 				9F8F031123AA7865004FB4A0 /* ChangeLanguageView.swift in Sources */,
 				9F828F9323D9F36C00EC721B /* KeyboardObserving.swift in Sources */,
 				9F7A4F21238DA049001C4B7A /* HospitalsRow.swift in Sources */,
+				9FE032EA23DAFFEA006B56EC /* GeometryGetter.swift in Sources */,
 				9F169A82237F428D005A8618 /* Police.swift in Sources */,
 				9F8F031423AA7A79004FB4A0 /* ChangeLanguageCell.swift in Sources */,
 				9F483A78237F32F1000E35A8 /* NewsView.swift in Sources */,

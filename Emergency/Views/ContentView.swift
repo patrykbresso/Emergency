@@ -17,7 +17,9 @@ struct ContentView: View {
     @EnvironmentObject var launch: FirstLaunch
     @State private var alwaysTrue: Bool = true
     @State private var keyboardOpened = false
-    
+    @State private var menuSize: CGRect = CGRect()
+    @State private var searchBarSize: CGRect = CGRect()
+    @State private var spacingSize: CGFloat = 0
     var body: some View {
         NavigationView {
         GeometryReader { geometry in
@@ -28,138 +30,149 @@ struct ContentView: View {
                                               EmptyView()
                                       }
                     }
-                    VStack(alignment: .leading, spacing: 30) {
-                        //Drop down menu
-                        HStack() {
-                            NavigationLink(destination: NewsView()) {
-                                VStack {
-                                    Image("news")
-                                        .renderingMode(.original)
-                                    Text(self.dataLoader.menuData.news)
-                                        .fontWeight(.bold)
-                                        .multilineTextAlignment(.center)
+                    VStack(alignment: .leading) {
+                        ScrollView(showsIndicators: false) {
+                            HStack() {
+                                NavigationLink(destination: NewsView()) {
+                                    VStack {
+                                        Image("news")
+                                            .renderingMode(.original)
+                                        Text(self.dataLoader.menuData.news)
+                                            .fontWeight(.bold)
+                                            .multilineTextAlignment(.center)
+                                            .lineLimit(2)
+                                            .fixedSize(horizontal: false, vertical: true)
+                                    }.frame(width: geometry.size.width / 2 - 40)
+                                }
+                                Spacer()
+                                NavigationLink(destination: AdviceView()) {
+                                    VStack {
+                                        Image("advice")
+                                            .renderingMode(.original)
+                                        Text(self.dataLoader.menuData.advice)
+                                            .fontWeight(.bold)
+                                            .multilineTextAlignment(.center)
+                                            
+                                            .lineLimit(2)
                                         .fixedSize(horizontal: false, vertical: true)
-                                        .lineLimit(2)
-                                }.frame(width: geometry.size.width / 2 - 60)
+                                    }.frame(width: geometry.size.width / 2 - 40)
+                                }
                             }
-                            Spacer()
-                            NavigationLink(destination: AdviceView()) {
-                                VStack {
-                                    Image("advice")
-                                        .renderingMode(.original)
-                                    Text(self.dataLoader.menuData.advice)
-                                        .fontWeight(.bold)
-                                        .multilineTextAlignment(.center)
+                            HStack() {
+                                NavigationLink(destination: TranslateView()) {
+                                    VStack {
+                                        Image("translate")
+                                            .renderingMode(.original)
+                                        Text(self.dataLoader.menuData.translate)
+                                            .fontWeight(.bold)
+                                            .multilineTextAlignment(.center)
+                                            
+                                            .lineLimit(2)
                                         .fixedSize(horizontal: false, vertical: true)
+                                    }.frame(width: geometry.size.width / 2 - 40)
+                                }
+                                Spacer()
+                                NavigationLink(destination: PhoneNumbersView()) {
+                                    VStack {
+                                        Image("phone")
+                                            .renderingMode(.original)
+                                        Text(self.dataLoader.menuData.phone)
+                                            .fontWeight(.bold)
+                                            .multilineTextAlignment(.center)
+                                            .lineLimit(2)
+                                            .fixedSize(horizontal: false, vertical: true)
+                                    }.frame(width: geometry.size.width / 2 - 40)
+                                }
+                            }.padding(.vertical)
+                            HStack() {
+                                NavigationLink(destination: HelpView()) {
+                                    VStack {
+                                        Image("help")
+                                            .renderingMode(.original)
+                                        Text(self.dataLoader.menuData.help)
+                                            .fontWeight(.bold)
+                                            .multilineTextAlignment(.center)
+                                            .lineLimit(2)
+                                            .fixedSize(horizontal: false, vertical: true)
+                                    }.frame(width: geometry.size.width / 2 - 40)
+                                }
+                                Spacer()
+                                NavigationLink(destination: LawsView()) {
+                                    VStack {
+                                        Image("law")
+                                            .renderingMode(.original)
+                                        Text(self.dataLoader.menuData.law)
+                                            .fontWeight(.bold)
+                                            .multilineTextAlignment(.center)
+                                            
+                                            
                                         .lineLimit(2)
-                                }.frame(width: geometry.size.width / 2 - 60)
-                            }
-                        }
-                        HStack() {
-                            NavigationLink(destination: TranslateView()) {
-                                VStack {
-                                    Image("translate")
-                                        .renderingMode(.original)
-                                    Text(self.dataLoader.menuData.translate)
-                                        .fontWeight(.bold)
-                                        .multilineTextAlignment(.center)
                                         .fixedSize(horizontal: false, vertical: true)
-                                        .lineLimit(2)
-                                }.frame(width: geometry.size.width / 2 - 60)
-                            }
-                            Spacer()
-                            NavigationLink(destination: PhoneNumbersView()) {
-                                VStack {
-                                    Image("phone")
-                                        .renderingMode(.original)
-                                    Text(self.dataLoader.menuData.phone)
-                                        .fontWeight(.bold)
-                                        .multilineTextAlignment(.center)
+                                    }.frame(width: geometry.size.width / 2 - 40)
+                                }
+                            }.padding(.vertical)
+                            HStack() {
+                                NavigationLink(destination: DifficultSituationsView()) {
+                                    VStack {
+                                        Image("difficultsituations")
+                                            .renderingMode(.original)
+                                        Text(self.dataLoader.menuData.difficultsituations)
+                                            .fontWeight(.bold)
+                                            .multilineTextAlignment(.center)
+                                            
+                                            .lineLimit(2)
                                         .fixedSize(horizontal: false, vertical: true)
-                                        .lineLimit(2)
-                                }.frame(width: geometry.size.width / 2 - 60)
-                            }
-                        }
-                        HStack() {
-                            NavigationLink(destination: HelpView()) {
-                                VStack {
-                                    Image("help")
-                                        .renderingMode(.original)
-                                    Text(self.dataLoader.menuData.help)
-                                        .fontWeight(.bold)
+                                    }.frame(width: geometry.size.width / 2 - 40)
+                                    
+                                }
+                                Spacer()
+                                NavigationLink(destination: ConsulatesView()) {
+                                    VStack {
+                                        Image("consulate")
+                                            .renderingMode(.original)
+                                        Text(self.dataLoader.menuData.consulate)
+                                            .fontWeight(.bold)
+                                            .multilineTextAlignment(.center)
+                                            
+                                            .lineLimit(2)
                                         .fixedSize(horizontal: false, vertical: true)
-                                        .multilineTextAlignment(.center)
-                                        .lineLimit(2)
-                                }.frame(width: geometry.size.width / 2 - 60)
-                            }
-                            Spacer()
-                            NavigationLink(destination: LawsView()) {
-                                VStack {
-                                    Image("law")
-                                        .renderingMode(.original)
-                                    Text(self.dataLoader.menuData.law)
-                                        .fontWeight(.bold)
-                                        .multilineTextAlignment(.center)
+                                        
+                                    }.frame(width: geometry.size.width / 2 - 40)
+                                }
+                            }.padding(.vertical)
+                            HStack() {
+                                NavigationLink(destination: HospitalsView()) {
+                                    VStack {
+                                        Image("hospital")
+                                            .renderingMode(.original)
+                                        Text(self.dataLoader.menuData.hospital)
+                                            .fontWeight(.bold)
+                                            .multilineTextAlignment(.center)
+                                            
+                                            .lineLimit(2)
                                         .fixedSize(horizontal: false, vertical: true)
-                                        .lineLimit(2)
-                                }.frame(width: geometry.size.width / 2 - 60)
-                            }
-                        }
-                        HStack() {
-                            NavigationLink(destination: DifficultSituationsView()) {
-                                VStack {
-                                    Image("difficultsituations")
-                                        .renderingMode(.original)
-                                    Text(self.dataLoader.menuData.difficultsituations)
-                                        .fontWeight(.bold)
-                                        .multilineTextAlignment(.center)
+                                    }.frame(width: geometry.size.width / 2 - 40)
+                                }
+                                Spacer()
+                                NavigationLink(destination: PoliceView()) {
+                                    VStack {
+                                        Image("police")
+                                            .renderingMode(.original)
+                                        Text(self.dataLoader.menuData.police)
+                                            .fontWeight(.bold)
+                                            .multilineTextAlignment(.center)
+                                            
+                                            .lineLimit(2)
                                         .fixedSize(horizontal: false, vertical: true)
-                                        .lineLimit(2)
-                                }.frame(width: geometry.size.width / 2 - 60)
-                                
+                                    }.frame(width: geometry.size.width / 2 - 40)
+                                }
                             }
-                            Spacer()
-                            NavigationLink(destination: ConsulatesView()) {
-                                VStack {
-                                    Image("consulate")
-                                        .renderingMode(.original)
-                                    Text(self.dataLoader.menuData.consulate)
-                                        .fontWeight(.bold)
-                                        .multilineTextAlignment(.center)
-                                        .fixedSize(horizontal: false, vertical: true)
-                                        .lineLimit(2)
-                                }.frame(width: geometry.size.width / 2 - 60)
-                            }
-                        }
-                        HStack() {
-                            NavigationLink(destination: HospitalsView()) {
-                                VStack {
-                                    Image("hospital")
-                                        .renderingMode(.original)
-                                    Text(self.dataLoader.menuData.hospital)
-                                        .fontWeight(.bold)
-                                        .multilineTextAlignment(.center)
-                                        .fixedSize(horizontal: false, vertical: true)
-                                        .lineLimit(2)
-                                }.frame(width: geometry.size.width / 2 - 60)
-                            }
-                            Spacer()
-                            NavigationLink(destination: PoliceView()) {
-                                VStack {
-                                    Image("police")
-                                        .renderingMode(.original)
-                                    Text(self.dataLoader.menuData.police)
-                                        .fontWeight(.bold)
-                                        .multilineTextAlignment(.center)
-                                        .fixedSize(horizontal: false, vertical: true)
-                                        .lineLimit(2)
-                                }.frame(width: geometry.size.width / 2 - 60)
-                            }
+                            .padding(.vertical)
                         }
                         //search bar
                         HStack {
                             Image("magnifier")
-                            .renderingMode(.original)
+                                .renderingMode(.original)
                             Spacer(minLength: 50)
                             ZStack {
                                 
@@ -178,40 +191,44 @@ struct ContentView: View {
                                 .textFieldStyle(CustomTextFieldStyle())
                                 
                             }
-                        }
-
+                        }.background(GeometryGetter(rect: self.$searchBarSize))
+                            .padding(.bottom, 10)
                         //move view up when keyboard appears
                          
                         NavigationLink(destination: SearchResultsView(searchTerm: self.keyword, results: self.searchResults), isActive: self.$show, label: { EmptyView()})
                         
-                    }.padding(.top, 30)
-                    .padding(.leading, 30)
-                    .padding(.trailing, 30)
-                    .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: .topLeading)
-                    .background(Color.primaryBlue
-                        .edgesIgnoringSafeArea(.all))
+                    }
+                    .padding([.leading, .trailing], 25)
+                
                     .foregroundColor(.white)
                     
                 
-                }.keyboardObserving()
-                    
+                }
+                .keyboardObserving()
+
                 .navigationBarTitle("")
                 .navigationBarHidden(true)
                 .navigationBarBackButtonHidden(true)
                 .disabled(self.dropDown.isDropDownMenuOpen)
-                .blur(radius: self.dropDown.isDropDownMenuOpen ? 2 : 0)
+                .blur(radius: self.dropDown.isDropDownMenuOpen ? 4 : 0)
                 HStack() {
                     Spacer()
                     DropDown()
-                }.offset(x: -30)
-        }
+                }.offset(x: -20)
+
+        }            .background(Color.primaryBlue
+            .edgesIgnoringSafeArea(.all))
+            
         .onTapGesture {
                 if self.dropDown.isDropDownMenuOpen {
                     self.dropDown.isDropDownMenuOpen.toggle()
                 }
+
             }
         }
+        
     }
+
     
 }
 

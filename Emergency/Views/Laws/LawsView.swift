@@ -22,24 +22,21 @@ struct LawsView: View {
                             self.presentationMode.wrappedValue.dismiss()
                         }) {
                             VStack {
-                                Image("law")
-                                    .renderingMode(.original)
                                 Image("left_arrow")
                                     .renderingMode(.original)
                             }
                         }
                         Spacer()
-                        NavigationLink(destination: LawsDetailView(law: self.dataLoader.lawsData[0])) {
-                            LawsCell(law: self.dataLoader.lawsData[0])
-                        }
-                        .frame(width: geometry.size.width / 2.7, height: geometry.size.height / 9)
+                        Image("law")
+                            .renderingMode(.original)
+                        Spacer()
                     }
                     .padding(.trailing, 35)
                     .padding(.leading, 35)
-                    ForEach((1...(self.dataLoader.lawsData.count - 1)), id: \.self) { i in
+                    ForEach((0...(self.dataLoader.lawsData.count - 2)), id: \.self) { i in
                         
                             HStack(spacing: 30) {
-                                if(i % 2 == 1) {
+                                if(i % 2 == 0) {
                                     NavigationLink(destination: LawsDetailView(law: self.dataLoader.lawsData[i])) {
                                         LawsCell(law: self.dataLoader.lawsData[i])
                                         }.frame(width: geometry.size.width / 2.7)
@@ -50,6 +47,10 @@ struct LawsView: View {
                                 }
                             }
                     }
+                    NavigationLink(destination: LawsDetailView(law: self.dataLoader.lawsData[self.dataLoader.lawsData.count - 1])) {
+                        LawsCell(law: self.dataLoader.lawsData[self.dataLoader.lawsData.count - 1])
+                    }.frame(width: geometry.size.width / 2.7)
+
                     
 
                 }
