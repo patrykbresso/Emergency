@@ -23,9 +23,18 @@ struct PoliceRow: View {
                 VStack {
                     Text(self.policeStation.name)
                         .bold()
+                        .multilineTextAlignment(.center)
+                    .fixedSize(horizontal: false, vertical: true)
+                    .padding(.bottom, 5)
                     Text(self.policeStation.address+" "+self.policeStation.postalCode+" "+self.policeStation.city)
-                    Text(self.policeStation.number.replacingOccurrences(of: ";", with: " "))
+                        .multilineTextAlignment(.center)
+                    .fixedSize(horizontal: false, vertical: true)
+                    .padding(.bottom, 5)
+                    Text(self.policeStation.number.replacingOccurrences(of: ";", with: "\n"))
+                        .multilineTextAlignment(.center)
+                    .fixedSize(horizontal: false, vertical: true)
                 }.font(.system(size: 15))
+                    .padding(5)
             }
             .foregroundColor(.white)
     }

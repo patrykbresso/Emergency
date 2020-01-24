@@ -65,9 +65,13 @@ struct PoliceDetailView: View {
                     VStack {
                         Text(self.policeStation.name)
                             .bold()
+                            .multilineTextAlignment(.center)
+                        .fixedSize(horizontal: false, vertical: true)
+                        .padding(.bottom, 5)
                         Text(self.policeStation.address)
-                        
-                        
+                            .multilineTextAlignment(.center)
+                        .fixedSize(horizontal: false, vertical: true)
+                        .padding(.bottom, 5)
                         ForEach(self.listOFNumbers) { number in
                             Button(action: {
                                 let cleanString = String(number.name.filter { !" \n\t\r".contains($0) })
@@ -80,6 +84,7 @@ struct PoliceDetailView: View {
                             
                                 Text(number.name)
                                 .bold()
+                                .padding(.bottom, 5)
                             }
                         }
                         

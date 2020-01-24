@@ -27,8 +27,11 @@ struct HospitalsRow: View {
                         .bold()
                         .multilineTextAlignment(.center)
                         .fixedSize(horizontal: false, vertical: true)
+                    .padding(.bottom, 5)
                     Text(self.hospital.address)
                         .multilineTextAlignment(.center)
+                    .fixedSize(horizontal: false, vertical: true)
+                    .padding(.bottom, 5)
                     ForEach(listOFNumbers) { number in
                     Button(action: {
                         let cleanString = String(number.name.filter { !" \n\t\r".contains($0) })
@@ -39,6 +42,9 @@ struct HospitalsRow: View {
                        }) {
                         Text(number.name)
                         .bold()
+                        .multilineTextAlignment(.center)
+                        .fixedSize(horizontal: false, vertical: true)
+                        .padding(.bottom, 5)
                     }
                     }
                 }.padding(5)

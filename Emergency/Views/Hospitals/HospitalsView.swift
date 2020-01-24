@@ -42,6 +42,7 @@ struct HospitalsView: View {
                         VStack {
                             Text(self.dataLoader.hospitalsData.title)
                                 .bold()
+                            
                             Text(self.dataLoader.hospitalsData.subtitle)
                             }.padding(10)
                         .multilineTextAlignment(.center)
