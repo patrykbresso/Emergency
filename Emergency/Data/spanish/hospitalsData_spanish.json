@@ -16,7 +16,7 @@
         },
         {
             "id": 3,
-            "name": "Urgencias (SOR) Hospital EspecialistaProvincial en Wrocław",
+            "name": "Urgencias (SOR) Hospital Especialista Provincial en Wrocław",
             "address": "ul. H. M. Kamieńskiego 73a, 51-124 Wrocław",
             "number": "71 32 70 100"
         },
@@ -24,7 +24,13 @@
             "id": 4,
             "name": "Urgencias (SOR) Hospital Especialista de Baja Silesia de  T. Marciniak",
             "address": "ul. Gen. A. E. Fieldorfa 2, 50-996 Wrocław ",
-            "number": "71 306 44 19 "
+            "number": "71 306 43 04 ; 71 306 44 19"
+        },
+        {
+            "id": 5,
+            "name": "Para niños Quirúrgico las 24 h Clínica de Cirugía Pediátrica y Urología en Hospital Clínico Público Independiente 1",
+            "address": "ul. M. Curie-Skłodowskiej 50/52, 50-369 Wrocław",
+            "number": "71 770 30 15"
         }
         
     ]
