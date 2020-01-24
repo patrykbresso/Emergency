@@ -201,6 +201,7 @@ struct ContentView: View {
                         
                     }
                     .padding([.leading, .trailing], 25)
+                    .padding(.top, 20)
                 
                     .foregroundColor(.white)
                     
