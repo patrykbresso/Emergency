@@ -13,8 +13,8 @@ struct DropDown : View {
 
     @EnvironmentObject var dropDown : DropDownMenu
     @EnvironmentObject var dataLoader: DataLoader
-    
     var body: some View {
+        
         VStack(alignment: .trailing) {
             HStack() {
                Text("...")

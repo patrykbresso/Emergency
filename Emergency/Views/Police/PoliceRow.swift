@@ -26,7 +26,7 @@ struct PoliceRow: View {
                     Text(self.policeStation.address+" "+self.policeStation.postalCode+" "+self.policeStation.city)
                     Text(self.policeStation.number)
                 }.font(.system(size: 15))
-            }.frame(width: UIScreen.screenWidth / 1.3, height: UIScreen.screenHeight / 6)
+            }
             .foregroundColor(.white)
     }
 }

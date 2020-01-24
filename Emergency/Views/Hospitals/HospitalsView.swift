@@ -37,20 +37,19 @@ struct HospitalsView: View {
                     }
                     ZStack() {
                         RoundedRectangle(cornerRadius: 10)
-                        .stroke(Color.primaryPink, lineWidth: 10)
-                        .background(Color.primaryPink)
+                        .fill(Color.primaryPink)
                         
                         VStack {
                             Text(self.dataLoader.hospitalsData.title)
                                 .bold()
                             Text(self.dataLoader.hospitalsData.subtitle)
-                        }
+                            }.padding(10)
                         .multilineTextAlignment(.center)
-                        
+                        .layoutPriority(1)
                         }
                     .font(.system(size: 14))
                     .foregroundColor(.white)
-                    .frame(width: geometry.size.width / 1.3, height: geometry.size.height / 4.5)
+                    
                     ScrollView() {
                         Spacer()
                         VStack(alignment: .center, spacing: 30) {
@@ -60,9 +59,11 @@ struct HospitalsView: View {
                         }
                     }
                 }
+                .frame(width: UIScreen.screenWidth / 1.3, alignment: .center)
             }
+            .padding([.leading, .trailing], self.paddingSides)
         }
-        .padding([.leading, .trailing], self.paddingSides)
+        
         .background(Color.primaryBlue
         .edgesIgnoringSafeArea(.all))
         .navigationBarTitle("")
