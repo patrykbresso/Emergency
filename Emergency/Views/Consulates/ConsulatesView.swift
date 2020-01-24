@@ -35,7 +35,7 @@ struct ConsulatesView: View {
                             .padding(.leading, -self.backButtonSize.width)
                         Spacer()
                     }
-                    ScrollView() {
+                    ScrollView(showsIndicators: false) {
                         Spacer()
                         VStack(alignment: .center, spacing: 30) {
                             ForEach(self.dataLoader.consulatesData) { consulate in
@@ -43,11 +43,13 @@ struct ConsulatesView: View {
                             }
                         }
                     }
+                    .frame(width: UIScreen.screenWidth / 1.3, alignment: .center)
                 }
-            }
-            .padding([.leading, .trailing], self.paddingSides)
+                .padding([.leading, .trailing], self.paddingSides)
+        }
             .background(Color.primaryBlue
             .edgesIgnoringSafeArea(.all))
+            
             .navigationBarTitle("")
             .navigationBarHidden(true)
             .navigationBarBackButtonHidden(true)

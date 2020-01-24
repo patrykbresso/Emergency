@@ -23,7 +23,11 @@ struct ConsulatesRow: View {
                 VStack {
                     Text(self.consulate.name)
                         .bold()
-                    Text(self.consulate.consulName).padding(.bottom, 10)
+                        .fixedSize(horizontal: false, vertical: true)
+                        .multilineTextAlignment(.center)
+                    Text(self.consulate.consulName)
+                        .multilineTextAlignment(.center)
+                        .padding(.bottom, 10)
                     Text(self.consulate.address).padding(.bottom, 10)
                     Button(action: {
                         let cleanString = String(self.consulate.number.filter { !" \n\t\r".contains($0) })
@@ -35,10 +39,9 @@ struct ConsulatesRow: View {
                        Text(self.consulate.number)
                         .bold()
                     }
-                }
+                }.padding(5)
             }
             .font(.system(size: 14))
-            .frame(width: UIScreen.screenWidth / 1.3, height: UIScreen.screenHeight / 6)
             .foregroundColor(.white)
         
     }

@@ -51,19 +51,18 @@ struct PoliceDetailView: View {
                 Spacer(minLength: 20)
                 
                 MapView(coordinate: self.policeStation.locationCoordinate)
-                    .frame(width: 346, height: 270, alignment: .center)
+                    .frame(width: UIScreen.screenWidth / 1.1, height: UIScreen.screenHeight / 3, alignment: .center)
                     .overlay(
                         RoundedRectangle(cornerRadius: 5)
                             .stroke(Color.white, lineWidth: 3)
                     )
                 CircleImage(image: Image(self.policeStation.imageName).resizable())
                 .frame(width: 180, height: 180)
-                    .offset(y: -100)
-
+                .padding(.top, -100)
+                Spacer()
                 ZStack {
                     RoundedRectangle(cornerRadius: 10)
                         .fill(Color.primaryPink)
-                        .frame(width: UIScreen.screenWidth / 1.25, height: UIScreen.screenHeight / 6)
                     VStack {
                         Text(self.policeStation.name)
                             .bold()
@@ -78,14 +77,15 @@ struct PoliceDetailView: View {
                            Text(self.policeStation.number)
                             .bold()
                         }
-                    }
+                        }.padding(10)
+                        .layoutPriority(1)
                     .foregroundColor(.white)
+                    .frame(width: UIScreen.screenWidth / 1.3)
                 }
                 Spacer()
                 
             }
             .padding([.leading, .trailing], self.paddingSides)
-            .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: .center)
             .background(Color.primaryBlue
             .edgesIgnoringSafeArea(.all)
             )

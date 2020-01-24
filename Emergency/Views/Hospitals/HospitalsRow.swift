@@ -24,7 +24,9 @@ struct HospitalsRow: View {
                     Text(self.hospital.name)
                         .bold()
                         .multilineTextAlignment(.center)
+                        .fixedSize(horizontal: false, vertical: true)
                     Text(self.hospital.address)
+                        .multilineTextAlignment(.center)
                     Button(action: {
                         let cleanString = String(self.hospital.number.filter { !" \n\t\r".contains($0) })
                         let tel = "tel://"
@@ -35,10 +37,8 @@ struct HospitalsRow: View {
                        Text(self.hospital.number)
                         .bold()
                     }
-                }
-            }
-            .font(.system(size: 14))
-            .frame(width: UIScreen.screenWidth / 1.3, height: UIScreen.screenHeight / 6)
+                }.padding(5)
+            }.font(.system(size: 14))
             .foregroundColor(.white)
         
     }
