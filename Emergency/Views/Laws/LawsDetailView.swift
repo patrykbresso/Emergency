@@ -10,7 +10,9 @@ import SwiftUI
 
 struct LawsDetailView: View {
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
-
+    @State var backButtonSize: CGRect = CGRect()
+    let paddingSides = CGFloat(20)
+    
     var law: Laws
 
     
@@ -25,10 +27,11 @@ struct LawsDetailView: View {
                             Image("left_arrow")
                                 .renderingMode(.original)
                         }             
-                    }
+                    }.background(GeometryGetter(rect: self.$backButtonSize))
                     Spacer()
                     Image("law")
                         .renderingMode(.original)
+                        .padding(.leading, -self.backButtonSize.width)
                     Spacer()
                 }.padding(15)
                 Spacer()
@@ -40,13 +43,13 @@ struct LawsDetailView: View {
                             Text(self.law.text)
                         }
                     }
-                    .padding(20)
                     .frame(width: UIScreen.screenWidth / 1.3, alignment: .center)
                     .foregroundColor(.white)
                     .background(Color.primaryPink)
                     .cornerRadius(10)
                
             }
+            .padding([.leading, .trailing], self.paddingSides)
             .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity)
             .background(Color.primaryBlue
                 .edgesIgnoringSafeArea(.all)

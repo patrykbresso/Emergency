@@ -11,8 +11,12 @@ import SwiftUI
 struct NewsView: View {
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     @EnvironmentObject var dataLoader: DataLoader
+    @State var backButtonSize: CGRect = CGRect()
+    let paddingSides = CGFloat(20)
     
     var body: some View {
+
+        
         GeometryReader { geometry in
                 VStack(alignment: HorizontalAlignment.leading) {
                     HStack {
@@ -22,22 +26,21 @@ struct NewsView: View {
                             VStack {
                                 Image("left_arrow")
                                 .renderingMode(.original)
-
-                                
+               
                             }
-                        }
+                        }.background(GeometryGetter(rect: self.$backButtonSize))
                         Spacer()
                         Image("news")
-                        .renderingMode(.original)
+                            .renderingMode(.original)
+                            .padding(.leading, -self.backButtonSize.width)
                         Spacer()
                     }
                         .padding(.top, 20)
-                        .padding(.leading, 35)
-                        .padding(.trailing, 35)
                         .foregroundColor(.white)
                     
                     Spacer()
                 }
+            .padding([.leading, .trailing], self.paddingSides)
             .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity)
             .background(Color.primaryBlue
                 .edgesIgnoringSafeArea(.all)

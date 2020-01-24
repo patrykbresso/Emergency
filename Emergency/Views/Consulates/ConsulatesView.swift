@@ -13,6 +13,8 @@ import SwiftUI
 struct ConsulatesView: View {
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     @EnvironmentObject var dataLoader: DataLoader
+    @State var backButtonSize: CGRect = CGRect()
+    let paddingSides = CGFloat(20)
     
     var body: some View {
 
@@ -26,27 +28,29 @@ struct ConsulatesView: View {
                                 Image("left_arrow")
                                     .renderingMode(.original)
                             }
-                        }
+                        }.background(GeometryGetter(rect: self.$backButtonSize))
                         Spacer()
                         Image("consulate")
                             .renderingMode(.original)
+                            .padding(.leading, -self.backButtonSize.width)
                         Spacer()
-                    }.padding(15)
+                    }
                     ScrollView() {
                         Spacer()
                         VStack(alignment: .center, spacing: 30) {
                             ForEach(self.dataLoader.consulatesData) { consulate in
                                 ConsulatesRow(consulate: consulate)
                             }
-                        }.frame(width: UIScreen.screenWidth / 0.95, alignment: .center)
+                        }
                     }
                 }
             }
+            .padding([.leading, .trailing], self.paddingSides)
             .background(Color.primaryBlue
             .edgesIgnoringSafeArea(.all))
-        .navigationBarTitle("")
-        .navigationBarHidden(true)
-        .navigationBarBackButtonHidden(true)
+            .navigationBarTitle("")
+            .navigationBarHidden(true)
+            .navigationBarBackButtonHidden(true)
     }
 
 }

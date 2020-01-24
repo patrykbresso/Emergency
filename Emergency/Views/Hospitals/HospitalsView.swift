@@ -12,7 +12,9 @@ import SwiftUI
 struct HospitalsView: View {
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     @EnvironmentObject var dataLoader: DataLoader
-
+    @State var backButtonSize: CGRect = CGRect()
+    let paddingSides = CGFloat(20)
+    
     var body: some View {
           
         GeometryReader { geometry in
@@ -26,12 +28,13 @@ struct HospitalsView: View {
                                 Image("left_arrow")
                                     .renderingMode(.original)
                             }
-                        }
+                        }.background(GeometryGetter(rect: self.$backButtonSize))
                         Spacer()
                         Image("hospital")
                             .renderingMode(.original)
+                            .padding(.leading, -self.backButtonSize.width)
                         Spacer()
-                    }.padding(30)
+                    }
                     ZStack() {
                         RoundedRectangle(cornerRadius: 10)
                         .stroke(Color.primaryPink, lineWidth: 10)
@@ -54,11 +57,12 @@ struct HospitalsView: View {
                             ForEach(self.dataLoader.hospitalsData.hospitals) { hospital in
                                 HospitalsRow(hospital: hospital)
                             }
-                        }.frame(width: geometry.size.width / 0.95, alignment: .center)
+                        }
                     }
                 }
             }
         }
+        .padding([.leading, .trailing], self.paddingSides)
         .background(Color.primaryBlue
         .edgesIgnoringSafeArea(.all))
         .navigationBarTitle("")

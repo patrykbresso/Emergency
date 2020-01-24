@@ -11,7 +11,8 @@ import SwiftUI
 struct AdviceView: View {
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     @EnvironmentObject var dataLoader: DataLoader
-
+    @State var backButtonSize: CGRect = CGRect()
+    let paddingSides = CGFloat(20)
     
     var body: some View {
             VStack(alignment: .leading) {
@@ -23,10 +24,11 @@ struct AdviceView: View {
                             Image("left_arrow")
                                 .renderingMode(.original)
                         }
-                    }
+                    }.background(GeometryGetter(rect: self.$backButtonSize))
                     Spacer()
                     Image("advice")
                         .renderingMode(.original)
+                        .padding(.leading, -self.backButtonSize.width)
                     Spacer()
                 }.padding(.bottom, 15)
                     ZStack {
@@ -52,7 +54,7 @@ struct AdviceView: View {
                     }
 
             }
-            .padding(15)
+            .padding([.leading, .trailing], self.paddingSides)
             .foregroundColor(.white)
         
         .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity)

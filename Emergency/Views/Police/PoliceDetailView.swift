@@ -12,7 +12,9 @@ import MapKit
 
 struct PoliceDetailView: View {
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
-
+    @State var backButtonSize: CGRect = CGRect()
+    let paddingSides = CGFloat(20)
+    
     var policeStation: Police
 
     
@@ -25,10 +27,11 @@ struct PoliceDetailView: View {
                     }) {
                         Image("left_arrow")
                             .renderingMode(.original)
-                    }
+                    }.background(GeometryGetter(rect: self.$backButtonSize))
                     Spacer()
                     Image("police")
                         .renderingMode(.original)
+                        .padding(.leading, self.backButtonSize.width)
                     Spacer()
                     Button(action: {
                         
@@ -42,8 +45,9 @@ struct PoliceDetailView: View {
                     }) {
                         Image("map")
                             .renderingMode(.original)
+                        
                     }
-                }.padding(15)
+                }
                 Spacer(minLength: 20)
                 
                 MapView(coordinate: self.policeStation.locationCoordinate)
@@ -80,6 +84,7 @@ struct PoliceDetailView: View {
                 Spacer()
                 
             }
+            .padding([.leading, .trailing], self.paddingSides)
             .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: .center)
             .background(Color.primaryBlue
             .edgesIgnoringSafeArea(.all)

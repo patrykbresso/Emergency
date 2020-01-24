@@ -11,7 +11,8 @@ import SwiftUI
 struct LawsView: View {
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     @EnvironmentObject var dataLoader: DataLoader
-    
+    @State var backButtonSize: CGRect = CGRect()
+    let paddingSides = CGFloat(20)
     
     var body: some View {
         
@@ -25,14 +26,13 @@ struct LawsView: View {
                                 Image("left_arrow")
                                     .renderingMode(.original)
                             }
-                        }
+                        }.background(GeometryGetter(rect: self.$backButtonSize))
                         Spacer()
                         Image("law")
                             .renderingMode(.original)
+                            .padding(.leading, -self.backButtonSize.width)
                         Spacer()
                     }
-                    .padding(.trailing, 35)
-                    .padding(.leading, 35)
                     ForEach((0...(self.dataLoader.lawsData.count - 2)), id: \.self) { i in
                         
                             HStack(spacing: 30) {
@@ -56,6 +56,7 @@ struct LawsView: View {
                 }
 
         }
+        .padding([.leading, .trailing], self.paddingSides)
         .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity)
         .background(Color.primaryBlue
             .edgesIgnoringSafeArea(.all)

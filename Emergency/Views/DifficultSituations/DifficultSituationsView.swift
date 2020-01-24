@@ -11,7 +11,9 @@ import SwiftUI
 struct DifficultSituationsView: View {
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     @EnvironmentObject var dataLoader: DataLoader
-
+    @State var backButtonSize: CGRect = CGRect()
+    let paddingSides = CGFloat(20)
+    
     var body: some View {
         GeometryReader { geometry in
             VStack() {
@@ -24,10 +26,11 @@ struct DifficultSituationsView: View {
                                 .renderingMode(.original)
                             
                         }
-                    }
+                    }.background(GeometryGetter(rect: self.$backButtonSize))
                     Spacer()
                     Image("difficultsituations")
                         .renderingMode(.original)
+                        .padding(.leading, -self.backButtonSize.width)
                     Spacer()
                 }.padding(15)
                 VStack {
@@ -53,12 +56,10 @@ struct DifficultSituationsView: View {
                         }
                     }
                 }
-                .padding(.leading, geometry.size.width / 10)
-                .padding(.trailing, geometry.size.width / 10)
-
             }
 
         }
+        .padding([.leading, .trailing], self.paddingSides)
         .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity)
         .background(Color.primaryBlue
             .edgesIgnoringSafeArea(.all)

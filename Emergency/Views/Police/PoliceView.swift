@@ -14,6 +14,8 @@ import MapKit
 struct PoliceView: View {
     @EnvironmentObject var dataLoader: DataLoader
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
+    @State var backButtonSize: CGRect = CGRect()
+    let paddingSides = CGFloat(20)
     
     var body: some View {
 
@@ -28,10 +30,11 @@ struct PoliceView: View {
                             Image("left_arrow")
                                 .renderingMode(.original)
                         }
-                    }
+                    }.background(GeometryGetter(rect: self.$backButtonSize))
                     Spacer()
                     Image("police")
                         .renderingMode(.original)
+                        .padding(.leading, self.backButtonSize.width)
                     Spacer()
                     //Map button
                     Button(action: {
@@ -47,13 +50,12 @@ struct PoliceView: View {
                         Image("map")
                             .renderingMode(.original)
                     }
-                }.padding(15)
+                }
                 
                 //Title cell
                 ZStack() {
                     RoundedRectangle(cornerRadius: 10)
-                    .stroke(Color.primaryPink, lineWidth: 10)
-                    .background(Color.primaryPink)
+                    .fill(Color.primaryPink)
                     
                     VStack {
                         Text(self.dataLoader.policeData.title)
@@ -77,12 +79,12 @@ struct PoliceView: View {
                                     PoliceRow(policeStation: policeStation)
                                 }
                         }
-                    }.frame(width: UIScreen.screenWidth, alignment: .center)
+                    }
                 }
 
             }
 
-        
+        .padding([.leading, .trailing], self.paddingSides)
         .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity)
         .background(Color.primaryBlue
             .edgesIgnoringSafeArea(.all)

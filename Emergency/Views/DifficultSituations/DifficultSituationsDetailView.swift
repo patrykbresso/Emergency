@@ -10,6 +10,8 @@ import SwiftUI
 
 struct DifficultSituationsDetailView: View {
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
+    @State var backButtonSize: CGRect = CGRect()
+    let paddingSides = CGFloat(20)
     
     var difficultSituation: DifficultSituations
     
@@ -25,10 +27,11 @@ struct DifficultSituationsDetailView: View {
                                 .renderingMode(.original)
                             
                         }
-                    }
+                    }.background(GeometryGetter(rect: self.$backButtonSize))
                     Spacer()
                     Image("difficultsituations")
                         .renderingMode(.original)
+                        .padding(.leading, -self.backButtonSize.width)
                     Spacer()
                 }.padding(15)
                 
@@ -43,12 +46,13 @@ struct DifficultSituationsDetailView: View {
                         ScrollView(){
                             Text(self.difficultSituation.text)
                         }
-                        .padding(15)
+
                     }
                 }
-            .padding(30)
+
             }
         }
+        .padding([.leading, .trailing], self.paddingSides)
         .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity)
         .background(Color.primaryBlue
             .edgesIgnoringSafeArea(.all)

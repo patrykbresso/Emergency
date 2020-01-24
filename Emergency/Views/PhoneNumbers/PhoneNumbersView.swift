@@ -12,6 +12,8 @@ struct PhoneNumbersView: View {
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     @EnvironmentObject var dataLoader: DataLoader
     @State var boxClicked: [Bool] = [false, false, false, false, false, false]
+    @State var backButtonSize: CGRect = CGRect()
+    let paddingSides = CGFloat(20)
     
     var body: some View {
         GeometryReader { geometry in
@@ -25,10 +27,11 @@ struct PhoneNumbersView: View {
                                 .renderingMode(.original)
                             
                         }
-                    }.padding(.leading, 15)
+                    }.background(GeometryGetter(rect: self.$backButtonSize))
                     Spacer()
                     Image("phone")
                         .renderingMode(.original)
+                        .padding(.leading, -self.backButtonSize.width)
                     Spacer()
                 }.padding(.bottom, 15)
                 VStack {
@@ -58,10 +61,8 @@ struct PhoneNumbersView: View {
                         }
                     }
                 }
-                .padding(.leading, 15)
-                .padding(.trailing, 15)
-                .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity)
             }
+            .padding([.leading, .trailing], self.paddingSides)
             .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity)
             .background(Color.primaryBlue
                 .edgesIgnoringSafeArea(.all)

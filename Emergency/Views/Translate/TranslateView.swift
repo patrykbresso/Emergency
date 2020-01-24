@@ -12,7 +12,8 @@ struct TranslateView: View {
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     @EnvironmentObject var dataLoader: DataLoader
     @State var buttonClicked: [Bool] = [false, false, false, false, false, false]
-
+    @State var backButtonSize: CGRect = CGRect()
+    let paddingSides = CGFloat(20)
     
     var body: some View {
         GeometryReader { geometry in
@@ -26,10 +27,11 @@ struct TranslateView: View {
                                 .renderingMode(.original)
                             
                         }
-                    }
+                    }.background(GeometryGetter(rect: self.$backButtonSize))
                     Spacer()
                     Image("translate")
                         .renderingMode(.original)
+                        .padding(.leading, -self.backButtonSize.width)
                     Spacer()
                 }.padding(.bottom, 15)
                 ForEach(self.dataLoader.translateData) { row in
@@ -59,8 +61,7 @@ struct TranslateView: View {
                 }
                     
             }
-            .padding(.leading, geometry.size.width / 10)
-            .padding(.trailing, geometry.size.width / 10)
+            .padding([.leading, .trailing], self.paddingSides)
 
         }
         .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity)

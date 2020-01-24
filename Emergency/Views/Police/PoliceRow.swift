@@ -15,12 +15,11 @@ struct PoliceRow: View {
     @EnvironmentObject var dataLoader: DataLoader
     var policeStation: Police
     var body: some View {
-
+        
             ZStack() {
                 RoundedRectangle(cornerRadius: 10)
-                .stroke(Color.primaryPink, lineWidth: 10)
-                .background(Color.primaryPink)
-                
+                .fill(Color.primaryPink)
+
                 VStack {
                     Text(self.policeStation.name)
                         .bold()

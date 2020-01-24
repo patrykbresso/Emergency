@@ -15,6 +15,8 @@ struct HelpView: View {
     @State var texts: [String] = ["emergency@pwr.edu"]
     @State var result: Result<MFMailComposeResult, Error>? = nil
     @State var isShowingMailView = false
+    @State var backButtonSize: CGRect = CGRect()
+    let paddingSides = CGFloat(20)
     var boxHeight: CGFloat = 100
     
     var body: some View {
@@ -28,11 +30,12 @@ struct HelpView: View {
                             Image("left_arrow")
                                 .renderingMode(.original)
                             
-                        }.padding(.leading, 15)
+                        }.background(GeometryGetter(rect: self.$backButtonSize))
                     }
                     Spacer()
                     Image("help")
                         .renderingMode(.original)
+                        .padding(.leading, -self.backButtonSize.width)
                     Spacer()
                 }.padding(.bottom, 15)
                 Spacer()
@@ -63,6 +66,7 @@ struct HelpView: View {
             }
 
         }
+        .padding([.leading, .trailing], self.paddingSides)
         .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity)
         .background(Color.primaryBlue
             .edgesIgnoringSafeArea(.all)
