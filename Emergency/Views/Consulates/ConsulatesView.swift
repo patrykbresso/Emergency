@@ -14,6 +14,7 @@ struct ConsulatesView: View {
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     @EnvironmentObject var dataLoader: DataLoader
     @State var backButtonSize: CGRect = CGRect()
+    @State var listOFNumbers = [Numbers]()
     let paddingSides = CGFloat(20)
     
     var body: some View {
@@ -55,6 +56,18 @@ struct ConsulatesView: View {
             .navigationBarBackButtonHidden(true)
     }
 
+    func dividePhoneNumbers(stringNumbers: String) -> [Numbers]{
+           var numbers = [Numbers]()
+           let array = stringNumbers.components(separatedBy: ";")
+           
+           
+           for i in array {
+               let uuid = UUID()
+               numbers.append(Numbers(id: uuid, name: i))
+           }
+       return numbers
+       }
+    
 }
 
 struct ConsulatesView_Previews: PreviewProvider {

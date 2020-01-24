@@ -61,16 +61,16 @@ struct PoliceView: View {
                         Text(self.dataLoader.policeData.title)
                             .bold()
                         Text(self.dataLoader.policeData.subtitle)
-                    }
-                    .multilineTextAlignment(.leading)
-                    .font(.system(size: 14))
-                }
+                        }.padding(5)
+                    .multilineTextAlignment(.center)
+                    .layoutPriority(1)
+                }.frame(width: UIScreen.screenWidth / 1.3)
                 .foregroundColor(.white)
-                .frame(width: UIScreen.screenWidth / 1.3, height:UIScreen.screenHeight / 9)
+                
                 
                 
                 //ScrollView with list of policestations
-                ScrollView {
+                ScrollView(showsIndicators: false) {
                     Spacer(minLength: 30)
                     VStack(spacing: 30) {
                         
@@ -80,12 +80,11 @@ struct PoliceView: View {
                                 }
                         }
                     }
-                }
+                }.frame(width: UIScreen.screenWidth / 1.3)
 
             }
 
         .padding([.leading, .trailing], self.paddingSides)
-        .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity)
         .background(Color.primaryBlue
             .edgesIgnoringSafeArea(.all)
         )

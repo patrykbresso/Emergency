@@ -13,6 +13,8 @@ import CoreLocation
 
 struct HospitalsRow: View {
 
+    @State var listOFNumbers = [Numbers]()
+    
     var hospital: Hospital
     var body: some View {
 
@@ -27,21 +29,38 @@ struct HospitalsRow: View {
                         .fixedSize(horizontal: false, vertical: true)
                     Text(self.hospital.address)
                         .multilineTextAlignment(.center)
+                    ForEach(listOFNumbers) { number in
                     Button(action: {
-                        let cleanString = String(self.hospital.number.filter { !" \n\t\r".contains($0) })
+                        let cleanString = String(number.name.filter { !" \n\t\r".contains($0) })
                         let tel = "tel://"
                         let formattedString = tel + cleanString
                         let url: NSURL = URL(string: formattedString)! as NSURL
                         UIApplication.shared.open(url as URL)
                        }) {
-                       Text(self.hospital.number)
+                        Text(number.name)
                         .bold()
                     }
+                    }
                 }.padding(5)
+                .onAppear() {
+                self.listOFNumbers = self.dividePhoneNumbers(stringNumbers: self.hospital.number)
+                }
             }.font(.system(size: 14))
             .foregroundColor(.white)
         
     }
+    
+    func dividePhoneNumbers(stringNumbers: String) -> [Numbers]{
+           var numbers = [Numbers]()
+           let array = stringNumbers.components(separatedBy: ";")
+           
+           
+           for i in array {
+               let uuid = UUID()
+               numbers.append(Numbers(id: uuid, name: i))
+           }
+       return numbers
+       }
 }
 
 #if DEBUG

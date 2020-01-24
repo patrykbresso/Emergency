@@ -14,13 +14,12 @@ struct PoliceDetailView: View {
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     @State var backButtonSize: CGRect = CGRect()
     let paddingSides = CGFloat(20)
-    
     var policeStation: Police
 
-    
-    var body: some View {
+    @State var listOFNumbers = [Numbers]()
 
-            VStack {
+    var body: some View {
+                    VStack {
                 HStack {
                     Button(action: {
                         self.presentationMode.wrappedValue.dismiss()
@@ -67,23 +66,32 @@ struct PoliceDetailView: View {
                         Text(self.policeStation.name)
                             .bold()
                         Text(self.policeStation.address)
-                        Button(action: {
-                            let cleanString = String(self.policeStation.number.filter { !" \n\t\r".contains($0) })
-                            let tel = "tel://"
-                            let formattedString = tel + cleanString
-                            let url: NSURL = URL(string: formattedString)! as NSURL
-                            UIApplication.shared.open(url as URL)
-                           }) {
-                           Text(self.policeStation.number)
-                            .bold()
+                        
+                        
+                        ForEach(self.listOFNumbers) { number in
+                            Button(action: {
+                                let cleanString = String(number.name.filter { !" \n\t\r".contains($0) })
+                                let tel = "tel://"
+                                let formattedString = tel + cleanString
+                                let url: NSURL = URL(string: formattedString)! as NSURL
+                                UIApplication.shared.open(url as URL)
+                               }) {
+                                
+                            
+                                Text(number.name)
+                                .bold()
+                            }
                         }
+                        
                         }.padding(10)
                         .layoutPriority(1)
                     .foregroundColor(.white)
                     .frame(width: UIScreen.screenWidth / 1.3)
                 }
                 Spacer()
-                
+                    .onAppear() {
+                        self.listOFNumbers = self.dividePhoneNumbers(stringNumbers: self.policeStation.number)
+                        }
             }
             .padding([.leading, .trailing], self.paddingSides)
             .background(Color.primaryBlue
@@ -96,7 +104,20 @@ struct PoliceDetailView: View {
         
         
     }
+    
+ func dividePhoneNumbers(stringNumbers: String) -> [Numbers]{
+        var numbers = [Numbers]()
+        let array = stringNumbers.components(separatedBy: ";")
+        
+        
+        for i in array {
+            let uuid = UUID()
+            numbers.append(Numbers(id: uuid, name: i))
+        }
+    return numbers
+    }
 }
+
 
 struct PoliceDetailView_Preview: PreviewProvider {
     static var previews: some View {
