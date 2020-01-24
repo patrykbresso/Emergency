@@ -25,11 +25,16 @@ struct ConsulatesRow: View {
                     Text(self.consulate.name)
                         .bold()
                         .fixedSize(horizontal: false, vertical: true)
+                        .padding(.bottom, 5)
                         .multilineTextAlignment(.center)
                     Text(self.consulate.consulName)
                         .multilineTextAlignment(.center)
-                        .padding(.bottom, 10)
-                    Text(self.consulate.address).padding(.bottom, 10)
+                        .fixedSize(horizontal: false, vertical: true)
+                        .padding(.bottom, 5)
+                    Text(self.consulate.address)
+                        .padding(.bottom, 5)
+                        .multilineTextAlignment(.center)
+                        .fixedSize(horizontal: false, vertical: true)
                     ForEach(self.listOFNumbers) { number in
                     Button(action: {
                         let cleanString = String(number.name.filter { !" \n\t\r".contains($0) })
@@ -40,6 +45,7 @@ struct ConsulatesRow: View {
                        }) {
                         Text(number.name)
                         .bold()
+                        .padding(.bottom, 5)
                     }
                     }
                 }.padding(5)
