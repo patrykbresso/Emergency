@@ -16,7 +16,7 @@ struct Footer: Decodable  {
 struct Title: Identifiable, Decodable {
     var id: Int
     var text: String
-    var name: String?
+    var name: String
 }
 
 

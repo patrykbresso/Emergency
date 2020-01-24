@@ -13,6 +13,7 @@ struct DropDown : View {
 
     @EnvironmentObject var dropDown : DropDownMenu
     @EnvironmentObject var dataLoader: DataLoader
+    let radius = CGFloat(6)
     
     var body: some View {
         VStack(alignment: .trailing) {
@@ -24,20 +25,23 @@ struct DropDown : View {
                 }
             if self.dropDown.isDropDownMenuOpen {
                 VStack() {
-
-                            Spacer()
-                        NavigationLink(destination: ChangeLanguageView()) {
-                            Text(self.dataLoader.footerData.changeLanguage)
-                                .multilineTextAlignment(.center)
-                                .foregroundColor(Color.primaryPink)
-                                .frame(width: UIScreen.screenWidth * 0.56, height: UIScreen.screenHeight * 0.07)
+                    ForEach(self.dataLoader.footerData.title) { row in 
+                        DropDownRow(title: row)
+                            .padding(.bottom, 10)
+                    }
+                    Spacer()
+                    NavigationLink(destination: ChangeLanguageView()) {
+                        Text(self.dataLoader.footerData.changeLanguage)
+                            .multilineTextAlignment(.center)
+                            .foregroundColor(Color.primaryPink)
+                            .frame(width: UIScreen.screenWidth * 0.56, height: UIScreen.screenHeight * 0.07)
+                            
+                            .overlay(
+                                RoundedRectangle(cornerRadius: self.radius)
+                                    .stroke(Color.primaryPink)
                                 
-                                .overlay(
-                                    RoundedRectangle(cornerRadius: 6)
-                                        .stroke(Color.primaryPink)
-                                    
-                                )
-                        }
+                            )
+                    }
                 }.frame(width: self.dropDown.isDropDownMenuOpen ? UIScreen.screenWidth * 0.63 : 10, height: self.dropDown.isDropDownMenuOpen ? UIScreen.screenHeight * 0.63 : 10)
                     .padding(UIScreen.screenWidth * 0.07)
                 .overlay(

@@ -23,8 +23,8 @@ struct ConsulatesRow: View {
                 VStack {
                     Text(self.consulate.name)
                         .bold()
-                    Text(self.consulate.consulName)
-                    Text(self.consulate.address)
+                    Text(self.consulate.consulName).padding(.bottom, 10)
+                    Text(self.consulate.address).padding(.bottom, 10)
                     Button(action: {
                         let cleanString = String(self.consulate.number.filter { !" \n\t\r".contains($0) })
                         let tel = "tel://"

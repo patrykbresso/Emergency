@@ -1,35 +1,35 @@
-
 {
     "title": [
         {
             "id": 1,
-            "text": "pomysłodawca:\n",
-            "name": "Dariusz Rajski\n\n"
+            "text": "Орігатор: ",
+            "name": "Dariusz Rajski "
         },
         {
             "id": 2,
-            "text": "rogramiści iOS:\n",
-            "name": "Paulina Binas\nPatryk Bresso\n"
+            "text": "Програмісти iOS: ",
+            "name": "Paulina Binas\nPatryk Bresso "
         },
         {
             "id": 3,
-            "text": "programiści Android:\n",
-            "name": "Kacper Kiedos:\nPaweł Klecha\n"
+            "text": "Програмісти Android: ",
+            "name": "Kacper Kiedos:\nPaweł Klecha "
         },
         {
             "id": 4,
-            "text": "projektant graficzny:\n",
-            "name": "Anna Ludwin\n"
+            "text": "Графічний дизайнер: ",
+            "name": "Anna Ludwin "
         },
         {
             "id": 5,
-            "text": "nadzór merytoryczny:\n",
-            "name": "Krzysztof Waśko\n\n"
+            "text": "Наглядач: ",
+            "name": "Krzysztof Waśko\n\n "
         },
         {
             "id": 6,
-            "text": "Politechnika Wrocławska\nAkademia Sztuk Pięknych\nWrocław, 2020"
+            "text": "Politechnika Wrocławska\nAkademia Sztuk Pięknych\nWrocław, 2020 ",
+            "name": ""
         }
     ],
-    "changeLanguage": "Zmień Język"
+    "changeLanguage": "Змінити мову"
 }

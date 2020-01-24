@@ -1,34 +1,34 @@
-
 {
     "title": [
         {
             "id": 1,
-            "text": "pomysłodawca:\n",
-            "name": "Dariusz Rajski\n\n"
+            "text": "pomysłodawca: ",
+            "name": "Dariusz Rajski "
         },
         {
             "id": 2,
-            "text": "rogramiści iOS:\n",
-            "name": "Paulina Binas\nPatryk Bresso\n"
+            "text": "programiści iOS: ",
+            "name": "Paulina Binas\nPatryk Bresso "
         },
         {
             "id": 3,
-            "text": "programiści Android:\n",
-            "name": "Kacper Kiedos:\nPaweł Klecha\n"
+            "text": "programiści Android: ",
+            "name": "Kacper Kiedos:\nPaweł Klecha "
         },
         {
             "id": 4,
-            "text": "projektant graficzny:\n",
-            "name": "Anna Ludwin\n"
+            "text": "projektant graficzny: ",
+            "name": "Anna Ludwin "
         },
         {
             "id": 5,
-            "text": "nadzór merytoryczny:\n",
-            "name": "Krzysztof Waśko\n\n"
+            "text": "nadzór merytoryczny: ",
+            "name": "Krzysztof Waśko\n\n "
         },
         {
             "id": 6,
-            "text": "Politechnika Wrocławska\nAkademia Sztuk Pięknych\nWrocław, 2020"
+            "text": "Politechnika Wrocławska\nAkademia Sztuk Pięknych\nWrocław, 2020 ",
+            "name": ""
         }
     ],
     "changeLanguage": "Zmień Język"

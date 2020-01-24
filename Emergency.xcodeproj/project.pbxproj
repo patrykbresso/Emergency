@@ -127,6 +127,7 @@
 		E83E446523A3FDB4003AB246 /* SearchResultsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83E446423A3FDB4003AB246 /* SearchResultsView.swift */; };
 		E8590BB92398469B00C37EE8 /* CustomTextFieldStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8590BB82398469B00C37EE8 /* CustomTextFieldStyle.swift */; };
 		E8625AB723BE0ABD00C6D983 /* SearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8625AB623BE0ABD00C6D983 /* SearchController.swift */; };
+		E8880D3623DB55C400D37CB7 /* DropDownRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8880D3523DB55C400D37CB7 /* DropDownRow.swift */; };
 		E8AD7F43239BEA87005150A7 /* DifficultSituationsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8AD7F42239BEA87005150A7 /* DifficultSituationsCell.swift */; };
 		E8AD7F45239BEAA0005150A7 /* DifficultSituationsDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8AD7F44239BEAA0005150A7 /* DifficultSituationsDetailView.swift */; };
 		E8AD7F49239BF04E005150A7 /* DifficultSituations.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8AD7F48239BF04E005150A7 /* DifficultSituations.swift */; };
@@ -287,6 +288,7 @@
 		E83E446423A3FDB4003AB246 /* SearchResultsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultsView.swift; sourceTree = "<group>"; };
 		E8590BB82398469B00C37EE8 /* CustomTextFieldStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextFieldStyle.swift; sourceTree = "<group>"; };
 		E8625AB623BE0ABD00C6D983 /* SearchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchController.swift; sourceTree = "<group>"; };
+		E8880D3523DB55C400D37CB7 /* DropDownRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropDownRow.swift; sourceTree = "<group>"; };
 		E8AD7F42239BEA87005150A7 /* DifficultSituationsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DifficultSituationsCell.swift; sourceTree = "<group>"; };
 		E8AD7F44239BEAA0005150A7 /* DifficultSituationsDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DifficultSituationsDetailView.swift; sourceTree = "<group>"; };
 		E8AD7F48239BF04E005150A7 /* DifficultSituations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DifficultSituations.swift; sourceTree = "<group>"; };
@@ -461,6 +463,7 @@
 			isa = PBXGroup;
 			children = (
 				9F87D2DC23D74E5500CDAB7C /* DropDown.swift */,
+				E8880D3523DB55C400D37CB7 /* DropDownRow.swift */,
 			);
 			path = DropMenu;
 			sourceTree = "<group>";
@@ -1054,6 +1057,7 @@
 				A151BB22237F2AB3007CEEC1 /* LawsView.swift in Sources */,
 				9F8F031123AA7865004FB4A0 /* ChangeLanguageView.swift in Sources */,
 				9F828F9323D9F36C00EC721B /* KeyboardObserving.swift in Sources */,
+				E8880D3623DB55C400D37CB7 /* DropDownRow.swift in Sources */,
 				9F7A4F21238DA049001C4B7A /* HospitalsRow.swift in Sources */,
 				9FE032EA23DAFFEA006B56EC /* GeometryGetter.swift in Sources */,
 				9F169A82237F428D005A8618 /* Police.swift in Sources */,
