@@ -18,13 +18,13 @@ struct LawsCell: View {
 
             ZStack() {
                 RoundedRectangle(cornerRadius: 10)
-                .stroke(Color.primaryPink, lineWidth: 10)
-                .background(Color.primaryPink)
+                    .fill(Color.primaryPink)
                 
                 Text(law.title)
                     .multilineTextAlignment(.center)
                     .font(.system(size: 14))
-                    .lineLimit(4)
+                    .lineLimit(5)
+                    .padding(5)
             }
             .foregroundColor(.white)
     }

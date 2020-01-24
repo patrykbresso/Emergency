@@ -30,27 +30,27 @@ struct AdviceView: View {
                         .renderingMode(.original)
                         .padding(.leading, -self.backButtonSize.width)
                     Spacer()
-                }.padding(.bottom, 15)
+                }
                     ZStack {
                         RoundedRectangle(cornerRadius: 10)
-                            .stroke(Color.primaryPink, lineWidth: 10)
-                            .background(Color.primaryPink)
+                            .fill(Color.primaryPink)
                         
-                         Text(self.dataLoader.adviceData.intro).padding(15)
+                         Text(self.dataLoader.adviceData.intro)
+                            .padding(10)
                         
                     }.fixedSize(horizontal: false, vertical: true)
-                    ScrollView {
+                ScrollView(showsIndicators: false) {
                         ForEach(self.dataLoader.adviceData.advice) { advice in
                             ZStack {
                                 RoundedRectangle(cornerRadius: 10)
-                                    .stroke(Color.primaryPink, lineWidth: 10)
-                                .background(Color.primaryPink)
+                                    .fill(Color.primaryPink)
                                 
-                                Text(advice.text).padding(15).lineLimit(nil)
+                                Text(advice.text)
+                                    .padding(10)
+                                    .lineLimit(nil)
                                     .fixedSize(horizontal: false, vertical: true)
                             }
-                            .padding(15)
-                        }
+                        }.padding([.top, .bottom], 15)
                     }
 
             }

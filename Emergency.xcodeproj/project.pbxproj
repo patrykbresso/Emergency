@@ -435,8 +435,8 @@
 			isa = PBXGroup;
 			children = (
 				A151BB21237F2AB2007CEEC1 /* LawsView.swift */,
-				9F7D3A792397D0330092ADD6 /* LawsCell.swift */,
 				9F7D3A7B2397D2E80092ADD6 /* LawsDetailView.swift */,
+				9F7D3A792397D0330092ADD6 /* LawsCell.swift */,
 			);
 			path = Laws;
 			sourceTree = "<group>";

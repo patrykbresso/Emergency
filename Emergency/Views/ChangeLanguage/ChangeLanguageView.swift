@@ -32,6 +32,7 @@ struct ChangeLanguageView: View {
                 
                 Spacer()
                 HStack {
+                    Spacer()
                     Button(action: {
                         UserDefaults.standard.set("polish", forKey: "language")
                         self.presentationMode.wrappedValue.dismiss()
@@ -45,8 +46,11 @@ struct ChangeLanguageView: View {
                     }) {
                         ChangeLanguageCell(language: "Español")
                     }
+                    Spacer()
                 }
+                .padding(.bottom, UIScreen.screenHeight / 15)
                 HStack {
+                    Spacer()
                     Button(action: {
                         UserDefaults.standard.set("english", forKey: "language")
                         self.presentationMode.wrappedValue.dismiss()
@@ -60,7 +64,9 @@ struct ChangeLanguageView: View {
                     }) {
                         ChangeLanguageCell(language: "Україна")
                     }
+                    Spacer()
                 }
+                .padding(.bottom, UIScreen.screenHeight / 15)
                 Button(action: {
                     UserDefaults.standard.set("german", forKey: "language")
                     self.presentationMode.wrappedValue.dismiss()
@@ -71,8 +77,7 @@ struct ChangeLanguageView: View {
                     self.dataLoader.loadLanguage(language: UserDefaults.standard.string(forKey: "language") ?? "english")
                     self.dropDown.isDropDownMenuOpen = false
                 }
-
-                
+                Spacer()
             }
         }
         .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity)

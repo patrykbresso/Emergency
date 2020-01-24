@@ -24,9 +24,7 @@ struct DropDown : View {
                 }
             if self.dropDown.isDropDownMenuOpen {
                 VStack() {
-                        Text(self.dataLoader.footerData.footer)
-                            .multilineTextAlignment(.center)
-                            .foregroundColor(Color.white)
+
                             Spacer()
                         NavigationLink(destination: ChangeLanguageView()) {
                             Text(self.dataLoader.footerData.changeLanguage)
@@ -51,6 +49,7 @@ struct DropDown : View {
         .background(Color.primaryBlue)
         
     }
+
 
 }
 

@@ -35,19 +35,20 @@ struct LawsDetailView: View {
                     Spacer()
                 }.padding(15)
                 Spacer()
+                ZStack{
+                    RoundedRectangle(cornerRadius: 10)
+                        .fill(Color.primaryPink)
                     VStack {
                         ScrollView {
                             Text(self.law.title)
                                 .bold()
                             Spacer()
                             Text(self.law.text)
-                        }
+                        }.padding(10)
                     }
-                    .frame(width: UIScreen.screenWidth / 1.3, alignment: .center)
                     .foregroundColor(.white)
-                    .background(Color.primaryPink)
-                    .cornerRadius(10)
-               
+                }.frame(width: UIScreen.screenWidth / 1.3, alignment: .center)
+                Spacer(minLength: UIScreen.screenHeight / 7)
             }
             .padding([.leading, .trailing], self.paddingSides)
             .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity)

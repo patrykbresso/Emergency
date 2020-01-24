@@ -9,8 +9,14 @@
 import Foundation
 
 struct Footer: Decodable  {
-    var footer: String
+    var title: [Title]
     var changeLanguage: String
+}
+
+struct Title: Identifiable, Decodable {
+    var id: Int
+    var text: String
+    var name: String?
 }
 
 

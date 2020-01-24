@@ -1,5 +1,35 @@
+
 {
-    "footer": "pomysłodawca:\nDariusz Rajski\nprogramiści iOS:\nPaulina Binas\nPatryk Bresso\nprogramiści Android:\nKacper Kiedos:\nPaweł Klecha\nprojektant graficzny:\nAnna Ludwin\nnadzór merytoryczny:\nKrzysztof Waśko\n\nPolitechnika Wrocławska\nAkademia Sztuk Pięknych\nWrocław, 2020",
+    "title": [
+        {
+            "id": 1,
+            "text": "pomysłodawca:\n",
+            "name": "Dariusz Rajski\n\n"
+        },
+        {
+            "id": 2,
+            "text": "rogramiści iOS:\n",
+            "name": "Paulina Binas\nPatryk Bresso\n"
+        },
+        {
+            "id": 3,
+            "text": "programiści Android:\n",
+            "name": "Kacper Kiedos:\nPaweł Klecha\n"
+        },
+        {
+            "id": 4,
+            "text": "projektant graficzny:\n",
+            "name": "Anna Ludwin\n"
+        },
+        {
+            "id": 5,
+            "text": "nadzór merytoryczny:\n",
+            "name": "Krzysztof Waśko\n\n"
+        },
+        {
+            "id": 6,
+            "text": "Politechnika Wrocławska\nAkademia Sztuk Pięknych\nWrocław, 2020"
+        }
+    ],
     "changeLanguage": "Zmień Język"
 }
-

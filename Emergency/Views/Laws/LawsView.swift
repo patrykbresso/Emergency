@@ -15,48 +15,46 @@ struct LawsView: View {
     let paddingSides = CGFloat(20)
     
     var body: some View {
-        
-        GeometryReader { geometry in
-                VStack(spacing: 30) {
-                    HStack {
-                        Button(action: {
-                            self.presentationMode.wrappedValue.dismiss()
-                        }) {
-                            VStack {
-                                Image("left_arrow")
-                                    .renderingMode(.original)
-                            }
-                        }.background(GeometryGetter(rect: self.$backButtonSize))
-                        Spacer()
-                        Image("law")
-                            .renderingMode(.original)
-                            .padding(.leading, -self.backButtonSize.width)
-                        Spacer()
-                    }
-                    ForEach((0...(self.dataLoader.lawsData.count - 2)), id: \.self) { i in
-                        
-                            HStack(spacing: 30) {
-                                if(i % 2 == 0) {
-                                    NavigationLink(destination: LawsDetailView(law: self.dataLoader.lawsData[i])) {
-                                        LawsCell(law: self.dataLoader.lawsData[i])
-                                        }.frame(width: geometry.size.width / 2.7)
-                                    
-                                    NavigationLink(destination: LawsDetailView(law: self.dataLoader.lawsData[i])) {
-                                        LawsCell(law: self.dataLoader.lawsData[i + 1])
-                                    }.frame(width: geometry.size.width / 2.7)
-                                }
-                            }
-                    }
-                    NavigationLink(destination: LawsDetailView(law: self.dataLoader.lawsData[self.dataLoader.lawsData.count - 1])) {
-                        LawsCell(law: self.dataLoader.lawsData[self.dataLoader.lawsData.count - 1])
-                    }.frame(width: geometry.size.width / 2.7)
 
-                    
-
+        VStack(spacing: 8) {
+                HStack {
+                    Button(action: {
+                        self.presentationMode.wrappedValue.dismiss()
+                    }) {
+                        VStack {
+                            Image("left_arrow")
+                                .renderingMode(.original)
+                        }
+                    }.background(GeometryGetter(rect: self.$backButtonSize))
+                    Spacer()
+                    Image("law")
+                        .renderingMode(.original)
+                        .padding(.leading, -self.backButtonSize.width)
+                    Spacer()
                 }
+                ForEach((0...(self.dataLoader.lawsData.count - 2)), id: \.self) { i in
+                    
+                    HStack(spacing: 20) {
+                            if(i % 2 == 0) {
+                                NavigationLink(destination: LawsDetailView(law: self.dataLoader.lawsData[i])) {
+                                    LawsCell(law: self.dataLoader.lawsData[i])
+                                }.frame(width: UIScreen.screenWidth / 2 - 2 * self.paddingSides)
+                                
+                                NavigationLink(destination: LawsDetailView(law: self.dataLoader.lawsData[i])) {
+                                    LawsCell(law: self.dataLoader.lawsData[i + 1])
+                                }.frame(width: UIScreen.screenWidth / 2 - 2 * self.paddingSides)
+                            }
+                        }
+                }
+                NavigationLink(destination: LawsDetailView(law: self.dataLoader.lawsData[self.dataLoader.lawsData.count - 1])) {
+                    LawsCell(law: self.dataLoader.lawsData[self.dataLoader.lawsData.count - 1])
+                }.frame(width: UIScreen.screenWidth / 2 - 2 * self.paddingSides)
 
-        }
-        .padding([.leading, .trailing], self.paddingSides)
+                
+
+            }
+
+        .padding([.leading, .trailing, .bottom], self.paddingSides)
         .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity)
         .background(Color.primaryBlue
             .edgesIgnoringSafeArea(.all)

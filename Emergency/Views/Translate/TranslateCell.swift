@@ -16,15 +16,17 @@ struct TranslateCell: View {
     var body: some View {
         ZStack {
             RoundedRectangle(cornerRadius: 10)
-            .stroke(Color.primaryPink, lineWidth: 10)
-            .background(Color.primaryPink)
+            .fill(Color.primaryPink)
             
             if(!showTranslation) {
                 Text(row.translation)
+                    .padding(5)
             } else {
                 Text(row.originalText)
+                    .padding(5)
             }
-        }.foregroundColor(.white)
+        }.multilineTextAlignment(.center)
+        .foregroundColor(.white)
     }
 }
 

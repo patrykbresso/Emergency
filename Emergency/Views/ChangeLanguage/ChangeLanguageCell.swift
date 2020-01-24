@@ -16,21 +16,21 @@ struct ChangeLanguageCell: View {
     var language: String
     var body: some View {
         
-        GeometryReader { geometry in
-            ZStack() {
-                RoundedRectangle(cornerRadius: 10)
-                    .stroke(Color.primaryPink, lineWidth: 10)
-                    .background(Color.primaryPink)
+
+        ZStack() {
+            RoundedRectangle(cornerRadius: 10)
+                .stroke(Color.primaryPink, lineWidth: 10)
+                .background(Color.primaryPink)
+            
+            Text(self.language)
+                .bold()
                 
-                Text(self.language)
-                    .bold()
-                    
-                
-            }
-            .font(.system(size: 14))
-            .frame(width: geometry.size.width / 1.3, height: geometry.size.height / 3)
-            .foregroundColor(.white)
+            
         }
+        .font(.system(size: 14))
+        .frame(width: UIScreen.screenWidth / 2.8, height: UIScreen.screenHeight / 9)
+        .foregroundColor(.white)
+    
     }
 }
 
