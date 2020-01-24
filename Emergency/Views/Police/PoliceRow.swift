@@ -24,7 +24,7 @@ struct PoliceRow: View {
                     Text(self.policeStation.name)
                         .bold()
                     Text(self.policeStation.address+" "+self.policeStation.postalCode+" "+self.policeStation.city)
-                    Text(self.policeStation.number)
+                    Text(self.policeStation.number.replacingOccurrences(of: ";", with: " "))
                 }.font(.system(size: 15))
             }
             .foregroundColor(.white)
