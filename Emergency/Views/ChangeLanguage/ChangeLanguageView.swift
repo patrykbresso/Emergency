@@ -37,7 +37,7 @@ struct ChangeLanguageView: View {
                         UserDefaults.standard.set("polish", forKey: "language")
                         self.presentationMode.wrappedValue.dismiss()
                     }) {
-                        ChangeLanguageCell(language: "POLSKI")
+                        ChangeLanguageCell(language: "Polski")
                     }
                     Spacer()
                     Button(action: {
@@ -55,7 +55,7 @@ struct ChangeLanguageView: View {
                         UserDefaults.standard.set("english", forKey: "language")
                         self.presentationMode.wrappedValue.dismiss()
                     }) {
-                        ChangeLanguageCell(language: "ENGLISH")
+                        ChangeLanguageCell(language: "English")
                     }
                     Spacer()
                     Button(action: {
@@ -71,7 +71,7 @@ struct ChangeLanguageView: View {
                     UserDefaults.standard.set("german", forKey: "language")
                     self.presentationMode.wrappedValue.dismiss()
                 }) {
-                    ChangeLanguageCell(language: "DEUTSCH")
+                    ChangeLanguageCell(language: "Deutsch")
                 }.onDisappear {
                     UserDefaults.standard.set(true, forKey: "launchedBefore")
                     self.dataLoader.loadLanguage(language: UserDefaults.standard.string(forKey: "language") ?? "english")

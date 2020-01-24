@@ -55,7 +55,7 @@ struct ContentView: View {
                                             
                                             .lineLimit(2)
                                         .fixedSize(horizontal: false, vertical: true)
-                                    }.padding(.trailing, 15)
+                                    }
                                     .frame(width: geometry.size.width / 2 - 40)
                                     
                                 }

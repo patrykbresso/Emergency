@@ -31,15 +31,15 @@ struct AdviceView: View {
                         .padding(.leading, -self.backButtonSize.width)
                     Spacer()
                 }
-                    ZStack {
-                        RoundedRectangle(cornerRadius: 10)
-                            .fill(Color.primaryPink)
-                        
-                         Text(self.dataLoader.adviceData.intro)
-                            .padding(10)
-                        
-                    }.fixedSize(horizontal: false, vertical: true)
                 ScrollView(showsIndicators: false) {
+                        ZStack {
+                            RoundedRectangle(cornerRadius: 10)
+                                .fill(Color.primaryPink)
+                            
+                             Text(self.dataLoader.adviceData.intro)
+                                .padding(10)
+                            
+                        }.fixedSize(horizontal: false, vertical: true)
                         ForEach(self.dataLoader.adviceData.advice) { advice in
                             ZStack {
                                 RoundedRectangle(cornerRadius: 10)

@@ -48,7 +48,7 @@ struct LawsDetailView: View {
                     }
                     .foregroundColor(.white)
                 }.frame(width: UIScreen.screenWidth / 1.3, alignment: .center)
-                Spacer(minLength: UIScreen.screenHeight / 7)
+                Spacer(minLength: UIScreen.screenHeight / 10)
             }
             .padding([.leading, .trailing], self.paddingSides)
             .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity)

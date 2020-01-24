@@ -15,8 +15,7 @@ struct DifficultSituationsView: View {
     let paddingSides = CGFloat(20)
     
     var body: some View {
-        GeometryReader { geometry in
-            VStack() {
+        VStack(spacing: 8) {
                 HStack {
                     Button(action: {
                         self.presentationMode.wrappedValue.dismiss()
@@ -33,40 +32,35 @@ struct DifficultSituationsView: View {
                         .padding(.leading, -self.backButtonSize.width)
                     Spacer()
                 }.padding(15)
-                VStack {
-                    ForEach(self.dataLoader.difficultSituationsData){ row in
-                        if(row.id % 2 == 0) {
-                            HStack {
-                                NavigationLink(destination: DifficultSituationsDetailView(difficultSituation: row)) {
-                                    DifficultSituationsCell(difficultSituation: row)
-                                        .frame(width: 150, height: 60)
-                                }
-                                Spacer()
-                                }
-                                .padding(.bottom, 10)
-                        } else {
-                            HStack {
-                                Spacer()
-                                NavigationLink(destination: DifficultSituationsDetailView(difficultSituation: row)) {
-                                    DifficultSituationsCell(difficultSituation: row)
-                                        .frame(width: 150, height: 60)
-                                }
+                ForEach(self.dataLoader.difficultSituationsData){ row in
+                    if(row.id % 2 == 0) {
+                        HStack {
+                            NavigationLink(destination: DifficultSituationsDetailView(difficultSituation: row)) {
+                                DifficultSituationsCell(difficultSituation: row)
+                            }.frame(width: UIScreen.screenWidth / 2 - 2 * self.paddingSides)
+                            Spacer()
                             }
                             .padding(.bottom, 10)
+                    } else {
+                        HStack {
+                            Spacer()
+                            NavigationLink(destination: DifficultSituationsDetailView(difficultSituation: row)) {
+                                DifficultSituationsCell(difficultSituation: row)
+                                    .frame(width: UIScreen.screenWidth / 2 - 2 * self.paddingSides)
+                            }
                         }
+                        .padding(.bottom, 10)
                     }
                 }
             }
-
-        }
-        .padding([.leading, .trailing], self.paddingSides)
-        .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity)
-        .background(Color.primaryBlue
-            .edgesIgnoringSafeArea(.all)
-        )
-        .navigationBarTitle("")
-        .navigationBarHidden(true)
-        .navigationBarBackButtonHidden(true)
+            .padding([.leading, .trailing, .bottom], self.paddingSides)
+            .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity)
+            .background(Color.primaryBlue
+                .edgesIgnoringSafeArea(.all)
+            )
+            .navigationBarTitle("")
+            .navigationBarHidden(true)
+            .navigationBarBackButtonHidden(true)
     }
 }
 

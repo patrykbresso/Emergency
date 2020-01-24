@@ -50,8 +50,6 @@ struct LawsView: View {
                     LawsCell(law: self.dataLoader.lawsData[self.dataLoader.lawsData.count - 1])
                 }.frame(width: UIScreen.screenWidth / 2 - 2 * self.paddingSides)
 
-                
-
             }
 
         .padding([.leading, .trailing, .bottom], self.paddingSides)
