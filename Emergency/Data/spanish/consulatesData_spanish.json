@@ -18,47 +18,42 @@
         "name": "Consulado de República de Bulgaria",
         "consulName": "Cónsul Honoraria - Jan Chorostkowski",
         "address": "ul. ks. P. Skargi 7/1 50-082 Wrocław",
-        "number": "71 783 39 28"
+        "number": "71 783 39 28;71 346 01 36"
     },
     {
         "id": 4,
         "name": "Consulado de República de Chile",
         "consulName": "Cónsul Honoraria - Zbigniew Sebastian",
         "address": "ul. Świdnicka 39 50-029 Wrocław",
-        "number": "71 372 44 91",
-        "email": "2@2.pl"
+        "number": "71 372 44 91"
     },
     {
         "id": 5,
         "name": "Consulado Honorario de República Checa",
         "consulName": "Cónsul Honoraria - Arkadiusz Ignasiak",
         "address": "ul. Szkocka 5/2 54-402 Wrocław",
-        "number": "71 350 97 00",
-        "email": "2@2.pl"
+        "number": "71 350 97 00"
     },
     {
         "id": 6,
         "name": "Consulado del Reino de Dinamarca",
         "consulName": "Cónsul Honoraria - Maria Keller",
         "address": "ul. Świdnicka 36/15 50-068 Wrocław",
-        "number": "71 372 39 50",
-        "email": "2@2.pl"
+        "number": "71 372 39 50;+48 602 25 11 11"
     },
     {
         "id": 7,
         "name": "Consulado Honorario de Finlandia",
         "consulName": "Cónsul Honoraria - Małgorzata Węgrzyn-Wysocka",
         "address": "ul. Włodkowica 10/11 50-072 Wrocław",
-        "number": "71 780 76 00",
-        "email": "2@2.pl"
+        "number": "71 780 76 00"
     },
     {
         "id": 8,
         "name": "Consulado Honorario de Francia",
         "consulName": "Cónsul Honoraria - Richard Kepinski",
         "address": "Rynek 58/300 50-116 Wrocław",
-        "number": "71 341 02 80 ",
-        "email": "2@2.pl"
+        "number": "71 341 02 80 "
     },
     {
         "id": 9,
@@ -73,8 +68,7 @@
        "name": "Consulado Honorario de la India",
        "consulName": "Cónsul Honoraria – Johri Kartikey",
        "address": "ul. Wita Stwosza 16, 50-148 Wrocław",
-       "number": "502 411 355",
-       "email": "2@2.pl"
+       "number": "502 411 355"
     },
     {
         "id": 11,
@@ -89,7 +83,7 @@
         "name": "Consulado del Reino de Noruega",
         "consulName": "Cónsul Honoraria - Bartosz Masternak",
         "address": "Rynek 7, V piętro 50 - 106 Wrocław",
-        "number": "601 701 158",
+        "number": "601 701 158;536 409 409;536 302 302",
         "email": "consulate@norway.wroc.pl"
     },
     {
@@ -97,7 +91,7 @@
         "name": "Consulado de Estados Unidos de México",
         "consulName": "Cónsul Honoraria - Bogdan Spiż",
         "address": "ul. Przejście Garncarskie 12 50-106 Wrocław",
-        "number": "71 344 68 56",
+        "number": "71 344 68 56;71 344 77 21",
         "email": "wroclaw@spiz.pl"
     },
     {
@@ -145,7 +139,7 @@
         "name": "Consulado Honorario de República de Lituania",
         "consulName": "Cónsul Honoraria - Tomasz Kosoń",
         "address": "Pl. Powstańców Śląskich 1/114 53 - 332 Wrocław",
-        "number": "71 360 24 00/ 10",
+        "number": "71 360 24 00;71 360 24 10",
         "email": "wroclaw@lithuaniaconsulatepoland.pl"
     },
     {
@@ -153,7 +147,7 @@
         "name": "Consulado Honorario de República de Corea",
         "consulName": "Cónsul Honoraria - Tomasz Szpikowski",
         "address": "ul. Leona Petrażyckiego 57 52 - 434 Wrocław ",
-        "number": "508 040 367 ",
+        "number": "508 040 367;508 040 367",
         "email": "beata.chelpa@korea-consul.wroc.pl"
     },
     {

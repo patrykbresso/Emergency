@@ -20,7 +20,7 @@
         "name": "Konsulat der Republik Bulgarien",
         "consulName": "Ehrenkonsul - Jan Chorostkowski",
         "address": "ul. ks. P. Skargi 7/1 50-082 Wrocław",
-        "number": "71 783 39 28" 
+        "number": "71 783 39 28;71 346 01 36"
     },
     {
         "id": 4,
@@ -42,7 +42,7 @@
         "name": "Konsulat des Königreichs Dänemark",
         "consulName": "Ehrenkonsulin - Maria Keller",
         "address": "ul. Świdnicka 36/15 50-068 Wrocław",
-        "number": "71 372 39 50"
+        "number": "71 372 39 50;+48 602 25 11 11"
     },
     {
         "id": 7,
@@ -58,6 +58,109 @@
         "consulName": "Ehrenkonsul - Richard Kepinski",
         "address": "Rynek 58/300 50-116 Wrocław",
         "number": "71 341 02 80 "
+    },
+    {
+        "id": 9,
+        "name": "Ehrenkonsulat des Königreichs Spanien",
+        "consulName": "Ehrenkonsul - Jesús García-Nieto Moreno",
+        "address": "ul. Ludwika Rydygiera 2a/15 50-249 Wrocław",
+        "number": "+48 669 505 300",
+        "email": "konsulat@fira.pm"
+    },
+    {
+       "id": 10,
+       "name": "Ehrenkonsulat Indiens",
+       "consulName": "Ehrenkonsul - Johri Kartikey",
+       "address": "ul. Wita Stwosza 16, 50-148 Wrocław",
+       "number": "502 411 355",
+       "email": ""
+    },
+    {
+        "id": 11,
+        "name": "Ehrenkonsulat von Luxemburg",
+        "consulName": "Ehrenkonsul - Krzysztof Bramorski",
+        "address": "ul. Rzeźnicza 32 - 33, II p. 50-130 Wrocław",
+        "number": "71 346 70 87",
+        "email": "luxemburg@konsulat.wroclaw.pl "
+    },
+    {
+        "id": 12,
+        "name": "Konsulat des Königreichs Norwegen",
+        "consulName": "Ehrenkonsul - Bartosz Masternak",
+        "address": "Rynek 7, V piętro 50 - 106 Wrocław",
+        "number": "601 701 158;536 409 409;536 302 302",
+        "email": "consulate@norway.wroc.pl"
+    },
+    {
+        "id": 13,
+        "name": "Konsulat der Vereinigten Mexikanischen Staaten",
+        "consulName": "Ehrenkonsul - Bogdan Spiż",
+        "address": "ul. Przejście Garncarskie 12 50-106 Wrocław",
+        "number": "71 344 68 56;71 344 77 21",
+        "email": "wroclaw@spiz.pl"
+    },
+    {
+        "id": 14,
+        "name": "Ehrenkonsulat der Slowakischen Republik",
+        "consulName": "Ehrenkonsul - Maciej Kaczmarski",
+        "address": "ul. Danuty Siedzikówny 12 51 - 214 Wrocław",
+        "number": "71 78 50 369",
+        "email": "konsulat@slowacji.wroclaw.pl"
+    },
+    {
+        "id": 15,
+        "name": "Ehrenkonsulat Schwedens",
+        "consulName": "Ehrenkonsulin - Małgorzata Ryniak",
+        "address": "ul. Mydlana 2 51 - 502 Wrocław",
+        "number": "71 30 21 300",
+        "email": "administration.swecons.wro@volvo.com"
+    },
+    {
+        "id": 16,
+        "name": "Ehrenkonsulat von Gross-Britannien ",
+        "consulName": "Ehrenkonsul - Marek Grzegorzewicz",
+        "address": "ul. Oławska 2 50 - 123 Wrocław",
+        "number": "71 344 89 61",
+        "email": "12321323123.swecons.wro@volvo.com"
+    },
+    {
+        "id": 17,
+        "name": "Ehrenkonsulat der Ukraine ",
+        "consulName": "Ehrenkonsul - Grzegorz Dzik",
+        "address": "ul. Jedności Narodowej 89 50 - 262 Wrocław",
+        "number": "71 788 44 50",
+        "email": "info@konsulat-ukraina.wroclaw.pl "
+    },
+    {
+        "id": 18,
+        "name": "Ehrenkonsulat der Italienischen Republik",
+        "consulName": "Ehrenkonsulin - Monika Przemysława Kwiatosz",
+        "address": "Plac Kościuszki 10/1 50 - 028 Wrocław",
+        "number": "795 413 015",
+        "email": "consolatoitaliano.wro@gmail.com"
+    },
+    {
+        "id": 19,
+        "name": "Ehrenkonsulat der Republik Litauen",
+        "consulName": "Ehrenkonsul - Tomasz Kosoń",
+        "address": "Pl. Powstańców Śląskich 1/114 53 - 332 Wrocław",
+        "number": "71 360 24 00;71 360 24 10",
+        "email": "wroclaw@lithuaniaconsulatepoland.pl"
+    },
+    {
+        "id": 20,
+        "name": "Ehrenkonsulat der Republik Korea",
+        "consulName": "Ehrenkonsul - Tomasz Szpikowski",
+        "address": "ul. Leona Petrażyckiego 57 52 - 434 Wrocław ",
+        "number": "71 738 39 72;508 040 367 ",
+        "email": "beata.chelpa@korea-consul.wroc.pl"
+    },
+    {
+        "id": 21,
+        "name": "Ehrenkonsulat der Republik Lettland",
+        "consulName": "Ehrenkonsul - Martin Kaczmarski",
+        "address": "ul. Danuty Siedzikówny 12",
+        "number": "71 773 74 64",
+        "email": "konsulat@lotwy.wroclaw.pl"
     }
-    
 ]
