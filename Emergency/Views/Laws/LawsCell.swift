@@ -23,7 +23,7 @@ struct LawsCell: View {
                 Text(law.title)
                     .multilineTextAlignment(.center)
                     .font(.system(size: 14))
-                    .lineLimit(5)
+                    .lineLimit(6)
                     .padding(5)
             }
             .foregroundColor(.white)
