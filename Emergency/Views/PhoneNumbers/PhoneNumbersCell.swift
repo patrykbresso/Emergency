@@ -20,13 +20,13 @@ struct PhoneNumbersCell: View {
                 Text(phoneNumber.name)
                     .multilineTextAlignment(.center)
                     .fixedSize(horizontal: false, vertical: true)
-                    .lineLimit(nil)
+                    .lineLimit(2)
                 Text(phoneNumber.number)
                     .font(.headline)
                     .fontWeight(.bold)
                     .multilineTextAlignment(.center)
                     .fixedSize(horizontal: false, vertical: true)
-                    .lineLimit(nil)
+                    .lineLimit(1)
                 if(showDescription) {
                     Text(phoneNumber.available)
                         .font(.body)
@@ -41,7 +41,6 @@ struct PhoneNumbersCell: View {
                         .multilineTextAlignment(.center)
                         .fixedSize(horizontal: false, vertical: true)
                         .lineLimit(nil)
-                        .padding(.leading, 5)
                         .padding(.trailing, 5)
                 }
             }
