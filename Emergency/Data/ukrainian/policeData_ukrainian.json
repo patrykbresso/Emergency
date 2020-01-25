@@ -24,7 +24,7 @@
             "address": "ul. Hubska 29/33",
             "postalCode": "50-501",
             "city": "Wrocław",
-            "number": "71 340 32 12 ; 71 340 39 22",
+            "number": " 71 340 32 12 ; 71 340 39 22 ",
             "coordinates": {
                 "longitude": 17.042646,
                 "latitude": 51.093346
@@ -37,7 +37,7 @@
             "address": "ul. Trzemeska 12",
             "postalCode": "50-040",
             "city": "Wrocław",
-            "number": "71 340 31 31 ; 71 359 26 00",
+            "number": " 71 340 31 31 ; 71 359 26 00 ",
             "coordinates": {
                 "longitude": 17.010767,
                 "latitude": 51.112300
@@ -50,7 +50,7 @@
             "address": "ul. Rydygiera 46 /48",
             "postalCode": "50-249",
             "city": "Wrocław",
-            "number": "71 340 43 06 ; 71 328 96 18",
+            "number": " 71 340 43 06 ; 71 328 96 18 ",
             "coordinates": {
                 "longitude":17.032310,
                 "latitude": 51.121025
@@ -63,7 +63,7 @@
             "address": "ul. Grunwaldzka 6",
             "postalCode": "50-355",
             "city": "Wrocław",
-            "number": "71 340 43 58 ; 71 322 22 17",
+            "number": " 71 340 43 58 ; 71 322 22 17 ",
             "coordinates": {
                 "longitude": 17.055712,
                 "latitude": 51.115019
@@ -76,7 +76,7 @@
             "address": "ul. Slężna 115-129",
             "postalCode": "53-123",
             "city": "Wrocław",
-            "number": "71 782 46 00 ; 71 782 46 01",
+            "number": " 71 782 46 00 ; 71 782 46 01 ",
             "coordinates": {
                 "longitude": 17.025356,
                 "latitude": 51.085191
@@ -89,7 +89,7 @@
             "address": "ul. Traugutta 94",
             "postalCode": "50-420",
             "city": "Wrocław",
-            "number": "71 340 43 44 ; 71 343 56 77",
+            "number": " 71 340 43 44 ; 71 343 56 77 ",
             "coordinates": {
                 "longitude": 17.052681,
                 "latitude": 51.101520
@@ -102,7 +102,7 @@
             "address": "ul. Połbina 1",
             "postalCode": "54-151",
             "city": "Wrocław",
-            "number": "71 340 43 80,71 351 02 13",
+            "number": " 71 340 43 80 ; 71 351 02 13 ",
             "coordinates": {
                 "longitude": 16.973718,
                 "latitude": 51.140234
@@ -115,7 +115,7 @@
             "address": "ul. Sredzka 42",
             "postalCode": "54-055",
             "city": "Wrocław",
-            "number": "71 354 32 96 ; 71 340 28 50",
+            "number": " 71 354 32 96 ; 71 340 28 50 ",
             "coordinates": {
                 "longitude": 16.863231,
                 "latitude": 51.146585
@@ -128,7 +128,7 @@
             "address": "ul. Grabiszyńska 255",
             "postalCode": "53-234",
             "city": "Wrocław",
-            "number": "71 340 41 16 ; 71 363 14 21",
+            "number": " 71 340 41 16 ; 71 363 14 21 ",
             "coordinates": {
                 "longitude": 16.983154,
                 "latitude": 51.095593
@@ -141,7 +141,7 @@
            "address": "pl. Piłsudskiego 6/8",
            "postalCode": "51-152",
            "city": "Wrocław",
-           "number": "71 340 45 25 ; 71 340 46 05",
+           "number": " 71 340 45 25 ; 71 340 46 05 ",
            "coordinates": {
                "longitude": 17.056761,
                "latitude": 51.137445
@@ -154,7 +154,7 @@
            "address": "ul. Kiełczowska 15",
            "postalCode": "51-315",
            "city": "Wrocław",
-           "number": "71 340 45 25 ; 71 340 46 05",
+           "number": " 71 340 45 25 ; 71 340 46 05 ",
            "coordinates": {
                "longitude": 17.117308,
                "latitude": 51.146688
@@ -167,7 +167,7 @@
            "address": "ul. Wybrzeże Wyspiańskiego 39 b",
            "postalCode": "50-370",
            "city": "Wrocław",
-           "number": "71 340 27 00",
+           "number": " 71 340 27 00 ",
            "coordinates": {
                "longitude": 17.065012,
                "latitude": 51.106096
@@ -180,7 +180,7 @@
           "address": "ul. Piłsudskiego 105",
           "postalCode": "50-085",
           "city": "Wrocław",
-          "number": "71 782 44 20",
+          "number": " 71 782 44 20 ",
           "coordinates": {
               "longitude": 17.036570,
               "latitude": 51.098803
@@ -193,7 +193,7 @@
            "address": "ul. Wrocławska 24",
            "postalCode": "55-095",
            "city": "Długołęka",
-           "number": "71 315 21 77 ; 71 374 76 24",
+           "number": " 71 315 21 77 ; 71 374 76 24 ",
            "coordinates": {
                "longitude": 17.184659,
                "latitude": 51.177753
@@ -206,7 +206,7 @@
             "address": "ul. Ogrodowa 8/10",
             "postalCode": "55-050",
             "city": "Sobótka",
-            "number": "71 316 28 17 ; 71 316 21 59",
+            "number": " 71 316 28 17 ; 71 316 21 59 ",
             "coordinates": {
                 "longitude": 16.747308,
                 "latitude": 50.900539
@@ -219,7 +219,7 @@
             "address": "ul.1-go Maja 16",
             "postalCode": "55-080",
             "city": "Kąty Wrocławskie",
-            "number": "71 316 65 07 ; 71 391 17 24",
+            "number": " 71 316 65 07 ; 71 391 17 24 ",
             "coordinates": {
                 "longitude": 16.765961,
                 "latitude": 51.031487
@@ -232,7 +232,7 @@
             "address": "ul. Jana Pawła II 12",
             "postalCode": "55-011",
             "city": "Siechnice",
-            "number": "71 786 09 96 ; 71 311 62 77",
+            "number": " 71 786 09 96 ; 71 311 62 77 ",
             "coordinates": {
                 "longitude": 17.151008,
                 "latitude": 51.032614

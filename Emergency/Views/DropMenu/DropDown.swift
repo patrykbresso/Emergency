@@ -19,8 +19,9 @@ struct DropDown : View {
         
         VStack(alignment: .trailing) {
             HStack() {
-               Text("...")
-            }.foregroundColor(Color.primaryPink)
+               Text("...").bold()
+                }
+            .foregroundColor(Color.primaryPink)
                 .onTapGesture {
                     self.dropDown.isDropDownMenuOpen.toggle()
                 }

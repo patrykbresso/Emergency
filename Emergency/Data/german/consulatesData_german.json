@@ -4,7 +4,7 @@
         "name": "Generalkonsulat Deutschlands",
         "consulName": "Generalkonsul – Hans Jörg Neumann",
         "address": "ul. Podwale 76 50-499 Wrocław",
-        "number": "71 377 27 00",
+        "number": " 71 377 27 00 ",
         "email": "info@breslau.diplo.de"
     },
     {
@@ -27,7 +27,7 @@
         "name": "Konsulat der Republik Chile",
         "consulName": "Ehrenkonsul - Zbigniew Sebastian",
         "address": "ul. Świdnicka 39 50-029 Wrocław",
-        "number": "71 372 44 91",
+        "number": " 71 372 44 91 ",
         "email": "konsulatchile@dig.wroc.pl"
     },
     {
@@ -42,7 +42,7 @@
         "name": "Konsulat des Königreichs Dänemark",
         "consulName": "Ehrenkonsulin - Maria Keller",
         "address": "ul. Świdnicka 36/15 50-068 Wrocław",
-        "number": "71 372 39 50;+48 602 25 11 11"
+        "number": " 71 372 39 50 ; +48 602 25 11 11 "
     },
     {
         "id": 7,
@@ -88,7 +88,7 @@
         "name": "Konsulat des Königreichs Norwegen",
         "consulName": "Ehrenkonsul - Bartosz Masternak",
         "address": "Rynek 7, V piętro 50 - 106 Wrocław",
-        "number": "601 701 158;536 409 409;536 302 302",
+        "number": " 601 701 158 ; 536 409 409 ; 536 302 302 ",
         "email": "consulate@norway.wroc.pl"
     },
     {
@@ -96,7 +96,7 @@
         "name": "Konsulat der Vereinigten Mexikanischen Staaten",
         "consulName": "Ehrenkonsul - Bogdan Spiż",
         "address": "ul. Przejście Garncarskie 12 50-106 Wrocław",
-        "number": "71 344 68 56;71 344 77 21",
+        "number": " 71 344 68 56 ; 71 344 77 21 ",
         "email": "wroclaw@spiz.pl"
     },
     {
@@ -152,7 +152,7 @@
         "name": "Ehrenkonsulat der Republik Korea",
         "consulName": "Ehrenkonsul - Tomasz Szpikowski",
         "address": "ul. Leona Petrażyckiego 57 52 - 434 Wrocław ",
-        "number": "71 738 39 72;508 040 367 ",
+        "number": " 71 738 39 72 ; 508 040 367 ",
         "email": "beata.chelpa@korea-consul.wroc.pl"
     },
     {

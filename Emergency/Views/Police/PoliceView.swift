@@ -64,7 +64,8 @@ struct PoliceView: View {
                         }.padding(5)
                     .multilineTextAlignment(.center)
                     .layoutPriority(1)
-                }.frame(width: UIScreen.screenWidth / 1.3)
+                    }.padding(5)
+                    .frame(width: UIScreen.screenWidth / 1.3)
                 .foregroundColor(.white)
                 
                 

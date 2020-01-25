@@ -94,7 +94,7 @@ struct ContentView: View {
                                         Text(self.dataLoader.menuData.help)
                                             .fontWeight(.bold)
                                             .multilineTextAlignment(.center)
-                                            .lineLimit(2)
+                                            .lineLimit(3)
                                             .fixedSize(horizontal: false, vertical: true)
                                     }.frame(width: geometry.size.width / 2 - 40)
                                 }
@@ -108,7 +108,7 @@ struct ContentView: View {
                                             .multilineTextAlignment(.center)
                                             
                                             
-                                        .lineLimit(2)
+                                        .lineLimit(3)
                                         .fixedSize(horizontal: false, vertical: true)
                                     }.frame(width: geometry.size.width / 2 - 40)
                                 }
