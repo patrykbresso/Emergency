@@ -40,7 +40,7 @@ struct LawsView: View {
                                     LawsCell(law: self.dataLoader.lawsData[i])
                                 }.frame(width: UIScreen.screenWidth / 2 - 2 * self.paddingSides)
                                 
-                                NavigationLink(destination: LawsDetailView(law: self.dataLoader.lawsData[i])) {
+                                NavigationLink(destination: LawsDetailView(law: self.dataLoader.lawsData[i + 1])) {
                                     LawsCell(law: self.dataLoader.lawsData[i + 1])
                                 }.frame(width: UIScreen.screenWidth / 2 - 2 * self.paddingSides)
                             }

@@ -37,7 +37,7 @@ struct ContentView: View {
                                     VStack {
                                         Image("news")
                                             .renderingMode(.original)
-                                        Text(self.dataLoader.menuData.news)
+                                        Text(self.dataLoader.menuData.news.uppercased())
                                             .fontWeight(.bold)
                                             .multilineTextAlignment(.center)
                                             .lineLimit(2)
@@ -49,28 +49,26 @@ struct ContentView: View {
                                     VStack {
                                         Image("advice")
                                             .renderingMode(.original)
-                                        Text(self.dataLoader.menuData.advice)
+                                        Text(self.dataLoader.menuData.advice.uppercased())
                                             .fontWeight(.bold)
                                             .multilineTextAlignment(.center)
-                                            
                                             .lineLimit(2)
-                                        .fixedSize(horizontal: false, vertical: true)
+                                            .fixedSize(horizontal: false, vertical: true)
                                     }
                                     .frame(width: geometry.size.width / 2 - 40)
                                     
                                 }
-                            }
+                            }.padding(.vertical)
                             HStack() {
                                 NavigationLink(destination: TranslateView()) {
                                     VStack {
                                         Image("translate")
                                             .renderingMode(.original)
-                                        Text(self.dataLoader.menuData.translate)
+                                        Text(self.dataLoader.menuData.translate.uppercased())
                                             .fontWeight(.bold)
                                             .multilineTextAlignment(.center)
-                                            
                                             .lineLimit(2)
-                                        .fixedSize(horizontal: false, vertical: true)
+                                            .fixedSize(horizontal: false, vertical: true)
                                     }.frame(width: geometry.size.width / 2 - 40)
                                 }
                                 Spacer()
@@ -78,7 +76,7 @@ struct ContentView: View {
                                     VStack {
                                         Image("phone")
                                             .renderingMode(.original)
-                                        Text(self.dataLoader.menuData.phone)
+                                        Text(self.dataLoader.menuData.phone.uppercased())
                                             .fontWeight(.bold)
                                             .multilineTextAlignment(.center)
                                             .lineLimit(2)
@@ -91,7 +89,7 @@ struct ContentView: View {
                                     VStack {
                                         Image("help")
                                             .renderingMode(.original)
-                                        Text(self.dataLoader.menuData.help)
+                                        Text(self.dataLoader.menuData.help.uppercased())
                                             .fontWeight(.bold)
                                             .multilineTextAlignment(.center)
                                             .lineLimit(3)
@@ -103,13 +101,11 @@ struct ContentView: View {
                                     VStack {
                                         Image("law")
                                             .renderingMode(.original)
-                                        Text(self.dataLoader.menuData.law)
+                                        Text(self.dataLoader.menuData.law.uppercased())
                                             .fontWeight(.bold)
                                             .multilineTextAlignment(.center)
-                                            
-                                            
-                                        .lineLimit(3)
-                                        .fixedSize(horizontal: false, vertical: true)
+                                            .lineLimit(3)
+                                            .fixedSize(horizontal: false, vertical: true)
                                     }.frame(width: geometry.size.width / 2 - 40)
                                 }
                             }.padding(.vertical)
@@ -118,27 +114,24 @@ struct ContentView: View {
                                     VStack {
                                         Image("difficultsituations")
                                             .renderingMode(.original)
-                                        Text(self.dataLoader.menuData.difficultsituations)
+                                        Text(self.dataLoader.menuData.difficultsituations.uppercased())
                                             .fontWeight(.bold)
                                             .multilineTextAlignment(.center)
-                                            
                                             .lineLimit(2)
-                                        .fixedSize(horizontal: false, vertical: true)
+                                            .fixedSize(horizontal: false, vertical: true)
                                     }.frame(width: geometry.size.width / 2 - 40)
                                     
                                 }
                                 Spacer()
                                 NavigationLink(destination: ConsulatesView()) {
                                     VStack {
-                                        Image("consulate")
+                                        Image("konsulaty")
                                             .renderingMode(.original)
-                                        Text(self.dataLoader.menuData.consulate)
+                                        Text(self.dataLoader.menuData.consulate.uppercased())
                                             .fontWeight(.bold)
                                             .multilineTextAlignment(.center)
-                                            
                                             .lineLimit(2)
-                                        .fixedSize(horizontal: false, vertical: true)
-                                        
+                                            .fixedSize(horizontal: false, vertical: true)
                                     }.frame(width: geometry.size.width / 2 - 40)
                                 }
                             }.padding(.vertical)
@@ -147,12 +140,11 @@ struct ContentView: View {
                                     VStack {
                                         Image("hospital")
                                             .renderingMode(.original)
-                                        Text(self.dataLoader.menuData.hospital)
+                                        Text(self.dataLoader.menuData.hospital.uppercased())
                                             .fontWeight(.bold)
                                             .multilineTextAlignment(.center)
-                                            
                                             .lineLimit(2)
-                                        .fixedSize(horizontal: false, vertical: true)
+                                            .fixedSize(horizontal: false, vertical: true)
                                     }.frame(width: geometry.size.width / 2 - 40)
                                 }
                                 Spacer()
@@ -160,12 +152,11 @@ struct ContentView: View {
                                     VStack {
                                         Image("police")
                                             .renderingMode(.original)
-                                        Text(self.dataLoader.menuData.police)
+                                        Text(self.dataLoader.menuData.police.uppercased())
                                             .fontWeight(.bold)
                                             .multilineTextAlignment(.center)
-                                            
                                             .lineLimit(2)
-                                        .fixedSize(horizontal: false, vertical: true)
+                                            .fixedSize(horizontal: false, vertical: true)
                                     }.frame(width: geometry.size.width / 2 - 40)
                                 }
                             }
