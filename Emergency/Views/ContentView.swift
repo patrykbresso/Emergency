@@ -183,11 +183,15 @@ struct ContentView: View {
                                 }
                                 TextField("", text: self.$keyword, onCommit: {
                                     self.keyboardOpened.toggle()
-                                    let searchController: SearchController = SearchController(dataLoader: self.dataLoader)
-                                    self.searchResults = searchController.searchByKeywords(searchedPhrase: self.keyword)
-                                    self.show = true
-                                    
-                                }).onTapGesture {
+                                    if !self.keyword.trimmingCharacters(in: .whitespaces).isEmpty {
+                                        let searchController: SearchController = SearchController(dataLoader: self.dataLoader)
+                                        self.searchResults = searchController.searchByKeywords(searchedPhrase: self.keyword)
+                                        
+                                        self.show = true
+                                    }
+                                    self.keyword = ""
+                                    }).padding(5)
+                                    .onTapGesture {
                                     self.keyboardOpened.toggle()
                                 }
                                 .textFieldStyle(CustomTextFieldStyle())

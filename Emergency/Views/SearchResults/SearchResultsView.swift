@@ -11,6 +11,8 @@ import SwiftUI
 struct SearchResultsView: View {
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     @EnvironmentObject var dataLoader: DataLoader
+    @State var backButtonSize: CGRect = CGRect()
+    let paddingSides = CGFloat(20)
     
     var searchTerm: String
     var results: [Page]
@@ -18,19 +20,19 @@ struct SearchResultsView: View {
     var body: some View {
         GeometryReader { geometry in
             VStack(alignment: HorizontalAlignment.leading) {
-                Button(action: {
-                    self.presentationMode.wrappedValue.dismiss()
-                }) {
-                    VStack {
-                        Image("magnifier")
-                            .renderingMode(.original)
-                        Image("left_arrow")
-                            .renderingMode(.original)
-                        
-                    }.padding(.leading, 15)
-                    .padding(.top, 15)
-                }
-                Text("Rezultaty dla '" + self.searchTerm + "':").font(.title)
+                HStack {
+                    Button(action: {
+                        self.presentationMode.wrappedValue.dismiss()
+                    }) {
+                            Image("left_arrow")
+                                .renderingMode(.original)
+                    }.background(GeometryGetter(rect: self.$backButtonSize))
+                    Spacer()
+                    Image("magnifier")
+                        .renderingMode(.original)
+                        .padding(.leading, -self.backButtonSize.width)
+                    Spacer()
+                }.padding(.bottom, 30)
                 if(self.results.count == 0) {
                     ScrollView{
                         ZStack {
