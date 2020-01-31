@@ -30,14 +30,26 @@ struct ContentView: View {
                                               EmptyView()
                                       }
                     }
+                    
+                    
                     VStack(alignment: .leading) {
+                        
+                        HStack() {
+                            Spacer()
+                            NavigationLink(destination: DropDown()) {
+                                Text("...")
+                                    .foregroundColor(Color.primaryPink)
+                                    .bold()
+                            }
+                        }.offset(x: -20)
+                        
                         ScrollView(showsIndicators: false) {
                             HStack() {
-                                NavigationLink(destination: NewsView()) {
+                                NavigationLink(destination: PsychologyView()) {
                                     VStack {
-                                        Image("news")
+                                        Image("psychology")
                                             .renderingMode(.original)
-                                        Text(self.dataLoader.menuData.news.uppercased())
+                                        Text(self.dataLoader.menuData.psychology.uppercased())
                                             .fontWeight(.bold)
                                             .multilineTextAlignment(.center)
                                             .lineLimit(2)
@@ -196,7 +208,6 @@ struct ContentView: View {
                         
                     }
                     .padding([.leading, .trailing], 25)
-                    .padding(.top, 20)
                 
                     .foregroundColor(.white)
                     
@@ -207,22 +218,11 @@ struct ContentView: View {
                 .navigationBarTitle("")
                 .navigationBarHidden(true)
                 .navigationBarBackButtonHidden(true)
-                .disabled(self.dropDown.isDropDownMenuOpen)
-                .blur(radius: self.dropDown.isDropDownMenuOpen ? 4 : 0)
-                HStack() {
-                    Spacer()
-                    DropDown()
-                }.offset(x: -20)
+
 
         }            .background(Color.primaryBlue
             .edgesIgnoringSafeArea(.all))
-            
-        .onTapGesture {
-                if self.dropDown.isDropDownMenuOpen {
-                    self.dropDown.isDropDownMenuOpen.toggle()
-                }
 
-            }
         }
         
     }

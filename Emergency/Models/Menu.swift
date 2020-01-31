@@ -9,7 +9,7 @@
 import Foundation
 
 struct Menu: Decodable {
-    var news: String
+    var psychology: String
     var advice: String
     var translate: String
     var phone: String

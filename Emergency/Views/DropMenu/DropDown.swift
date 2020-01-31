@@ -11,49 +11,59 @@ import SwiftUI
 
 struct DropDown : View {
 
-    @EnvironmentObject var dropDown : DropDownMenu
     @EnvironmentObject var dataLoader: DataLoader
+    @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
+    @State var dismissFooter = false
     let radius = CGFloat(6)
     
     var body: some View {
         
-        VStack(alignment: .trailing) {
-            HStack() {
-               Text("...").bold()
-                }
-            .foregroundColor(Color.primaryPink)
-                .onTapGesture {
-                    self.dropDown.isDropDownMenuOpen.toggle()
-                }
-            if self.dropDown.isDropDownMenuOpen {
+
                 VStack() {
-                    ForEach(self.dataLoader.footerData.title) { row in 
-                        DropDownRow(title: row)
-                            .padding(.bottom, 10)
-                    }
-                    Spacer()
-                    NavigationLink(destination: ChangeLanguageView()) {
-                        Text(self.dataLoader.footerData.changeLanguage)
-                            .multilineTextAlignment(.center)
-                            .foregroundColor(Color.primaryPink)
-                            .frame(width: UIScreen.screenWidth * 0.56, height: UIScreen.screenHeight * 0.07)
-                            
-                            .overlay(
-                                RoundedRectangle(cornerRadius: self.radius)
-                                    .stroke(Color.primaryPink)
+                    HStack {
+                        Button(action: {
+                            self.presentationMode.wrappedValue.dismiss()
+                        }) {
+                            VStack {
+                                Image("left_arrow")
+                                    .renderingMode(.original)
                                 
-                            )
+                            }
+                        }
+                        Spacer()
                     }
-                }.frame(width: self.dropDown.isDropDownMenuOpen ? UIScreen.screenWidth * 0.63 : 10, height: self.dropDown.isDropDownMenuOpen ? UIScreen.screenHeight * 0.63 : 10)
+                    VStack {
+                        ForEach(self.dataLoader.footerData.title) { row in
+                            DropDownRow(title: row)
+                                .padding(.bottom, 10)
+                        }
+                        Spacer()
+                        NavigationLink(destination: ChangeLanguageView()) {
+                            Text(self.dataLoader.footerData.changeLanguage)
+                                .multilineTextAlignment(.center)
+                                .foregroundColor(Color.primaryPink)
+                                .frame(width: UIScreen.screenWidth * 0.56, height: UIScreen.screenHeight * 0.07)
+                                
+                                .overlay(
+                                    RoundedRectangle(cornerRadius: self.radius)
+                                        .stroke(Color.primaryPink)
+                                    
+                                )
+                        }
+                    }
                     .padding(UIScreen.screenWidth * 0.07)
-                .overlay(
-                    RoundedRectangle(cornerRadius: 6)
-                        .stroke(Color.primaryPink)
-                )
-            }
-        }
-        .background(Color.primaryBlue)
-        
+                    .overlay(
+                        RoundedRectangle(cornerRadius: 6)
+                            .stroke(Color.primaryPink)
+                    )
+                }.padding(15)
+                .background(Color.primaryBlue
+                    .edgesIgnoringSafeArea(.all))
+                    
+
+        .navigationBarTitle("")
+        .navigationBarHidden(true)
+        .navigationBarBackButtonHidden(true)
     }
 
 

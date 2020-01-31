@@ -8,7 +8,7 @@
 
 import SwiftUI
 
-struct NewsView: View {
+struct PsychologyView: View {
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     @EnvironmentObject var dataLoader: DataLoader
     @State var backButtonSize: CGRect = CGRect()
@@ -30,7 +30,7 @@ struct NewsView: View {
                             }
                         }.background(GeometryGetter(rect: self.$backButtonSize))
                         Spacer()
-                        Image("news")
+                        Image("psychology")
                             .renderingMode(.original)
                             .padding(.leading, -self.backButtonSize.width)
                         Spacer()
@@ -53,9 +53,9 @@ struct NewsView: View {
 }
 
 #if DEBUG
-struct NewsView_Previews: PreviewProvider {
+struct PsychologyView_Previews: PreviewProvider {
     static var previews: some View {
-        NewsView()
+        PsychologyView()
     }
 }
 #endif

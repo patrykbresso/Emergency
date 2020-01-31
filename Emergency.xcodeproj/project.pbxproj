@@ -22,7 +22,7 @@
 		9F43E11A23C2409A0023E14D /* mainMenu_polish.json in Resources */ = {isa = PBXBuildFile; fileRef = 9F43E11923C2409A0023E14D /* mainMenu_polish.json */; };
 		9F43E11C23C240A60023E14D /* mainMenu_spanish.json in Resources */ = {isa = PBXBuildFile; fileRef = 9F43E11B23C240A60023E14D /* mainMenu_spanish.json */; };
 		9F43E11E23C240B70023E14D /* mainMenu_ukrainian.json in Resources */ = {isa = PBXBuildFile; fileRef = 9F43E11D23C240B70023E14D /* mainMenu_ukrainian.json */; };
-		9F483A78237F32F1000E35A8 /* NewsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F483A77237F32F1000E35A8 /* NewsView.swift */; };
+		9F483A78237F32F1000E35A8 /* PsychologyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F483A77237F32F1000E35A8 /* PsychologyView.swift */; };
 		9F7A4F1E238D878B001C4B7A /* CustomButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F7A4F1D238D878B001C4B7A /* CustomButtons.swift */; };
 		9F7A4F21238DA049001C4B7A /* HospitalsRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F7A4F20238DA049001C4B7A /* HospitalsRow.swift */; };
 		9F7A4F25238DA101001C4B7A /* Hospitals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F7A4F24238DA101001C4B7A /* Hospitals.swift */; };
@@ -179,7 +179,7 @@
 		9F43E11923C2409A0023E14D /* mainMenu_polish.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = mainMenu_polish.json; sourceTree = "<group>"; };
 		9F43E11B23C240A60023E14D /* mainMenu_spanish.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = mainMenu_spanish.json; sourceTree = "<group>"; };
 		9F43E11D23C240B70023E14D /* mainMenu_ukrainian.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = mainMenu_ukrainian.json; sourceTree = "<group>"; };
-		9F483A77237F32F1000E35A8 /* NewsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsView.swift; sourceTree = "<group>"; };
+		9F483A77237F32F1000E35A8 /* PsychologyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PsychologyView.swift; sourceTree = "<group>"; };
 		9F7A4F1D238D878B001C4B7A /* CustomButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButtons.swift; sourceTree = "<group>"; };
 		9F7A4F20238DA049001C4B7A /* HospitalsRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HospitalsRow.swift; sourceTree = "<group>"; };
 		9F7A4F24238DA101001C4B7A /* Hospitals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hospitals.swift; sourceTree = "<group>"; };
@@ -692,7 +692,7 @@
 				9F8F037B23AAA986004FB4A0 /* DropMenu */,
 				9F8F031223AA7A55004FB4A0 /* ChangeLanguage */,
 				E8AD7F4C239BF53B005150A7 /* Advice */,
-				E8AD7F50239BF578005150A7 /* News */,
+				E8AD7F50239BF578005150A7 /* Psychology */,
 				E8AD7F4F239BF567005150A7 /* PhoneNumbers */,
 				E8AD7F4E239BF55D005150A7 /* Help */,
 				E8AD7F4D239BF548005150A7 /* Translate */,
@@ -739,12 +739,12 @@
 			path = PhoneNumbers;
 			sourceTree = "<group>";
 		};
-		E8AD7F50239BF578005150A7 /* News */ = {
+		E8AD7F50239BF578005150A7 /* Psychology */ = {
 			isa = PBXGroup;
 			children = (
-				9F483A77237F32F1000E35A8 /* NewsView.swift */,
+				9F483A77237F32F1000E35A8 /* PsychologyView.swift */,
 			);
-			path = News;
+			path = Psychology;
 			sourceTree = "<group>";
 		};
 		FB0759D9C999299D9A337BEE /* Frameworks */ = {
@@ -1066,7 +1066,7 @@
 				9FE032EA23DAFFEA006B56EC /* GeometryGetter.swift in Sources */,
 				9F169A82237F428D005A8618 /* Police.swift in Sources */,
 				9F8F031423AA7A79004FB4A0 /* ChangeLanguageCell.swift in Sources */,
-				9F483A78237F32F1000E35A8 /* NewsView.swift in Sources */,
+				9F483A78237F32F1000E35A8 /* PsychologyView.swift in Sources */,
 				A151BB26237F2AE3007CEEC1 /* ConsulatesView.swift in Sources */,
 				A151BB18237F1E89007CEEC1 /* AdviceView.swift in Sources */,
 				9F0B293123DA0AFC00C22577 /* View.swift in Sources */,

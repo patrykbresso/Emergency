@@ -19,7 +19,7 @@ struct ChangeLanguageView: View {
     @State private var showContentView = false
     @Environment(\.presentationMode) var presentationMode
     @EnvironmentObject var launch: FirstLaunch
-
+    
     var body: some View {
         GeometryReader { geometry in
             VStack {
