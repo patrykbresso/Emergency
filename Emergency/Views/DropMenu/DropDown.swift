@@ -11,9 +11,11 @@ import SwiftUI
 
 struct DropDown : View {
 
+    @EnvironmentObject var footer : FooterMenu
     @EnvironmentObject var dataLoader: DataLoader
+    
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
-    @State var dismissFooter = false
+
     let radius = CGFloat(6)
     
     var body: some View {
@@ -30,14 +32,16 @@ struct DropDown : View {
                                 
                             }
                         }
+
                         Spacer()
                     }
+                    Spacer()
                     VStack {
                         ForEach(self.dataLoader.footerData.title) { row in
                             DropDownRow(title: row)
                                 .padding(.bottom, 10)
                         }
-                        Spacer()
+                        
                         NavigationLink(destination: ChangeLanguageView()) {
                             Text(self.dataLoader.footerData.changeLanguage)
                                 .multilineTextAlignment(.center)
@@ -47,23 +51,32 @@ struct DropDown : View {
                                 .overlay(
                                     RoundedRectangle(cornerRadius: self.radius)
                                         .stroke(Color.primaryPink)
-                                    
                                 )
-                        }
+                        }.padding(.top, 30)
                     }
                     .padding(UIScreen.screenWidth * 0.07)
                     .overlay(
                         RoundedRectangle(cornerRadius: 6)
                             .stroke(Color.primaryPink)
                     )
-                }.padding(15)
-                .background(Color.primaryBlue
-                    .edgesIgnoringSafeArea(.all))
+                    Spacer()
+                }.onAppear() {
+                    if self.footer.closeFooter {
+                        self.footer.closeFooter = false
+                        self.presentationMode.wrappedValue.dismiss()
+                    }
                     
-
+                }
+                  
+                .padding(15)
+                .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity)
+                .background(Color.primaryBlue
+                        .edgesIgnoringSafeArea(.all)
+                    )
         .navigationBarTitle("")
         .navigationBarHidden(true)
         .navigationBarBackButtonHidden(true)
+
     }
 
 

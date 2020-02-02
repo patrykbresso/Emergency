@@ -9,6 +9,6 @@
 import Foundation
 import SwiftUI
 
-class DropDownMenu : ObservableObject {
-    @Published var isDropDownMenuOpen = false
+class FooterMenu : ObservableObject {
+    @Published var closeFooter = false
 }

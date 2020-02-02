@@ -13,7 +13,7 @@ struct ContentView: View {
     @State private var keyword: String = ""
     @State var searchResults: [Page] = []
     @EnvironmentObject var dataLoader: DataLoader
-    @EnvironmentObject var dropDown : DropDownMenu
+    @EnvironmentObject var footer : FooterMenu
     @EnvironmentObject var launch: FirstLaunch
     @State private var alwaysTrue: Bool = true
     @State private var keyboardOpened = false

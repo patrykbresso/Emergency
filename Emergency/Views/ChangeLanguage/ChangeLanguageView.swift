@@ -14,7 +14,7 @@ import Combine
 
 struct ChangeLanguageView: View {
     
-    @EnvironmentObject var dropDown : DropDownMenu
+    @EnvironmentObject var footer : FooterMenu
     @EnvironmentObject var dataLoader: DataLoader
     @State private var showContentView = false
     @Environment(\.presentationMode) var presentationMode
@@ -74,8 +74,16 @@ struct ChangeLanguageView: View {
                     ChangeLanguageCell(language: "Deutsch")
                 }.onDisappear {
                     UserDefaults.standard.set(true, forKey: "launchedBefore")
+                    self.launch.firstLoad = true
                     self.dataLoader.loadLanguage(language: UserDefaults.standard.string(forKey: "language") ?? "english")
-                    self.dropDown.isDropDownMenuOpen = false
+                    
+                   
+                        
+                }
+                .onAppear() {
+                    if self.launch.firstLoad {
+                        self.footer.closeFooter = true
+                    }
                 }
                 Spacer()
             }
