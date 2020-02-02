@@ -23,6 +23,7 @@ class DataLoader: ObservableObject {
     @Published var footerData: Footer
     @Published var searchKeywords: [SearchKeywords]
     @Published var menuData: Menu
+    @Published var psychologyData: Psychology
     
     
    
@@ -39,7 +40,7 @@ class DataLoader: ObservableObject {
         footerData = DataLoader.load("footer_changelanguage_\(language).json")
         searchKeywords = DataLoader.load("searchKeywords_\(language).json")
         menuData = DataLoader.load("mainMenu_\(language).json")
-    
+        psychologyData = DataLoader.load("psychology_\(language).json")
     }
     
     func loadLanguage(language: String) {
@@ -55,6 +56,7 @@ class DataLoader: ObservableObject {
         footerData = DataLoader.load("footer_changelanguage_\(language).json")
         searchKeywords = DataLoader.load("searchKeywords_\(language).json")
         menuData = DataLoader.load("mainMenu_\(language).json")
+        psychologyData = DataLoader.load("psychology_\(language).json")
     }
     
 static func load<T: Decodable>(_ filename: String, as type: T.Type = T.self) -> T {
@@ -96,6 +98,7 @@ var phoneNumbersData: [PhoneNumber] = load("phoneNumbersData.json")
 var translateData: [Translate] = load("translateData.json")
 var searchKeywords: [SearchKeywords] = load("searchKeywords.json")
 var menuData: Menu = DataLoader.load("mainMenu.json")
+var psychologyData: Psychology = DataLoader.load("psychology.json")
 
 func load<T: Decodable>(_ filename: String, as type: T.Type = T.self) -> T {
     

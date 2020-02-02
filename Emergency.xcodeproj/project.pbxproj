@@ -43,6 +43,13 @@
 		9F87D2EF23D83DF400CDAB7C /* footer_changelanguage.json in Resources */ = {isa = PBXBuildFile; fileRef = 9F87D2EE23D83DF400CDAB7C /* footer_changelanguage.json */; };
 		9F87D2F123D83E2900CDAB7C /* Footer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F87D2F023D83E2900CDAB7C /* Footer.swift */; };
 		9F87D2F323D849DF00CDAB7C /* UIScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F87D2F223D849DF00CDAB7C /* UIScreen.swift */; };
+		9F88B44923E75F9E00D307DF /* Psychology.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F88B44823E75F9E00D307DF /* Psychology.swift */; };
+		9F88B44B23E7605900D307DF /* psychology.json in Resources */ = {isa = PBXBuildFile; fileRef = 9F88B44A23E7605900D307DF /* psychology.json */; };
+		9F88B44D23E7606400D307DF /* psychology_english.json in Resources */ = {isa = PBXBuildFile; fileRef = 9F88B44C23E7606300D307DF /* psychology_english.json */; };
+		9F88B44F23E7607D00D307DF /* psychology_german.json in Resources */ = {isa = PBXBuildFile; fileRef = 9F88B44E23E7607D00D307DF /* psychology_german.json */; };
+		9F88B45123E7608600D307DF /* psychology_polish.json in Resources */ = {isa = PBXBuildFile; fileRef = 9F88B45023E7608600D307DF /* psychology_polish.json */; };
+		9F88B45323E7609000D307DF /* psychology_spanish.json in Resources */ = {isa = PBXBuildFile; fileRef = 9F88B45223E7609000D307DF /* psychology_spanish.json */; };
+		9F88B45523E7609E00D307DF /* psychology_ukrainian.json in Resources */ = {isa = PBXBuildFile; fileRef = 9F88B45423E7609E00D307DF /* psychology_ukrainian.json */; };
 		9F8F031123AA7865004FB4A0 /* ChangeLanguageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8F031023AA7865004FB4A0 /* ChangeLanguageView.swift */; };
 		9F8F031423AA7A79004FB4A0 /* ChangeLanguageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8F031323AA7A79004FB4A0 /* ChangeLanguageCell.swift */; };
 		9FAACF852379B65600C3CF94 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FAACF842379B65600C3CF94 /* AppDelegate.swift */; };
@@ -200,6 +207,13 @@
 		9F87D2EE23D83DF400CDAB7C /* footer_changelanguage.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = footer_changelanguage.json; sourceTree = "<group>"; };
 		9F87D2F023D83E2900CDAB7C /* Footer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Footer.swift; sourceTree = "<group>"; };
 		9F87D2F223D849DF00CDAB7C /* UIScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIScreen.swift; sourceTree = "<group>"; };
+		9F88B44823E75F9E00D307DF /* Psychology.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Psychology.swift; sourceTree = "<group>"; };
+		9F88B44A23E7605900D307DF /* psychology.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = psychology.json; sourceTree = "<group>"; };
+		9F88B44C23E7606300D307DF /* psychology_english.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = psychology_english.json; sourceTree = "<group>"; };
+		9F88B44E23E7607D00D307DF /* psychology_german.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = psychology_german.json; sourceTree = "<group>"; };
+		9F88B45023E7608600D307DF /* psychology_polish.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = psychology_polish.json; sourceTree = "<group>"; };
+		9F88B45223E7609000D307DF /* psychology_spanish.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = psychology_spanish.json; sourceTree = "<group>"; };
+		9F88B45423E7609E00D307DF /* psychology_ukrainian.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = psychology_ukrainian.json; sourceTree = "<group>"; };
 		9F8F031023AA7865004FB4A0 /* ChangeLanguageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeLanguageView.swift; sourceTree = "<group>"; };
 		9F8F031323AA7A79004FB4A0 /* ChangeLanguageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeLanguageCell.swift; sourceTree = "<group>"; };
 		9FAACF812379B65600C3CF94 /* Emergency.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Emergency.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -413,6 +427,7 @@
 				E83E446223A3F29B003AB246 /* Page.swift */,
 				9F43E10F23C23D7E0023E14D /* Menu.swift */,
 				9F87D2F023D83E2900CDAB7C /* Footer.swift */,
+				9F88B44823E75F9E00D307DF /* Psychology.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -553,6 +568,7 @@
 				9FB3E49523ABE211005E1095 /* policeData_english.json */,
 				9FB3E49623ABE211005E1095 /* searchKeywords_english.json */,
 				9FB3E49723ABE211005E1095 /* translateData_english.json */,
+				9F88B44C23E7606300D307DF /* psychology_english.json */,
 				9FB3E49823ABE211005E1095 /* consulatesData_english.json */,
 				9FB3E49923ABE211005E1095 /* difficultSituationsData_english.json */,
 				9FB3E49A23ABE211005E1095 /* phoneNumbersData_english.json */,
@@ -571,6 +587,7 @@
 				9FB3E49F23ABE211005E1095 /* phoneNumbersData_polish.json */,
 				9FB3E4A023ABE211005E1095 /* hospitalsData_polish.json */,
 				9FB3E4A123ABE211005E1095 /* translateData_polish.json */,
+				9F88B45023E7608600D307DF /* psychology_polish.json */,
 				9FB3E4A223ABE211005E1095 /* adviceData_polish.json */,
 				9FB3E4A323ABE211005E1095 /* difficultSituationsData_polish.json */,
 				9FB3E4A423ABE211005E1095 /* searchKeywords_polish.json */,
@@ -589,6 +606,7 @@
 				9FB3E4A923ABE211005E1095 /* translateData_ukrainian.json */,
 				9FB3E4AA23ABE211005E1095 /* difficultSituationsData_ukrainian.json */,
 				9FB3E4AB23ABE211005E1095 /* adviceData_ukrainian.json */,
+				9F88B45423E7609E00D307DF /* psychology_ukrainian.json */,
 				9FB3E4AC23ABE211005E1095 /* lawsData_ukrainian.json */,
 				9FB3E4AD23ABE211005E1095 /* hospitalsData_ukrainian.json */,
 				9FB3E4AE23ABE211005E1095 /* consulatesData_ukrainian.json */,
@@ -607,6 +625,7 @@
 				9FB3E4B323ABE211005E1095 /* translateData_german.json */,
 				9FB3E4B423ABE211005E1095 /* lawsData_german.json */,
 				9FB3E4B523ABE211005E1095 /* phoneNumbersData_german.json */,
+				9F88B44E23E7607D00D307DF /* psychology_german.json */,
 				9FB3E4B623ABE211005E1095 /* consulatesData_german.json */,
 				9FB3E4B723ABE211005E1095 /* searchKeywords_german.json */,
 				9FB3E4B823ABE211005E1095 /* policeData_german.json */,
@@ -626,6 +645,7 @@
 				9FB3E4BE23ABE211005E1095 /* consulatesData_spanish.json */,
 				9FB3E4BF23ABE211005E1095 /* searchKeywords_spanish.json */,
 				9FB3E4C023ABE211005E1095 /* translateData_spanish.json */,
+				9F88B45223E7609000D307DF /* psychology_spanish.json */,
 				9FB3E4C123ABE211005E1095 /* phoneNumbersData_spanish.json */,
 				9FB3E4C223ABE211005E1095 /* difficultSituationsData_spanish.json */,
 				9FB3E4C323ABE211005E1095 /* lawsData_spanish.json */,
@@ -643,6 +663,7 @@
 				9F43E11323C2405C0023E14D /* mainMenu.json */,
 				9FB3E4F523ABE2C4005E1095 /* searchKeywords.json */,
 				9FB3E4F623ABE2C4005E1095 /* translateData.json */,
+				9F88B44A23E7605900D307DF /* psychology.json */,
 				9FB3E4F723ABE2C4005E1095 /* consulatesData.json */,
 				9FB3E4F823ABE2C4005E1095 /* difficultSituationsData.json */,
 				9FB3E4F923ABE2C4005E1095 /* adviceData.json */,
@@ -881,6 +902,7 @@
 				9FAACF912379B65900C3CF94 /* LaunchScreen.storyboard in Resources */,
 				9FB3E4FC23ABE2C4005E1095 /* policeData.json in Resources */,
 				9FB3E4DB23ABE211005E1095 /* lawsData_ukrainian.json in Resources */,
+				9F88B44D23E7606400D307DF /* psychology_english.json in Resources */,
 				9FB3E4D623ABE211005E1095 /* policeData_polish.json in Resources */,
 				9FB3E4CD23ABE211005E1095 /* lawsData_english.json in Resources */,
 				9FB3E4EB23ABE211005E1095 /* consulatesData_spanish.json in Resources */,
@@ -896,9 +918,11 @@
 				9FB3E4C623ABE211005E1095 /* policeData_english.json in Resources */,
 				9F43E11823C240850023E14D /* mainMenu_german.json in Resources */,
 				9FB3E4C923ABE211005E1095 /* consulatesData_english.json in Resources */,
+				9F88B44F23E7607D00D307DF /* psychology_german.json in Resources */,
 				9FB3E4D423ABE211005E1095 /* searchKeywords_polish.json in Resources */,
 				9F87D2EB23D83DD300CDAB7C /* footer_changelanguage_ukrainian.json in Resources */,
 				9FB3E4EF23ABE211005E1095 /* difficultSituationsData_spanish.json in Resources */,
+				9F88B45123E7608600D307DF /* psychology_polish.json in Resources */,
 				9F43E11423C2405C0023E14D /* mainMenu.json in Resources */,
 				9FB3E4C823ABE211005E1095 /* translateData_english.json in Resources */,
 				9FB3E4C523ABE211005E1095 /* adviceData_english.json in Resources */,
@@ -908,6 +932,7 @@
 				9FB3E4CA23ABE211005E1095 /* difficultSituationsData_english.json in Resources */,
 				9FB3E4CB23ABE211005E1095 /* phoneNumbersData_english.json in Resources */,
 				9FB3E4DF23ABE211005E1095 /* searchKeywords_ukrainian.json in Resources */,
+				9F88B45323E7609000D307DF /* psychology_spanish.json in Resources */,
 				9FB3E4EA23ABE211005E1095 /* adviceData_spanish.json in Resources */,
 				9FB3E50423ABE2C4005E1095 /* lawsData.json in Resources */,
 				9FB3E50223ABE2C4005E1095 /* adviceData.json in Resources */,
@@ -915,6 +940,7 @@
 				9FAACF8B2379B65900C3CF94 /* Assets.xcassets in Resources */,
 				9FB3E4FE23ABE2C4005E1095 /* searchKeywords.json in Resources */,
 				9FB3E4E523ABE211005E1095 /* searchKeywords_german.json in Resources */,
+				9F88B44B23E7605900D307DF /* psychology.json in Resources */,
 				9FB3E4E423ABE211005E1095 /* consulatesData_german.json in Resources */,
 				9FB3E50123ABE2C4005E1095 /* difficultSituationsData.json in Resources */,
 				9F43E11A23C2409A0023E14D /* mainMenu_polish.json in Resources */,
@@ -926,6 +952,7 @@
 				9FB3E4C723ABE211005E1095 /* searchKeywords_english.json in Resources */,
 				9FB3E4D823ABE211005E1095 /* translateData_ukrainian.json in Resources */,
 				9FB3E4DD23ABE211005E1095 /* consulatesData_ukrainian.json in Resources */,
+				9F88B45523E7609E00D307DF /* psychology_ukrainian.json in Resources */,
 				9FB3E4E123ABE211005E1095 /* translateData_german.json in Resources */,
 				9FB3E4D123ABE211005E1095 /* translateData_polish.json in Resources */,
 				9FB3E4F123ABE211005E1095 /* hospitalsData_spanish.json in Resources */,
@@ -1071,6 +1098,7 @@
 				A151BB18237F1E89007CEEC1 /* AdviceView.swift in Sources */,
 				9F0B293123DA0AFC00C22577 /* View.swift in Sources */,
 				9F169A8C237F6844005A8618 /* CircleImage.swift in Sources */,
+				9F88B44923E75F9E00D307DF /* Psychology.swift in Sources */,
 				9F7D3A7C2397D2E80092ADD6 /* LawsDetailView.swift in Sources */,
 				9F87D2F323D849DF00CDAB7C /* UIScreen.swift in Sources */,
 				E83E446323A3F29B003AB246 /* Page.swift in Sources */,
