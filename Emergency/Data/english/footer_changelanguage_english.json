@@ -8,12 +8,12 @@
         {
             "id": 2,
             "text": "iOS Programmers: ",
-            "name": "Paulina Binas\nPatryk Bresso "
+            "name": "Paulina Binas \nPatryk Bresso "
         },
         {
             "id": 3,
             "text": "Android Programmers: ",
-            "name": "Kacper Kiedos:\nPaweł Klecha "
+            "name": "Kacper Kiedos \nPaweł Klecha "
         },
         {
             "id": 4,
@@ -23,11 +23,11 @@
         {
             "id": 5,
             "text": "Technical supervisor: ",
-            "name": "Krzysztof Waśko\n\n "
+            "name": "Krzysztof Waśko \n \n "
         },
         {
             "id": 6,
-            "text": "Wrocław University of Technology\nAcademy of Art and Design\nWrocław, 2020 ",
+            "text": "Wrocław University of Technology \nAcademy of Art and Design \nWrocław, 2020 ",
             "name": ""
         }
     ],

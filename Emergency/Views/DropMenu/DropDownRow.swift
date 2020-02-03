@@ -15,9 +15,13 @@ struct DropDownRow: View {
         VStack {
             Text(title.text)
                 .multilineTextAlignment(.center)
+                .lineLimit(nil)
+                .fixedSize(horizontal: false, vertical: true)
             if(title.name != "") {
                 Text(title.name)
                     .bold()
+                    .lineLimit(nil)
+                    .fixedSize(horizontal: false, vertical: true)
                     .multilineTextAlignment(.center)
             }
         }.foregroundColor(Color.white)

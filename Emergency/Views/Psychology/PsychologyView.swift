@@ -14,11 +14,8 @@ struct PsychologyView: View {
     @State var backButtonSize: CGRect = CGRect()
     @State var listOFNumbers = [Numbers]()
     let paddingSides = CGFloat(20)
-    
-    var body: some View {
-
         
-        GeometryReader { geometry in
+        var body: some View {
                 VStack(alignment: HorizontalAlignment.leading) {
                     
                     HStack {
@@ -40,66 +37,76 @@ struct PsychologyView: View {
                         .foregroundColor(.white)
                     
                     Spacer(minLength: 25)
-                    ZStack {
-                        RoundedRectangle(cornerRadius: 10)
-                        .fill(Color.primaryPink)
-                        VStack {
-                            Text(self.dataLoader.psychologyData.intro)
-                                .padding(.bottom, 5)
-                            .multilineTextAlignment(.center)
-                            Text(self.dataLoader.psychologyData.name)
-                                .bold()
-                            .padding(.bottom, 5)
-                            .multilineTextAlignment(.center)
-                            Text(self.dataLoader.psychologyData.address)
-                            .padding(.bottom, 5)
-                            .multilineTextAlignment(.center)
-                            Button(action: {
-
-                                let http = "http://"
-                                let formattedString = http + self.dataLoader.psychologyData.website
-                                
-                                let url: NSURL = URL(string: formattedString)! as NSURL
-
-                                UIApplication.shared.open(url as URL)
-
-                            }) {
-                                Text(self.dataLoader.psychologyData.website)
-                                .bold()
-                                .padding(.bottom, 5)
-                            }
-                            Text(self.dataLoader.psychologyData.phoneInfo)
-                                .bold()
-                                .padding(.bottom, 5)
-                            ForEach(self.listOFNumbers) { number in
+                    
+                    ScrollView {
+                        ZStack {
+                            RoundedRectangle(cornerRadius: 10)
+                            .fill(Color.primaryPink)
+                            VStack {
+                                Text(self.dataLoader.psychologyData.intro)
+                                    .padding(.bottom, 5)
+                                    .lineLimit(nil)
+                                    .fixedSize(horizontal: false, vertical: true)
+                                    .multilineTextAlignment(.center)
+                                Text(self.dataLoader.psychologyData.name)
+                                    .bold()
+                                    .padding(.bottom, 5)
+                                    .lineLimit(nil)
+                                    .fixedSize(horizontal: false, vertical: true)
+                                    .multilineTextAlignment(.center)
+                                Text(self.dataLoader.psychologyData.address)
+                                    .padding(.bottom, 5)
+                                    .lineLimit(nil)
+                                    .fixedSize(horizontal: false, vertical: true)
+                                    .multilineTextAlignment(.center)
                                 Button(action: {
-                                    let cleanString = String(number.name.filter { !" \n\t\r".contains($0) })
-                                    let tel = "tel://"
-                                    let formattedString = tel + cleanString
-                                    let url: NSURL = URL(string: formattedString)! as NSURL
-                                    UIApplication.shared.open(url as URL)
-                                   }) {
+
+                                    let http = "http://"
+                                    let formattedString = http + self.dataLoader.psychologyData.website
                                     
-                                
-                                    Text(number.name)
+                                    let url: NSURL = URL(string: formattedString)! as NSURL
+
+                                    UIApplication.shared.open(url as URL)
+
+                                }) {
+                                    Text(self.dataLoader.psychologyData.website)
                                     .bold()
                                     .padding(.bottom, 5)
                                 }
-                            }
-                        }.padding(15)
-                    }
-                    Spacer(minLength: 25)
-                    ZStack {
-                        RoundedRectangle(cornerRadius: 10)
-                        .fill(Color.primaryPink)
-                        
-                        Text(self.dataLoader.psychologyData.text)
-                            .multilineTextAlignment(.center)
-                        .padding(5)
+                                Text(self.dataLoader.psychologyData.phoneInfo)
+                                    .bold()
+                                    .padding(.bottom, 5)
+                                ForEach(self.listOFNumbers) { number in
+                                    Button(action: {
+                                        let cleanString = String(number.name.filter { !" \n\t\r".contains($0) })
+                                        let tel = "tel://"
+                                        let formattedString = tel + cleanString
+                                        let url: NSURL = URL(string: formattedString)! as NSURL
+                                        UIApplication.shared.open(url as URL)
+                                       }) {
+                                        
+                                    
+                                        Text(number.name)
+                                        .bold()
+                                        .padding(.bottom, 5)
+                                    }
+                                }
+                            }.padding(15)
+                        }
+                        Spacer(minLength: 25)
+                        ZStack {
+                            RoundedRectangle(cornerRadius: 10)
+                            .fill(Color.primaryPink)
+                            
+                            Text(self.dataLoader.psychologyData.text)
+                                .multilineTextAlignment(.center)
+                            .padding(5)
+                        }
                     }
                 }.onAppear() {
                     self.listOFNumbers = self.dividePhoneNumbers(stringNumbers: self.dataLoader.psychologyData.numbers)
                 }
+                    
             .padding([.leading, .trailing], self.paddingSides)
             .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity)
             .background(Color.primaryBlue
@@ -108,7 +115,6 @@ struct PsychologyView: View {
             .navigationBarTitle("")
             .navigationBarHidden(true)
             .navigationBarBackButtonHidden(true)
-        }
     }
     
     
@@ -123,7 +129,6 @@ struct PsychologyView: View {
            }
        return numbers
        }
-    
 }
 
 #if DEBUG

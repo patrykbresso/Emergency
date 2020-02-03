@@ -8,12 +8,12 @@
         {
             "id": 2,
             "text": "Programadores de iOS: ",
-            "name": "Paulina Binas\nPatryk Bresso "
+            "name": "Paulina Binas \nPatryk Bresso "
         },
         {
             "id": 3,
             "text": "Programadores de Android: ",
-            "name": "Kacper Kiedos:\nPaweł Klecha "
+            "name": "Kacper Kiedos \nPaweł Klecha "
         },
         {
             "id": 4,
@@ -22,12 +22,12 @@
         },
         {
             "id": 5,
-            "text": "Ssupervisor: ",
-            "name": "Krzysztof Waśko\n\n "
+            "text": "Supervisor: ",
+            "name": "Krzysztof Waśko \n \n "
         },
         {
             "id": 6,
-            "text": "Politechnika Wrocławska\nAkademia Sztuk Pięknych\nWrocław, 2020 ",
+            "text": "Politechnika Wrocławska \nAkademia Sztuk Pięknych \nWrocław, 2020 ",
             "name": ""
         }
     ],
