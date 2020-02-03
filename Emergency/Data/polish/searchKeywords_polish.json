@@ -553,5 +553,26 @@
                 "keyword": "Wrocław"
             }
         ]
+    },
+    {
+        "id": 25,
+        "name": "psychology",
+        "page": 0,
+        "title": "Pomoc psychologiczna",
+        "subtitle": "",
+        "keywords": [
+            {
+                "keyword": "pomoc psychologiczna"
+            },
+            {
+                "keyword": "psycholog"
+            },
+            {
+                "keyword": "pomoc psychiatryczna"
+            },
+            {
+                "keyword": "psychiatra"
+            }
+        ]
     }
 ]

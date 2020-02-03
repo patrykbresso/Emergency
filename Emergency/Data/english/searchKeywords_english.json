@@ -550,5 +550,26 @@
                 "keyword": "Wroclaw"
             }
         ]
+    },
+    {
+        "id": 25,
+        "name": "psychology",
+        "page": 0,
+        "title": "Psychological help",
+        "subtitle": "",
+        "keywords": [
+            {
+                "keyword": "psychological help"
+            },
+            {
+                "keyword": "psychologist"
+            },
+            {
+                "keyword": "psychiatric help"
+            },
+            {
+                "keyword": "psychiatrist"
+            }
+        ]
     }
 ]

@@ -82,6 +82,7 @@ struct SearchResultsView: View {
         let translate = AnyView(TranslateView())
         let consulates = AnyView(ConsulatesView())
         let hospitals = AnyView(HospitalsView())
+        let psychology = AnyView(PsychologyView())
         if(name == "difficultSituations") {
             let data = self.dataLoader.difficultSituationsData[pageNumber - 1]
             return AnyView(DifficultSituationsDetailView(difficultSituation: DifficultSituations(id: pageNumber, title: data.title, text: data.text)))
@@ -99,6 +100,7 @@ struct SearchResultsView: View {
             case "translate": return translate
             case "consulates": return consulates
             case "hospitals": return hospitals
+            case "psychology": return psychology
             default: return home
         }
     }
