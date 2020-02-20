@@ -5,7 +5,6 @@
 //  Created by Patryk Bresso on 21/01/2020.
 //  Copyright © 2020 Wasko. All rights reserved.
 //
-
 import Foundation
 import SwiftUI
 
@@ -36,29 +35,28 @@ struct DropDown : View {
                         Spacer()
                     }
                     Spacer()
-                    VStack {
-                        ForEach(self.dataLoader.footerData.title) { row in
-                            DropDownRow(title: row)
-                                .padding(.bottom, 10)
-                        }
-                        
-                        NavigationLink(destination: ChangeLanguageView()) {
-                            Text(self.dataLoader.footerData.changeLanguage)
-                                .multilineTextAlignment(.center)
-                                .foregroundColor(Color.primaryPink)
-                                .frame(width: UIScreen.screenWidth * 0.56, height: UIScreen.screenHeight * 0.07)
-                                
-                                .overlay(
+                    ZStack {
+                        RoundedRectangle(cornerRadius: self.radius)
+                        .fill(Color.primaryPink)
+                        VStack {
+                            ForEach(self.dataLoader.footerData.title) { row in
+                                DropDownRow(title: row)
+                                    .padding(.bottom, 10)
+                            }
+                            Spacer()
+                            NavigationLink(destination: ChangeLanguageView()) {
+                                ZStack {
                                     RoundedRectangle(cornerRadius: self.radius)
-                                        .stroke(Color.primaryPink)
-                                )
-                        }.padding(.top, 30)
-                    }
-                    .padding(UIScreen.screenWidth * 0.07)
-                    .overlay(
-                        RoundedRectangle(cornerRadius: 6)
-                            .stroke(Color.primaryPink)
-                    )
+                                        .stroke(Color.white)
+                                    Text(self.dataLoader.footerData.changeLanguage.uppercased())
+                                        .multilineTextAlignment(.center)
+                                        .foregroundColor(Color.white)
+                                }
+                                .frame(height: 45.0)
+                                
+                            }
+                        }.padding(.top, 15)
+                    }.padding(UIScreen.screenWidth * 0.07)
                     Spacer()
                 }.onAppear() {
                     if self.footer.closeFooter {
