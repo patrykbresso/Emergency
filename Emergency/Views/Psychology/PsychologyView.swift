@@ -43,53 +43,68 @@ struct PsychologyView: View {
                             RoundedRectangle(cornerRadius: 10)
                             .fill(Color.primaryPink)
                             VStack {
-                                Text(self.dataLoader.psychologyData.intro)
-                                    .padding(.bottom, 5)
-                                    .lineLimit(nil)
-                                    .fixedSize(horizontal: false, vertical: true)
-                                    .multilineTextAlignment(.center)
-                                Text(self.dataLoader.psychologyData.name)
-                                    .bold()
-                                    .padding(.bottom, 5)
-                                    .lineLimit(nil)
-                                    .fixedSize(horizontal: false, vertical: true)
-                                    .multilineTextAlignment(.center)
-                                Text(self.dataLoader.psychologyData.address)
-                                    .padding(.bottom, 5)
-                                    .lineLimit(nil)
-                                    .fixedSize(horizontal: false, vertical: true)
-                                    .multilineTextAlignment(.center)
-                                Button(action: {
-
-                                    let http = "http://"
-                                    let formattedString = http + self.dataLoader.psychologyData.website
-                                    
-                                    let url: NSURL = URL(string: formattedString)! as NSURL
-
-                                    UIApplication.shared.open(url as URL)
-
-                                }) {
-                                    Text(self.dataLoader.psychologyData.website)
-                                    .bold()
-                                    .padding(.bottom, 5)
+                                HStack{
+                                    Text(self.dataLoader.psychologyData.intro)
+                                        .padding(.bottom, 5)
+                                        .lineLimit(nil)
+                                        .fixedSize(horizontal: false, vertical: true)
+                                        .multilineTextAlignment(.leading)
+                                    Spacer()
                                 }
-                                Text(self.dataLoader.psychologyData.phoneInfo)
-                                    .bold()
-                                    .padding(.bottom, 5)
-                                ForEach(self.listOFNumbers) { number in
-                                    Button(action: {
-                                        let cleanString = String(number.name.filter { !" \n\t\r".contains($0) })
-                                        let tel = "tel://"
-                                        let formattedString = tel + cleanString
-                                        let url: NSURL = URL(string: formattedString)! as NSURL
-                                        UIApplication.shared.open(url as URL)
-                                       }) {
-                                        
-                                    
-                                        Text(number.name)
+                                HStack{
+                                    Text(self.dataLoader.psychologyData.name)
                                         .bold()
                                         .padding(.bottom, 5)
+                                        .lineLimit(nil)
+                                        .fixedSize(horizontal: false, vertical: true)
+                                        .multilineTextAlignment(.leading)
+                                    Spacer()
+                                }
+                                HStack{
+                                    Text(self.dataLoader.psychologyData.address)
+                                        .padding(.bottom, 5)
+                                        .lineLimit(nil)
+                                        .fixedSize(horizontal: false, vertical: true)
+                                        .multilineTextAlignment(.leading)
+                                    Spacer()
+                                }
+                                Button(action: {
+                                    let http = "http://"
+                                    let formattedString = http + self.dataLoader.psychologyData.website
+                                    let url: NSURL = URL(string: formattedString)! as NSURL
+                                    UIApplication.shared.open(url as URL)
+                                }){
+                                    HStack{
+                                        Text(self.dataLoader.psychologyData.website)
+                                            .bold()
+                                        Spacer()
                                     }
+                                }.padding(.bottom, 5)
+                                HStack{
+                                    Text(self.dataLoader.psychologyData.phoneInfo)
+                                        .bold()
+                                        .multilineTextAlignment(.leading)
+                                        .lineLimit(2)
+                                        .fixedSize(horizontal: false, vertical: true)
+                                        .padding(.bottom, 10)
+                                    Spacer()
+                                }
+                                ForEach(self.listOFNumbers) { number in
+                                    HStack{
+                                        Button(action: {
+                                            let cleanString = String(number.name.filter { !" \n\t\r".contains($0) })
+                                            let tel = "tel://"
+                                            let formattedString = tel + cleanString
+                                            let url: NSURL = URL(string: formattedString)! as NSURL
+                                            UIApplication.shared.open(url as URL)
+                                           }) {
+                                            Text(number.name)
+                                            .bold()
+                                            .multilineTextAlignment(.leading)
+                                        }
+                                        Spacer()
+                                    }
+                                    .padding(.bottom, 5)
                                 }
                             }.padding(15)
                         }
@@ -99,8 +114,10 @@ struct PsychologyView: View {
                             .fill(Color.primaryPink)
                             
                             Text(self.dataLoader.psychologyData.text)
-                                .multilineTextAlignment(.center)
-                            .padding(5)
+                                .multilineTextAlignment(.leading)
+                                .lineLimit(nil)
+                                .fixedSize(horizontal: false, vertical: true)
+                            .padding(15)
                         }
                     }
                 }.onAppear() {
