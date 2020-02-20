@@ -39,6 +39,7 @@ struct DropDown : View {
                         RoundedRectangle(cornerRadius: self.radius)
                         .fill(Color.primaryPink)
                         VStack {
+                            Spacer()
                             ForEach(self.dataLoader.footerData.title) { row in
                                 DropDownRow(title: row)
                                     .padding(.bottom, 10)
