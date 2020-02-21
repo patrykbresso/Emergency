@@ -35,13 +35,37 @@ struct ContentView: View {
                     VStack(alignment: .leading) {
                         
                         HStack() {
+                            Image("magnifier")
+                                .renderingMode(.original)
+                            Spacer()
+                            ZStack {
+                                
+                                if(self.keyword.isEmpty) {
+                                    Text(self.dataLoader.menuData.search)
+                                }
+                                TextField("", text: self.$keyword, onCommit: {
+                                    self.keyboardOpened.toggle()
+                                    if !self.keyword.trimmingCharacters(in: .whitespaces).isEmpty {
+                                        let searchController: SearchController = SearchController(dataLoader: self.dataLoader)
+                                        self.searchResults = searchController.searchByKeywords(searchedPhrase: self.keyword)
+                                        
+                                        self.show = true
+                                    }
+                                    self.keyword = ""
+                                    }).padding(5)
+                                    .onTapGesture {
+                                    self.keyboardOpened.toggle()
+                                }
+                                .textFieldStyle(CustomTextFieldStyle())
+                                
+                            }
                             Spacer()
                             NavigationLink(destination: DropDown()) {
                                 Text("...")
                                     .foregroundColor(Color.primaryPink)
                                     .bold()
                             }
-                        }.offset(x: -20)
+                        }
                         
                         ScrollView(showsIndicators: false) {
                             HStack() {
@@ -175,33 +199,9 @@ struct ContentView: View {
                             .padding(.vertical)
                         }
                         //search bar
-                        HStack {
-                            Image("magnifier")
-                                .renderingMode(.original)
-                            Spacer(minLength: 50)
-                            ZStack {
-                                
-                                if(self.keyword.isEmpty) {
-                                    Text(self.dataLoader.menuData.search)
-                                }
-                                TextField("", text: self.$keyword, onCommit: {
-                                    self.keyboardOpened.toggle()
-                                    if !self.keyword.trimmingCharacters(in: .whitespaces).isEmpty {
-                                        let searchController: SearchController = SearchController(dataLoader: self.dataLoader)
-                                        self.searchResults = searchController.searchByKeywords(searchedPhrase: self.keyword)
-                                        
-                                        self.show = true
-                                    }
-                                    self.keyword = ""
-                                    }).padding(5)
-                                    .onTapGesture {
-                                    self.keyboardOpened.toggle()
-                                }
-                                .textFieldStyle(CustomTextFieldStyle())
-                                
-                            }
-                        }.background(GeometryGetter(rect: self.$searchBarSize))
-                            .padding(.bottom, 10)
+                            
+                        /*.background(GeometryGetter(rect: self.$searchBarSize))
+                            .padding(.bottom, 10)*/
                         //move view up when keyboard appears
                          
                         NavigationLink(destination: SearchResultsView(searchTerm: self.keyword, results: self.searchResults), isActive: self.$show, label: { EmptyView()})
@@ -213,7 +213,6 @@ struct ContentView: View {
                     
                 
                 }
-                .keyboardObserving()
 
                 .navigationBarTitle("")
                 .navigationBarHidden(true)
