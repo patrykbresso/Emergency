@@ -41,6 +41,7 @@ struct DifficultSituationsDetailView: View {
                     ScrollView {
                         Text(self.difficultSituation.title)
                             .bold()
+                            .frame(maxWidth: .infinity, alignment: .leading)
                         Spacer()
                         Text(self.difficultSituation.text)
                     }.padding(10)

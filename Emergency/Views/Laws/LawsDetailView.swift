@@ -42,10 +42,13 @@ struct LawsDetailView: View {
                         ScrollView {
                             Text(self.law.title)
                                 .bold()
+                                .frame(maxWidth: .infinity, alignment: .leading)
+                                
                             Spacer()
                             Text(self.law.text)
                         }.padding(10)
                     }
+                        
                     .foregroundColor(.white)
                 }.frame(width: UIScreen.screenWidth / 1.3, alignment: .center)
                 Spacer(minLength: UIScreen.screenHeight / 10)

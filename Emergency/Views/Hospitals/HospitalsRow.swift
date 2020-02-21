@@ -25,27 +25,26 @@ struct HospitalsRow: View {
                 VStack {
                     Text(self.hospital.name)
                         .bold()
-                        .multilineTextAlignment(.center)
+                        .frame(maxWidth: .infinity, alignment: .leading)
                         .fixedSize(horizontal: false, vertical: true)
                     .padding(.bottom, 5)
                     Text(self.hospital.address)
-                        .multilineTextAlignment(.center)
+                        .frame(maxWidth: .infinity, alignment: .leading)
                     .fixedSize(horizontal: false, vertical: true)
                     .padding(.bottom, 5)
                     ForEach(listOFNumbers) { number in
-                    Button(action: {
-                        let cleanString = String(number.name.filter { !" \n\t\r".contains($0) })
-                        let tel = "tel://"
-                        let formattedString = tel + cleanString
-                        let url: NSURL = URL(string: formattedString)! as NSURL
-                        UIApplication.shared.open(url as URL)
-                       }) {
-                        Text(number.name)
-                        .bold()
-                        .multilineTextAlignment(.center)
-                        .fixedSize(horizontal: false, vertical: true)
-                        .padding(.bottom, 5)
-                    }
+                        Button(action: {
+                            let cleanString = String(number.name.filter { !" \n\t\r".contains($0) })
+                            let tel = "tel://"
+                            let formattedString = tel + cleanString
+                            let url: NSURL = URL(string: formattedString)! as NSURL
+                            UIApplication.shared.open(url as URL)
+                           }) {
+                            Text(number.name)
+                            .bold()
+                            .frame(maxWidth: .infinity, alignment: .leading)
+                            .padding(.bottom, 5)
+                        }
                     }
                 }.padding(5)
                 .onAppear() {

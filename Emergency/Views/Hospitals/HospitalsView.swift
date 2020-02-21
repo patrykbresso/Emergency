@@ -42,10 +42,10 @@ struct HospitalsView: View {
                         VStack {
                             Text(self.dataLoader.hospitalsData.title)
                                 .bold()
-                            
+                                .frame(maxWidth: .infinity, alignment: .leading)
+                                .fixedSize(horizontal: false, vertical: true)
                             Text(self.dataLoader.hospitalsData.subtitle)
                             }.padding(10)
-                        .multilineTextAlignment(.center)
                         .layoutPriority(1)
                         }
                     .font(.system(size: 14))

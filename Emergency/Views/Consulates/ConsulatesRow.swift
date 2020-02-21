@@ -26,27 +26,27 @@ struct ConsulatesRow: View {
                         .bold()
                         .fixedSize(horizontal: false, vertical: true)
                         .padding(.bottom, 5)
-                        .multilineTextAlignment(.center)
+                        .frame(maxWidth: .infinity, alignment: .leading)
                     Text(self.consulate.consulName)
-                        .multilineTextAlignment(.center)
-                        .fixedSize(horizontal: false, vertical: true)
+                        .frame(maxWidth: .infinity, alignment: .leading)
                         .padding(.bottom, 5)
                     Text(self.consulate.address)
-                        .padding(.bottom, 5)
-                        .multilineTextAlignment(.center)
                         .fixedSize(horizontal: false, vertical: true)
-                    ForEach(self.listOFNumbers) { number in
-                    Button(action: {
-                        let cleanString = String(number.name.filter { !" \n\t\r".contains($0) })
-                        let tel = "tel://"
-                        let formattedString = tel + cleanString
-                        let url: NSURL = URL(string: formattedString)! as NSURL
-                        UIApplication.shared.open(url as URL)
-                       }) {
-                        Text(number.name)
-                        .bold()
                         .padding(.bottom, 5)
-                    }
+                        .frame(maxWidth: .infinity, alignment: .leading)
+                    ForEach(self.listOFNumbers) { number in
+                        Button(action: {
+                            let cleanString = String(number.name.filter { !" \n\t\r".contains($0) })
+                            let tel = "tel://"
+                            let formattedString = tel + cleanString
+                            let url: NSURL = URL(string: formattedString)! as NSURL
+                            UIApplication.shared.open(url as URL)
+                           }) {
+                            Text(number.name)
+                            .bold()
+                            .frame(maxWidth: .infinity, alignment: .leading)
+                            .padding(.bottom, 5)
+                        }
                     }
                 }.padding(5)
                 .onAppear() {

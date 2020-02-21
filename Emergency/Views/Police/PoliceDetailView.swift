@@ -65,11 +65,11 @@ struct PoliceDetailView: View {
                     VStack {
                         Text(self.policeStation.name)
                             .bold()
-                            .multilineTextAlignment(.center)
+                            .frame(maxWidth: .infinity, alignment: .leading)
                         .fixedSize(horizontal: false, vertical: true)
                         .padding(.bottom, 5)
                         Text(self.policeStation.address)
-                            .multilineTextAlignment(.center)
+                            .frame(maxWidth: .infinity, alignment: .leading)
                         .fixedSize(horizontal: false, vertical: true)
                         .padding(.bottom, 5)
                         ForEach(self.listOFNumbers) { number in
@@ -85,6 +85,7 @@ struct PoliceDetailView: View {
                                 Text(number.name)
                                 .bold()
                                 .padding(.bottom, 5)
+                                .frame(maxWidth: .infinity, alignment: .leading)
                             }
                         }
                         

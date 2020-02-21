@@ -22,6 +22,8 @@ struct GeometryGetter: View {
         DispatchQueue.main.async {
             self.rect = geometry.frame(in: .global)
         }
+            
+        
 
         return Rectangle().fill(Color.clear)
     }

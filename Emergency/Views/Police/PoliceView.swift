@@ -60,7 +60,11 @@ struct PoliceView: View {
                     VStack {
                         Text(self.dataLoader.policeData.title)
                             .bold()
+                            .frame(maxWidth: .infinity, alignment: .leading)
+                            .multilineTextAlignment(.leading)
                         Text(self.dataLoader.policeData.subtitle)
+                            .frame(maxWidth: .infinity, alignment: .leading)
+                            .multilineTextAlignment(.leading)
                         }.padding(5)
                     .multilineTextAlignment(.center)
                     .layoutPriority(1)
@@ -81,7 +85,7 @@ struct PoliceView: View {
                                 }
                         }
                     }
-                }.frame(width: UIScreen.screenWidth / 1.3)
+                }.frame(width: UIScreen.screenWidth / 1.35)
 
             }
 
