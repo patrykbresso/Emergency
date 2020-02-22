@@ -8,7 +8,7 @@
 
 import SwiftUI
 import CoreLocation
-
+import MapKit
 
 
 struct HospitalsRow: View {
@@ -28,10 +28,34 @@ struct HospitalsRow: View {
                         .frame(maxWidth: .infinity, alignment: .leading)
                         .fixedSize(horizontal: false, vertical: true)
                     .padding(.bottom, 5)
-                    Text(self.hospital.address)
-                        .frame(maxWidth: .infinity, alignment: .leading)
-                    .fixedSize(horizontal: false, vertical: true)
-                    .padding(.bottom, 5)
+                    
+                    Button(action: {
+                        
+                        
+                        let addressString = self.hospital.address
+                        CLGeocoder().geocodeAddressString(addressString,
+                                completionHandler: {(placemarks, error) in
+                            
+                            if error != nil {
+                                print("Geocode failed with error: \(error!.localizedDescription)")
+                            } else if let marks = placemarks, marks.count > 0 {
+                                let placemark = marks[0]
+                                if let location = placemark.location {
+                                    let coords = location.coordinate
+                                
+                                    let place = MKPlacemark(coordinate: coords, addressDictionary: nil)
+                                    let mapItem = MKMapItem(placemark: place)
+                                    mapItem.name = self.hospital.name
+                                    mapItem.openInMaps(launchOptions: nil)
+                                }
+                            }
+                        })
+                    }){
+                        Text(self.hospital.address)
+                            .frame(maxWidth: .infinity, alignment: .leading)
+                        .fixedSize(horizontal: false, vertical: true)
+                        .padding(.bottom, 5)
+                    }
                     ForEach(listOFNumbers) { number in
                         Button(action: {
                             let cleanString = String(number.name.filter { !" \n\t\r".contains($0) })

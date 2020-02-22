@@ -8,7 +8,7 @@
 
 import SwiftUI
 import CoreLocation
-
+import MapKit
 
 
 struct ConsulatesRow: View {
@@ -30,10 +30,32 @@ struct ConsulatesRow: View {
                     Text(self.consulate.consulName)
                         .frame(maxWidth: .infinity, alignment: .leading)
                         .padding(.bottom, 5)
-                    Text(self.consulate.address)
-                        .fixedSize(horizontal: false, vertical: true)
-                        .padding(.bottom, 5)
-                        .frame(maxWidth: .infinity, alignment: .leading)
+                    Button(action: {
+                        let addressString = self.consulate.address
+                        CLGeocoder().geocodeAddressString(addressString,
+                                completionHandler: {(placemarks, error) in
+                            
+                            if error != nil {
+                                print("Geocode failed with error: \(error!.localizedDescription)")
+                            } else if let marks = placemarks, marks.count > 0 {
+                                let placemark = marks[0]
+                                if let location = placemark.location {
+                                    let coords = location.coordinate
+                                
+                                    let place = MKPlacemark(coordinate: coords, addressDictionary: nil)
+                                    let mapItem = MKMapItem(placemark: place)
+                                    mapItem.name = self.consulate.name
+                                    mapItem.openInMaps(launchOptions: nil)
+                                }
+                            }
+                        })
+                        
+                    }) {
+                        Text(self.consulate.address)
+                            .fixedSize(horizontal: false, vertical: true)
+                            .padding(.bottom, 5)
+                            .frame(maxWidth: .infinity, alignment: .leading)
+                    }
                     ForEach(self.listOFNumbers) { number in
                         Button(action: {
                             let cleanString = String(number.name.filter { !" \n\t\r".contains($0) })
