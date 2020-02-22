@@ -37,6 +37,7 @@ struct AdviceView: View {
                                 .fill(Color.primaryPink)
                             
                              Text(self.dataLoader.adviceData.intro)
+                                .font(Font.custom("AvantGardeNormal", size: 14))
                                 .padding(10)
                             
                         }.fixedSize(horizontal: false, vertical: true)
@@ -46,6 +47,7 @@ struct AdviceView: View {
                                     .fill(Color.primaryPink)
                                 
                                 Text(advice.text)
+                                    .font(Font.custom("AvantGardeNormal", size: 14))
                                     .padding(10)
                                     .lineLimit(nil)
                                     .fixedSize(horizontal: false, vertical: true)

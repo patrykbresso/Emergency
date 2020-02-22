@@ -18,10 +18,11 @@ struct DifficultSituationsCell: View {
             .background(Color.primaryPink)
             
             Text(difficultSituation.title)
-            .multilineTextAlignment(.center)
-            .font(.system(size: 14))
-            .lineLimit(5)
-            .padding(5)
+                .font(Font.custom("AvantGardeNormal", size: 14))
+                .multilineTextAlignment(.center)
+                .font(.system(size: 14))
+                .lineLimit(5)
+                .padding(5)
         }
         .foregroundColor(.white)
     }

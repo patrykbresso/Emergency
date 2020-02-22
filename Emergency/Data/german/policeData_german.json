@@ -5,7 +5,7 @@
     "police":[
         {
             "id": 1,
-            "name": "StädtischePolizeidirektion",
+            "name": "Städtische Polizeidirektion",
             "address": "ul. Sołtysowicka 21",
             "postalCode": "51-168",
             "city": "Wrocław",
@@ -19,7 +19,7 @@
         },
         {
             "id": 2,
-            "name": "AbteilungfürStraßenverkehr",
+            "name": "Abteilung für Straßenverkehr",
             "address": "ul. Hubska 29/33",
             "postalCode": "50-501",
             "city": "Wrocław",

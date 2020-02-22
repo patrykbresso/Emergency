@@ -41,10 +41,12 @@ struct HospitalsView: View {
                         
                         VStack {
                             Text(self.dataLoader.hospitalsData.title)
-                                .bold()
+                                .fontWeight(.bold)
+                                .font(Font.custom("AvantGardeBold", size: 14))
                                 .frame(maxWidth: .infinity, alignment: .leading)
                                 .fixedSize(horizontal: false, vertical: true)
                             Text(self.dataLoader.hospitalsData.subtitle)
+                                .font(Font.custom("AvantGardeNormal", size: 14))
                             }.padding(10)
                         .layoutPriority(1)
                         }

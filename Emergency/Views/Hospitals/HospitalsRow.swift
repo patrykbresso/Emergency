@@ -24,7 +24,8 @@ struct HospitalsRow: View {
                 
                 VStack {
                     Text(self.hospital.name)
-                        .bold()
+                        .fontWeight(.bold)
+                        .font(Font.custom("AvantGardeBold", size: 14))
                         .frame(maxWidth: .infinity, alignment: .leading)
                         .fixedSize(horizontal: false, vertical: true)
                     .padding(.bottom, 5)
@@ -52,6 +53,7 @@ struct HospitalsRow: View {
                         })
                     }){
                         Text(self.hospital.address)
+                            .font(Font.custom("AvantGardeNormal", size: 14))
                             .frame(maxWidth: .infinity, alignment: .leading)
                         .fixedSize(horizontal: false, vertical: true)
                         .padding(.bottom, 5)
@@ -65,7 +67,8 @@ struct HospitalsRow: View {
                             UIApplication.shared.open(url as URL)
                            }) {
                             Text(number.name)
-                            .bold()
+                            .fontWeight(.bold)
+                            .font(Font.custom("AvantGardeBold", size: 14))
                             .frame(maxWidth: .infinity, alignment: .leading)
                             .padding(.bottom, 5)
                         }

@@ -53,7 +53,7 @@ struct ContentView: View {
                                         self.show = true
                                     }
                                     self.keyword = ""
-                                    }).padding(5)
+                                }).padding(5).padding(.leading, 15)
                                     .onTapGesture {
                                     self.keyboardOpened.toggle()
                                 }

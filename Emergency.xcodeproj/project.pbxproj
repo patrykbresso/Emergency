@@ -131,6 +131,7 @@
 		AB44EC0A1A887C0F6271A8B4 /* Pods_Emergency.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C62C0887FF051036269EA58 /* Pods_Emergency.framework */; };
 		C01907BEF0A423E69187A72B /* Pods_EmergencyUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38F29B74A73222348AB45E64 /* Pods_EmergencyUITests.framework */; };
 		C7DA29D6DD0ADAAD141A1B1D /* Pods_EmergencyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5337DBD89CD585332792FABD /* Pods_EmergencyTests.framework */; };
+		E80427802401B2B000C62C05 /* PoliceImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E804277F2401B2B000C62C05 /* PoliceImageView.swift */; };
 		E82DE11D23999E57009F0F37 /* MailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E82DE11C23999E57009F0F37 /* MailView.swift */; };
 		E83E446123A3E62F003AB246 /* SearchKeywords.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83E446023A3E62F003AB246 /* SearchKeywords.swift */; };
 		E83E446323A3F29B003AB246 /* Page.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83E446223A3F29B003AB246 /* Page.swift */; };
@@ -302,6 +303,7 @@
 		A151BB29237F2AFE007CEEC1 /* PoliceRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoliceRow.swift; sourceTree = "<group>"; };
 		BEEFCFFC5EDA393F1CA178AF /* Pods-EmergencyUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EmergencyUITests.release.xcconfig"; path = "Target Support Files/Pods-EmergencyUITests/Pods-EmergencyUITests.release.xcconfig"; sourceTree = "<group>"; };
 		C4C29EC31A572AC3686977D1 /* Pods-Emergency.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Emergency.release.xcconfig"; path = "Target Support Files/Pods-Emergency/Pods-Emergency.release.xcconfig"; sourceTree = "<group>"; };
+		E804277F2401B2B000C62C05 /* PoliceImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoliceImageView.swift; sourceTree = "<group>"; };
 		E82DE11C23999E57009F0F37 /* MailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailView.swift; sourceTree = "<group>"; };
 		E83E446023A3E62F003AB246 /* SearchKeywords.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchKeywords.swift; sourceTree = "<group>"; };
 		E83E446223A3F29B003AB246 /* Page.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page.swift; sourceTree = "<group>"; };
@@ -401,6 +403,7 @@
 				A151BB29237F2AFE007CEEC1 /* PoliceRow.swift */,
 				9F169A87237F6740005A8618 /* PoliceDetailView.swift */,
 				9F169A85237F62EB005A8618 /* PoliceView.swift */,
+				E804277F2401B2B000C62C05 /* PoliceImageView.swift */,
 			);
 			path = Police;
 			sourceTree = "<group>";
@@ -1104,6 +1107,7 @@
 				9F483A78237F32F1000E35A8 /* PsychologyView.swift in Sources */,
 				A151BB26237F2AE3007CEEC1 /* ConsulatesView.swift in Sources */,
 				A151BB18237F1E89007CEEC1 /* AdviceView.swift in Sources */,
+				E80427802401B2B000C62C05 /* PoliceImageView.swift in Sources */,
 				9F0B293123DA0AFC00C22577 /* View.swift in Sources */,
 				9F169A8C237F6844005A8618 /* CircleImage.swift in Sources */,
 				9F88B44923E75F9E00D307DF /* Psychology.swift in Sources */,

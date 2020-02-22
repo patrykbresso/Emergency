@@ -23,11 +23,11 @@ struct ChangeLanguageCell: View {
                 .background(Color.primaryPink)
             
             Text(self.language)
-                .bold()
+                .fontWeight(.bold)
+                .font(Font.custom("AvantGardeBold", size: 14))
                 
             
         }
-        .font(.system(size: 14))
         .frame(width: UIScreen.screenWidth / 2.8, height: UIScreen.screenHeight / 9)
         .foregroundColor(.white)
     

@@ -48,6 +48,7 @@ struct HelpView: View {
                             .background(Color.primaryPink)
                             .frame(width: 250, height: self.boxHeight)
                         Text(self.texts[0])
+                            .font(Font.custom("AvantGardeNormal", size: 14))
                             .padding(.top, 15)
                             .foregroundColor(.white)
                             .frame(width: 250, height: self.boxHeight)

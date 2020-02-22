@@ -20,9 +20,11 @@ struct TranslateCell: View {
             
             if(!showTranslation) {
                 Text(row.translation)
+                    .font(Font.custom("AvantGardeNormal", size: 14))
                     .padding(5)
             } else {
                 Text(row.originalText)
+                    .font(Font.custom("AvantGardeNormal", size: 14))
                     .padding(5)
             }
         }.multilineTextAlignment(.center)

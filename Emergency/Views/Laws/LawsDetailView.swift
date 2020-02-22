@@ -41,11 +41,13 @@ struct LawsDetailView: View {
                     VStack {
                         ScrollView {
                             Text(self.law.title)
-                                .bold()
+                                .fontWeight(.bold)
+                                .font(Font.custom("AvantGardeBold", size: 14))
                                 .frame(maxWidth: .infinity, alignment: .leading)
                                 
                             Spacer()
                             Text(self.law.text)
+                                .font(Font.custom("AvantGardeNormal", size: 14))
                         }.padding(10)
                     }
                         

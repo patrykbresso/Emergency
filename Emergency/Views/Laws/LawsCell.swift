@@ -21,6 +21,7 @@ struct LawsCell: View {
                     .fill(Color.primaryPink)
                 
                 Text(law.title)
+                    .font(Font.custom("AvantGardeNormal", size: 14))
                     .multilineTextAlignment(.center)
                     .font(.system(size: 14))
                     .lineLimit(6)

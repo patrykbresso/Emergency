@@ -55,20 +55,26 @@ struct PoliceDetailView: View {
                         RoundedRectangle(cornerRadius: 5)
                             .stroke(Color.white, lineWidth: 3)
                     )
-                CircleImage(image: Image(self.policeStation.imageName).resizable())
-                .frame(width: 180, height: 180)
-                .padding(.top, -100)
+                VStack {
+                    NavigationLink(destination: PoliceImageView(image: self.policeStation.imageName)) {
+                        CircleImage(image: Image(self.policeStation.imageName).resizable())
+                        .frame(width: 180, height: 180)
+                        .padding(.top, -100)
+                    }.buttonStyle(PlainButtonStyle())
+                }
                 Spacer()
                 ZStack {
                     RoundedRectangle(cornerRadius: 10)
                         .fill(Color.primaryPink)
                     VStack {
                         Text(self.policeStation.name)
-                            .bold()
+                            .fontWeight(.bold)
+                            .font(Font.custom("AvantGardeBold", size: 14))
                             .frame(maxWidth: .infinity, alignment: .leading)
                         .fixedSize(horizontal: false, vertical: true)
                         .padding(.bottom, 5)
                         Text(self.policeStation.address)
+                            .font(Font.custom("AvantGardeNormal", size: 14))
                             .frame(maxWidth: .infinity, alignment: .leading)
                         .fixedSize(horizontal: false, vertical: true)
                         .padding(.bottom, 5)
@@ -83,7 +89,8 @@ struct PoliceDetailView: View {
                                 
                             
                                 Text(number.name)
-                                .bold()
+                                .fontWeight(.bold)
+                                .font(Font.custom("AvantGardeBold", size: 14))
                                 .padding(.bottom, 5)
                                 .frame(maxWidth: .infinity, alignment: .leading)
                             }

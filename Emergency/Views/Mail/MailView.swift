@@ -29,6 +29,9 @@ struct MailView: UIViewControllerRepresentable {
         func mailComposeController(_ controller: MFMailComposeViewController,
                                    didFinishWith result: MFMailComposeResult,
                                    error: Error?) {
+             
+            // Configure the fields of the interface.
+            controller.setToRecipients(["emergency@pwr.edu"])
             defer {
                 $presentation.wrappedValue.dismiss()
             }

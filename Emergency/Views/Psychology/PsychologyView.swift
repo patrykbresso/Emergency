@@ -54,8 +54,8 @@ struct PsychologyView: View {
                                 }
                                 HStack{
                                     Text(self.dataLoader.psychologyData.name)
+                                        .fontWeight(.bold)
                                         .font(Font.custom("AvantGardeBold", size: 14))
-                                        .bold()
                                         .padding(.bottom, 5)
                                         .lineLimit(nil)
                                         .fixedSize(horizontal: false, vertical: true)
@@ -80,14 +80,14 @@ struct PsychologyView: View {
                                     HStack{
                                         Text(self.dataLoader.psychologyData.website)
                                             .font(Font.custom("AvantGardeBold", size: 14))
-                                            .bold()
+                                            .fontWeight(.bold)
                                         Spacer()
                                     }
                                 }.padding(.bottom, 5)
                                 HStack{
                                     Text(self.dataLoader.psychologyData.phoneInfo)
                                         .font(Font.custom("AvantGardeBold", size: 14))
-                                        .bold()
+                                        .fontWeight(.bold)
                                         .multilineTextAlignment(.leading)
                                         .lineLimit(2)
                                         .fixedSize(horizontal: false, vertical: true)
@@ -105,7 +105,7 @@ struct PsychologyView: View {
                                            }) {
                                             Text(number.name)
                                             .font(Font.custom("AvantGardeBold", size: 14))
-                                            .bold()
+                                            .fontWeight(.bold)
                                             .multilineTextAlignment(.leading)
                                         }
                                         Spacer()

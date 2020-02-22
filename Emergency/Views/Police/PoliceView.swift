@@ -59,10 +59,12 @@ struct PoliceView: View {
                     
                     VStack {
                         Text(self.dataLoader.policeData.title)
-                            .bold()
+                            .fontWeight(.bold)
+                            .font(Font.custom("AvantGardeBold", size: 14))
                             .frame(maxWidth: .infinity, alignment: .leading)
                             .multilineTextAlignment(.leading)
                         Text(self.dataLoader.policeData.subtitle)
+                            .font(Font.custom("AvantGardeNormal", size: 14))
                             .frame(maxWidth: .infinity, alignment: .leading)
                             .multilineTextAlignment(.leading)
                         }.padding(5)
