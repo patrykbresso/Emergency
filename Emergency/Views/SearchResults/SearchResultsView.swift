@@ -6,6 +6,8 @@
 //  Copyright © 2019 Wasko. All rights reserved.
 //
 
+
+
 import SwiftUI
 
 struct SearchResultsView: View {
@@ -40,6 +42,7 @@ struct SearchResultsView: View {
                                 .stroke(Color.primaryPink, lineWidth: 10)
                                 .background(Color.primaryPink)
                             Text("No results were found").padding(15)
+                            .font(Font.custom("AvantGardeNormal", size: 14))
                         }.padding(15)
                     }
                 } else {
@@ -51,10 +54,10 @@ struct SearchResultsView: View {
                                         .stroke(Color.primaryPink, lineWidth: 10)
                                         .background(Color.primaryPink)
                                     VStack {
-                                        Text(result.pageName).fontWeight(.bold).padding(15)
+                                        Text(result.pageName).font(Font.custom("AvantGardeBold", size: 14)).fontWeight(.bold).padding(15)
                                         if(result.pageSubtitle != "") {
                                             Text(result.pageSubtitle)
-                                                .font(.body).padding(.bottom, 15)
+                                                .font(Font.custom("AvantGardeNormal", size: 14)).padding(.bottom, 15)
                                         }
                                     }
                                 }
