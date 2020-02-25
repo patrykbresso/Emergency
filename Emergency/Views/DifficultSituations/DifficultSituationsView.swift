@@ -31,6 +31,11 @@ struct DifficultSituationsView: View {
                         .renderingMode(.original)
                         .padding(.leading, -self.backButtonSize.width)
                     Spacer()
+                    NavigationLink(destination: DropDown()) {
+                        Text("...")
+                            .foregroundColor(Color.primaryPink)
+                            .bold()
+                    }
                 }.padding(15)
                 ForEach(self.dataLoader.difficultSituationsData){ row in
                     if(row.id % 2 == 0) {

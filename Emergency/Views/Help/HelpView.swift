@@ -12,7 +12,7 @@ import MessageUI
 struct HelpView: View {
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     @EnvironmentObject var dataLoader: DataLoader
-    @State var texts: [String] = ["emergency@pwr.edu"]
+    @State var texts: [String] = ["emergency@pwr.edu.pl", "emergency@upwr.edu.pl"]
     @State var result: Result<MFMailComposeResult, Error>? = nil
     @State var isShowingMailView = false
     @State var backButtonSize: CGRect = CGRect()
@@ -37,31 +37,40 @@ struct HelpView: View {
                         .renderingMode(.original)
                         .padding(.leading, -self.backButtonSize.width)
                     Spacer()
+                    NavigationLink(destination: DropDown()) {
+                        Text("...")
+                            .foregroundColor(Color.primaryPink)
+                            .bold()
+                    }
                 }.padding(.bottom, 15)
                 Spacer()
-                Button(action: {
-                    self.onBoxClick(boxNo: 0)
-                }) {
-                    VStack {
-                        RoundedRectangle(cornerRadius: 10)
-                            .stroke(Color.primaryPink, lineWidth: 10)
-                            .background(Color.primaryPink)
-                            .frame(width: 250, height: self.boxHeight)
-                        Text(self.texts[0])
-                            .font(Font.custom("AvantGardeNormal", size: 14))
-                            .padding(.top, 15)
-                            .foregroundColor(.white)
-                            .frame(width: 250, height: self.boxHeight)
-                            .offset(y: -120)
-                    }
-                }.frame(width: 250, height: self.boxHeight)
-                    .offset(y: 55)
-                    .disabled(!MFMailComposeViewController.canSendMail())
-                    .sheet(isPresented: self.$isShowingMailView) {
-                        MailView(result: self.$result)
-                    }
-                    .padding(.trailing, (geometry.size.width - 250) / 2)
-                    .padding(.leading, (geometry.size.width - 250) / 2)
+                
+                ForEach(self.texts, id: \.self) { emailAddress in
+                    Button(action: {
+                        self.onBoxClick(boxNo: 0)
+                    }) {
+                        VStack {
+                            RoundedRectangle(cornerRadius: 10)
+                                .stroke(Color.primaryPink, lineWidth: 10)
+                                .background(Color.primaryPink)
+                                .frame(width: 250, height: self.boxHeight)
+                            Text(emailAddress)
+                                .font(Font.custom("AvantGardeNormal", size: 14))
+                                .padding(.top, 20)
+                                .foregroundColor(.white)
+                                .frame(width: 250, height: self.boxHeight)
+                                .offset(y: -120)
+                        }
+                    }.frame(width: 250, height: self.boxHeight)
+                        .offset(y: 55)
+                        .disabled(!MFMailComposeViewController.canSendMail())
+                        .sheet(isPresented: self.$isShowingMailView) {
+                            MailView(result: self.$result)
+                        }
+                    .padding([.leading, .trailing], (geometry.size.width - 250) / 2)
+                    .padding(.bottom, 20)
+                
+                }
                 Spacer()
 
             }

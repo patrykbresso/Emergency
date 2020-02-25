@@ -33,6 +33,11 @@ struct LawsDetailView: View {
                         .renderingMode(.original)
                         .padding(.leading, -self.backButtonSize.width)
                     Spacer()
+                    NavigationLink(destination: DropDown()) {
+                        Text("...")
+                            .foregroundColor(Color.primaryPink)
+                            .bold()
+                    }
                 }.padding(15)
                 Spacer()
                 ZStack{

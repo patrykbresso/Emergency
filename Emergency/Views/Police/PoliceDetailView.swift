@@ -28,10 +28,6 @@ struct PoliceDetailView: View {
                             .renderingMode(.original)
                     }.background(GeometryGetter(rect: self.$backButtonSize))
                     Spacer()
-                    Image("police")
-                        .renderingMode(.original)
-                        .padding(.leading, self.backButtonSize.width)
-                    Spacer()
                     Button(action: {
                         
                         let coordinate = CLLocationCoordinate2D(latitude: self.policeStation.coordinates.latitude,longitude: self.policeStation.coordinates.longitude)
@@ -45,6 +41,12 @@ struct PoliceDetailView: View {
                         Image("map")
                             .renderingMode(.original)
                         
+                    }
+                    Spacer()
+                    NavigationLink(destination: DropDown()) {
+                        Text("...")
+                            .foregroundColor(Color.primaryPink)
+                            .bold()
                     }
                 }
                 Spacer(minLength: 20)

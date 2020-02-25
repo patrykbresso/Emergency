@@ -34,6 +34,11 @@ struct HospitalsView: View {
                             .renderingMode(.original)
                             .padding(.leading, -self.backButtonSize.width)
                         Spacer()
+                        NavigationLink(destination: DropDown()) {
+                            Text("...")
+                                .foregroundColor(Color.primaryPink)
+                                .bold()
+                        }
                     }
                     ZStack() {
                         RoundedRectangle(cornerRadius: 10)

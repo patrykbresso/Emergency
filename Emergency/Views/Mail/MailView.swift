@@ -14,12 +14,12 @@ struct MailView: UIViewControllerRepresentable {
 
     @Environment(\.presentationMode) var presentation
     @Binding var result: Result<MFMailComposeResult, Error>?
-
+    
     class Coordinator: NSObject, MFMailComposeViewControllerDelegate {
 
         @Binding var presentation: PresentationMode
         @Binding var result: Result<MFMailComposeResult, Error>?
-
+        
         init(presentation: Binding<PresentationMode>,
              result: Binding<Result<MFMailComposeResult, Error>?>) {
             _presentation = presentation
@@ -31,7 +31,6 @@ struct MailView: UIViewControllerRepresentable {
                                    error: Error?) {
              
             // Configure the fields of the interface.
-            controller.setToRecipients(["emergency@pwr.edu"])
             defer {
                 $presentation.wrappedValue.dismiss()
             }
@@ -51,6 +50,7 @@ struct MailView: UIViewControllerRepresentable {
     func makeUIViewController(context: UIViewControllerRepresentableContext<MailView>) -> MFMailComposeViewController {
         let vc = MFMailComposeViewController()
         vc.mailComposeDelegate = context.coordinator
+        vc.setToRecipients(["emergency@pwr.edu.pl"])
         return vc
     }
 

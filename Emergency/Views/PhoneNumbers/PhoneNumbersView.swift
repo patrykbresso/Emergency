@@ -33,6 +33,11 @@ struct PhoneNumbersView: View {
                         .renderingMode(.original)
                         .padding(.leading, -self.backButtonSize.width)
                     Spacer()
+                    NavigationLink(destination: DropDown()) {
+                        Text("...")
+                            .foregroundColor(Color.primaryPink)
+                            .bold()
+                    }
                 }.padding(.bottom, 15)
                 VStack {
                     ForEach(self.dataLoader.phoneNumbersData){ row in

@@ -169,7 +169,7 @@ struct ContentView: View {
                                 Spacer()
                                 NavigationLink(destination: ConsulatesView()) {
                                     VStack {
-                                        Image("konsulaty")
+                                        Image("consulate")
                                             .renderingMode(.original)
                                         Text(self.dataLoader.menuData.consulate.uppercased())
                                             .font(Font.custom("AvantGardeBold", size: 14))

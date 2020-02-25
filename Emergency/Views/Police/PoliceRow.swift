@@ -37,7 +37,7 @@ struct PoliceRow: View {
                         .frame(maxWidth: .infinity, alignment: .leading)
                         .fixedSize(horizontal: false, vertical: true)
                 }.font(.system(size: 15))
-                    .padding(5)
+                 .padding(10)
             }
             .foregroundColor(.white)
     }

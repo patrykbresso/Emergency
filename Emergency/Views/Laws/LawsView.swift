@@ -31,6 +31,11 @@ struct LawsView: View {
                         .renderingMode(.original)
                         .padding(.leading, -self.backButtonSize.width)
                     Spacer()
+                    NavigationLink(destination: DropDown()) {
+                        Text("...")
+                            .foregroundColor(Color.primaryPink)
+                            .bold()
+                    }
                 }
                 ForEach((0...(self.dataLoader.lawsData.count - 2)), id: \.self) { i in
                     

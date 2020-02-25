@@ -33,6 +33,11 @@ struct TranslateView: View {
                         .renderingMode(.original)
                         .padding(.leading, -self.backButtonSize.width)
                     Spacer()
+                    NavigationLink(destination: DropDown()) {
+                        Text("...")
+                            .foregroundColor(Color.primaryPink)
+                            .bold()
+                    }
                 }.padding(.bottom, 15)
                 ForEach(self.dataLoader.translateData) { row in
                     if(row.id % 2 == 0) {

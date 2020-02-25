@@ -34,8 +34,36 @@ struct PoliceView: View {
                     Spacer()
                     Image("police")
                         .renderingMode(.original)
-                        .padding(.leading, self.backButtonSize.width)
                     Spacer()
+                    NavigationLink(destination: DropDown()) {
+                        Text("...")
+                            .foregroundColor(Color.primaryPink)
+                            .bold()
+                    }
+                }
+                
+                //Title cell
+                VStack {
+                    ZStack() {
+                        RoundedRectangle(cornerRadius: 10)
+                        .fill(Color.primaryPink)
+                        
+                        VStack {
+                            Text(self.dataLoader.policeData.title)
+                                .fontWeight(.bold)
+                                .font(Font.custom("AvantGardeBold", size: 14))
+                                .frame(maxWidth: .infinity, alignment: .leading)
+                                .multilineTextAlignment(.leading)
+                            Text(self.dataLoader.policeData.subtitle)
+                                .font(Font.custom("AvantGardeNormal", size: 14))
+                                .frame(maxWidth: .infinity, alignment: .leading)
+                                .multilineTextAlignment(.leading)
+                            }.padding(10)
+                        .multilineTextAlignment(.center)
+                        .layoutPriority(1)
+                        }.padding(5)
+                        .frame(width: UIScreen.screenWidth / 1.3)
+                        .foregroundColor(.white)
                     //Map button
                     Button(action: {
                         
@@ -51,29 +79,6 @@ struct PoliceView: View {
                             .renderingMode(.original)
                     }
                 }
-                
-                //Title cell
-                ZStack() {
-                    RoundedRectangle(cornerRadius: 10)
-                    .fill(Color.primaryPink)
-                    
-                    VStack {
-                        Text(self.dataLoader.policeData.title)
-                            .fontWeight(.bold)
-                            .font(Font.custom("AvantGardeBold", size: 14))
-                            .frame(maxWidth: .infinity, alignment: .leading)
-                            .multilineTextAlignment(.leading)
-                        Text(self.dataLoader.policeData.subtitle)
-                            .font(Font.custom("AvantGardeNormal", size: 14))
-                            .frame(maxWidth: .infinity, alignment: .leading)
-                            .multilineTextAlignment(.leading)
-                        }.padding(5)
-                    .multilineTextAlignment(.center)
-                    .layoutPriority(1)
-                    }.padding(5)
-                    .frame(width: UIScreen.screenWidth / 1.3)
-                .foregroundColor(.white)
-                
                 
                 
                 //ScrollView with list of policestations

@@ -24,9 +24,15 @@ struct ChangeLanguageView: View {
         GeometryReader { geometry in
             VStack {
                 HStack {
-                    Image("translate")
-                        .renderingMode(.original)
-                        .padding(.leading, 40)
+                    Button(action: {
+                        self.presentationMode.wrappedValue.dismiss()
+                        }) {
+                                VStack {
+                                Image("left_arrow")
+                                .renderingMode(.original)
+                    
+                            }
+                    }
                     Spacer()
                 }
                 
@@ -89,6 +95,7 @@ struct ChangeLanguageView: View {
             }
         }
         .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity)
+        .padding([.leading, .trailing], 20)
         .background(Color.primaryBlue
         .edgesIgnoringSafeArea(.all))
             
