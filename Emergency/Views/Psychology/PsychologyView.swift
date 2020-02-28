@@ -50,7 +50,7 @@ struct PsychologyView: View {
                             VStack {
                                 HStack{
                                     Text(self.dataLoader.psychologyData.intro)
-                                        .font(Font.custom("AvantGardeNormal", size: 14))
+                                        .font(Font.custom("ITCAvantGardePro-Bk", size: 14))
                                         .padding(.bottom, 5)
                                         .lineLimit(nil)
                                         .fixedSize(horizontal: false, vertical: true)
@@ -60,7 +60,7 @@ struct PsychologyView: View {
                                 HStack{
                                     Text(self.dataLoader.psychologyData.name)
                                         .fontWeight(.bold)
-                                        .font(Font.custom("AvantGardeBold", size: 14))
+                                        .font(Font.custom("ITCAvantGardePro-Bold", size: 14))
                                         .padding(.bottom, 5)
                                         .lineLimit(nil)
                                         .fixedSize(horizontal: false, vertical: true)
@@ -69,7 +69,7 @@ struct PsychologyView: View {
                                 }
                                 HStack{
                                     Text(self.dataLoader.psychologyData.address)
-                                        .font(Font.custom("AvantGardeNormal", size: 14))
+                                        .font(Font.custom("ITCAvantGardePro-Bk", size: 14))
                                         .padding(.bottom, 5)
                                         .lineLimit(nil)
                                         .fixedSize(horizontal: false, vertical: true)
@@ -84,14 +84,14 @@ struct PsychologyView: View {
                                 }){
                                     HStack{
                                         Text(self.dataLoader.psychologyData.website)
-                                            .font(Font.custom("AvantGardeBold", size: 14))
+                                            .font(Font.custom("ITCAvantGardePro-Bold", size: 14))
                                             .fontWeight(.bold)
                                         Spacer()
                                     }
                                 }.padding(.bottom, 5)
                                 HStack{
                                     Text(self.dataLoader.psychologyData.phoneInfo)
-                                        .font(Font.custom("AvantGardeBold", size: 14))
+                                        .font(Font.custom("ITCAvantGardePro-Bold", size: 14))
                                         .fontWeight(.bold)
                                         .multilineTextAlignment(.leading)
                                         .lineLimit(2)
@@ -109,7 +109,7 @@ struct PsychologyView: View {
                                             UIApplication.shared.open(url as URL)
                                            }) {
                                             Text(number.name)
-                                            .font(Font.custom("AvantGardeBold", size: 14))
+                                            .font(Font.custom("ITCAvantGardePro-Bold", size: 14))
                                             .fontWeight(.bold)
                                             .multilineTextAlignment(.leading)
                                         }
@@ -125,7 +125,7 @@ struct PsychologyView: View {
                             .fill(Color.primaryPink)
                             
                             Text(self.dataLoader.psychologyData.text)
-                                .font(Font.custom("AvantGardeNormal", size: 14))
+                                .font(Font.custom("ITCAvantGardePro-Bk", size: 14))
                                 .multilineTextAlignment(.leading)
                                 .lineLimit(nil)
                                 .fixedSize(horizontal: false, vertical: true)

@@ -52,8 +52,6 @@
 		9F88B45523E7609E00D307DF /* psychology_ukrainian.json in Resources */ = {isa = PBXBuildFile; fileRef = 9F88B45423E7609E00D307DF /* psychology_ukrainian.json */; };
 		9F8F031123AA7865004FB4A0 /* ChangeLanguageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8F031023AA7865004FB4A0 /* ChangeLanguageView.swift */; };
 		9F8F031423AA7A79004FB4A0 /* ChangeLanguageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8F031323AA7A79004FB4A0 /* ChangeLanguageCell.swift */; };
-		9F8FBECE2401457500C7DE7F /* AvantGardeNormal.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9F8FBECD2401457500C7DE7F /* AvantGardeNormal.ttf */; };
-		9F8FBED02401458200C7DE7F /* AvantGardeBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9F8FBECF2401458200C7DE7F /* AvantGardeBold.ttf */; };
 		9FAACF852379B65600C3CF94 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FAACF842379B65600C3CF94 /* AppDelegate.swift */; };
 		9FAACF872379B65600C3CF94 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FAACF862379B65600C3CF94 /* SceneDelegate.swift */; };
 		9FAACF892379B65600C3CF94 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FAACF882379B65600C3CF94 /* ContentView.swift */; };
@@ -139,6 +137,8 @@
 		E8590BB92398469B00C37EE8 /* CustomTextFieldStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8590BB82398469B00C37EE8 /* CustomTextFieldStyle.swift */; };
 		E8625AB723BE0ABD00C6D983 /* SearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8625AB623BE0ABD00C6D983 /* SearchController.swift */; };
 		E8880D3623DB55C400D37CB7 /* DropDownRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8880D3523DB55C400D37CB7 /* DropDownRow.swift */; };
+		E88CA3F024099DBD00C8A3BE /* AvantGardeBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = E88CA3EE24099DBC00C8A3BE /* AvantGardeBold.otf */; };
+		E88CA3F324099DBD00C8A3BE /* AvantGardeNormal.otf in Resources */ = {isa = PBXBuildFile; fileRef = E88CA3EF24099DBD00C8A3BE /* AvantGardeNormal.otf */; };
 		E8AD7F43239BEA87005150A7 /* DifficultSituationsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8AD7F42239BEA87005150A7 /* DifficultSituationsCell.swift */; };
 		E8AD7F45239BEAA0005150A7 /* DifficultSituationsDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8AD7F44239BEAA0005150A7 /* DifficultSituationsDetailView.swift */; };
 		E8AD7F49239BF04E005150A7 /* DifficultSituations.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8AD7F48239BF04E005150A7 /* DifficultSituations.swift */; };
@@ -219,8 +219,6 @@
 		9F88B45423E7609E00D307DF /* psychology_ukrainian.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = psychology_ukrainian.json; sourceTree = "<group>"; };
 		9F8F031023AA7865004FB4A0 /* ChangeLanguageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeLanguageView.swift; sourceTree = "<group>"; };
 		9F8F031323AA7A79004FB4A0 /* ChangeLanguageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeLanguageCell.swift; sourceTree = "<group>"; };
-		9F8FBECD2401457500C7DE7F /* AvantGardeNormal.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = AvantGardeNormal.ttf; sourceTree = "<group>"; };
-		9F8FBECF2401458200C7DE7F /* AvantGardeBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = AvantGardeBold.ttf; sourceTree = "<group>"; };
 		9FAACF812379B65600C3CF94 /* Emergency.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Emergency.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FAACF842379B65600C3CF94 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9FAACF862379B65600C3CF94 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -311,6 +309,8 @@
 		E8590BB82398469B00C37EE8 /* CustomTextFieldStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextFieldStyle.swift; sourceTree = "<group>"; };
 		E8625AB623BE0ABD00C6D983 /* SearchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchController.swift; sourceTree = "<group>"; };
 		E8880D3523DB55C400D37CB7 /* DropDownRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropDownRow.swift; sourceTree = "<group>"; };
+		E88CA3EE24099DBC00C8A3BE /* AvantGardeBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = AvantGardeBold.otf; sourceTree = "<group>"; };
+		E88CA3EF24099DBD00C8A3BE /* AvantGardeNormal.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = AvantGardeNormal.otf; sourceTree = "<group>"; };
 		E8AD7F42239BEA87005150A7 /* DifficultSituationsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DifficultSituationsCell.swift; sourceTree = "<group>"; };
 		E8AD7F44239BEAA0005150A7 /* DifficultSituationsDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DifficultSituationsDetailView.swift; sourceTree = "<group>"; };
 		E8AD7F48239BF04E005150A7 /* DifficultSituations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DifficultSituations.swift; sourceTree = "<group>"; };
@@ -470,8 +470,8 @@
 		9F87D2F423D85B0700CDAB7C /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
-				9F8FBECF2401458200C7DE7F /* AvantGardeBold.ttf */,
-				9F8FBECD2401457500C7DE7F /* AvantGardeNormal.ttf */,
+				E88CA3EE24099DBC00C8A3BE /* AvantGardeBold.otf */,
+				E88CA3EF24099DBD00C8A3BE /* AvantGardeNormal.otf */,
 			);
 			path = Fonts;
 			sourceTree = "<group>";
@@ -911,6 +911,7 @@
 				9FAACF912379B65900C3CF94 /* LaunchScreen.storyboard in Resources */,
 				9FB3E4FC23ABE2C4005E1095 /* policeData.json in Resources */,
 				9FB3E4DB23ABE211005E1095 /* lawsData_ukrainian.json in Resources */,
+				E88CA3F324099DBD00C8A3BE /* AvantGardeNormal.otf in Resources */,
 				9F88B44D23E7606400D307DF /* psychology_english.json in Resources */,
 				9FB3E4D623ABE211005E1095 /* policeData_polish.json in Resources */,
 				9FB3E4CD23ABE211005E1095 /* lawsData_english.json in Resources */,
@@ -933,11 +934,11 @@
 				9FB3E4EF23ABE211005E1095 /* difficultSituationsData_spanish.json in Resources */,
 				9F88B45123E7608600D307DF /* psychology_polish.json in Resources */,
 				9F43E11423C2405C0023E14D /* mainMenu.json in Resources */,
-				9F8FBECE2401457500C7DE7F /* AvantGardeNormal.ttf in Resources */,
 				9FB3E4C823ABE211005E1095 /* translateData_english.json in Resources */,
 				9FB3E4C523ABE211005E1095 /* adviceData_english.json in Resources */,
 				9F87D2ED23D83DE100CDAB7C /* footer_changelanguage_spanish.json in Resources */,
 				9FB3E50023ABE2C4005E1095 /* consulatesData.json in Resources */,
+				E88CA3F024099DBD00C8A3BE /* AvantGardeBold.otf in Resources */,
 				9F43E11223C240440023E14D /* mainMenu_english.json in Resources */,
 				9FB3E4CA23ABE211005E1095 /* difficultSituationsData_english.json in Resources */,
 				9FB3E4CB23ABE211005E1095 /* phoneNumbersData_english.json in Resources */,
@@ -960,7 +961,6 @@
 				9FB3E4D223ABE211005E1095 /* adviceData_polish.json in Resources */,
 				9F87D2EF23D83DF400CDAB7C /* footer_changelanguage.json in Resources */,
 				9FB3E4C723ABE211005E1095 /* searchKeywords_english.json in Resources */,
-				9F8FBED02401458200C7DE7F /* AvantGardeBold.ttf in Resources */,
 				9FB3E4D823ABE211005E1095 /* translateData_ukrainian.json in Resources */,
 				9FB3E4DD23ABE211005E1095 /* consulatesData_ukrainian.json in Resources */,
 				9F88B45523E7609E00D307DF /* psychology_ukrainian.json in Resources */,
@@ -1289,7 +1289,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Emergency/Preview Content\"";
-				DEVELOPMENT_TEAM = 4W294URY36;
+				DEVELOPMENT_TEAM = krzysztof.wasko;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Emergency/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1310,7 +1310,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Emergency/Preview Content\"";
-				DEVELOPMENT_TEAM = 4W294URY36;
+				DEVELOPMENT_TEAM = krzysztof.wasko;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Emergency/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (

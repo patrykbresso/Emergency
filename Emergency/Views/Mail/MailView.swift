@@ -14,6 +14,7 @@ struct MailView: UIViewControllerRepresentable {
 
     @Environment(\.presentationMode) var presentation
     @Binding var result: Result<MFMailComposeResult, Error>?
+    var mail: String;
     
     class Coordinator: NSObject, MFMailComposeViewControllerDelegate {
 
@@ -50,7 +51,7 @@ struct MailView: UIViewControllerRepresentable {
     func makeUIViewController(context: UIViewControllerRepresentableContext<MailView>) -> MFMailComposeViewController {
         let vc = MFMailComposeViewController()
         vc.mailComposeDelegate = context.coordinator
-        vc.setToRecipients(["emergency@pwr.edu.pl"])
+        vc.setToRecipients([self.mail])
         return vc
     }
 

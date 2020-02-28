@@ -33,7 +33,7 @@ struct AdviceView: View {
                     NavigationLink(destination: DropDown()) {
                         Text("...")
                             .foregroundColor(Color.primaryPink)
-                            .bold()
+                            .font(Font.custom("ITCAvantGardePro-Bold", size: 14))
                     }
                 }
                 ScrollView(showsIndicators: false) {
@@ -42,7 +42,7 @@ struct AdviceView: View {
                                 .fill(Color.primaryPink)
                             
                              Text(self.dataLoader.adviceData.intro)
-                                .font(Font.custom("AvantGardeNormal", size: 14))
+                            .font(Font.custom("ITCAvantGardePro-Bk", size: 14))
                                 .padding(10)
                             
                         }.fixedSize(horizontal: false, vertical: true)
@@ -52,7 +52,7 @@ struct AdviceView: View {
                                     .fill(Color.primaryPink)
                                 
                                 Text(advice.text)
-                                    .font(Font.custom("AvantGardeNormal", size: 14))
+                                    .font(Font.custom("ITCAvantGardePro-Bk", size: 14))
                                     .padding(10)
                                     .lineLimit(nil)
                                     .fixedSize(horizontal: false, vertical: true)

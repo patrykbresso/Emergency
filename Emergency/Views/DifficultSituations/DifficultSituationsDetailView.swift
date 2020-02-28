@@ -46,11 +46,11 @@ struct DifficultSituationsDetailView: View {
                     ScrollView {
                         Text(self.difficultSituation.title)
                             .fontWeight(.bold)
-                            .font(Font.custom("AvantGardeBold", size: 14))
+                            .font(Font.custom("ITCAvantGardePro-Bold", size: 14))
                             .frame(maxWidth: .infinity, alignment: .leading)
                         Spacer()
                         Text(self.difficultSituation.text)
-                            .font(Font.custom("AvantGardeNormal", size: 14))
+                            .font(Font.custom("ITCAvantGardePro-Bk", size: 14))
                     }.padding(10)
                 }
                 .foregroundColor(.white)

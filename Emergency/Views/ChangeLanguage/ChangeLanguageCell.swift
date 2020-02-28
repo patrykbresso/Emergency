@@ -23,8 +23,7 @@ struct ChangeLanguageCell: View {
                 .background(Color.primaryPink)
             
             Text(self.language)
-                .fontWeight(.bold)
-                .font(Font.custom("AvantGardeBold", size: 14))
+                .font(Font.custom("ITCAvantGardePro-Bold", size: 14))
                 
             
         }

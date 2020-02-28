@@ -71,12 +71,12 @@ struct PoliceDetailView: View {
                     VStack {
                         Text(self.policeStation.name)
                             .fontWeight(.bold)
-                            .font(Font.custom("AvantGardeBold", size: 14))
+                            .font(Font.custom("ITCAvantGardePro-Bold", size: 14))
                             .frame(maxWidth: .infinity, alignment: .leading)
                         .fixedSize(horizontal: false, vertical: true)
                         .padding(.bottom, 5)
                         Text(self.policeStation.address)
-                            .font(Font.custom("AvantGardeNormal", size: 14))
+                            .font(Font.custom("ITCAvantGardePro-Bk", size: 14))
                             .frame(maxWidth: .infinity, alignment: .leading)
                         .fixedSize(horizontal: false, vertical: true)
                         .padding(.bottom, 5)
@@ -92,13 +92,13 @@ struct PoliceDetailView: View {
                             
                                 Text(number.name)
                                 .fontWeight(.bold)
-                                .font(Font.custom("AvantGardeBold", size: 14))
+                                .font(Font.custom("ITCAvantGardePro-Bold", size: 14))
                                 .padding(.bottom, 5)
                                 .frame(maxWidth: .infinity, alignment: .leading)
                             }
                         }
                         
-                        }.padding(10)
+                        }.padding(15)
                         .layoutPriority(1)
                     .foregroundColor(.white)
                     .frame(width: UIScreen.screenWidth / 1.3)

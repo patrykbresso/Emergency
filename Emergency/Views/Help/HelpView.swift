@@ -14,6 +14,7 @@ struct HelpView: View {
     @EnvironmentObject var dataLoader: DataLoader
     @State var texts: [String] = ["emergency@pwr.edu.pl", "emergency@upwr.edu.pl"]
     @State var result: Result<MFMailComposeResult, Error>? = nil
+    @State var mail: String = ""
     @State var isShowingMailView = false
     @State var backButtonSize: CGRect = CGRect()
     let paddingSides = CGFloat(20)
@@ -47,7 +48,7 @@ struct HelpView: View {
                 
                 ForEach(self.texts, id: \.self) { emailAddress in
                     Button(action: {
-                        self.onBoxClick(boxNo: 0)
+                        self.onBoxClick(boxNo: Int(self.texts.firstIndex(of: emailAddress) ?? 0))
                     }) {
                         VStack {
                             RoundedRectangle(cornerRadius: 10)
@@ -55,7 +56,7 @@ struct HelpView: View {
                                 .background(Color.primaryPink)
                                 .frame(width: 250, height: self.boxHeight)
                             Text(emailAddress)
-                                .font(Font.custom("AvantGardeNormal", size: 14))
+                                .font(Font.custom("ITCAvantGardePro-Bk", size: 14))
                                 .padding(.top, 20)
                                 .foregroundColor(.white)
                                 .frame(width: 250, height: self.boxHeight)
@@ -65,7 +66,7 @@ struct HelpView: View {
                         .offset(y: 55)
                         .disabled(!MFMailComposeViewController.canSendMail())
                         .sheet(isPresented: self.$isShowingMailView) {
-                            MailView(result: self.$result)
+                            MailView(result: self.$result, mail: self.mail)
                         }
                     .padding([.leading, .trailing], (geometry.size.width - 250) / 2)
                     .padding(.bottom, 20)
@@ -87,6 +88,7 @@ struct HelpView: View {
     }
     
     func onBoxClick(boxNo: Int) {
+        self.mail = self.texts[boxNo]
         self.isShowingMailView.toggle()
     }
 }

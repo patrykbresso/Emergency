@@ -17,11 +17,10 @@ struct DropDownRow: View {
                 .multilineTextAlignment(.center)
                 .lineLimit(nil)
                 .fixedSize(horizontal: false, vertical: true)
-                .font(Font.custom("AvantGardeNormal", size: 14))
+                .font(Font.custom("ITCAvantGardePro-Bk", size: 14))
             if(title.name != "") {
                 Text(title.name)
-                    .fontWeight(.bold)
-                    .font(Font.custom("AvantGardeBold", size: 14))
+                    .font(Font.custom("ITCAvantGardePro-Bold", size: 14))
                     .lineLimit(nil)
                     .fixedSize(horizontal: false, vertical: true)
                     .multilineTextAlignment(.center)

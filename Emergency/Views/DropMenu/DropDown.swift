@@ -49,7 +49,7 @@ struct DropDown : View {
                                 ZStack {
                                     RoundedRectangle(cornerRadius: self.radius)
                                         .stroke(Color.white)
-                                    Text(self.dataLoader.footerData.changeLanguage.uppercased())
+                                    Text(self.dataLoader.footerData.changeLanguage.uppercased()).font(Font.custom("ITCAvantGardePro-Bk", size: 14))
                                         .multilineTextAlignment(.center)
                                         .foregroundColor(Color.white)
                                 }

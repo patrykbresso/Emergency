@@ -25,7 +25,7 @@ struct HospitalsRow: View {
                 VStack {
                     Text(self.hospital.name)
                         .fontWeight(.bold)
-                        .font(Font.custom("AvantGardeBold", size: 14))
+                        .font(Font.custom("ITCAvantGardePro-Bold", size: 14))
                         .frame(maxWidth: .infinity, alignment: .leading)
                         .fixedSize(horizontal: false, vertical: true)
                     .padding(.bottom, 5)
@@ -53,7 +53,7 @@ struct HospitalsRow: View {
                         })
                     }){
                         Text(self.hospital.address)
-                            .font(Font.custom("AvantGardeNormal", size: 14))
+                            .font(Font.custom("ITCAvantGardePro-Bk", size: 14))
                             .frame(maxWidth: .infinity, alignment: .leading)
                         .fixedSize(horizontal: false, vertical: true)
                         .padding(.bottom, 5)
@@ -68,7 +68,7 @@ struct HospitalsRow: View {
                            }) {
                             Text(number.name)
                             .fontWeight(.bold)
-                            .font(Font.custom("AvantGardeBold", size: 14))
+                            .font(Font.custom("ITCAvantGardePro-Bold", size: 14))
                             .frame(maxWidth: .infinity, alignment: .leading)
                             .padding(.bottom, 5)
                         }
