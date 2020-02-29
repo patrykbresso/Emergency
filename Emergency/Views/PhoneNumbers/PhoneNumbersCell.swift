@@ -22,12 +22,22 @@ struct PhoneNumbersCell: View {
                     .multilineTextAlignment(.center)
                     .fixedSize(horizontal: false, vertical: true)
                     .lineLimit(2)
-                Text(phoneNumber.number)
-                    .fontWeight(.bold)
-                    .font(Font.custom("ITCAvantGardePro-Bold", size: 14))
-                    .multilineTextAlignment(.center)
-                    .fixedSize(horizontal: false, vertical: true)
-                    .lineLimit(1)
+                Button(action: {
+                    if(self.showDescription){
+                        let cleanString = String(self.phoneNumber.number.filter { !" \n\t\r".contains($0) })
+                        let tel = "tel://"
+                        let formattedString = tel + cleanString
+                        let url: NSURL = URL(string: formattedString)! as NSURL
+                        UIApplication.shared.open(url as URL)
+                    }
+                   }) {
+                    Text(phoneNumber.number)
+                        .fontWeight(.bold)
+                        .font(Font.custom("ITCAvantGardePro-Bold", size: 14))
+                        .multilineTextAlignment(.center)
+                        .fixedSize(horizontal: false, vertical: true)
+                        .lineLimit(1)
+                    }
                 if(showDescription) {
                     Text(phoneNumber.available)
                         .fontWeight(.bold)

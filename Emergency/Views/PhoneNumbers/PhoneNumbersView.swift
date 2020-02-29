@@ -48,7 +48,7 @@ struct PhoneNumbersView: View {
                                 }) {
                                     PhoneNumbersCell(phoneNumber: row, showDescription: self.boxClicked[row.id - 1])
                                         
-                                }.frame(width: 155)
+                                }.frame(width: UIScreen.screenWidth / 2 - 2 * self.paddingSides)
                                 Spacer()
                                 }
                         } else {
@@ -59,7 +59,7 @@ struct PhoneNumbersView: View {
                                 }) {
                                     PhoneNumbersCell(phoneNumber: row, showDescription: self.boxClicked[row.id - 1])
                                     
-                                }.frame(width: 155)
+                                }.frame(width: UIScreen.screenWidth / 2 - 2 * self.paddingSides)
                             }
                             .padding(.bottom, 5)
                         }

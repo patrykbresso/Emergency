@@ -73,7 +73,7 @@ struct HospitalsRow: View {
                             .padding(.bottom, 5)
                         }
                     }
-                }.padding(5)
+                }.padding(15)
                 .onAppear() {
                 self.listOFNumbers = self.dividePhoneNumbers(stringNumbers: self.hospital.number)
                 }
