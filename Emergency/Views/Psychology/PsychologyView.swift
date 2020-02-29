@@ -31,7 +31,7 @@ struct PsychologyView: View {
                         Spacer()
                         Image("psychology")
                             .renderingMode(.original)
-                            .padding(.leading, -self.backButtonSize.width)
+                            //.padding(.leading, -self.backButtonSize.width)
                         Spacer()
                         NavigationLink(destination: DropDown()) {
                             Text("...")
@@ -43,7 +43,7 @@ struct PsychologyView: View {
                     
                     Spacer(minLength: 25)
                     
-                    ScrollView {
+                    ScrollView(showsIndicators: false) {
                         ZStack {
                             RoundedRectangle(cornerRadius: 10)
                             .fill(Color.primaryPink)

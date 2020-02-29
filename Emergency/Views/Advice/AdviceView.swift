@@ -28,7 +28,7 @@ struct AdviceView: View {
                     Spacer()
                     Image("advice")
                         .renderingMode(.original)
-                        .padding(.leading, -self.backButtonSize.width)
+                        //.padding(.leading, -self.backButtonSize.width)
                     Spacer()
                     NavigationLink(destination: DropDown()) {
                         Text("...")
@@ -46,6 +46,7 @@ struct AdviceView: View {
                                 .padding(10)
                             
                         }.fixedSize(horizontal: false, vertical: true)
+                            .padding(.bottom, 10)
                         ForEach(self.dataLoader.adviceData.advice) { advice in
                             ZStack {
                                 RoundedRectangle(cornerRadius: 10)
@@ -57,7 +58,7 @@ struct AdviceView: View {
                                     .lineLimit(nil)
                                     .fixedSize(horizontal: false, vertical: true)
                             }
-                        }.padding([.top, .bottom], 15)
+                        }.padding([.top, .bottom], 10)
                     }
 
             }

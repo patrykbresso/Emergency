@@ -58,7 +58,7 @@ struct HospitalsView: View {
                     .font(.system(size: 14))
                     .foregroundColor(.white)
                     
-                    ScrollView() {
+                    ScrollView(showsIndicators: false) {
                         Spacer()
                         VStack(alignment: .center, spacing: 30) {
                             ForEach(self.dataLoader.hospitalsData.hospitals) { hospital in

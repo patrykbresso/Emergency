@@ -40,10 +40,18 @@ struct DropDown : View {
                         .fill(Color.primaryPink)
                         VStack {
                             Spacer()
-                            ForEach(self.dataLoader.footerData.title) { row in
-                                DropDownRow(title: row)
+                            
+                            
+                            ForEach((0...(self.dataLoader.footerData.title.count - 2)), id: \.self) { i in
+                                DropDownRow(title: self.dataLoader.footerData.title[i])
+                                .padding(.bottom, 10)
+                            }
+                            
+                            ScrollView(showsIndicators: false) {
+                                DropDownRow(title: self.dataLoader.footerData.title[self.dataLoader.footerData.title.count - 1])
                                     .padding(.bottom, 10)
                             }
+                            
                             Spacer()
                             NavigationLink(destination: ChangeLanguageView()) {
                                 ZStack {

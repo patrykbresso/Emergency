@@ -14,7 +14,8 @@ struct CustomTextFieldStyle: TextFieldStyle {
         configuration
             .background(RoundedRectangle(cornerRadius: 5.0)
                 .stroke(Color.primaryPink, lineWidth: 3)
-                .frame(width: 250, height: 30)
+                .frame(width: UIScreen.screenWidth - 120, height: 30)
+                .padding(.top, 5)
             )
             .foregroundColor(.white)
     }

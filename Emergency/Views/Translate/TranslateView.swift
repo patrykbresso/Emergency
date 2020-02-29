@@ -64,6 +64,7 @@ struct TranslateView: View {
                         .padding(.bottom, 5)
                     }
                 }
+                
                     
             }
             .padding([.leading, .trailing], self.paddingSides)

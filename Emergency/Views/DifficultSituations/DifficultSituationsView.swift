@@ -37,7 +37,7 @@ struct DifficultSituationsView: View {
                             .bold()
                     }
                 }.padding(15)
-                ForEach(self.dataLoader.difficultSituationsData){ row in
+                /*ForEach(self.dataLoader.difficultSituationsData){ row in
                     if(row.id % 2 == 0) {
                         HStack {
                             NavigationLink(destination: DifficultSituationsDetailView(difficultSituation: row)) {
@@ -56,6 +56,21 @@ struct DifficultSituationsView: View {
                         }
                         .padding(.bottom, 10)
                     }
+                }*/
+            
+                ForEach((0...(self.dataLoader.difficultSituationsData.count - 2)), id: \.self) { i in
+                    
+                    HStack(spacing: 20) {
+                            if(i % 2 == 0) {
+                                NavigationLink(destination: DifficultSituationsDetailView(difficultSituation: self.dataLoader.difficultSituationsData[i])) {
+                                    DifficultSituationsCell(difficultSituation: self.dataLoader.difficultSituationsData[i])
+                                }.frame(width: UIScreen.screenWidth / 2 - 2 * self.paddingSides)
+                                
+                                NavigationLink(destination: DifficultSituationsDetailView(difficultSituation: self.dataLoader.difficultSituationsData[i + 1])) {
+                                    DifficultSituationsCell(difficultSituation: self.dataLoader.difficultSituationsData[i + 1])
+                                }.frame(width: UIScreen.screenWidth / 2 - 2 * self.paddingSides)
+                            }
+                        }
                 }
             }
             .padding([.leading, .trailing, .bottom], self.paddingSides)

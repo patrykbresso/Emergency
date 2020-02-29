@@ -14,8 +14,7 @@ struct DifficultSituationsCell: View {
     var body: some View {
         ZStack() {
             RoundedRectangle(cornerRadius: 10)
-            .stroke(Color.primaryPink, lineWidth: 10)
-            .background(Color.primaryPink)
+                .fill(Color.primaryPink)
             
             Text(difficultSituation.title)
                 .font(Font.custom("ITCAvantGardePro-Bk", size: 14))

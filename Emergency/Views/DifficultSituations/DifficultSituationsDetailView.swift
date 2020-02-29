@@ -43,7 +43,7 @@ struct DifficultSituationsDetailView: View {
                 RoundedRectangle(cornerRadius: 10)
                     .fill(Color.primaryPink)
                 VStack {
-                    ScrollView {
+                    ScrollView(showsIndicators: false) {
                         Text(self.difficultSituation.title)
                             .fontWeight(.bold)
                             .font(Font.custom("ITCAvantGardePro-Bold", size: 14))

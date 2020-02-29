@@ -36,7 +36,7 @@ struct SearchResultsView: View {
                     Spacer()
                 }.padding(.bottom, 30)
                 if(self.results.count == 0) {
-                    ScrollView{
+                    ScrollView(showsIndicators: false){
                         ZStack {
                             RoundedRectangle(cornerRadius: 10)
                                 .stroke(Color.primaryPink, lineWidth: 10)
@@ -46,7 +46,7 @@ struct SearchResultsView: View {
                         }.padding(15)
                     }
                 } else {
-                    ScrollView {
+                    ScrollView(showsIndicators: false) {
                         ForEach(self.results) { result in
                             NavigationLink(destination: self.getDestination(name: result.name, pageName: result.pageName, pageNumber: result.page)) {
                                 ZStack {

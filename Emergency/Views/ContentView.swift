@@ -52,7 +52,7 @@ struct ContentView: View {
                                         self.show = true
                                     }
                                     self.keyword = ""
-                                }).padding(5).padding(.leading, 15)
+                                }).padding(5)
                                     .onTapGesture {
                                     self.keyboardOpened.toggle()
                                 }
@@ -65,7 +65,7 @@ struct ContentView: View {
                                     .foregroundColor(Color.primaryPink)
                                     .bold()
                             }
-                        }
+                        }.padding(.top, 5)
                         
                         ScrollView(showsIndicators: false) {
                             HStack() {
@@ -78,7 +78,7 @@ struct ContentView: View {
                                             .multilineTextAlignment(.center)
                                             .lineLimit(3)
                                             .fixedSize(horizontal: false, vertical: true)
-                                    }.frame(width: geometry.size.width / 2 - 40)
+                                    }.frame(width: geometry.size.width / 2 - 25)
                                 }
                                 Spacer()
                                 NavigationLink(destination: AdviceView()) {
@@ -92,7 +92,7 @@ struct ContentView: View {
                                             .lineLimit(2)
                                             .fixedSize(horizontal: false, vertical: true)
                                     }
-                                    .frame(width: geometry.size.width / 2 - 40)
+                                    .frame(width: geometry.size.width / 2 - 25)
                                     
                                 }
                             }.padding(.vertical)
@@ -107,7 +107,7 @@ struct ContentView: View {
                                             .multilineTextAlignment(.center)
                                             .lineLimit(2)
                                             .fixedSize(horizontal: false, vertical: true)
-                                    }.frame(width: geometry.size.width / 2 - 40)
+                                    }.frame(width: geometry.size.width / 2 - 25)
                                 }
                                 Spacer()
                                 NavigationLink(destination: PhoneNumbersView()) {
@@ -120,7 +120,7 @@ struct ContentView: View {
                                             .multilineTextAlignment(.center)
                                             .lineLimit(2)
                                             .fixedSize(horizontal: false, vertical: true)
-                                    }.frame(width: geometry.size.width / 2 - 40)
+                                    }.frame(width: geometry.size.width / 2 - 25)
                                 }
                             }.padding(.vertical)
                             HStack() {
@@ -134,7 +134,7 @@ struct ContentView: View {
                                             .multilineTextAlignment(.center)
                                             .lineLimit(3)
                                             .fixedSize(horizontal: false, vertical: true)
-                                    }.frame(width: geometry.size.width / 2 - 40)
+                                    }.frame(width: geometry.size.width / 2 - 25)
                                 }
                                 Spacer()
                                 NavigationLink(destination: LawsView()) {
@@ -147,7 +147,7 @@ struct ContentView: View {
                                             .multilineTextAlignment(.center)
                                             .lineLimit(3)
                                             .fixedSize(horizontal: false, vertical: true)
-                                    }.frame(width: geometry.size.width / 2 - 40)
+                                    }.frame(width: geometry.size.width / 2 - 25)
                                 }
                             }.padding(.vertical)
                             HStack() {
@@ -161,7 +161,7 @@ struct ContentView: View {
                                             .multilineTextAlignment(.center)
                                             .lineLimit(2)
                                             .fixedSize(horizontal: false, vertical: true)
-                                    }.frame(width: geometry.size.width / 2 - 40)
+                                    }.frame(width: geometry.size.width / 2 - 25)
                                     
                                 }
                                 Spacer()
@@ -175,7 +175,7 @@ struct ContentView: View {
                                             .multilineTextAlignment(.center)
                                             .lineLimit(2)
                                             .fixedSize(horizontal: false, vertical: true)
-                                    }.frame(width: geometry.size.width / 2 - 40)
+                                    }.frame(width: geometry.size.width / 2 - 25)
                                 }
                             }.padding(.vertical)
                             HStack() {
@@ -189,7 +189,7 @@ struct ContentView: View {
                                             .multilineTextAlignment(.center)
                                             .lineLimit(2)
                                             .fixedSize(horizontal: false, vertical: true)
-                                    }.frame(width: geometry.size.width / 2 - 40)
+                                    }.frame(width: geometry.size.width / 2 - 25)
                                 }
                                 Spacer()
                                 NavigationLink(destination: PoliceView()) {
@@ -202,7 +202,7 @@ struct ContentView: View {
                                             .multilineTextAlignment(.center)
                                             .lineLimit(2)
                                             .fixedSize(horizontal: false, vertical: true)
-                                    }.frame(width: geometry.size.width / 2 - 40)
+                                    }.frame(width: geometry.size.width / 2 - 25)
                                 }
                             }
                             .padding(.vertical)
