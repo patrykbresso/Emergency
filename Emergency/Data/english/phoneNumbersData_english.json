@@ -37,9 +37,9 @@
     },
     {
         "id": 6,
-        "name": "Helpline",
+        "name": "WroMigrant",
         "number": "71 77 24 950",
-        "available": "available (Mon, Tue, Fri 9 AM – 4 PM ), (Wed, Thu 11 AM –6 PM)",
-        "description": "Helpline, municipal information centre for foreigners, also available in English"
+        "available": "available (Mon, Tue, Wed, Thu, Fri 9 AM – 4 PM )",
+        "description": "Helpline, municipal information centre for foreigners"
     }
 ]

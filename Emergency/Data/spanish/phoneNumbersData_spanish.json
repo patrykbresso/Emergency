@@ -36,9 +36,9 @@
     },
     {
         "id": 6,
-        "name": "Línea de ayuda",
+        "name": "WroMigrant",
         "number": "71 77 24 950",
-        "available": "horario: (lunes, martes, viernes, de 9:00 a 16:00), (miércoles, jueves, de 11:00 a 18:00)",
-        "description": "Punto de información telefónica municipal para extranjeros, también disponible en inglés."
+        "available": "horario: (lunes, martes, miércoles, jueves ,viernes, de 9:00 a 16:00)",
+        "description": "línea de ayuda, punto de información telefónica municipal para extranjeros."
     }
 ]

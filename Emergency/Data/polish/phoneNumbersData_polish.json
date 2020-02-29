@@ -36,9 +36,9 @@
     },
     {
         "id": 6,
-        "name": "Infolinia",
+        "name": "WroMigrant",
         "number": "71 77 24 950",
-        "available": "czynny: (Pn, Wt, Pt, 9:00 - 16:00), (Śr, Czw, 11:00 – 18:00)",
-        "description": "Miejski punkt  informacji telefonicznej dla obcokrajowców, dostępny również  języku angielskim."
+        "available": "czynny: (Pn, Wt, Sr, Czw, Pt, 9:00 - 16:00 )",
+        "description": "Miejski punkt  informacji telefonicznej dla obcokrajowców"
     }
 ]

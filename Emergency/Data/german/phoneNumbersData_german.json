@@ -36,9 +36,9 @@
     },
     {
         "id": 6,
-        "name": "Infolinie",
+        "name": "WroMigrant",
         "number": "71 77 24 950",
-        "available": "In Betrieb: Montags, Dienstags, Freitags 9:00 - 16:00 , Mittwochs, Donnerstags 11:00 – 18:00",
-        "description": "Infolinie, Städtische Telefoninformation für Ausländer, auch in der englischen Sprache"
+        "available": "In Betrieb: Montags, Dienstags, Mittwochs, Donnerstags, Freitags 9:00 - 16:00",
+        "description": "WroMigrant, Städtische Telefoninformation für Ausländer"
     }
 ]
