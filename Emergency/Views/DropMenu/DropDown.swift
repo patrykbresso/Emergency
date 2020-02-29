@@ -40,13 +40,10 @@ struct DropDown : View {
                         .fill(Color.primaryPink)
                         VStack {
                             Spacer()
-                            
-                            
                             ForEach((0...(self.dataLoader.footerData.title.count - 2)), id: \.self) { i in
                                 DropDownRow(title: self.dataLoader.footerData.title[i])
-                                .padding(.bottom, 10)
+                                .padding(.bottom, 15)
                             }
-                            
                             ScrollView(showsIndicators: false) {
                                 DropDownRow(title: self.dataLoader.footerData.title[self.dataLoader.footerData.title.count - 1])
                                     .padding(.bottom, 10)

@@ -37,26 +37,6 @@ struct DifficultSituationsView: View {
                             .bold()
                     }
                 }.padding(15)
-                /*ForEach(self.dataLoader.difficultSituationsData){ row in
-                    if(row.id % 2 == 0) {
-                        HStack {
-                            NavigationLink(destination: DifficultSituationsDetailView(difficultSituation: row)) {
-                                DifficultSituationsCell(difficultSituation: row)
-                            }.frame(width: UIScreen.screenWidth / 2 - 2 * self.paddingSides)
-                            Spacer()
-                            }
-                            .padding(.bottom, 10)
-                    } else {
-                        HStack {
-                            Spacer()
-                            NavigationLink(destination: DifficultSituationsDetailView(difficultSituation: row)) {
-                                DifficultSituationsCell(difficultSituation: row)
-                                    .frame(width: UIScreen.screenWidth / 2 - 2 * self.paddingSides)
-                            }
-                        }
-                        .padding(.bottom, 10)
-                    }
-                }*/
             
                 ForEach((0...(self.dataLoader.difficultSituationsData.count - 2)), id: \.self) { i in
                     

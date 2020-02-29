@@ -58,6 +58,17 @@ struct PoliceView: View {
                                 .font(Font.custom("ITCAvantGardePro-Bk", size: 14))
                                 .frame(maxWidth: .infinity, alignment: .leading)
                                 .multilineTextAlignment(.leading)
+                            Button(action: {
+                                let cleanString = String("112")
+                                let tel = "tel://"
+                                let formattedString = tel + cleanString
+                                let url: NSURL = URL(string: formattedString)! as NSURL
+                                UIApplication.shared.open(url as URL)
+                               }) {
+                                Text("112")
+                                .font(Font.custom("ITCAvantGardePro-Bold", size: 14))
+                                .frame(maxWidth: .infinity, alignment: .leading)
+                            }
                             }.padding(15)
                         .multilineTextAlignment(.center)
                         .layoutPriority(1)

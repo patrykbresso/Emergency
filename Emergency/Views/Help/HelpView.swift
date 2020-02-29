@@ -12,7 +12,7 @@ import MessageUI
 struct HelpView: View {
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     @EnvironmentObject var dataLoader: DataLoader
-    @State var texts: [String] = ["emergency@pwr.edu.pl", "emergency@upwr.edu.pl"]
+    @State var texts: [String] = ["emergency@pwr.edu.pl", "emergency@upwr.edu.pl", "emergency@awf.wroc.pl", "emergency@ue.wroc.pl"]
     @State var result: Result<MFMailComposeResult, Error>? = nil
     @State var mail: String = ""
     @State var isShowingMailView = false
