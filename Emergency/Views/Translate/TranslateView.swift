@@ -39,31 +39,6 @@ struct TranslateView: View {
                             .font(Font.custom("ITCAvantGardePro-Bold", size: 14))
                     }
                 }.padding(.bottom, 15)
-                /*ForEach(self.dataLoader.translateData) { row in
-                    if(row.id % 2 == 0) {
-                        HStack {
-                            Button(action: {
-                                self.onBoxClick(boxNo: row.id - 1)
-                            }) {
-                                TranslateCell(row: row, showTranslation: self.buttonClicked[row.id - 1])
-                                    .frame(width: 150)
-                            }
-                            Spacer()
-                            }
-                            .padding(.bottom, 5)
-                    } else {
-                        HStack {
-                            Spacer()
-                            Button(action: {
-                                self.onBoxClick(boxNo: row.id - 1)
-                            }) {
-                                TranslateCell(row: row, showTranslation: self.buttonClicked[row.id - 1])
-                                .frame(width: 150)
-                            }
-                        }
-                        .padding(.bottom, 5)
-                    }
-                }*/
                 
                 
                 VStack {
@@ -71,6 +46,7 @@ struct TranslateView: View {
                     ForEach((0..<(self.dataLoader.translateData.count - 1)), id: \.self) { i in
                         HStack(spacing: 20) {
                             if(i % 2 == 0) {
+                                Spacer()
                                 Button(action: {
                                     self.onBoxClick(boxNo: i)
                                 }) {
@@ -83,6 +59,7 @@ struct TranslateView: View {
                                     TranslateCell(row: self.dataLoader.translateData[i+1], showTranslation: self.buttonClicked[i+1])
                                         .frame(width: UIScreen.screenWidth / 2 - 2 * self.paddingSides, height: UIScreen.screenHeight / 6)
                                 }
+                                Spacer()
                             }
                         }.padding(.bottom, 20)
                         
