@@ -24,7 +24,7 @@
             "address": "ul. Hubska 29/33",
             "postalCode": "50-501",
             "city": "Wrocław",
-            "number": "+48 47 87 132 12 ; +48 47 87 139 22",
+            "number": "+48 47 87 132 12;+48 47 87 139 22",
             "coordinates": {
                 "longitude": 17.042646,
                 "latitude": 51.093346
@@ -232,7 +232,7 @@
             "address": "ul. Jana Pawła II 12",
             "postalCode": "55-011",
             "city": "Siechnice",
-            "number": "+48 47 87 168 62 ; +48 47 87 116 00",
+            "number": "+48 47 87 168 62;+48 47 87 116 00",
             "coordinates": {
                 "longitude": 17.151008,
                 "latitude": 51.032614

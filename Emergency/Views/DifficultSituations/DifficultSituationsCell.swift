@@ -21,7 +21,7 @@ struct DifficultSituationsCell: View {
                 .lineSpacing(5.0)
                 .multilineTextAlignment(.center)
                 .font(.system(size: 14))
-                .lineLimit(2)
+                .lineLimit(3)
                 .padding(5)
         }
         .foregroundColor(.white)
