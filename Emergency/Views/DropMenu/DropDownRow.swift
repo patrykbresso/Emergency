@@ -20,12 +20,15 @@ struct DropDownRow: View {
                 .fixedSize(horizontal: false, vertical: true)
                 .font(Font.custom("ITCAvantGardePro-Bk", size: 14))
             if(title.name != "") {
+                
                 Text(title.name)
                     .font(Font.custom("ITCAvantGardePro-Bold", size: 14))
+                    .lineSpacing(5.0)
                     .lineLimit(nil)
                     .lineSpacing(5.0)
                     .fixedSize(horizontal: false, vertical: true)
                     .multilineTextAlignment(.center)
+                    .padding(.top, 5)
             }
         }.foregroundColor(Color.white)
     }

@@ -38,7 +38,7 @@ struct LawsDetailView: View {
                             .foregroundColor(Color.primaryPink)
                             .font(Font.custom("ITCAvantGardePro-Bold", size: 14))
                     }
-                }.padding(15)
+                }.padding(20)
                 Spacer()
                 ZStack{
                     RoundedRectangle(cornerRadius: 10)

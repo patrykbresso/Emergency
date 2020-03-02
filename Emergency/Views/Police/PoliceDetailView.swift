@@ -48,8 +48,7 @@ struct PoliceDetailView: View {
                             .foregroundColor(Color.primaryPink)
                             .font(Font.custom("ITCAvantGardePro-Bold", size: 14))
                     }
-                }
-                Spacer(minLength: 20)
+                }.padding(.bottom, 20)
                 
                 MapView(coordinate: self.policeStation.locationCoordinate)
                     .frame(width: UIScreen.screenWidth / 1.1, height: UIScreen.screenHeight / 3, alignment: .center)

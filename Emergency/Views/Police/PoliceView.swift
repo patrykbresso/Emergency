@@ -40,7 +40,7 @@ struct PoliceView: View {
                             .foregroundColor(Color.primaryPink)
                             .font(Font.custom("ITCAvantGardePro-Bold", size: 14))
                     }
-                }
+                }.padding(.bottom, 20)
                 
                 //Title cell
                 VStack {

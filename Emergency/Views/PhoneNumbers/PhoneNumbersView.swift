@@ -37,7 +37,7 @@ struct PhoneNumbersView: View {
                             .foregroundColor(Color.primaryPink)
                             .font(Font.custom("ITCAvantGardePro-Bold", size: 14))
                     }
-                }.padding(.bottom, 15)
+                }.padding(.bottom, 20)
                 VStack {
                     HStack {
                         Spacer()
@@ -50,7 +50,7 @@ struct PhoneNumbersView: View {
                         }.frame(width: UIScreen.screenWidth / 1.5 - 2 * self.paddingSides)
                         
                         Spacer()
-                    }.padding(.bottom, 20)
+                    }.padding(.bottom, 30)
                     
                     ForEach((1..<(self.dataLoader.phoneNumbersData.count - 1)), id: \.self) { i in
                         HStack(spacing: 20) {
@@ -87,7 +87,7 @@ struct PhoneNumbersView: View {
                     }.padding(.bottom, 20)
                 }
             }
-            .padding([.leading, .trailing, .bottom], self.paddingSides)
+            .padding([.leading, .trailing], self.paddingSides)
             .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity)
             .background(Color.primaryBlue
                 .edgesIgnoringSafeArea(.all)

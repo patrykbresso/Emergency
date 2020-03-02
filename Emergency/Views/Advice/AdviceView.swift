@@ -35,7 +35,7 @@ struct AdviceView: View {
                             .foregroundColor(Color.primaryPink)
                             .font(Font.custom("ITCAvantGardePro-Bold", size: 14))
                     }
-                }
+                }.padding(.bottom, 20)
                 ScrollView(showsIndicators: false) {
                         ZStack {
                             RoundedRectangle(cornerRadius: 10)

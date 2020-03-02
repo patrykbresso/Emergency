@@ -38,11 +38,12 @@ struct TranslateView: View {
                             .foregroundColor(Color.primaryPink)
                             .font(Font.custom("ITCAvantGardePro-Bold", size: 14))
                     }
-                }.padding(.bottom, 15)
+                }.padding(.bottom, 20)
+                    .padding([.leading, .trailing], self.paddingSides)
                 
                 
                 VStack {
-                    Spacer()
+                    
                     ForEach((0..<(self.dataLoader.translateData.count - 1)), id: \.self) { i in
                         HStack(spacing: 20) {
                             if(i % 2 == 0) {

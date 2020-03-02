@@ -36,7 +36,7 @@ struct DifficultSituationsView: View {
                             .foregroundColor(Color.primaryPink)
                             .font(Font.custom("ITCAvantGardePro-Bold", size: 14))
                     }
-                }.padding(15)
+                }.padding(20)
             
                 ForEach((0...(self.dataLoader.difficultSituationsData.count - 2)), id: \.self) { i in
                     
