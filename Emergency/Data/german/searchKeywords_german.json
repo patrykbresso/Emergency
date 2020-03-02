@@ -590,6 +590,19 @@
         "page": 0,
         "title": "Psychologische Hilfe",
         "subtitle": "",
-        "keywords": []
+        "keywords": [
+            {
+                "keyword": "psychologische Hilfe"
+            },
+            {
+                "keyword": "Psychologe"
+            },
+            {
+                "keyword": "psychiatrische Hilfe"
+            },
+            {
+                "keyword": "Psychiater"
+            }
+        ]
     }
 ]

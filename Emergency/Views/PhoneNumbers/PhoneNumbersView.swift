@@ -16,7 +16,6 @@ struct PhoneNumbersView: View {
     let paddingSides = CGFloat(20)
     
     var body: some View {
-        GeometryReader { geometry in
             VStack(alignment: HorizontalAlignment.leading) {
                 HStack {
                     Button(action: {
@@ -39,7 +38,6 @@ struct PhoneNumbersView: View {
                             .font(Font.custom("ITCAvantGardePro-Bold", size: 14))
                     }
                 }.padding(.bottom, 15)
-                
                 VStack {
                     HStack {
                         Spacer()
@@ -49,10 +47,10 @@ struct PhoneNumbersView: View {
                         }) {
                             PhoneNumbersCell(phoneNumber: self.dataLoader.phoneNumbersData[0], showDescription: self.boxClicked[0])
                                 
-                        }.frame(width: UIScreen.screenWidth / 1.5 - 2 * self.paddingSides, height: UIScreen.screenHeight / 8)
+                        }.frame(width: UIScreen.screenWidth / 1.5 - 2 * self.paddingSides)
                         
                         Spacer()
-                    }.padding(.bottom, 25)
+                    }.padding(.bottom, 20)
                     
                     ForEach((1..<(self.dataLoader.phoneNumbersData.count - 1)), id: \.self) { i in
                         HStack(spacing: 20) {
@@ -63,14 +61,14 @@ struct PhoneNumbersView: View {
                                 }) {
                                     PhoneNumbersCell(phoneNumber: self.dataLoader.phoneNumbersData[i], showDescription: self.boxClicked[i])
                                         
-                                }.frame(width: UIScreen.screenWidth / 2 - 2 * self.paddingSides, height: UIScreen.screenHeight / 8)
+                                }.frame(width: UIScreen.screenWidth / 2 - 2 * self.paddingSides)
                                 
                                 Button(action: {
                                     self.onBoxClick(boxNo: i + 1)
                                 }) {
                                     PhoneNumbersCell(phoneNumber: self.dataLoader.phoneNumbersData[i+1], showDescription: self.boxClicked[i + 1])
                                         
-                                }.frame(width: UIScreen.screenWidth / 2 - 2 * self.paddingSides, height: UIScreen.screenHeight / 8)
+                                }.frame(width: UIScreen.screenWidth / 2 - 2 * self.paddingSides)
                             }
                         }.padding(.bottom, 20)
                         
@@ -83,39 +81,11 @@ struct PhoneNumbersView: View {
                         }) {
                             PhoneNumbersCell(phoneNumber: self.dataLoader.phoneNumbersData[self.dataLoader.phoneNumbersData.count - 1], showDescription: self.boxClicked[self.dataLoader.phoneNumbersData.count - 1])
                                 
-                        }.frame(width: UIScreen.screenWidth / 1.5 - 2 * self.paddingSides, height: UIScreen.screenHeight / 8)
+                        }.frame(width: UIScreen.screenWidth / 1.5 - 2 * self.paddingSides)
                         
                         Spacer()
-                    }
-                    Spacer()
+                    }.padding(.bottom, 20)
                 }
-                
-                /*VStack {
-                    ForEach(self.dataLoader.phoneNumbersData){ row in
-                        if(row.id % 2 == 0) {
-                            HStack {
-                                Button(action: {
-                                    self.onBoxClick(boxNo: row.id - 1)
-                                }) {
-                                    PhoneNumbersCell(phoneNumber: row, showDescription: self.boxClicked[row.id - 1])
-                                        
-                                }.frame(width: UIScreen.screenWidth / 2 - 2 * self.paddingSides)
-                                Spacer()
-                                }
-                        } else {
-                            HStack {
-                                Spacer()
-                                Button(action: {
-                                    self.onBoxClick(boxNo: row.id - 1)
-                                }) {
-                                    PhoneNumbersCell(phoneNumber: row, showDescription: self.boxClicked[row.id - 1])
-                                    
-                                }.frame(width: UIScreen.screenWidth / 2 - 2 * self.paddingSides)
-                            }
-                            .padding(.bottom, 5)
-                        }
-                    }
-                }*/
             }
             .padding([.leading, .trailing, .bottom], self.paddingSides)
             .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity)
@@ -125,7 +95,14 @@ struct PhoneNumbersView: View {
             .navigationBarTitle("")
             .navigationBarHidden(true)
             .navigationBarBackButtonHidden(true)
-        }
+    }
+    
+    func callNumber(number: String) {
+        let cleanString = String(number.filter { !" \n\t\r".contains($0) })
+        let tel = "tel://"
+        let formattedString = tel + cleanString
+        let url: NSURL = URL(string: formattedString)! as NSURL
+        UIApplication.shared.open(url as URL)
     }
     
     func clearPreviousClick(boxNo: Int) {
@@ -138,6 +115,9 @@ struct PhoneNumbersView: View {
     
     func onBoxClick(boxNo: Int) {
         self.clearPreviousClick(boxNo: boxNo)
+        if(self.boxClicked[boxNo]) {
+            self.callNumber(number: self.dataLoader.phoneNumbersData[boxNo].number)
+        }
         self.boxClicked[boxNo] = self.boxClicked[boxNo] ? false : true
     }
 }

@@ -91,13 +91,12 @@ struct PoliceView: View {
                     }) {
                         Image("map")
                             .renderingMode(.original)
-                    }
+                    }.padding(.top, 10).padding(.bottom, 20)
                 }
                 
                 
                 //ScrollView with list of policestations
                 ScrollView(showsIndicators: false) {
-                    Spacer(minLength: 30)
                     VStack(spacing: 30) {
                         
                         ForEach(self.dataLoader.policeData.police) { policeStation in

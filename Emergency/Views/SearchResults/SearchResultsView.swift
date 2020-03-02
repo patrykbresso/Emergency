@@ -55,10 +55,10 @@ struct SearchResultsView: View {
                                         .stroke(Color.primaryPink, lineWidth: 10)
                                         .background(Color.primaryPink)
                                     VStack {
-                                        Text(result.pageName).font(Font.custom("ITCAvantGardePro-Bold", size: 14)).fontWeight(.bold).padding(15)
+                                        Text(result.pageName).font(Font.custom("ITCAvantGardePro-Bold", size: 14)).frame(maxWidth: .infinity, alignment: .leading).padding(15)
                                         if(result.pageSubtitle != "") {
                                             Text(result.pageSubtitle)
-                                                .font(Font.custom("ITCAvantGardePro-Bk", size: 14)).padding(.bottom, 15)
+                                                .font(Font.custom("ITCAvantGardePro-Bk", size: 14)).frame(maxWidth: .infinity, alignment: .leading).padding(15).padding(.top, 0)
                                         }
                                     }
                                 }

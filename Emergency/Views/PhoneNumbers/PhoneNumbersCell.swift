@@ -24,24 +24,15 @@ struct PhoneNumbersCell: View {
                     .fixedSize(horizontal: false, vertical: true)
                     .lineLimit(2)
                     .padding(.bottom, 5)
-                Button(action: {
-                    if(self.showDescription){
-                        let cleanString = String(self.phoneNumber.number.filter { !" \n\t\r".contains($0) })
-                        let tel = "tel://"
-                        let formattedString = tel + cleanString
-                        let url: NSURL = URL(string: formattedString)! as NSURL
-                        UIApplication.shared.open(url as URL)
-                    }
-                   }) {
-                    Text(phoneNumber.number)
-                        .fontWeight(.bold)
-                        .font(Font.custom("ITCAvantGardePro-Bold", size: 14))
-                        .lineSpacing(5.0)
-                        .multilineTextAlignment(.center)
-                        .fixedSize(horizontal: false, vertical: true)
-                        .lineLimit(1)
-                        .padding(.bottom, 5)
-                    }
+                Text(phoneNumber.number)
+                    .fontWeight(.bold)
+                    .font(Font.custom("ITCAvantGardePro-Bold", size: 14))
+                    .lineSpacing(5.0)
+                    .multilineTextAlignment(.center)
+                    .fixedSize(horizontal: false, vertical: true)
+                    .lineLimit(1)
+                    .padding(.bottom, 5)
+                    
                 if(showDescription) {
                     Text(phoneNumber.available)
                         .fontWeight(.bold)
@@ -60,8 +51,7 @@ struct PhoneNumbersCell: View {
                         .padding(.trailing, 5)
                 }
             }
-                .padding(.bottom, 5)
-                .padding(.top, 5)
+                .padding(5)
                     
         }
         .foregroundColor(.white)

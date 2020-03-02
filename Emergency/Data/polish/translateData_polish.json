@@ -1,32 +1,32 @@
 [
     {
         "id": 1,
-        "originalText": "Potrzebuje pomocy!",
-        "translation": "I need help!"
+        "translation": "Potrzebuję pomocy!",
+        "originalText": "I need help!"
     },
     {
         "id": 2,
-        "originalText": "Potrzebuje lekarza!",
-        "translation": "I need a doctor!"
+        "translation": "Potrzebuję lekarza!",
+        "originalText": "I need a doctor!"
     },
     {
         "id": 3,
-        "originalText": "Prosze zabierz mnie do szpitala!",
-        "translation": "Please take me to a hospital!"
+        "translation": "Proszę zabierz mnie do szpitala!",
+        "originalText": "Please take me to a hospital!"
     },
     {
         "id": 4,
-        "originalText": "Prosze zadzwonic na policje!",
-        "translation": "Please call the police!"
+        "translation": "Proszę zadzwonić na policję!",
+        "originalText": "Please call the police!"
     },
     {
         "id": 5,
-        "originalText": "Zostalem okradziony!",
-        "translation": "I've been robbed!"
+        "translation": "Zostałem okradziony!",
+        "originalText": "I've been robbed!"
     },
     {
         "id": 6,
-        "originalText": "Jestem teraz na (...) ulicy.",
-        "translation": "I'm on the (...) street."
+        "translation": "Jestem teraz na (...) ulicy.",
+        "originalText": "I'm on the (...) street."
     }
 ]

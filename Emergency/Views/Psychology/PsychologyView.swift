@@ -89,6 +89,7 @@ struct PsychologyView: View {
                                         Text(self.dataLoader.psychologyData.website)
                                             .font(Font.custom("ITCAvantGardePro-Bold", size: 14))
                                             .fontWeight(.bold)
+                                            .lineSpacing(5.0)
                                         Spacer()
                                     }
                                 }.padding(.bottom, 5)
@@ -98,6 +99,7 @@ struct PsychologyView: View {
                                         .fontWeight(.bold)
                                         .multilineTextAlignment(.leading)
                                         .lineLimit(2)
+                                        .lineSpacing(5.0)
                                         .fixedSize(horizontal: false, vertical: true)
                                         .padding(.bottom, 10)
                                     Spacer()
@@ -113,7 +115,7 @@ struct PsychologyView: View {
                                            }) {
                                             Text(number.name)
                                             .font(Font.custom("ITCAvantGardePro-Bold", size: 14))
-                                            .fontWeight(.bold)
+                                            .lineSpacing(5.0)
                                             .multilineTextAlignment(.leading)
                                         }
                                         Spacer()
