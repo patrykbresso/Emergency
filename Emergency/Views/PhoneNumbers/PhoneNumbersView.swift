@@ -61,14 +61,14 @@ struct PhoneNumbersView: View {
                                 }) {
                                     PhoneNumbersCell(phoneNumber: self.dataLoader.phoneNumbersData[i], showDescription: self.boxClicked[i])
                                         
-                                }.frame(width: UIScreen.screenWidth / 2 - 2 * self.paddingSides)
+                                }.frame(width: UIScreen.screenWidth / 1.9 - 2 * self.paddingSides)
                                 
                                 Button(action: {
                                     self.onBoxClick(boxNo: i + 1)
                                 }) {
                                     PhoneNumbersCell(phoneNumber: self.dataLoader.phoneNumbersData[i+1], showDescription: self.boxClicked[i + 1])
                                         
-                                }.frame(width: UIScreen.screenWidth / 2 - 2 * self.paddingSides)
+                                }.frame(width: UIScreen.screenWidth / 1.9 - 2 * self.paddingSides)
                             }
                         }.padding(.bottom, 20)
                         

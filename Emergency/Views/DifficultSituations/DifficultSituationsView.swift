@@ -15,7 +15,7 @@ struct DifficultSituationsView: View {
     let paddingSides = CGFloat(20)
     
     var body: some View {
-        VStack(spacing: 8) {
+        VStack(spacing: 10) {
                 HStack {
                     Button(action: {
                         self.presentationMode.wrappedValue.dismiss()
@@ -36,7 +36,7 @@ struct DifficultSituationsView: View {
                             .foregroundColor(Color.primaryPink)
                             .font(Font.custom("ITCAvantGardePro-Bold", size: 18))
                     }
-                }.padding(20)
+                }.padding(.bottom, 20)
             
                 ForEach((0...(self.dataLoader.difficultSituationsData.count - 2)), id: \.self) { i in
                     
@@ -44,16 +44,16 @@ struct DifficultSituationsView: View {
                             if(i % 2 == 0) {
                                 NavigationLink(destination: DifficultSituationsDetailView(difficultSituation: self.dataLoader.difficultSituationsData[i])) {
                                     DifficultSituationsCell(difficultSituation: self.dataLoader.difficultSituationsData[i])
-                                }.frame(width: UIScreen.screenWidth / 2 - 2 * self.paddingSides)
+                                }.frame(width: UIScreen.screenWidth / 1.9 - 2 * self.paddingSides)
                                 
                                 NavigationLink(destination: DifficultSituationsDetailView(difficultSituation: self.dataLoader.difficultSituationsData[i + 1])) {
                                     DifficultSituationsCell(difficultSituation: self.dataLoader.difficultSituationsData[i + 1])
-                                }.frame(width: UIScreen.screenWidth / 2 - 2 * self.paddingSides)
+                                }.frame(width: UIScreen.screenWidth / 1.9 - 2 * self.paddingSides)
                             }
                         }
                 }
             }
-            .padding([.leading, .trailing, .bottom], self.paddingSides)
+            .padding([.leading, .trailing], self.paddingSides)
             .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity)
             .background(Color.primaryBlue
                 .edgesIgnoringSafeArea(.all)

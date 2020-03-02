@@ -75,8 +75,7 @@ struct PoliceView: View {
                             }.padding(15)
                         .multilineTextAlignment(.center)
                         .layoutPriority(1)
-                        }.padding(10)
-                        .frame(width: UIScreen.screenWidth / 1.3)
+                        }
                         .foregroundColor(.white)
                     //Map button
                     Button(action: {
@@ -105,7 +104,7 @@ struct PoliceView: View {
                                 }
                         }
                     }
-                }.frame(width: UIScreen.screenWidth / 1.35)
+                }
 
             }
 

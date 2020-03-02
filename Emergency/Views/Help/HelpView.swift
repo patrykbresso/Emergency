@@ -44,6 +44,7 @@ struct HelpView: View {
                             .font(Font.custom("ITCAvantGardePro-Bold", size: 18))
                     }
                 }.padding(.bottom, 20)
+                .padding([.leading, .trailing], self.paddingSides)
                 
                 ScrollView {
                     ForEach(self.texts, id: \.self) { emailAddress in
@@ -75,7 +76,7 @@ struct HelpView: View {
             }
 
         }
-        .padding([.leading, .trailing], self.paddingSides)
+        
         .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity)
         .background(Color.primaryBlue
             .edgesIgnoringSafeArea(.all)

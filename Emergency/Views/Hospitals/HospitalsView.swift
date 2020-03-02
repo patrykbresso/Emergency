@@ -59,7 +59,6 @@ struct HospitalsView: View {
                         }
                     .font(.system(size: 14))
                     .foregroundColor(.white)
-                    
                     ScrollView(showsIndicators: false) {
                         Spacer()
                         VStack(alignment: .center, spacing: 30) {
@@ -69,7 +68,7 @@ struct HospitalsView: View {
                         }
                     }
                 }
-                .frame(width: UIScreen.screenWidth / 1.3, alignment: .center)
+
             }
             .padding([.leading, .trailing], self.paddingSides)
         }

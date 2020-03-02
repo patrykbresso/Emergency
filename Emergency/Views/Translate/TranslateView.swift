@@ -17,7 +17,7 @@ struct TranslateView: View {
     
     var body: some View {
         GeometryReader { geometry in
-            VStack(alignment: HorizontalAlignment.leading) {
+            VStack {
                 HStack {
                     Button(action: {
                         self.presentationMode.wrappedValue.dismiss()
@@ -38,12 +38,11 @@ struct TranslateView: View {
                             .foregroundColor(Color.primaryPink)
                             .font(Font.custom("ITCAvantGardePro-Bold", size: 18))
                     }
-                }.padding(.bottom, 20)
-                    .padding([.leading, .trailing], self.paddingSides)
+                }.padding([.leading, .trailing], self.paddingSides)
+                .padding(.bottom, 15)
                 
                 
                 VStack {
-                    
                     ForEach((0..<(self.dataLoader.translateData.count - 1)), id: \.self) { i in
                         HStack(spacing: 20) {
                             if(i % 2 == 0) {
@@ -52,13 +51,13 @@ struct TranslateView: View {
                                     self.onBoxClick(boxNo: i)
                                 }) {
                                     TranslateCell(row: self.dataLoader.translateData[i], showTranslation: self.buttonClicked[i])
-                                        .frame(width: UIScreen.screenWidth / 2 - 2 * self.paddingSides, height: UIScreen.screenHeight / 6)
+                                        .frame(width: UIScreen.screenWidth / 1.9 - 2 * self.paddingSides, height: UIScreen.screenHeight / 6)
                                 }
                                 Button(action: {
                                     self.onBoxClick(boxNo: i+1)
                                 }) {
                                     TranslateCell(row: self.dataLoader.translateData[i+1], showTranslation: self.buttonClicked[i+1])
-                                        .frame(width: UIScreen.screenWidth / 2 - 2 * self.paddingSides, height: UIScreen.screenHeight / 6)
+                                        .frame(width: UIScreen.screenWidth / 1.9 - 2 * self.paddingSides, height: UIScreen.screenHeight / 6)
                                 }
                                 Spacer()
                             }
@@ -69,9 +68,10 @@ struct TranslateView: View {
                 }
                     
             }
-            .padding([.leading, .trailing, .bottom], self.paddingSides)
+            
 
         }
+        
         .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity)
         .background(Color.primaryBlue
             .edgesIgnoringSafeArea(.all)
