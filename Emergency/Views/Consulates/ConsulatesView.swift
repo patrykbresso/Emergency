@@ -48,7 +48,6 @@ struct ConsulatesView: View {
                             }
                         }
                     }
-                    .frame(width: UIScreen.screenWidth / 1.3, alignment: .center)
                 }
                 .padding([.leading, .trailing], self.paddingSides)
         }

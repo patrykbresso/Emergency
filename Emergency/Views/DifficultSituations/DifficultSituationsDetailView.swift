@@ -37,7 +37,7 @@ struct DifficultSituationsDetailView: View {
                         .foregroundColor(Color.primaryPink)
                         .font(Font.custom("ITCAvantGardePro-Bold", size: 14))
                 }
-            }.padding(15)
+            }.padding(.bottom, 20)
             
             ZStack {
                 RoundedRectangle(cornerRadius: 10)
@@ -55,7 +55,7 @@ struct DifficultSituationsDetailView: View {
                     }.padding(10)
                 }
                 .foregroundColor(.white)
-            }.frame(width: UIScreen.screenWidth / 1.3, alignment: .center)
+            }
             Spacer(minLength: UIScreen.screenHeight / 10)
 
         }
