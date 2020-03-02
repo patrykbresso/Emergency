@@ -25,7 +25,8 @@ struct LawsCell: View {
                     .lineSpacing(5.0)
                     .multilineTextAlignment(.center)
                     .font(.system(size: 14))
-                    .lineLimit(6)
+                    .fixedSize(horizontal: false, vertical: true)
+                    .lineLimit(nil)
                     .padding(5)
             }
             .foregroundColor(.white)
