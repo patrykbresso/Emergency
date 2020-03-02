@@ -37,6 +37,7 @@ struct LawsView: View {
                             .font(Font.custom("ITCAvantGardePro-Bold", size: 14))
                     }
                 }
+            ScrollView {
                 ForEach((0...(self.dataLoader.lawsData.count - 2)), id: \.self) { i in
                     
                     HStack(spacing: 20) {
@@ -54,8 +55,8 @@ struct LawsView: View {
                 NavigationLink(destination: LawsDetailView(law: self.dataLoader.lawsData[self.dataLoader.lawsData.count - 1])) {
                     LawsCell(law: self.dataLoader.lawsData[self.dataLoader.lawsData.count - 1])
                 }.frame(width: UIScreen.screenWidth / 2 - 2 * self.paddingSides)
-
             }
+        }
 
         .padding([.leading, .trailing, .bottom], self.paddingSides)
         .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity)
