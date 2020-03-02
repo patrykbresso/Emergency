@@ -47,7 +47,7 @@ struct ContentView: View {
                                     Text(self.dataLoader.menuData.search).font(.custom("ITCAvantGardePro-Bk", size: 14))
                                 }
                                 TextField("", text: self.$keyword, onCommit: {
-                                    self.keyboardOpened.toggle()
+                                    self.keyboardOpened = false
                                     if !self.keyword.trimmingCharacters(in: .whitespaces).isEmpty {
                                         let searchController: SearchController = SearchController(dataLoader: self.dataLoader)
                                         self.searchResults = searchController.searchByKeywords(searchedPhrase: self.keyword)
@@ -56,8 +56,8 @@ struct ContentView: View {
                                     }
                                     self.keyword = ""
                                 }).padding(20)
-                                    .onTapGesture {
-                                    self.keyboardOpened.toggle()
+                                .onTapGesture {
+                                    self.keyboardOpened = true
                                 }
                                 
                             }
@@ -65,6 +65,11 @@ struct ContentView: View {
                             NavigationLink(destination: DropDown()) {
                                 Text("...").font(Font.custom("ITCAvantGardePro-Bold", size: 14))
                                     .foregroundColor(Color.primaryPink)
+                            }.disabled(self.keyboardOpened)
+                            .onTapGesture {
+                                    if self.keyboardOpened {
+                                        self.keyboardOpened.toggle()
+                                    }
                             }
                         }.padding(.top, 5)
                         
@@ -207,8 +212,12 @@ struct ContentView: View {
                                 }
                             }
                             .padding(.vertical)
+                        }.disabled(self.keyboardOpened)
+                        .onTapGesture {
+                                if self.keyboardOpened {
+                                    self.keyboardOpened.toggle()
+                                }
                         }
-                        //search bar
                             
                         /*.background(GeometryGetter(rect: self.$searchBarSize))
                             .padding(.bottom, 10)*/

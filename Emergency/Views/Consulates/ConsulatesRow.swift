@@ -32,6 +32,7 @@ struct ConsulatesRow: View {
                         .font(Font.custom("ITCAvantGardePro-Bk", size: 14))
                         .lineSpacing(5.0)
                         .frame(maxWidth: .infinity, alignment: .leading)
+                        .fixedSize(horizontal: false, vertical: true)
                         .padding(.bottom, 5)
                     Button(action: {
                         let addressString = self.consulate.address

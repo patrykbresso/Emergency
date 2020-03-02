@@ -43,8 +43,7 @@ struct HelpView: View {
                             .foregroundColor(Color.primaryPink)
                             .font(Font.custom("ITCAvantGardePro-Bold", size: 14))
                     }
-                }
-                Spacer()
+                }.padding(.bottom, 20)
                 
                 ScrollView {
                     ForEach(self.texts, id: \.self) { emailAddress in
@@ -62,7 +61,6 @@ struct HelpView: View {
                                     
                             }
                         }.frame(width: 250, height: self.boxHeight)
-                            .offset(y: 55)
                             .disabled(!MFMailComposeViewController.canSendMail())
                             .sheet(isPresented: self.$isShowingMailView) {
                                 MailView(result: self.$result, mail: self.mail)

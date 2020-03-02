@@ -42,7 +42,7 @@ struct DropDown : View {
                             Spacer()
                             ForEach((0...(self.dataLoader.footerData.title.count - 2)), id: \.self) { i in
                                 DropDownRow(title: self.dataLoader.footerData.title[i])
-                                .padding(.bottom, 15)
+                                .padding(.bottom, 10)
                             }
                             ScrollView(showsIndicators: false) {
                                 DropDownRow(title: self.dataLoader.footerData.title[self.dataLoader.footerData.title.count - 1])
@@ -63,7 +63,7 @@ struct DropDown : View {
                                 
                             }
                         }.padding(.top, 15)
-                    }.padding(UIScreen.screenWidth * 0.07)
+                    }.padding(UIScreen.screenWidth * 0.06)
                     Spacer()
                 }.onAppear() {
                     if self.footer.closeFooter {

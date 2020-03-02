@@ -40,8 +40,7 @@ struct PsychologyView: View {
                         }
                     }
                         .foregroundColor(.white)
-                    
-                    Spacer(minLength: 25)
+                    .padding(.bottom, 20)
                     
                     ScrollView(showsIndicators: false) {
                         ZStack {

@@ -39,7 +39,7 @@ struct HospitalsView: View {
                                 .foregroundColor(Color.primaryPink)
                                 .font(Font.custom("ITCAvantGardePro-Bold", size: 14))
                         }
-                    }
+                    }.padding(.bottom, 20)
                     ZStack() {
                         RoundedRectangle(cornerRadius: 10)
                         .fill(Color.primaryPink)

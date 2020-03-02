@@ -36,7 +36,7 @@ struct LawsView: View {
                             .foregroundColor(Color.primaryPink)
                             .font(Font.custom("ITCAvantGardePro-Bold", size: 14))
                     }
-                }
+                }.padding(.bottom, 20)
                 ForEach((0...(self.dataLoader.lawsData.count - 2)), id: \.self) { i in
                     
                     HStack(spacing: 20) {
