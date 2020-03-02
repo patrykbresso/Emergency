@@ -39,7 +39,7 @@ struct LawsView: View {
                     }
 
                 }.padding(.bottom, 20)
-            ScrollView {
+            ScrollView(showsIndicators: false) {
                 VStack {
                     ForEach((0...(self.dataLoader.lawsData.count - 2)), id: \.self) { i in
                         
@@ -47,11 +47,11 @@ struct LawsView: View {
                                 if(i % 2 == 0) {
                                     NavigationLink(destination: LawsDetailView(law: self.dataLoader.lawsData[i])) {
                                         LawsCell(law: self.dataLoader.lawsData[i])
-                                    }.frame(width: UIScreen.screenWidth / 2 - 2 * self.paddingSides, height: UIScreen.screenHeight / 7)
+                                    }.frame(width: UIScreen.screenWidth / 1.9 - 2 * self.paddingSides, height: UIScreen.screenHeight / 7)
                                     
                                     NavigationLink(destination: LawsDetailView(law: self.dataLoader.lawsData[i + 1])) {
                                         LawsCell(law: self.dataLoader.lawsData[i + 1])
-                                    }.frame(width: UIScreen.screenWidth / 2 - 2 * self.paddingSides, height: UIScreen.screenHeight / 7)
+                                    }.frame(width: UIScreen.screenWidth / 1.9 - 2 * self.paddingSides, height: UIScreen.screenHeight / 7)
                                 }
                         }.padding(.bottom, 10)
                     }

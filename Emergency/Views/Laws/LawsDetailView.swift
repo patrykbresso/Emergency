@@ -38,7 +38,7 @@ struct LawsDetailView: View {
                             .foregroundColor(Color.primaryPink)
                             .font(Font.custom("ITCAvantGardePro-Bold", size: 14))
                     }
-                }.padding(20)
+                }.padding(.bottom, 20)
                 Spacer()
                 ZStack{
                     RoundedRectangle(cornerRadius: 10)
@@ -58,7 +58,7 @@ struct LawsDetailView: View {
                     }
                         
                     .foregroundColor(.white)
-                }.frame(width: UIScreen.screenWidth / 1.3, alignment: .center)
+                }
                 Spacer(minLength: UIScreen.screenHeight / 10)
             }
             .padding([.leading, .trailing], self.paddingSides)
