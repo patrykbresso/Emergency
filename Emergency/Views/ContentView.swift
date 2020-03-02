@@ -39,7 +39,10 @@ struct ContentView: View {
                                 .renderingMode(.original)
                             Spacer()
                             ZStack {
-                                
+                            RoundedRectangle(cornerRadius: 10)
+                                .stroke(Color.primaryPink, lineWidth: 3)
+                                .frame(width: UIScreen.screenWidth - 120, height: 30)
+
                                 if(self.keyword.isEmpty) {
                                     Text(self.dataLoader.menuData.search).font(.custom("ITCAvantGardePro-Bk", size: 14))
                                 }
@@ -52,18 +55,16 @@ struct ContentView: View {
                                         self.show = true
                                     }
                                     self.keyword = ""
-                                }).padding(5)
+                                }).padding(20)
                                     .onTapGesture {
                                     self.keyboardOpened.toggle()
                                 }
-                                .textFieldStyle(CustomTextFieldStyle())
                                 
                             }
                             Spacer()
                             NavigationLink(destination: DropDown()) {
-                                Text("...").font(Font.custom("ITCAvantGardePro-Bk", size: 14))
+                                Text("...").font(Font.custom("ITCAvantGardePro-Bold", size: 14))
                                     .foregroundColor(Color.primaryPink)
-                                    .bold()
                             }
                         }.padding(.top, 5)
                         
@@ -232,7 +233,6 @@ struct ContentView: View {
             .edgesIgnoringSafeArea(.all))
 
         }
-        
     }
 
     

@@ -43,7 +43,9 @@ struct AdviceView: View {
                             
                              Text(self.dataLoader.adviceData.intro)
                             .font(Font.custom("ITCAvantGardePro-Bk", size: 14))
-                                .padding(15)
+                            .lineSpacing(5.0)
+                            .padding(15)
+                            
                             
                         }.fixedSize(horizontal: false, vertical: true)
                             .padding(.bottom, 10)
@@ -54,6 +56,7 @@ struct AdviceView: View {
                                 
                                 Text(advice.text)
                                     .font(Font.custom("ITCAvantGardePro-Bk", size: 14))
+                                    .lineSpacing(5.0)
                                     .padding(15)
                                     .lineLimit(nil)
                                     .fixedSize(horizontal: false, vertical: true)

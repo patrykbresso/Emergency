@@ -34,7 +34,7 @@ struct DifficultSituationsView: View {
                     NavigationLink(destination: DropDown()) {
                         Text("...")
                             .foregroundColor(Color.primaryPink)
-                            .bold()
+                            .font(Font.custom("ITCAvantGardePro-Bold", size: 14))
                     }
                 }.padding(15)
             

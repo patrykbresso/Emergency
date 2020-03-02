@@ -1289,7 +1289,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Emergency/Preview Content\"";
-				DEVELOPMENT_TEAM = krzysztof.wasko;
+				DEVELOPMENT_TEAM = 6RF8783XNS;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Emergency/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1310,7 +1310,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Emergency/Preview Content\"";
-				DEVELOPMENT_TEAM = krzysztof.wasko;
+				DEVELOPMENT_TEAM = 6RF8783XNS;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Emergency/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (

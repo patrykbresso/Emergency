@@ -24,8 +24,8 @@ struct HospitalsRow: View {
                 
                 VStack {
                     Text(self.hospital.name)
-                        .fontWeight(.bold)
                         .font(Font.custom("ITCAvantGardePro-Bold", size: 14))
+                        .lineSpacing(5.0)
                         .frame(maxWidth: .infinity, alignment: .leading)
                         .fixedSize(horizontal: false, vertical: true)
                     .padding(.bottom, 5)
@@ -54,6 +54,7 @@ struct HospitalsRow: View {
                     }){
                         Text(self.hospital.address)
                             .font(Font.custom("ITCAvantGardePro-Bk", size: 14))
+                            .lineSpacing(5.0)
                             .frame(maxWidth: .infinity, alignment: .leading)
                         .fixedSize(horizontal: false, vertical: true)
                         .padding(.bottom, 5)
@@ -67,8 +68,8 @@ struct HospitalsRow: View {
                             UIApplication.shared.open(url as URL)
                            }) {
                             Text(number.name)
-                            .fontWeight(.bold)
                             .font(Font.custom("ITCAvantGardePro-Bold", size: 14))
+                            .lineSpacing(5.0)
                             .frame(maxWidth: .infinity, alignment: .leading)
                             .padding(.bottom, 5)
                         }
@@ -77,8 +78,7 @@ struct HospitalsRow: View {
                 .onAppear() {
                 self.listOFNumbers = self.dividePhoneNumbers(stringNumbers: self.hospital.number)
                 }
-            }.font(.system(size: 14))
-            .foregroundColor(.white)
+            }.foregroundColor(.white)
         
     }
     

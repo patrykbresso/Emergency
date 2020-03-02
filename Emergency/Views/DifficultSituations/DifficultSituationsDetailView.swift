@@ -35,7 +35,7 @@ struct DifficultSituationsDetailView: View {
                 NavigationLink(destination: DropDown()) {
                     Text("...")
                         .foregroundColor(Color.primaryPink)
-                        .bold()
+                        .font(Font.custom("ITCAvantGardePro-Bold", size: 14))
                 }
             }.padding(15)
             
@@ -45,12 +45,13 @@ struct DifficultSituationsDetailView: View {
                 VStack {
                     ScrollView(showsIndicators: false) {
                         Text(self.difficultSituation.title)
-                            .fontWeight(.bold)
                             .font(Font.custom("ITCAvantGardePro-Bold", size: 14))
+                            .lineSpacing(5.0)
                             .frame(maxWidth: .infinity, alignment: .leading)
                         Spacer()
                         Text(self.difficultSituation.text)
                             .font(Font.custom("ITCAvantGardePro-Bk", size: 14))
+                            .lineSpacing(5.0)
                     }.padding(10)
                 }
                 .foregroundColor(.white)

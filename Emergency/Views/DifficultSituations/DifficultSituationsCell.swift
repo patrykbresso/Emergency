@@ -18,9 +18,10 @@ struct DifficultSituationsCell: View {
             
             Text(difficultSituation.title)
                 .font(Font.custom("ITCAvantGardePro-Bk", size: 14))
+                .lineSpacing(5.0)
                 .multilineTextAlignment(.center)
                 .font(.system(size: 14))
-                .lineLimit(5)
+                .lineLimit(2)
                 .padding(5)
         }
         .foregroundColor(.white)

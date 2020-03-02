@@ -36,7 +36,7 @@ struct PsychologyView: View {
                         NavigationLink(destination: DropDown()) {
                             Text("...")
                                 .foregroundColor(Color.primaryPink)
-                                .bold()
+                                .font(Font.custom("ITCAvantGardePro-Bold", size: 14))
                         }
                     }
                         .foregroundColor(.white)
@@ -51,6 +51,7 @@ struct PsychologyView: View {
                                 HStack{
                                     Text(self.dataLoader.psychologyData.intro)
                                         .font(Font.custom("ITCAvantGardePro-Bk", size: 14))
+                                        .lineSpacing(5.0)
                                         .padding(.bottom, 5)
                                         .lineLimit(nil)
                                         .fixedSize(horizontal: false, vertical: true)
@@ -60,6 +61,7 @@ struct PsychologyView: View {
                                 HStack{
                                     Text(self.dataLoader.psychologyData.name)
                                         .fontWeight(.bold)
+                                        .lineSpacing(5.0)
                                         .font(Font.custom("ITCAvantGardePro-Bold", size: 14))
                                         .padding(.bottom, 5)
                                         .lineLimit(nil)
@@ -70,6 +72,7 @@ struct PsychologyView: View {
                                 HStack{
                                     Text(self.dataLoader.psychologyData.address)
                                         .font(Font.custom("ITCAvantGardePro-Bk", size: 14))
+                                        .lineSpacing(5.0)
                                         .padding(.bottom, 5)
                                         .lineLimit(nil)
                                         .fixedSize(horizontal: false, vertical: true)
@@ -128,6 +131,7 @@ struct PsychologyView: View {
                                 .font(Font.custom("ITCAvantGardePro-Bk", size: 14))
                                 .multilineTextAlignment(.leading)
                                 .lineLimit(nil)
+                                .lineSpacing(5.0)
                                 .fixedSize(horizontal: false, vertical: true)
                             .padding(15)
                         }

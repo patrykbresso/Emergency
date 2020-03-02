@@ -34,7 +34,7 @@ struct LawsView: View {
                     NavigationLink(destination: DropDown()) {
                         Text("...")
                             .foregroundColor(Color.primaryPink)
-                            .bold()
+                            .font(Font.custom("ITCAvantGardePro-Bold", size: 14))
                     }
                 }
                 ForEach((0...(self.dataLoader.lawsData.count - 2)), id: \.self) { i in

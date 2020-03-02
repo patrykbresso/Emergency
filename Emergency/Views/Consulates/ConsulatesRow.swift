@@ -23,13 +23,14 @@ struct ConsulatesRow: View {
                     .fill(Color.primaryPink)
                 VStack {
                     Text(self.consulate.name)
-                        .fontWeight(.bold)
                         .font(Font.custom("ITCAvantGardePro-Bold", size: 14))
+                        .lineSpacing(5.0)
                         .fixedSize(horizontal: false, vertical: true)
                         .padding(.bottom, 5)
                         .frame(maxWidth: .infinity, alignment: .leading)
                     Text(self.consulate.consulName)
                         .font(Font.custom("ITCAvantGardePro-Bk", size: 14))
+                        .lineSpacing(5.0)
                         .frame(maxWidth: .infinity, alignment: .leading)
                         .padding(.bottom, 5)
                     Button(action: {
@@ -55,6 +56,7 @@ struct ConsulatesRow: View {
                     }) {
                         Text(self.consulate.address)
                             .font(Font.custom("ITCAvantGardePro-Bk", size: 14))
+                            .lineSpacing(5.0)
                             .fixedSize(horizontal: false, vertical: true)
                             .padding(.bottom, 5)
                             .frame(maxWidth: .infinity, alignment: .leading)

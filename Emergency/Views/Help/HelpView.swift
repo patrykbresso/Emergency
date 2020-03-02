@@ -41,38 +41,38 @@ struct HelpView: View {
                     NavigationLink(destination: DropDown()) {
                         Text("...")
                             .foregroundColor(Color.primaryPink)
-                            .bold()
+                            .font(Font.custom("ITCAvantGardePro-Bold", size: 14))
                     }
-                }.padding(.bottom, 15)
-                Spacer()
-                
-                ForEach(self.texts, id: \.self) { emailAddress in
-                    Button(action: {
-                        self.onBoxClick(boxNo: Int(self.texts.firstIndex(of: emailAddress) ?? 0))
-                    }) {
-                        VStack {
-                            RoundedRectangle(cornerRadius: 10)
-                                .stroke(Color.primaryPink, lineWidth: 10)
-                                .background(Color.primaryPink)
-                                .frame(width: 250, height: self.boxHeight)
-                            Text(emailAddress)
-                                .font(Font.custom("ITCAvantGardePro-Bk", size: 14))
-                                .padding(.top, 20)
-                                .foregroundColor(.white)
-                                .frame(width: 250, height: self.boxHeight)
-                                .offset(y: -120)
-                        }
-                    }.frame(width: 250, height: self.boxHeight)
-                        .offset(y: 55)
-                        .disabled(!MFMailComposeViewController.canSendMail())
-                        .sheet(isPresented: self.$isShowingMailView) {
-                            MailView(result: self.$result, mail: self.mail)
-                        }
-                    .padding([.leading, .trailing], (geometry.size.width - 250) / 2)
-                    .padding(.bottom, 20)
-                
                 }
                 Spacer()
+                
+                ScrollView {
+                    ForEach(self.texts, id: \.self) { emailAddress in
+                        Button(action: {
+                            self.onBoxClick(boxNo: Int(self.texts.firstIndex(of: emailAddress) ?? 0))
+                        }) {
+                            ZStack {
+                                RoundedRectangle(cornerRadius: 10)
+                                    .fill(Color.primaryPink)
+                                    .frame(width: 250, height: self.boxHeight)
+                                Text(emailAddress)
+                                    .font(Font.custom("ITCAvantGardePro-Bold", size: 14))
+                                    .foregroundColor(.white)
+                                    .frame(width: 250, height: self.boxHeight)
+                                    
+                            }
+                        }.frame(width: 250, height: self.boxHeight)
+                            .offset(y: 55)
+                            .disabled(!MFMailComposeViewController.canSendMail())
+                            .sheet(isPresented: self.$isShowingMailView) {
+                                MailView(result: self.$result, mail: self.mail)
+                            }
+                        .padding([.leading, .trailing], (geometry.size.width - 250) / 2)
+                        .padding(.bottom, 20)
+                    
+                    }
+                    Spacer()
+                }
 
             }
 

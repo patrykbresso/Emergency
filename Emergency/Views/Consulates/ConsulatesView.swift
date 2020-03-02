@@ -38,7 +38,7 @@ struct ConsulatesView: View {
                         NavigationLink(destination: DropDown()) {
                             Text("...")
                                 .foregroundColor(Color.primaryPink)
-                                .bold()
+                                .font(Font.custom("ITCAvantGardePro-Bold", size: 14))
                         }
                     }
                     ScrollView(showsIndicators: false) {

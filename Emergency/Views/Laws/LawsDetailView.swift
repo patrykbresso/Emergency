@@ -36,7 +36,7 @@ struct LawsDetailView: View {
                     NavigationLink(destination: DropDown()) {
                         Text("...")
                             .foregroundColor(Color.primaryPink)
-                            .bold()
+                            .font(Font.custom("ITCAvantGardePro-Bold", size: 14))
                     }
                 }.padding(15)
                 Spacer()
@@ -46,13 +46,14 @@ struct LawsDetailView: View {
                     VStack {
                         ScrollView(showsIndicators: false) {
                             Text(self.law.title)
-                                .fontWeight(.bold)
                                 .font(Font.custom("ITCAvantGardePro-Bold", size: 14))
+                                .lineSpacing(5.0)
                                 .frame(maxWidth: .infinity, alignment: .leading)
                                 
                             Spacer()
                             Text(self.law.text)
                                 .font(Font.custom("ITCAvantGardePro-Bk", size: 14))
+                                .lineSpacing(5.0)
                         }.padding(10)
                     }
                         

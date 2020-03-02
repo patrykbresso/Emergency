@@ -36,10 +36,61 @@ struct PhoneNumbersView: View {
                     NavigationLink(destination: DropDown()) {
                         Text("...")
                             .foregroundColor(Color.primaryPink)
-                            .bold()
+                            .font(Font.custom("ITCAvantGardePro-Bold", size: 14))
                     }
                 }.padding(.bottom, 15)
+                
                 VStack {
+                    HStack {
+                        Spacer()
+                        
+                        Button(action: {
+                            self.onBoxClick(boxNo: 0)
+                        }) {
+                            PhoneNumbersCell(phoneNumber: self.dataLoader.phoneNumbersData[0], showDescription: self.boxClicked[0])
+                                
+                        }.frame(width: UIScreen.screenWidth / 1.5 - 2 * self.paddingSides, height: UIScreen.screenHeight / 8)
+                        
+                        Spacer()
+                    }.padding(.bottom, 25)
+                    
+                    ForEach((1..<(self.dataLoader.phoneNumbersData.count - 1)), id: \.self) { i in
+                        HStack(spacing: 20) {
+                            if(i % 2 == 1) {
+                                
+                                Button(action: {
+                                    self.onBoxClick(boxNo: i)
+                                }) {
+                                    PhoneNumbersCell(phoneNumber: self.dataLoader.phoneNumbersData[i], showDescription: self.boxClicked[i])
+                                        
+                                }.frame(width: UIScreen.screenWidth / 2 - 2 * self.paddingSides, height: UIScreen.screenHeight / 8)
+                                
+                                Button(action: {
+                                    self.onBoxClick(boxNo: i + 1)
+                                }) {
+                                    PhoneNumbersCell(phoneNumber: self.dataLoader.phoneNumbersData[i+1], showDescription: self.boxClicked[i + 1])
+                                        
+                                }.frame(width: UIScreen.screenWidth / 2 - 2 * self.paddingSides, height: UIScreen.screenHeight / 8)
+                            }
+                        }.padding(.bottom, 20)
+                        
+                    }
+                    HStack {
+                        Spacer()
+                        
+                        Button(action: {
+                            self.onBoxClick(boxNo: self.dataLoader.phoneNumbersData.count - 1)
+                        }) {
+                            PhoneNumbersCell(phoneNumber: self.dataLoader.phoneNumbersData[self.dataLoader.phoneNumbersData.count - 1], showDescription: self.boxClicked[self.dataLoader.phoneNumbersData.count - 1])
+                                
+                        }.frame(width: UIScreen.screenWidth / 1.5 - 2 * self.paddingSides, height: UIScreen.screenHeight / 8)
+                        
+                        Spacer()
+                    }
+                    Spacer()
+                }
+                
+                /*VStack {
                     ForEach(self.dataLoader.phoneNumbersData){ row in
                         if(row.id % 2 == 0) {
                             HStack {
@@ -64,7 +115,7 @@ struct PhoneNumbersView: View {
                             .padding(.bottom, 5)
                         }
                     }
-                }
+                }*/
             }
             .padding([.leading, .trailing, .bottom], self.paddingSides)
             .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity)

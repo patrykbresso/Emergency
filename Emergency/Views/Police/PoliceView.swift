@@ -38,7 +38,7 @@ struct PoliceView: View {
                     NavigationLink(destination: DropDown()) {
                         Text("...")
                             .foregroundColor(Color.primaryPink)
-                            .bold()
+                            .font(Font.custom("ITCAvantGardePro-Bold", size: 14))
                     }
                 }
                 
@@ -50,14 +50,17 @@ struct PoliceView: View {
                         
                         VStack {
                             Text(self.dataLoader.policeData.title)
-                                .fontWeight(.bold)
                                 .font(Font.custom("ITCAvantGardePro-Bold", size: 14))
+                                .lineSpacing(5.0)
                                 .frame(maxWidth: .infinity, alignment: .leading)
                                 .multilineTextAlignment(.leading)
+                                .padding(.bottom, 5)
                             Text(self.dataLoader.policeData.subtitle)
                                 .font(Font.custom("ITCAvantGardePro-Bk", size: 14))
+                                .lineSpacing(5.0)
                                 .frame(maxWidth: .infinity, alignment: .leading)
                                 .multilineTextAlignment(.leading)
+                                .padding(.bottom, 5)
                             Button(action: {
                                 let cleanString = String("112")
                                 let tel = "tel://"
@@ -72,7 +75,7 @@ struct PoliceView: View {
                             }.padding(15)
                         .multilineTextAlignment(.center)
                         .layoutPriority(1)
-                        }.padding(5)
+                        }.padding(10)
                         .frame(width: UIScreen.screenWidth / 1.3)
                         .foregroundColor(.white)
                     //Map button

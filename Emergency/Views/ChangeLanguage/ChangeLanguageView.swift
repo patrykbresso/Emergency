@@ -23,17 +23,19 @@ struct ChangeLanguageView: View {
     var body: some View {
         GeometryReader { geometry in
             VStack {
-                HStack {
-                    Button(action: {
-                        self.presentationMode.wrappedValue.dismiss()
-                        }) {
-                                VStack {
-                                Image("left_arrow")
-                                .renderingMode(.original)
-                    
-                            }
+                if self.launch.firstLoad {
+                    HStack {
+                        Button(action: {
+                            self.presentationMode.wrappedValue.dismiss()
+                            }) {
+                                    VStack {
+                                    Image("left_arrow")
+                                    .renderingMode(.original)
+                        
+                                }
+                        }
+                        Spacer()
                     }
-                    Spacer()
                 }
                 
                 Spacer()
