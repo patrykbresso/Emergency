@@ -63,7 +63,7 @@ struct ContentView: View {
                             }
                             Spacer()
                             NavigationLink(destination: DropDown()) {
-                                Text("...").font(Font.custom("ITCAvantGardePro-Bold", size: 14))
+                                Text("...").font(Font.custom("ITCAvantGardePro-Bold", size: 18))
                                     .foregroundColor(Color.primaryPink)
                             }.disabled(self.keyboardOpened)
                             .onTapGesture {
