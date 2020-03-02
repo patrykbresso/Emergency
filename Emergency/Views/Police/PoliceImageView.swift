@@ -31,6 +31,11 @@ struct PoliceImageView: View {
                         .renderingMode(.original)
                         .padding(.leading, -self.backButtonSize.width)
                     Spacer()
+                    NavigationLink(destination: DropDown()) {
+                        Text("...")
+                            .foregroundColor(Color.primaryPink)
+                            .font(Font.custom("ITCAvantGardePro-Bold", size: 18))
+                    }
                 }
                 Spacer()
                 Image(image)
