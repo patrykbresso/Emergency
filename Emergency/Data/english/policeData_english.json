@@ -158,7 +158,7 @@
                "longitude": 17.117308,
                "latitude": 51.146688
            },
-           "imageName": "policja_psie_pole"
+           "imageName": "policja_osiedle"
         },
         {
            "id": 13,
@@ -171,7 +171,7 @@
                "longitude": 17.065012,
                "latitude": 51.106096
            },
-           "imageName": "policja_psie_pole"
+           "imageName": "policja_wodna"
         },
         {
           "id": 14,
@@ -184,7 +184,7 @@
               "longitude": 17.036570,
               "latitude": 51.098803
           },
-          "imageName": "policja_psie_pole"
+          "imageName": "policja_pkp"
        },
          {
            "id": 15,
@@ -197,7 +197,7 @@
                "longitude": 17.184659,
                "latitude": 51.177753
            },
-           "imageName": "policja_psie_pole"
+           "imageName": "policja_dlugoleka"
         },
          {
             "id": 16,
@@ -210,7 +210,7 @@
                 "longitude": 16.747308,
                 "latitude": 50.900539
             },
-            "imageName": "policja_psie_pole"
+            "imageName": "policja_sobotka"
          },
          {
             "id": 17,
@@ -223,7 +223,7 @@
                 "longitude": 16.765961,
                 "latitude": 51.031487
             },
-            "imageName": "policja_psie_pole"
+            "imageName": "policja_katy_wroclawskie"
          },
          {
             "id": 18,
@@ -236,7 +236,7 @@
                 "longitude": 17.151008,
                 "latitude": 51.032614
             },
-            "imageName": "policja_psie_pole"
+            "imageName": "policja_siechnice"
          }
     ]
 }
