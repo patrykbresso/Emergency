@@ -104,7 +104,7 @@ struct PoliceView: View {
                                 }
                         }
                     }
-                }
+                }.padding(.bottom, paddingSides)
 
             }
 

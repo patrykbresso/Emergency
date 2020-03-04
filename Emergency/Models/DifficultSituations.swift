@@ -12,4 +12,6 @@ struct DifficultSituations: Identifiable, Decodable {
     var id: Int
     var title: String
     var text: String
+    var phone: String?
+    var text2: String?
 }

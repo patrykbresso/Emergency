@@ -59,6 +59,7 @@ struct HospitalsView: View {
                         }
                     .font(.system(size: 14))
                     .foregroundColor(.white)
+                    .padding(.bottom, 15)
                     ScrollView(showsIndicators: false) {
                         Spacer()
                         VStack(alignment: .center, spacing: 30) {

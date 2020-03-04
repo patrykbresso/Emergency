@@ -53,7 +53,7 @@ struct DifficultSituationsView: View {
                         }
                 }
             }
-            .padding([.leading, .trailing], self.paddingSides)
+        .padding([.leading, .trailing, .bottom], self.paddingSides)
             .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity)
             .background(Color.primaryBlue
                 .edgesIgnoringSafeArea(.all)

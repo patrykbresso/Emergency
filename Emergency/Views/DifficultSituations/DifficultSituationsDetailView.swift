@@ -5,7 +5,6 @@
 //  Created by Paulina Binas on 07/12/2019.
 //  Copyright © 2019 Wasko. All rights reserved.
 //
-
 import SwiftUI
 
 struct DifficultSituationsDetailView: View {
@@ -52,6 +51,24 @@ struct DifficultSituationsDetailView: View {
                         Text(self.difficultSituation.text)
                             .font(Font.custom("ITCAvantGardePro-Bk", size: 14))
                             .lineSpacing(5.0)
+                        HStack {
+                            Button(action: {
+                                self.callPhone(number: self.difficultSituation.phone)
+                            }) {
+                                self.difficultSituation.phone.map {
+                                    Text($0)
+                                        .font(Font.custom("ITCAvantGardePro-Bold", size: 14))
+                                        .lineSpacing(5.0)
+                                        .multilineTextAlignment(.leading)
+                                }
+                            }.padding([.bottom, .top], 5)
+                            Spacer()
+                        }
+                        self.difficultSituation.text2.map {
+                            Text($0)
+                            .font(Font.custom("ITCAvantGardePro-Bk", size: 14))
+                            .lineSpacing(5.0)
+                        }
                     }.padding(10)
                 }
                 .foregroundColor(.white)
@@ -68,7 +85,19 @@ struct DifficultSituationsDetailView: View {
         .navigationBarHidden(true)
         .navigationBarBackButtonHidden(true)
     }
+    
+    func callPhone(number: String?) {
+        if(number != nil) {
+            let cleanString = String(number?.filter { !" \n\t\r".contains($0) } ?? "")
+            let tel = "tel://"
+            let formattedString = tel + cleanString
+            let url: NSURL = URL(string: formattedString)! as NSURL
+            UIApplication.shared.open(url as URL)
+        }
+    }
 }
+
+
 
 struct DifficultSituationsDetailView_Previews: PreviewProvider {
     static var previews: some View {
