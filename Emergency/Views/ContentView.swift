@@ -213,6 +213,7 @@ struct ContentView: View {
                             }
                             .padding(.vertical)
                         }.disabled(self.keyboardOpened)
+                        .minimumScaleFactor(0.99)
                         .onTapGesture {
                                 if self.keyboardOpened {
                                     self.keyboardOpened.toggle()
