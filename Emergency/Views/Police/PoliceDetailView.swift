@@ -12,9 +12,11 @@ import MapKit
 
 struct PoliceDetailView: View {
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
+    @EnvironmentObject var dataLoader: DataLoader
     @State var backButtonSize: CGRect = CGRect()
     let paddingSides = CGFloat(20)
-    var policeStation: Police
+    let index: Int
+    //var policeStation: Police
 
     @State var listOFNumbers = [Numbers]()
 
@@ -30,11 +32,11 @@ struct PoliceDetailView: View {
                     Spacer()
                     Button(action: {
                         
-                        let coordinate = CLLocationCoordinate2D(latitude: self.policeStation.coordinates.latitude,longitude: self.policeStation.coordinates.longitude)
+                        let coordinate = CLLocationCoordinate2D(latitude: self.dataLoader.policeData.police[self.index].coordinates.latitude,longitude: self.dataLoader.policeData.police[self.index].coordinates.longitude)
                         
                         let placemark = MKPlacemark(coordinate: coordinate, addressDictionary: nil)
                         let mapItem = MKMapItem(placemark: placemark)
-                        mapItem.name = self.policeStation.name
+                        mapItem.name = self.dataLoader.policeData.police[self.index].name
                         mapItem.openInMaps(launchOptions: nil)
 
                     }) {
@@ -50,15 +52,15 @@ struct PoliceDetailView: View {
                     }
                 }.padding(.bottom, 20)
                 
-                MapView(coordinate: self.policeStation.locationCoordinate)
+                        MapView(coordinate: self.dataLoader.policeData.police[index].locationCoordinate)
                     .frame(width: UIScreen.screenWidth / 1.1, height: UIScreen.screenHeight / 3, alignment: .center)
                     .overlay(
                         RoundedRectangle(cornerRadius: 5)
                             .stroke(Color.white, lineWidth: 3)
                     )
                 VStack {
-                    NavigationLink(destination: PoliceImageView(image: self.policeStation.imageName)) {
-                        CircleImage(image: Image(self.policeStation.imageName).resizable())
+                    NavigationLink(destination: PoliceImageView(image: self.dataLoader.policeData.police[index].imageName)) {
+                        CircleImage(image: Image(self.dataLoader.policeData.police[index].imageName).resizable())
                         .frame(width: 180, height: 180)
                         .padding(.top, -100)
                     }.buttonStyle(PlainButtonStyle())
@@ -68,13 +70,13 @@ struct PoliceDetailView: View {
                     RoundedRectangle(cornerRadius: 10)
                         .fill(Color.primaryPink)
                     VStack {
-                        Text(self.policeStation.name)
+                        Text(self.dataLoader.policeData.police[index].name)
                             .font(Font.custom("ITCAvantGardePro-Bold", size: 14))
                             .lineSpacing(5.0)
                             .frame(maxWidth: .infinity, alignment: .leading)
                         .fixedSize(horizontal: false, vertical: true)
                         .padding(.bottom, 5)
-                        Text(self.policeStation.address)
+                        Text(self.dataLoader.policeData.police[index].address)
                             .font(Font.custom("ITCAvantGardePro-Bk", size: 14))
                             .lineSpacing(5.0)
                             .frame(maxWidth: .infinity, alignment: .leading)
@@ -105,7 +107,7 @@ struct PoliceDetailView: View {
                 }
                 Spacer()
                     .onAppear() {
-                        self.listOFNumbers = self.dividePhoneNumbers(stringNumbers: self.policeStation.number)
+                        self.listOFNumbers = self.dividePhoneNumbers(stringNumbers: self.dataLoader.policeData.police[self.index].number)
                         }
             }
             .padding([.leading, .trailing], self.paddingSides)
@@ -136,7 +138,7 @@ struct PoliceDetailView: View {
 
 struct PoliceDetailView_Preview: PreviewProvider {
     static var previews: some View {
-        PoliceDetailView(policeStation: policeData.police[1])
+        PoliceDetailView(index: 1)
     }
 }
 

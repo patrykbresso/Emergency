@@ -45,17 +45,17 @@ struct LawsView: View {
                         
                         HStack(spacing: 20) {
                                 if(i % 2 == 0) {
-                                    NavigationLink(destination: LawsDetailView(law: self.dataLoader.lawsData[i])) {
+                                    NavigationLink(destination: LawsDetailView(index: i)) {
                                         LawsCell(law: self.dataLoader.lawsData[i])
                                     }.frame(width: UIScreen.screenWidth / 1.9 - 2 * self.paddingSides, height: UIScreen.screenHeight / 7)
                                     
-                                    NavigationLink(destination: LawsDetailView(law: self.dataLoader.lawsData[i + 1])) {
+                                    NavigationLink(destination: LawsDetailView(index: i + 1)) {
                                         LawsCell(law: self.dataLoader.lawsData[i + 1])
                                     }.frame(width: UIScreen.screenWidth / 1.9 - 2 * self.paddingSides, height: UIScreen.screenHeight / 7)
                                 }
                         }.padding(.bottom, 10)
                     }
-                    NavigationLink(destination: LawsDetailView(law: self.dataLoader.lawsData[self.dataLoader.lawsData.count - 1])) {
+                    NavigationLink(destination: LawsDetailView(index: self.dataLoader.lawsData.count - 1)) {
                         LawsCell(law: self.dataLoader.lawsData[self.dataLoader.lawsData.count - 1])
                     }.frame(width: UIScreen.screenWidth / 2 - 2 * self.paddingSides, height: UIScreen.screenHeight / 11)
                 }.padding(.top, 10)

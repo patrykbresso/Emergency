@@ -98,11 +98,13 @@ struct PoliceView: View {
                 ScrollView(showsIndicators: false) {
                     VStack(spacing: 30) {
                         
-                        ForEach(self.dataLoader.policeData.police) { policeStation in
-                                NavigationLink(destination: PoliceDetailView(policeStation: policeStation)) {
-                                    PoliceRow(policeStation: policeStation)
-                                }
+                        ForEach((0...(self.dataLoader.difficultSituationsData.count - 1)), id: \.self) { i in
+                            NavigationLink(destination: PoliceDetailView(index: i)) {
+                                PoliceRow(policeStation: self.dataLoader.policeData.police[i])
+                            }
+                        
                         }
+
                     }
                 }.padding(.bottom, paddingSides)
 

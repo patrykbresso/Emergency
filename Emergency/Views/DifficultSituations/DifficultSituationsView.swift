@@ -42,11 +42,11 @@ struct DifficultSituationsView: View {
                     
                     HStack(spacing: 20) {
                             if(i % 2 == 0) {
-                                NavigationLink(destination: DifficultSituationsDetailView(difficultSituation: self.dataLoader.difficultSituationsData[i])) {
+                                NavigationLink(destination: DifficultSituationsDetailView(index: i)) {
                                     DifficultSituationsCell(difficultSituation: self.dataLoader.difficultSituationsData[i])
                                 }.frame(width: UIScreen.screenWidth / 1.9 - 2 * self.paddingSides)
                                 
-                                NavigationLink(destination: DifficultSituationsDetailView(difficultSituation: self.dataLoader.difficultSituationsData[i + 1])) {
+                                NavigationLink(destination: DifficultSituationsDetailView(index: i+1)) {
                                     DifficultSituationsCell(difficultSituation: self.dataLoader.difficultSituationsData[i + 1])
                                 }.frame(width: UIScreen.screenWidth / 1.9 - 2 * self.paddingSides)
                             }

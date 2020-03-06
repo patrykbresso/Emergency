@@ -10,9 +10,11 @@ import SwiftUI
 struct DifficultSituationsDetailView: View {
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     @State var backButtonSize: CGRect = CGRect()
+    @EnvironmentObject var dataLoader: DataLoader
     let paddingSides = CGFloat(20)
     
-    var difficultSituation: DifficultSituations
+    //var difficultSituation: DifficultSituations
+    let index: Int
     
     var body: some View {
         VStack {
@@ -43,19 +45,19 @@ struct DifficultSituationsDetailView: View {
                     .fill(Color.primaryPink)
                 VStack {
                     ScrollView(showsIndicators: false) {
-                        Text(self.difficultSituation.title)
+                        Text(self.dataLoader.difficultSituationsData[index].title)
                             .font(Font.custom("ITCAvantGardePro-Bold", size: 14))
                             .lineSpacing(5.0)
                             .frame(maxWidth: .infinity, alignment: .leading)
                         Spacer()
-                        Text(self.difficultSituation.text)
+                        Text(self.dataLoader.difficultSituationsData[index].text)
                             .font(Font.custom("ITCAvantGardePro-Bk", size: 14))
                             .lineSpacing(5.0)
                         HStack {
                             Button(action: {
-                                self.callPhone(number: self.difficultSituation.phone)
+                                self.callPhone(number: self.dataLoader.difficultSituationsData[self.index].phone)
                             }) {
-                                self.difficultSituation.phone.map {
+                                self.dataLoader.difficultSituationsData[index].phone.map {
                                     Text($0)
                                         .font(Font.custom("ITCAvantGardePro-Bold", size: 14))
                                         .lineSpacing(5.0)
@@ -64,7 +66,7 @@ struct DifficultSituationsDetailView: View {
                             }.padding([.bottom, .top], 5)
                             Spacer()
                         }
-                        self.difficultSituation.text2.map {
+                        self.dataLoader.difficultSituationsData[index].text2.map {
                             Text($0)
                             .font(Font.custom("ITCAvantGardePro-Bk", size: 14))
                             .lineSpacing(5.0)
@@ -101,6 +103,6 @@ struct DifficultSituationsDetailView: View {
 
 struct DifficultSituationsDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        DifficultSituationsDetailView(difficultSituation: difficultSituationsData[0])
+        DifficultSituationsDetailView(index: 1)
     }
 }

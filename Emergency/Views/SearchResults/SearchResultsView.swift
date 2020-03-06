@@ -88,12 +88,10 @@ struct SearchResultsView: View {
         let hospitals = AnyView(HospitalsView())
         let psychology = AnyView(PsychologyView())
         if(name == "difficultSituations") {
-            let data = self.dataLoader.difficultSituationsData[pageNumber - 1]
-            return AnyView(DifficultSituationsDetailView(difficultSituation: DifficultSituations(id: pageNumber, title: data.title, text: data.text)))
+            return AnyView(DifficultSituationsDetailView(index: pageNumber - 1))
         }
         if(name == "laws") {
-            let data = self.dataLoader.lawsData[pageNumber]
-            return AnyView(LawsDetailView(law: Laws(id: pageNumber, title: data.title, text: data.text)))
+            return AnyView(LawsDetailView(index: pageNumber))
         }
         let home = AnyView(ContentView())
         

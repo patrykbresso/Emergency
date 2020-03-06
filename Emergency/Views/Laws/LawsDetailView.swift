@@ -11,9 +11,11 @@ import SwiftUI
 struct LawsDetailView: View {
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     @State var backButtonSize: CGRect = CGRect()
+    @EnvironmentObject var dataLoader: DataLoader
     let paddingSides = CGFloat(20)
     
-    var law: Laws
+    let index: Int
+    //var law: Laws
 
     
     var body: some View {
@@ -45,13 +47,13 @@ struct LawsDetailView: View {
                         .fill(Color.primaryPink)
                     VStack {
                         ScrollView(showsIndicators: false) {
-                            Text(self.law.title)
+                            Text(self.dataLoader.lawsData[index].title)
                                 .font(Font.custom("ITCAvantGardePro-Bold", size: 14))
                                 .lineSpacing(5.0)
                                 .frame(maxWidth: .infinity, alignment: .leading)
                                 
                             Spacer()
-                            Text(self.law.text)
+                            Text(self.dataLoader.lawsData[index].text)
                                 .font(Font.custom("ITCAvantGardePro-Bk", size: 14))
                                 .lineSpacing(5.0)
                         }.padding(10)
@@ -76,7 +78,7 @@ struct LawsDetailView: View {
 
 struct LawsDetailView_Preview: PreviewProvider {
     static var previews: some View {
-        LawsDetailView(law: lawsData[0])
+        LawsDetailView(index: 1)
     }
 }
 
