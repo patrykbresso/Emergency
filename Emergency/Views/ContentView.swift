@@ -309,7 +309,6 @@ struct ContentView: View {
                         }.disabled(self.keyboardOpened)
                         .minimumScaleFactor(0.99)
                         .onTapGesture {
-                            print(self.language)
                                 if self.keyboardOpened {
                                     self.keyboardOpened.toggle()
                                 }
