@@ -15,6 +15,7 @@ struct ContentView: View {
     @EnvironmentObject var dataLoader: DataLoader
     @EnvironmentObject var footer : FooterMenu
     @EnvironmentObject var launch: FirstLaunch
+    @State private var language: String = UserDefaults.standard.string(forKey: "language") ?? "English"
     @State private var alwaysTrue: Bool = true
     @State private var keyboardOpened = false
     @State private var menuSize: CGRect = CGRect()
@@ -26,11 +27,13 @@ struct ContentView: View {
                 ZStack() {
                     
                     if !self.launch.firstLoad {
+                        
                         NavigationLink(destination: ChangeLanguageView(), isActive:  self.$alwaysTrue) {
                                               EmptyView()
                                       }
                     }
-                    
+
+
                     
                     VStack(alignment: .leading) {
                         
@@ -79,11 +82,21 @@ struct ContentView: View {
                                     VStack {
                                         Image("psychology")
                                             .renderingMode(.original)
-                                        Text(self.dataLoader.menuData.psychology.uppercased())
-                                            .font(.custom("ITCAvantGardePro-Bold", size: 14))
-                                            .multilineTextAlignment(.center)
-                                            .lineLimit(3)
-                                            .fixedSize(horizontal: false, vertical: true)
+                                        if self.language == "german" {
+                                            Text(self.dataLoader.menuData.psychology.uppercased())
+                                                .font(.system(size: 13))
+                                                .fontWeight(.heavy)
+                                                .multilineTextAlignment(.center)
+                                                .lineLimit(2)
+                                                .fixedSize(horizontal: false, vertical: true)
+                                            } else {
+                                            Text(self.dataLoader.menuData.psychology.uppercased())
+                                                .font(Font.custom("ITCAvantGardePro-Bold", size: 14))
+                                                .fontWeight(.bold)
+                                                .multilineTextAlignment(.center)
+                                                .lineLimit(2)
+                                                .fixedSize(horizontal: false, vertical: true)
+                                            }
                                     }.frame(width: geometry.size.width / 2 - 25)
                                 }
                                 Spacer()
@@ -91,12 +104,21 @@ struct ContentView: View {
                                     VStack {
                                         Image("advice")
                                             .renderingMode(.original)
-                                        Text(self.dataLoader.menuData.advice.uppercased())
-                                            .font(Font.custom("ITCAvantGardePro-Bold", size: 14))
-                                            .fontWeight(.bold)
-                                            .multilineTextAlignment(.center)
-                                            .lineLimit(2)
-                                            .fixedSize(horizontal: false, vertical: true)
+                                        if self.language == "german" {
+                                            Text(self.dataLoader.menuData.advice.uppercased())
+                                                .font(.system(size: 13))
+                                                .fontWeight(.heavy)
+                                                .multilineTextAlignment(.center)
+                                                .lineLimit(2)
+                                                .fixedSize(horizontal: false, vertical: true)
+                                            } else {
+                                            Text(self.dataLoader.menuData.advice.uppercased())
+                                                .font(Font.custom("ITCAvantGardePro-Bold", size: 14))
+                                                .fontWeight(.bold)
+                                                .multilineTextAlignment(.center)
+                                                .lineLimit(2)
+                                                .fixedSize(horizontal: false, vertical: true)
+                                            }
                                     }
                                     .frame(width: geometry.size.width / 2 - 25)
                                     
@@ -107,12 +129,21 @@ struct ContentView: View {
                                     VStack {
                                         Image("translate")
                                             .renderingMode(.original)
-                                        Text(self.dataLoader.menuData.translate.uppercased())
-                                            .font(Font.custom("ITCAvantGardePro-Bold", size: 14))
-                                            .fontWeight(.bold)
-                                            .multilineTextAlignment(.center)
-                                            .lineLimit(2)
-                                            .fixedSize(horizontal: false, vertical: true)
+                                        if self.language == "german" {
+                                            Text(self.dataLoader.menuData.translate.uppercased())
+                                                .font(.system(size: 13))
+                                                .fontWeight(.heavy)
+                                                .multilineTextAlignment(.center)
+                                                .lineLimit(2)
+                                                .fixedSize(horizontal: false, vertical: true)
+                                            } else {
+                                            Text(self.dataLoader.menuData.translate.uppercased())
+                                                .font(Font.custom("ITCAvantGardePro-Bold", size: 14))
+                                                .fontWeight(.bold)
+                                                .multilineTextAlignment(.center)
+                                                .lineLimit(2)
+                                                .fixedSize(horizontal: false, vertical: true)
+                                            }
                                     }.frame(width: geometry.size.width / 2 - 25)
                                 }
                                 Spacer()
@@ -120,12 +151,21 @@ struct ContentView: View {
                                     VStack {
                                         Image("phone")
                                             .renderingMode(.original)
-                                        Text(self.dataLoader.menuData.phone.uppercased())
-                                            .font(Font.custom("ITCAvantGardePro-Bold", size: 14))
-                                            .fontWeight(.bold)
-                                            .multilineTextAlignment(.center)
-                                            .lineLimit(2)
-                                            .fixedSize(horizontal: false, vertical: true)
+                                        if self.language == "german" {
+                                            Text(self.dataLoader.menuData.phone.uppercased())
+                                                .font(.system(size: 13))
+                                                .fontWeight(.heavy)
+                                                .multilineTextAlignment(.center)
+                                                .lineLimit(2)
+                                                .fixedSize(horizontal: false, vertical: true)
+                                            } else {
+                                            Text(self.dataLoader.menuData.phone.uppercased())
+                                                .font(Font.custom("ITCAvantGardePro-Bold", size: 14))
+                                                .fontWeight(.bold)
+                                                .multilineTextAlignment(.center)
+                                                .lineLimit(2)
+                                                .fixedSize(horizontal: false, vertical: true)
+                                            }
                                     }.frame(width: geometry.size.width / 2 - 25)
                                 }
                             }.padding(.vertical)
@@ -134,12 +174,21 @@ struct ContentView: View {
                                     VStack {
                                         Image("help")
                                             .renderingMode(.original)
-                                        Text(self.dataLoader.menuData.help.uppercased())
-                                            .font(Font.custom("ITCAvantGardePro-Bold", size: 14))
-                                            .fontWeight(.bold)
-                                            .multilineTextAlignment(.center)
-                                            .lineLimit(3)
-                                            .fixedSize(horizontal: false, vertical: true)
+                                        if self.language == "german" {
+                                            Text(self.dataLoader.menuData.help.uppercased())
+                                                .font(.system(size: 13))
+                                                .fontWeight(.heavy)
+                                                .multilineTextAlignment(.center)
+                                                .lineLimit(2)
+                                                .fixedSize(horizontal: false, vertical: true)
+                                            } else {
+                                            Text(self.dataLoader.menuData.help.uppercased())
+                                                .font(Font.custom("ITCAvantGardePro-Bold", size: 14))
+                                                .fontWeight(.bold)
+                                                .multilineTextAlignment(.center)
+                                                .lineLimit(2)
+                                                .fixedSize(horizontal: false, vertical: true)
+                                            }
                                     }.frame(width: geometry.size.width / 2 - 25)
                                 }
                                 Spacer()
@@ -147,12 +196,21 @@ struct ContentView: View {
                                     VStack {
                                         Image("law")
                                             .renderingMode(.original)
-                                        Text(self.dataLoader.menuData.law.uppercased())
-                                            .font(Font.custom("ITCAvantGardePro-Bold", size: 14))
-                                            .fontWeight(.bold)
-                                            .multilineTextAlignment(.center)
-                                            .lineLimit(3)
-                                            .fixedSize(horizontal: false, vertical: true)
+                                        if self.language == "german" {
+                                            Text(self.dataLoader.menuData.law.uppercased())
+                                                .font(.system(size: 13))
+                                                .fontWeight(.heavy)
+                                                .multilineTextAlignment(.center)
+                                                .lineLimit(2)
+                                                .fixedSize(horizontal: false, vertical: true)
+                                            } else {
+                                            Text(self.dataLoader.menuData.law.uppercased())
+                                                .font(Font.custom("ITCAvantGardePro-Bold", size: 14))
+                                                .fontWeight(.bold)
+                                                .multilineTextAlignment(.center)
+                                                .lineLimit(2)
+                                                .fixedSize(horizontal: false, vertical: true)
+                                            }
                                     }.frame(width: geometry.size.width / 2 - 25)
                                 }
                             }.padding(.vertical)
@@ -161,12 +219,21 @@ struct ContentView: View {
                                     VStack {
                                         Image("difficultsituations")
                                             .renderingMode(.original)
-                                        Text(self.dataLoader.menuData.difficultsituations.uppercased())
-                                            .font(Font.custom("ITCAvantGardePro-Bold", size: 14))
-                                            .fontWeight(.bold)
-                                            .multilineTextAlignment(.center)
-                                            .lineLimit(2)
-                                            .fixedSize(horizontal: false, vertical: true)
+                                        if self.language == "german" {
+                                            Text(self.dataLoader.menuData.difficultsituations.uppercased())
+                                                .font(.system(size: 13))
+                                                .fontWeight(.heavy)
+                                                .multilineTextAlignment(.center)
+                                                .lineLimit(2)
+                                                .fixedSize(horizontal: false, vertical: true)
+                                            } else {
+                                            Text(self.dataLoader.menuData.difficultsituations.uppercased())
+                                                .font(Font.custom("ITCAvantGardePro-Bold", size: 14))
+                                                .fontWeight(.bold)
+                                                .multilineTextAlignment(.center)
+                                                .lineLimit(2)
+                                                .fixedSize(horizontal: false, vertical: true)
+                                            }
                                     }.frame(width: geometry.size.width / 2 - 25)
                                     
                                 }
@@ -175,12 +242,21 @@ struct ContentView: View {
                                     VStack {
                                         Image("consulate")
                                             .renderingMode(.original)
-                                        Text(self.dataLoader.menuData.consulate.uppercased())
-                                            .font(Font.custom("ITCAvantGardePro-Bold", size: 14))
-                                            .fontWeight(.bold)
-                                            .multilineTextAlignment(.center)
-                                            .lineLimit(2)
-                                            .fixedSize(horizontal: false, vertical: true)
+                                        if self.language == "german" {
+                                            Text(self.dataLoader.menuData.consulate.uppercased())
+                                                .font(.system(size: 13))
+                                                .fontWeight(.heavy)
+                                                .multilineTextAlignment(.center)
+                                                .lineLimit(2)
+                                                .fixedSize(horizontal: false, vertical: true)
+                                            } else {
+                                            Text(self.dataLoader.menuData.consulate.uppercased())
+                                                .font(Font.custom("ITCAvantGardePro-Bold", size: 14))
+                                                .fontWeight(.bold)
+                                                .multilineTextAlignment(.center)
+                                                .lineLimit(2)
+                                                .fixedSize(horizontal: false, vertical: true)
+                                            }
                                     }.frame(width: geometry.size.width / 2 - 25)
                                 }
                             }.padding(.vertical)
@@ -189,12 +265,21 @@ struct ContentView: View {
                                     VStack {
                                         Image("hospital")
                                             .renderingMode(.original)
-                                        Text(self.dataLoader.menuData.hospital.uppercased())
-                                            .font(Font.custom("ITCAvantGardePro-Bold", size: 14))
-                                            .fontWeight(.bold)
-                                            .multilineTextAlignment(.center)
-                                            .lineLimit(2)
-                                            .fixedSize(horizontal: false, vertical: true)
+                                        if self.language == "german" {
+                                            Text(self.dataLoader.menuData.hospital.uppercased())
+                                                .font(.system(size: 13))
+                                                .fontWeight(.heavy)
+                                                .multilineTextAlignment(.center)
+                                                .lineLimit(2)
+                                                .fixedSize(horizontal: false, vertical: true)
+                                            } else {
+                                            Text(self.dataLoader.menuData.hospital.uppercased())
+                                                .font(Font.custom("ITCAvantGardePro-Bold", size: 14))
+                                                .fontWeight(.bold)
+                                                .multilineTextAlignment(.center)
+                                                .lineLimit(2)
+                                                .fixedSize(horizontal: false, vertical: true)
+                                            }
                                     }.frame(width: geometry.size.width / 2 - 25)
                                 }
                                 Spacer()
@@ -202,12 +287,21 @@ struct ContentView: View {
                                     VStack {
                                         Image("police")
                                             .renderingMode(.original)
-                                        Text(self.dataLoader.menuData.police.uppercased())
-                                            .font(Font.custom("ITCAvantGardePro-Bold", size: 14))
-                                            .fontWeight(.bold)
-                                            .multilineTextAlignment(.center)
-                                            .lineLimit(2)
-                                            .fixedSize(horizontal: false, vertical: true)
+                                        if self.language == "german" {
+                                            Text(self.dataLoader.menuData.police.uppercased())
+                                                .font(.system(size: 13))
+                                                .fontWeight(.heavy)
+                                                .multilineTextAlignment(.center)
+                                                .lineLimit(2)
+                                                .fixedSize(horizontal: false, vertical: true)
+                                            } else {
+                                            Text(self.dataLoader.menuData.police.uppercased())
+                                                .font(Font.custom("ITCAvantGardePro-Bold", size: 14))
+                                                .fontWeight(.bold)
+                                                .multilineTextAlignment(.center)
+                                                .lineLimit(2)
+                                                .fixedSize(horizontal: false, vertical: true)
+                                            }
                                     }.frame(width: geometry.size.width / 2 - 25)
                                 }
                             }
@@ -215,6 +309,7 @@ struct ContentView: View {
                         }.disabled(self.keyboardOpened)
                         .minimumScaleFactor(0.99)
                         .onTapGesture {
+                            print(self.language)
                                 if self.keyboardOpened {
                                     self.keyboardOpened.toggle()
                                 }
