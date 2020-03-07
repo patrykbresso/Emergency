@@ -12,6 +12,7 @@ import CoreLocation
 
 struct LawsCell: View {
     @EnvironmentObject var dataLoader: DataLoader
+    @State private var language: String = UserDefaults.standard.string(forKey: "language") ?? "english"
     var law: Laws
     var body: some View {
         
@@ -20,14 +21,24 @@ struct LawsCell: View {
                 RoundedRectangle(cornerRadius: 10)
                     .fill(Color.primaryPink)
                 
-                Text(law.title)
-                    .font(Font.custom("ITCAvantGardePro-Bk", size: 14))
-                    .lineSpacing(5.0)
-                    .multilineTextAlignment(.center)
-                    .font(.system(size: 14))
-                    .fixedSize(horizontal: false, vertical: true)
-                    .lineLimit(nil)
-                    .padding(5)
+                
+                    if (UserDefaults.standard.string(forKey: "language") == "german") {
+                        Text(law.title)
+                        .font(Font.custom("ITCAvantGardePro-Bk", size: 13))
+                        .lineSpacing(5.0)
+                        .multilineTextAlignment(.center)
+                        .fixedSize(horizontal: false, vertical: true)
+                        .lineLimit(nil)
+                        .padding(5)
+                    } else {
+                        Text(law.title)
+                        .font(Font.custom("ITCAvantGardePro-Bk", size: 14))
+                        .lineSpacing(5.0)
+                        .multilineTextAlignment(.center)
+                        .fixedSize(horizontal: false, vertical: true)
+                        .lineLimit(nil)
+                        .padding(5)
+                    }
             }
             .foregroundColor(.white)
     }

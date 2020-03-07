@@ -57,7 +57,7 @@ struct LawsView: View {
                     }
                     NavigationLink(destination: LawsDetailView(index: self.dataLoader.lawsData.count - 1)) {
                         LawsCell(law: self.dataLoader.lawsData[self.dataLoader.lawsData.count - 1])
-                    }.frame(width: UIScreen.screenWidth / 2 - 2 * self.paddingSides, height: UIScreen.screenHeight / 9).padding(.bottom, 10)
+                    }.frame(width: UIScreen.screenWidth / 1.8 - 2 * self.paddingSides, height: UIScreen.screenHeight / 8).padding(.bottom, 10)
                 }.padding([.top, .bottom], 10)
             }
         }

@@ -20,6 +20,7 @@ struct LawsDetailView: View {
     
     var body: some View {
 
+        
             VStack() {
                 HStack {
                     Button(action: {
@@ -56,6 +57,7 @@ struct LawsDetailView: View {
                             Text(self.dataLoader.lawsData[index].text)
                                 .font(Font.custom("ITCAvantGardePro-Bk", size: 14))
                                 .lineSpacing(5.0)
+                                .padding(.trailing, 2)
                         }.padding(10)
                     }
                         
