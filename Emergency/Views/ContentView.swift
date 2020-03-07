@@ -15,7 +15,7 @@ struct ContentView: View {
     @EnvironmentObject var dataLoader: DataLoader
     @EnvironmentObject var footer : FooterMenu
     @EnvironmentObject var launch: FirstLaunch
-    @State private var language: String = UserDefaults.standard.string(forKey: "language") ?? "English"
+    @State private var language: String = UserDefaults.standard.string(forKey: "language") ?? "english"
     @State private var alwaysTrue: Bool = true
     @State private var keyboardOpened = false
     @State private var menuSize: CGRect = CGRect()
@@ -82,7 +82,7 @@ struct ContentView: View {
                                     VStack {
                                         Image("psychology")
                                             .renderingMode(.original)
-                                        if self.language == "german" {
+                                        if (UserDefaults.standard.string(forKey: "language") == "german") {
                                             Text(self.dataLoader.menuData.psychology.uppercased())
                                                 .font(.system(size: 13))
                                                 .fontWeight(.heavy)
@@ -104,7 +104,7 @@ struct ContentView: View {
                                     VStack {
                                         Image("advice")
                                             .renderingMode(.original)
-                                        if self.language == "german" {
+                                        if (UserDefaults.standard.string(forKey: "language") == "german") {
                                             Text(self.dataLoader.menuData.advice.uppercased())
                                                 .font(.system(size: 13))
                                                 .fontWeight(.heavy)
@@ -129,7 +129,7 @@ struct ContentView: View {
                                     VStack {
                                         Image("translate")
                                             .renderingMode(.original)
-                                        if self.language == "german" {
+                                        if (UserDefaults.standard.string(forKey: "language") == "german") {
                                             Text(self.dataLoader.menuData.translate.uppercased())
                                                 .font(.system(size: 13))
                                                 .fontWeight(.heavy)
@@ -151,7 +151,7 @@ struct ContentView: View {
                                     VStack {
                                         Image("phone")
                                             .renderingMode(.original)
-                                        if self.language == "german" {
+                                        if (UserDefaults.standard.string(forKey: "language") == "german") {
                                             Text(self.dataLoader.menuData.phone.uppercased())
                                                 .font(.system(size: 13))
                                                 .fontWeight(.heavy)
@@ -174,7 +174,7 @@ struct ContentView: View {
                                     VStack {
                                         Image("help")
                                             .renderingMode(.original)
-                                        if self.language == "german" {
+                                        if (UserDefaults.standard.string(forKey: "language") == "german") {
                                             Text(self.dataLoader.menuData.help.uppercased())
                                                 .font(.system(size: 13))
                                                 .fontWeight(.heavy)
@@ -196,7 +196,7 @@ struct ContentView: View {
                                     VStack {
                                         Image("law")
                                             .renderingMode(.original)
-                                        if self.language == "german" {
+                                        if (UserDefaults.standard.string(forKey: "language") == "german") {
                                             Text(self.dataLoader.menuData.law.uppercased())
                                                 .font(.system(size: 13))
                                                 .fontWeight(.heavy)
@@ -219,7 +219,7 @@ struct ContentView: View {
                                     VStack {
                                         Image("difficultsituations")
                                             .renderingMode(.original)
-                                        if self.language == "german" {
+                                        if (UserDefaults.standard.string(forKey: "language") == "german") {
                                             Text(self.dataLoader.menuData.difficultsituations.uppercased())
                                                 .font(.system(size: 13))
                                                 .fontWeight(.heavy)
@@ -242,7 +242,7 @@ struct ContentView: View {
                                     VStack {
                                         Image("consulate")
                                             .renderingMode(.original)
-                                        if self.language == "german" {
+                                        if (UserDefaults.standard.string(forKey: "language") == "german") {
                                             Text(self.dataLoader.menuData.consulate.uppercased())
                                                 .font(.system(size: 13))
                                                 .fontWeight(.heavy)
@@ -265,7 +265,7 @@ struct ContentView: View {
                                     VStack {
                                         Image("hospital")
                                             .renderingMode(.original)
-                                        if self.language == "german" {
+                                        if (UserDefaults.standard.string(forKey: "language") == "german") {
                                             Text(self.dataLoader.menuData.hospital.uppercased())
                                                 .font(.system(size: 13))
                                                 .fontWeight(.heavy)
@@ -287,7 +287,7 @@ struct ContentView: View {
                                     VStack {
                                         Image("police")
                                             .renderingMode(.original)
-                                        if self.language == "german" {
+                                        if (UserDefaults.standard.string(forKey: "language") == "german") {
                                             Text(self.dataLoader.menuData.police.uppercased())
                                                 .font(.system(size: 13))
                                                 .fontWeight(.heavy)
