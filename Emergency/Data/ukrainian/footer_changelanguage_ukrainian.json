@@ -7,26 +7,21 @@
         },
         {
             "id": 2,
-            "text": "Програмісти iOS: ",
-            "name": "Paulina Binas \nPatryk Bresso "
+            "text": "Програмісти",
+            "name": "Paulina Binas \nPatryk Bresso \nKacper Kiedos \nPaweł Klecha"
         },
         {
             "id": 3,
-            "text": "Програмісти Android: ",
-            "name": "Kacper Kiedos \nPaweł Klecha "
-        },
-        {
-            "id": 4,
             "text": "Графічний дизайнер: ",
             "name": "Anna Ludwin "
         },
         {
-            "id": 5,
+            "id": 4,
             "text": "Наглядач: ",
             "name": "Krzysztof Waśko \n \n "
         },
         {
-            "id": 6,
+            "id": 5,
             "name": "Politechnika Wrocławska\nKomenda Miejska Policji we Wrocławiu\nUniwersytet Wrocławski\nUniwersytet Przyrodniczy we Wrocławiu\nAkademia Sztuk Pięknych we Wrocławiu\nUniwersytet Medyczny we Wrocławiu\nUniwersytet Ekonomiczny we Wrocławiu\nAkademia Wychowania Fizycznego we Wrocławiu\n\nWrocław, 2020 ",
             "text": ""
         }
