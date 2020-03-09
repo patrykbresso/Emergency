@@ -25,7 +25,6 @@ struct PhoneNumbersCell: View {
                     .lineLimit(2)
                     .padding(.bottom, 5)
                 Text(phoneNumber.number)
-                    .fontWeight(.bold)
                     .font(Font.custom("ITCAvantGardePro-Bold", size: 14))
                     .lineSpacing(5.0)
                     .multilineTextAlignment(.center)
@@ -35,20 +34,21 @@ struct PhoneNumbersCell: View {
                     
                 if(showDescription) {
                     Text(phoneNumber.available)
-                        .fontWeight(.bold)
                         .font(Font.custom("ITCAvantGardePro-Bold", size: 14))
                         .lineSpacing(5.0)
                         .multilineTextAlignment(.center)
                         .fixedSize(horizontal: false, vertical: true)
                         .lineLimit(nil)
                         .padding([.leading, .trailing, .bottom], 5)
-                    Text(phoneNumber.description)
-                        .font(Font.custom("ITCAvantGardePro-Bk", size: 14))
-                        .lineSpacing(5.0)
-                        .multilineTextAlignment(.center)
-                        .fixedSize(horizontal: false, vertical: true)
-                        .lineLimit(nil)
-                        .padding(.trailing, 5)
+                    if !phoneNumber.description.isEmpty {
+                        Text(phoneNumber.description)
+                            .font(Font.custom("ITCAvantGardePro-Bk", size: 14))
+                            .lineSpacing(5.0)
+                            .multilineTextAlignment(.center)
+                            .fixedSize(horizontal: false, vertical: true)
+                            .lineLimit(nil)
+                            .padding(.trailing, 5)
+                    }
                 }
             }
                 .padding(5)
