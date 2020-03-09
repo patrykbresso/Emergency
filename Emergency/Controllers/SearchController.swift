@@ -18,9 +18,11 @@ struct SearchController {
         for view in dataLoader.searchKeywords {
             for word in view.keywords {
                 if(searchedPhrase.lowercased().contains(word.keyword.lowercased())) {
-                    let result: Page = Page(id: i,name: view.name, page: view.page, pageName: view.title, pageSubtitle: view.subtitle)
-                    i = i + 1
-                    results.append(result)
+                    let result: Page = Page(id: i, name: view.name, page: view.page, pageName: view.title, pageSubtitle: view.subtitle)
+                    if(!results.contains(where: { $0.pageName == result.pageName && $0.pageSubtitle == result.pageSubtitle})){
+                        i = i + 1
+                        results.append(result)
+                    }
                 }
             }
         }
