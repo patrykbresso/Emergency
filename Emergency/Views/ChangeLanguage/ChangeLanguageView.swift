@@ -19,11 +19,12 @@ struct ChangeLanguageView: View {
     @State private var showContentView = false
     @Environment(\.presentationMode) var presentationMode
     @EnvironmentObject var launch: FirstLaunch
+    @Binding var showView: Bool
     
     var body: some View {
         GeometryReader { geometry in
             VStack {
-                if self.launch.firstLoad {
+                if self.launch.nextLoad {
                     HStack {
                         Button(action: {
                             self.presentationMode.wrappedValue.dismiss()
@@ -43,6 +44,7 @@ struct ChangeLanguageView: View {
                     Spacer()
                     Button(action: {
                         UserDefaults.standard.set("polish", forKey: "language")
+                        //self.showView = false
                         self.presentationMode.wrappedValue.dismiss()
                     }) {
                         ChangeLanguageCell(language: "Polski")
@@ -82,15 +84,16 @@ struct ChangeLanguageView: View {
                     ChangeLanguageCell(language: "Deutsch")
                 }.onDisappear {
                     UserDefaults.standard.set(true, forKey: "launchedBefore")
-                    self.launch.firstLoad = true
+                    self.launch.nextLoad = true
                     self.dataLoader.loadLanguage(language: UserDefaults.standard.string(forKey: "language") ?? "english")
                     
                    
                         
                 }
                 .onAppear() {
-                    if self.launch.firstLoad {
+                    if self.launch.nextLoad {
                         self.footer.closeFooter = true
+        
                     }
                 }
                 Spacer()
@@ -108,8 +111,3 @@ struct ChangeLanguageView: View {
 }
     
     
-struct ChangeLanguageView_Previews: PreviewProvider {
-    static var previews: some View {
-        ChangeLanguageView()
-    }
-}

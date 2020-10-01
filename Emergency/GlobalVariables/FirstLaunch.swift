@@ -11,6 +11,6 @@ import SwiftUI
 
 class FirstLaunch : ObservableObject {
     
-    @Published var firstLoad: Bool = UserDefaults.standard.bool(forKey: "launchedBefore") 
+    @Published var nextLoad: Bool = UserDefaults.standard.bool(forKey: "launchedBefore")
 }
 

@@ -14,7 +14,7 @@ struct DropDown : View {
     @EnvironmentObject var dataLoader: DataLoader
     
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
-
+    @State private var alwaysTrue: Bool = true
     let radius = CGFloat(6)
     
     var body: some View {
@@ -50,7 +50,7 @@ struct DropDown : View {
                             }
                             
                             Spacer()
-                            NavigationLink(destination: ChangeLanguageView()) {
+                            NavigationLink(destination: ChangeLanguageView(showView: self.$alwaysTrue)) {
                                 ZStack {
                                     RoundedRectangle(cornerRadius: self.radius)
                                         .stroke(Color.white)

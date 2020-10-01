@@ -21,20 +21,12 @@ struct ContentView: View {
     @State private var menuSize: CGRect = CGRect()
     @State private var searchBarSize: CGRect = CGRect()
     @State private var spacingSize: CGFloat = 0
+    @State var showView: Bool = false
     var body: some View {
         NavigationView {
         GeometryReader { geometry in
                 ZStack() {
-                    
-                    if !self.launch.firstLoad {
-                        
-                        NavigationLink(destination: ChangeLanguageView(), isActive:  self.$alwaysTrue) {
-                                              EmptyView()
-                                      }
-                    }
-
-
-                    
+                                        
                     VStack(alignment: .leading) {
                         
                         HStack() {
@@ -336,6 +328,18 @@ struct ContentView: View {
         }            .background(Color.primaryBlue
             .edgesIgnoringSafeArea(.all))
 
+        }.onAppear() {
+            if !self.launch.nextLoad {
+                self.showView = true
+            } else {
+                self.showView = false
+            }
+        }
+        .sheet(isPresented: self.$showView) {
+            ChangeLanguageView(showView: self.$showView)
+                .environmentObject(self.launch)
+                .environmentObject(self.dataLoader)
+                .environmentObject(self.footer)
         }
     }
 
